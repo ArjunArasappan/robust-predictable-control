@@ -1,0 +1,28 @@
+/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/gym/envs/registration.py:555: UserWarning: [33mWARN: The environment InvertedPendulum-v2 is out of date. You should consider upgrading to version `v4`.[0m
+  logger.warn(
+Traceback (most recent call last):
+  File "/home/harsh/arjun/robust-predictable-control/train.py", line 236, in main
+    workspace = MujocoWorkspace(args)
+  File "/home/harsh/arjun/robust-predictable-control/train.py", line 77, in __init__
+    self.setup()
+    ~~~~~~~~~~^^
+  File "/home/harsh/arjun/robust-predictable-control/train.py", line 86, in setup
+    self.train_env = gym.make(self.args.env_name)
+                     ~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/gym/envs/registration.py", line 640, in make
+    env = env_creator(**_kwargs)
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/gym/envs/mujoco/inverted_pendulum.py", line 21, in __init__
+    MuJocoPyEnv.__init__(
+    ~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<3 lines>...
+        **kwargs
+        ^^^^^^^^
+    )
+    ^
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/gym/envs/mujoco/mujoco_env.py", line 186, in __init__
+    raise error.DependencyNotInstalled(
+        f"{MUJOCO_PY_IMPORT_ERROR}. (HINT: you need to install mujoco_py, and also perform the setup instructions here: https://github.com/openai/mujoco-py/.)"
+    )
+gym.error.DependencyNotInstalled: No module named 'mujoco_py'. (HINT: you need to install mujoco_py, and also perform the setup instructions here: https://github.com/openai/mujoco-py/.)

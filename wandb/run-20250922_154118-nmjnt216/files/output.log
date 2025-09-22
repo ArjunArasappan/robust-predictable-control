@@ -1,0 +1,2182 @@
+/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/gymnasium/envs/registration.py:512: DeprecationWarning: [33mWARN: The environment InvertedPendulum-v4 is out of date. You should consider upgrading to version `v5`.[0m
+  logger.deprecation(
+Namespace(agent='RPC', env_name='InvertedPendulum-v4', device='cuda', seed=1, num_train_steps=25000, learning_starts=5000, gamma=0.99, tau=0.005, env_buffer_size=100000, target_update_interval=1, log_interval=500, save_snapshot_interval=50000, eval_episode_interval=1000, num_eval_episodes=1, latent_dims=50, model_hidden_dims=256, model_num_layers=2, kl_constraint=10.0, lambda_init=1e-05, alpha_autotune=False, alpha_init=0.2, noise_factor=3.0, batch_size=256, seq_len=4, lr=0.0003)
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00376337 -0.00153347  0.00655405 -0.00181602]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00303034 -0.00268948  0.03003625 -0.05546094]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01614131 -0.0463751   0.92599254 -2.10789083]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03876323 -0.09620156  0.20909255 -0.41899865]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.06510274 -0.15553595  1.10439577 -2.52423665]
+Episode: 1, total numsteps: 5, return: 5.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00099187 -0.00944882  0.00507026  0.00076287]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00184807 -0.0025323  -0.14667102  0.34165048]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00541807 -0.01955186  0.50793421 -1.17464133]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02197154 -0.05701643  0.32119686 -0.71267067]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03680827 -0.0904078   0.42083539 -0.95981054]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03488536 -0.08633217 -0.51387448  1.13529524]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02479262 -0.06766988  0.00702728 -0.180727  ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02671992 -0.07970967  0.08919347 -0.42025076]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02362287 -0.08217588 -0.24288111  0.28645725]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02562883 -0.09944012  0.3411548  -1.13247097]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03149788 -0.12753822 -0.04564683 -0.29075906]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02807276 -0.13749455 -0.12526124 -0.21026218]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00881372 -0.11553549 -0.83611667  1.29303918]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02803546 -0.05932125 -1.00703938  1.5258136 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.07977282  0.02560489 -1.579403    2.72044276]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.15197827  0.15303701 -2.02982715  3.65647915]
+Episode: 2, total numsteps: 21, return: 16.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00340537  0.00576857 -0.0039361  -0.00093004]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01234328  0.02614628 -0.44175164  1.00954357]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.03050916  0.06718227 -0.46722371  1.04971575]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.03003533  0.06524937  0.48761816 -1.11645544]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00757329 -0.01886274  1.39141475 -3.07921469]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.07168422 -0.15879055  1.81314792 -3.92550704]
+Episode: 3, total numsteps: 27, return: 6.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00731917 -0.00193774 -0.0059309  -0.00475373]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01646052  0.0184378  -0.4499289   1.01320705]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.04787471  0.08929562 -1.11912091  2.52000729]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.07374368  0.14591861 -0.17985721  0.35771661]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.08057101  0.16170192 -0.1617066   0.43353209]
+Episode: 4, total numsteps: 32, return: 5.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00500729 -0.00439182 -0.00029618  0.00961474]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0099315  -0.01546696  0.24583559 -0.55758942]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03074854 -0.06283143  0.79375745 -1.8016536 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.06682907 -0.14419254  1.01047545 -2.27371427]
+Episode: 5, total numsteps: 36, return: 4.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00923314  0.0044958   0.00082454 -0.00446218]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00912126  0.04689812 -0.9158539   2.10249833]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.04437632  0.12663125 -0.84857002  1.9025365 ]
+Episode: 6, total numsteps: 39, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00678696  0.00939851  0.00032137 -0.00768269]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02426398  0.04968859 -0.87159295  2.00104419]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.05328654  0.11523854 -0.58203918  1.300274  ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.06261616  0.13612516  0.11245957 -0.22890164]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.05476866  0.12201859  0.27981224 -0.47588816]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.05346273  0.12835479 -0.21266081  0.77616169]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.04865389  0.13051372  0.45082012 -0.64768925]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.03064365  0.10768568  0.4502852  -0.50011419]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01253339  0.08992523  0.45568882 -0.39282238]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01549276  0.05370363  0.94492359 -1.41210141]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [0.0388871  0.03284841 0.2277497  0.3412035 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.06069877  0.01746585  0.86094901 -1.09345849]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.10221606 -0.04119918  1.21473085 -1.84053121]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.16199145 -0.13949421  1.77260707 -3.07125748]
+Episode: 7, total numsteps: 53, return: 14.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [0.0024698  0.00553366 0.00226007 0.00834595]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01461249 -0.02184735  0.60324264 -1.36347475]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02626172 -0.04659999 -0.01794899  0.09995631]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00896295 -0.00524503 -0.84502983  1.9506639 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01035542  0.03735177 -0.12446214  0.21244737]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-9.73133989e-04  1.32002644e-02  5.91613226e-01 -1.40252794e+00]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03746525 -0.07536632  1.32877477 -3.01832225]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.08911223 -0.19100771  1.25556534 -2.78881581]
+Episode: 8, total numsteps: 61, return: 8.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00920814  0.00057179 -0.00081328 -0.00875301]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02891708  0.04571413 -0.98175785  2.24227675]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.06211946  0.12008113 -0.68108659  1.50228691]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.08065861  0.16098147 -0.2485156   0.56583297]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0775834   0.15634043  0.40036205 -0.78034462]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.07068581  0.14956411 -0.05365695  0.42391334]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0843779   0.19515024 -0.62870363  1.84060856]
+Episode: 9, total numsteps: 68, return: 7.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00282656  0.00705266  0.00185882 -0.00479805]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01505556 -0.02104989  0.6079593  -1.38642458]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.05767507 -0.11771167  1.52010561 -3.43118131]
+Episode: 10, total numsteps: 71, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [0.00679763 0.00018992 0.00021778 0.0050606 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0060928   0.00206911 -0.03536711  0.08810711]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02043618 -0.03082184  0.75029541 -1.71360815]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04715928 -0.0906216   0.58765865 -1.29436078]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.07420567 -0.15085868  0.76478608 -1.7220345 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.08601726 -0.17795043 -0.16979815  0.33014531]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.08652657 -0.18485439  0.19382488 -0.66255889]
+Episode: 11, total numsteps: 78, return: 7.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00704156  0.00639253  0.00366574  0.00574194]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00613124 -0.02332373  0.65320801 -1.47652382]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04743491 -0.11632789  1.40982172 -3.16355077]
+Episode: 12, total numsteps: 81, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00616767  0.00604728 -0.00617352 -0.00836895]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01658745  0.02935534 -0.51340038  1.16177839]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0263028   0.05027475  0.02519885 -0.09363166]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.03692145  0.07437558 -0.55429121  1.28339305]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.04587208  0.09540608  0.10382648 -0.20581279]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.05936462  0.12967847 -0.77519549  1.89391305]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.07744776  0.17643315 -0.13282755  0.47647081]
+Episode: 13, total numsteps: 88, return: 7.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00710454  0.00722567  0.00753074 -0.00056181]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00240213  0.01892133 -0.24196953  0.57949136]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01454534  0.05868359 -0.60474576  1.40438191]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.03102602  0.0968151  -0.2215782   0.52302762]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.05280054  0.14863982 -0.86490662  2.05338001]
+Episode: 14, total numsteps: 93, return: 5.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00451903 -0.00985816  0.00291442  0.00439819]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0241058   0.0356726  -0.97947705  2.24908394]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.07244192  0.1451879  -1.43636772  3.22922373]
+Episode: 15, total numsteps: 96, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00671138 -0.00436244 -0.00569564  0.00278663]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00923719  0.03200704 -0.78954185  1.79732612]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.03529893  0.09001169 -0.51579368  1.12446896]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.06070153  0.14649475 -0.75411401  1.70115953]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.08198686  0.19531783 -0.31311085  0.76542308]
+Episode: 16, total numsteps: 101, return: 5.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0061011   0.00927342 -0.0069895  -0.00035575]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00305237  0.01585338 -0.1450669   0.32607229]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01191936 -0.00498557  0.58623589 -1.34873977]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04043792 -0.0693714   0.83986157 -1.87514104]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.08619036 -0.1716962   1.44566416 -3.23485703]
+Episode: 17, total numsteps: 106, return: 5.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00789432 -0.00154566  0.00179004 -0.00951019]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00970729 -0.00593662  0.08863454 -0.20812034]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 1.10950201e-03  1.39133121e-02 -5.16729124e-01  1.18494626e+00]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 3.85037292e-04  1.43730967e-02  4.76910403e-01 -1.12936595e+00]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0090061  -0.00525068 -0.04355769  0.12670839]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00241318  0.02197886 -0.52619094  1.2246359 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.04033093  0.10910327 -1.36715973  3.11747578]
+Episode: 18, total numsteps: 113, return: 7.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [0.0034692  0.00838177 0.00653651 0.00771041]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01421023 -0.01533961  0.52911402 -1.18176325]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04311267 -0.07955571  0.91557449 -2.02864191]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.06480303 -0.12579453  0.17308097 -0.3192105 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.06703602 -0.12974645 -0.06064643  0.11462396]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.06177211 -0.12108669 -0.20239325  0.31727316]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.06055378 -0.12664184  0.14017652 -0.5833857 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.06460536 -0.14810007  0.06298648 -0.49515877]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.07080771 -0.17846663  0.24670481 -1.0209677 ]
+Episode: 19, total numsteps: 122, return: 9.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00320711 -0.00508895  0.00537034 -0.00576651]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01246727 -0.02626766  0.45640729 -1.04270154]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02523253 -0.05472089  0.18345345 -0.39493899]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03057169 -0.06648135  0.08405448 -0.19825158]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02877647 -0.06350368 -0.17303506  0.34018134]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00648015 -0.01588854 -0.94027369  2.02738858]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.04261415  0.08946533 -1.51353623  3.24087188]
+Episode: 20, total numsteps: 129, return: 7.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0066255  -0.00874564  0.00650976 -0.00670985]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-5.17562212e-04  7.96404098e-03 -3.62675614e-01  8.33701860e-01]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02237637  0.05764086 -0.72977253  1.64790777]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.048377    0.11566377 -0.57200784  1.27045677]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.05258123  0.12456413  0.35824906 -0.7939418 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02771775  0.07169618  0.88468265 -1.84712416]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01884884 -0.02483021  1.44348565 -2.98240417]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.08643192 -0.16428276  1.93420233 -3.9951523 ]
+Episode: 21, total numsteps: 137, return: 8.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00249706 -0.00366524  0.00382674 -0.00642856]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01432875 -0.04245935  0.8350931  -1.91360424]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0550568  -0.13473091  1.20089487 -2.70377926]
+Episode: 22, total numsteps: 140, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00207488 -0.00988351 -0.00475011 -0.00157622]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01912485  0.02884695 -0.84541786  1.91850558]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.05315889  0.1047519  -0.85754801  1.89159558]
+Episode: 23, total numsteps: 143, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00788158  0.0026632  -0.00239151  0.00450588]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02264472  0.036793   -0.73369625  1.68471035]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.05156553  0.10223476 -0.71360414  1.60126497]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0687525   0.14054771 -0.14888743  0.34171052]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.08309289  0.17559503 -0.56669491  1.40072052]
+Episode: 24, total numsteps: 148, return: 5.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00307732 -0.00137547  0.00734641  0.0026427 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00439328 -0.00362788  0.05831388 -0.11407171]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00729446  0.02426866 -0.64069282  1.49169627]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01420227  0.03973271  0.29154073 -0.68444156]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00666173  0.02329215  0.08659415 -0.14824846]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01144931  0.03701231 -0.32470085  0.82320505]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01055956  0.03780843  0.36671058 -0.76097509]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01108099  0.04389634 -0.39008166  1.04114783]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01731606  0.06373864  0.07619063 -0.02962951]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02686395  0.09278749 -0.55154371  1.46563454]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.05316457  0.16140111 -0.76348159  1.96952259]
+Episode: 25, total numsteps: 159, return: 11.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00620549 -0.00316411  0.00087339 -0.00607406]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01986122 -0.03488732  0.68002042 -1.56418538]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04250648 -0.08600955  0.45414499 -1.0102619 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.07955395 -0.17031355  1.39426334 -3.18215757]
+Episode: 26, total numsteps: 163, return: 4.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00992282 -0.00513569 -0.00486265 -0.0085362 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01746308 -0.0233964   0.38083195 -0.89559635]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03346595 -0.06050882  0.41987775 -0.96629418]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04263018 -0.08169159  0.04017227 -0.10953621]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04024054 -0.07821295 -0.15911327  0.2787172 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0516555  -0.10965831  0.72671112 -1.8255693 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.06880127 -0.15552314  0.13411119 -0.49810842]
+Episode: 27, total numsteps: 170, return: 7.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00484394  0.00526257  0.00395787 -0.00742654]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00560686 -0.01867416  0.51720777 -1.17767365]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0205572  -0.05168332  0.2320519  -0.48923558]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0355159  -0.0847656   0.51534229 -1.16145174]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.05139347 -0.12069627  0.28015202 -0.65000751]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.05805636 -0.13779819  0.05408549 -0.21496124]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.06064323 -0.14961302  0.07524238 -0.3758534 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04475585 -0.12376731 -0.86756027  1.64758054]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01030577 -0.06227578 -0.85619751  1.44145963]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00476562 -0.05137286  0.09898883 -0.86234095]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00936226 -0.06618874 -0.3269667   0.10472041]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0123679  -0.08648494  0.17506017 -1.10595021]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.007609   -0.12601225  0.06404029 -0.88166955]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0164306  -0.13659462 -0.5028938   0.33281462]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02009957 -0.16367719  0.31626586 -1.66166302]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02644523 -0.18823899 -0.62920183  0.3967935 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0588913  -0.15958132 -0.99288909  1.03401326]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.07828668 -0.16847896  0.01925283 -1.4449183 ]
+Episode: 28, total numsteps: 188, return: 18.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00247523 -0.00158157  0.00329968 -0.00088142]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01158652 -0.03378739  0.69785348 -1.59313732]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04352809 -0.10581311  0.89957292 -2.01523226]
+Episode: 29, total numsteps: 191, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00173037  0.00679369  0.00452947 -0.00269985]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00709292 -0.00512564  0.26291965 -0.58742624]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01204766 -0.01526083 -0.01396727  0.069411  ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02193659 -0.03692676  0.50690036 -1.13980572]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02322799 -0.03822723 -0.43891158  1.04382725]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00378721  0.00618661 -0.53371355  1.1836357 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02250605  0.0639254  -0.78104632  1.70675588]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.05452109  0.13348057 -0.82068993  1.78303625]
+Episode: 30, total numsteps: 199, return: 8.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00103207 -0.00264601 -0.00780531 -0.00593517]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01241726  0.0226799  -0.55993981  1.25935237]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.03219732  0.06621467 -0.43041607  0.93076599]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.05388434  0.11404772 -0.65378426  1.46194903]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.06847509  0.14670453 -0.07876853  0.19702468]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.06775678  0.14823463  0.11413949 -0.11575068]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.04920582  0.11445654  0.81233287 -1.562003  ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00793831  0.03543993  1.25142049 -2.39421954]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04572142 -0.06561854  1.43247464 -2.67336495]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.09423953 -0.15089359  0.99712568 -1.62452643]
+Episode: 31, total numsteps: 209, return: 10.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00432387 -0.00371732 -0.00373904  0.00153399]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01439556  0.0192226  -0.49850365  1.13402296]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.05113702  0.10261064 -1.33611616  3.02116647]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0859157   0.17966513 -0.409264    0.88455828]
+Episode: 32, total numsteps: 213, return: 4.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [0.0094338  0.00549328 0.00582268 0.00518537]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02058224 -0.01938624  0.55012978 -1.23659964]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04359913 -0.07028908  0.60147732 -1.31726461]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.07203473 -0.13299302  0.82032985 -1.82180339]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.08635777 -0.16420737 -0.0996727   0.22292895]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.07034332 -0.13099964 -0.70027682  1.42931584]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04977464 -0.09465201 -0.3300245   0.40803019]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03966421 -0.08752592 -0.17628457 -0.04412576]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01920874 -0.05994541 -0.8449884   1.40928661]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00379671 -0.04843995  0.07087557 -0.80121029]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00715133 -0.0487551  -0.61584077  0.7634092 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.03113421 -0.02132561 -0.58402416  0.6154984 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.06854356  0.03477725 -1.28493953  2.17839044]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.11098583  0.09978589 -0.84033504  1.10141783]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.15349994  0.16500075 -1.28409385  2.15384434]
+Episode: 33, total numsteps: 228, return: 15.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [1.93975461e-03 8.35384514e-03 3.79260311e-03 7.12861474e-06]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01604827  0.05042611 -0.90051486  2.08171648]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.06476015  0.16178651 -1.53290187  3.4807798 ]
+Episode: 34, total numsteps: 231, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00845832 -0.00023102 -0.00574338 -0.00734607]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00721621 -0.0038912   0.06766072 -0.17404867]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00648482 -0.00616034 -0.03068967  0.05689687]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01055612 -0.04621357  0.88005896 -2.03734287]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.06357507 -0.16751693  1.76710163 -4.01269121]
+Episode: 35, total numsteps: 236, return: 5.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0001213   0.00570171 -0.00409987  0.00537544]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00678989 -0.00973625  0.33662131 -0.7694547 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03391806 -0.07145026  1.01815783 -2.30532572]
+Episode: 36, total numsteps: 239, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00051259 -0.00701904  0.00929935 -0.00196728]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0181561   0.03678434 -0.94003642  2.16973587]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.07067069  0.15647418 -1.68292452  3.80624607]
+Episode: 37, total numsteps: 242, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00409531  0.00693997 -0.00751079  0.00467181]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02063228  0.04477505 -0.81699021  1.86771298]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.04914744  0.10889116 -0.61085069  1.35849945]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.083096    0.18567056 -1.08503339  2.47485117]
+Episode: 38, total numsteps: 246, return: 4.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00624351 -0.00215016 -0.005362    0.00682456]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01490379  0.01761472 -0.42651733  0.97172875]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0478957   0.09264145 -1.2208761   2.76603881]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.08688366  0.17970731 -0.73270496  1.62442625]
+Episode: 39, total numsteps: 250, return: 4.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00219851  0.00949386  0.00250523  0.00387246]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 2.12756047e-03  8.70714558e-05  2.13244790e-01 -4.69439551e-01]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00801541  0.0249319  -0.7174627   1.68610034]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.03931611  0.09719963 -0.84826423  1.93714965]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0657831   0.15745566 -0.47794471  1.10132317]
+Episode: 40, total numsteps: 255, return: 5.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0004305  -0.00382064 -0.00208887  0.00881868]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00421056  0.00701102 -0.22936536  0.527623  ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0324789   0.07183937 -1.18131729  2.69389736]
+Episode: 41, total numsteps: 258, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00597594  0.00976438  0.00516612 -0.00280426]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01711131  0.03605561 -0.56033764  1.30393164]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0428041   0.09517391 -0.72465684  1.65794378]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.07318287  0.16480224 -0.79502573  1.83373266]
+Episode: 42, total numsteps: 262, return: 4.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 2.83027179e-03 -2.38036921e-03 -2.37014135e-03  7.60590039e-05]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00458019  0.0145068  -0.36717025  0.83585978]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.03825557  0.09123763 -1.31376014  2.98203108]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.07753143  0.17885513 -0.65522274  1.44339237]
+Episode: 43, total numsteps: 266, return: 4.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00966554 -0.00012857  0.00943197 -0.0042907 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02553597  0.03725764 -0.80064823  1.85439751]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0388921   0.06726083  0.12862445 -0.31653262]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02384624  0.0333346   0.62280842 -1.37233929]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00569165 -0.00396869  0.28688667 -0.51205239]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00897358  0.01009695 -0.4486001   1.19414398]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.03128114  0.06697375 -0.66696615  1.65389719]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.06423445  0.14717047 -0.98035287  2.35898935]
+Episode: 44, total numsteps: 274, return: 8.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00496436 -0.00114422 -0.00581438  0.00810005]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00148926  0.00667065 -0.16751454  0.37898356]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02184782  0.06002398 -0.99705859  2.27129049]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.04450499  0.11011817 -0.14050121  0.27437118]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.04546889  0.11216     0.09155889 -0.16562552]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.05731918  0.14333654 -0.68118517  1.70185759]
+Episode: 45, total numsteps: 280, return: 6.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00966345 -0.00392982  0.00998052 -0.00475706]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01062002 -0.00102493 -0.05762684  0.14842697]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02918289  0.04232594 -0.86828719  2.00100914]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.05843866  0.10857639 -0.59692187  1.33481315]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.077719    0.15211545 -0.36885311  0.85833692]
+Episode: 46, total numsteps: 285, return: 5.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [0.00698089 0.00211366 0.00612071 0.00260636]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01948659 -0.02603509  0.61749205 -1.39584202]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.05544892 -0.10691633  1.17941016 -2.64368207]
+Episode: 47, total numsteps: 288, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00274606  0.00521578 -0.00947031 -0.00106374]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00365726 -0.01036572  0.32873897 -0.77029701]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02440306 -0.0581171   0.70799025 -1.61428963]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03919612 -0.09096257  0.03499513 -0.05766926]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02181852 -0.05160916 -0.90187162  2.00627274]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0311766   0.06482405 -1.7463361   3.81067053]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.08203291  0.17110041 -0.80367727  1.56433043]
+Episode: 48, total numsteps: 295, return: 7.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00256291 -0.00045852 -0.00744759 -0.00554986]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01497165 -0.04183934  0.88164175 -2.04248258]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04399528 -0.10786978  0.57212351 -1.28369959]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.07702318 -0.18310692  1.07759564 -2.4712477 ]
+Episode: 49, total numsteps: 299, return: 4.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00124103 -0.00224462  0.00583312  0.00210273]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01184623  0.02859311 -0.65835679  1.52427067]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.04688453  0.10868275 -1.09288411  2.48003184]
+Episode: 50, total numsteps: 302, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00722533  0.00464722  0.00203647 -0.00424769]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0095831  -0.00066166  0.11555838 -0.258677  ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01412313 -0.01054576  0.11166327 -0.23778244]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01555834 -0.01298279 -0.03931411  0.11054912]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01704913 -0.01594988  0.11334648 -0.25437075]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04019381 -0.0691033   1.04115169 -2.38219004]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.07991194 -0.1588341   0.94667842 -2.12558143]
+Episode: 51, total numsteps: 309, return: 7.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00565521 -0.00497465 -0.00849578  0.00925729]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01240017  0.03624316 -0.89177673  2.03087938]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.05237592  0.12608345 -1.1073778   2.47055567]
+Episode: 52, total numsteps: 312, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [0.00080022 0.00547789 0.00058446 0.00223159]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00560984 -0.00536033  0.23926478 -0.53870006]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00512932 -0.0032301  -0.26152362  0.62923967]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0092519   0.03034594 -0.45748807  1.05019053]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00962991  0.03053752  0.43538645 -1.01161966]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01350122 -0.02154664  0.72119757 -1.59463395]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04552659 -0.09145375  0.88063328 -1.90925691]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.06335333 -0.12762038  0.01505923  0.06335463]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04643594 -0.08724646 -0.85943144  1.94000397]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 1.01367105e-03  1.23581800e-02 -1.41168138e+00  3.04483702e+00]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.06936954  0.16347267 -2.10459259  4.5084711 ]
+Episode: 53, total numsteps: 323, return: 11.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00932215 -0.00626413  0.00349379  0.00141129]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02901674  0.03951755 -0.98539011  2.2642635 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.07348268  0.14023437 -1.23807524  2.78110264]
+Episode: 54, total numsteps: 326, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0068289   0.00904059 -0.00691293  0.00020606]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0015412  -0.00360867  0.27056916 -0.6263907 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00890788  0.01392951 -0.63595959  1.47718014]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.05134869  0.11107267 -1.48354219  3.36730237]
+Episode: 55, total numsteps: 330, return: 4.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00711994  0.00434743 -0.00447374 -0.00731732]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01642114  0.02523984 -0.45932879  1.0412333 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0316472   0.05908863 -0.30323543  0.66338552]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.03163514  0.05808702  0.30175415 -0.69462281]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02908859  0.0540329  -0.17257861  0.47483593]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0446859   0.09360508 -0.60618753  1.49614288]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.05600709  0.12402685  0.03692304  0.05294696]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.04503213  0.10659348  0.51080732 -0.91521624]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.03983556  0.10785083 -0.24813625  0.95216517]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.03769129  0.11929567  0.35295265 -0.35863538]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01073033  0.07801361  0.99423159 -1.69690507]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01575049  0.04388239  0.33269022 -0.03837722]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03399234  0.03182436  0.57883673 -0.55967253]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04486266  0.03895258 -0.03317934  0.89693871]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.033339    0.09819435 -0.54182981  2.05859244]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01154483  0.18059181 -0.54909796  2.07643233]
+Episode: 56, total numsteps: 346, return: 16.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00908026 -0.00650329 -0.00616403  0.00073944]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01015215 -0.00465582 -0.04732578  0.09073516]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01038205 -0.00501132  0.03553414 -0.10582266]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02041653  0.01725909 -0.53562925  1.20527393]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.03058321  0.03863498  0.02477768 -0.11341677]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.03856032  0.05563576 -0.42224379  0.95158632]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.03898104  0.05583834  0.39830594 -0.91520265]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02270993  0.02039136  0.41596392 -0.86480017]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01408996  0.00556937  0.01679833  0.10719868]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02641646  0.03990237 -0.63135393  1.59490523]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.05210045  0.10387177 -0.6538867   1.61555096]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.08312201  0.17995367 -0.89699735  2.19263281]
+Episode: 57, total numsteps: 358, return: 12.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00097922  0.00914589  0.00908303  0.00593092]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00070179  0.00977164  0.00480426  0.02521591]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01900904  0.05368217 -0.91742183  2.1480579 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.04221648  0.10743379 -0.24690684  0.5745813 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.07003895  0.17295189 -1.14048703  2.67758112]
+Episode: 58, total numsteps: 363, return: 5.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00343175  0.00690046  0.00877504 -0.00954765]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01624379 -0.02209782  0.630154   -1.42613456]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.05816453 -0.11666649  1.46336285 -3.28952064]
+Episode: 59, total numsteps: 366, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0076379  -0.00279472 -0.00812826  0.00199049]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02150423  0.02853825 -0.68331865  1.54889242]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.05097154  0.09443923 -0.79075967  1.75560987]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.08491649  0.16997808 -0.90704122  2.03080543]
+Episode: 60, total numsteps: 370, return: 4.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00479272 -0.00471321 -0.00423344 -0.00804569]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00969989  0.0058608  -0.24049001  0.5312676 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01224362  0.01038271  0.11193702 -0.29268893]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01965383  0.02663676 -0.48058261  1.08906777]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.04461646  0.08288188 -0.76737872  1.7244602 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.07348803  0.14750371 -0.67772711  1.52242461]
+Episode: 61, total numsteps: 376, return: 6.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00481889  0.00301345  0.00213016 -0.00931909]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01017202  0.03755384 -0.74953304  1.71844914]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02139932  0.06205997  0.18410688 -0.45673498]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0066166   0.0282865   0.55455147 -1.22821453]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02860068 -0.04919247  1.20527706 -2.64039298]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.07079368 -0.13921598  0.90736778 -1.89034311]
+Episode: 62, total numsteps: 382, return: 6.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00141072  0.00370407 -0.00687307 -0.00228684]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01077245 -0.02506226  0.61434046 -1.42166863]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.05427663 -0.12461336  1.55768758 -3.53911387]
+Episode: 63, total numsteps: 385, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00960332 -0.00836284 -0.00567093 -0.001707  ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.010726   -0.0064817  -0.05034825  0.09478002]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01726996  0.00759206 -0.27632575  0.60453529]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02370541  0.02068212 -0.04654967  0.06025114]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.03557372  0.04654106 -0.54547045  1.22114857]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.07320905  0.13149195 -1.3336796   3.01235061]
+Episode: 64, total numsteps: 391, return: 6.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0007352   0.00769043 -0.00366683 -0.00957072]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00466252 -0.0053191   0.2728323  -0.63471574]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01085853 -0.01925408  0.03811098 -0.07271935]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03185819 -0.06737503  1.0089039  -2.30979181]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.06822805 -0.14951664  0.81196153 -1.82114127]
+Episode: 65, total numsteps: 396, return: 5.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00652447 -0.00876306 -0.00814016  0.00926363]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01874371 -0.03750305  0.61733699 -1.43141422]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04196305 -0.09059989  0.54492058 -1.23671674]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0547397  -0.11973461  0.09625316 -0.24083783]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.05033063 -0.1123232  -0.31558887  0.60131096]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.05583108 -0.13247232  0.58722608 -1.58041221]
+Episode: 66, total numsteps: 402, return: 6.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00506731 -0.00324292 -0.00735642 -0.00226539]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01061337 -0.01684934  0.28387645 -0.67133652]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01307226 -0.02277371 -0.15921117  0.3594227 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01524166 -0.02884955  0.26622724 -0.65020748]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01455311 -0.0285364  -0.29864763  0.64770132]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00433351  0.01227562 -0.64528841  1.3905604 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02829212  0.06250437 -0.55397206  1.13444699]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.054344    0.11688864 -0.74869173  1.5881585 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.09017606  0.19444353 -1.04235292  2.29136031]
+Episode: 67, total numsteps: 411, return: 9.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0032161   0.00748882 -0.00162494 -0.0083591 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01646385  0.03777371 -0.65889096  1.50693031]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.03813345  0.08647689 -0.42647246  0.94623324]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.07356532  0.16717125 -1.34130631  3.06624341]
+Episode: 68, total numsteps: 415, return: 4.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0085361   0.00244627 -0.0076658  -0.00773652]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00335421  0.02897291 -0.58524155  1.3204607 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00701491  0.03546958  0.39850247 -0.96209825]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01773426 -0.02173465  0.83853678 -1.89630078]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.06567311 -0.12928453  1.55630619 -3.47419583]
+Episode: 69, total numsteps: 420, return: 5.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00068134 -0.00815822  0.00263504  0.00232768]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00668014 -0.0249439   0.36444779 -0.83314069]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01878581 -0.05216424  0.24183087 -0.53751781]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02515736 -0.0664368   0.07759879 -0.1840286 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03667718 -0.09417937  0.49718139 -1.19366164]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04895868 -0.12495517  0.11898665 -0.36384658]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.054474   -0.14311057  0.15683307 -0.54489628]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0514917  -0.14577245 -0.30439592  0.39791495]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03539131 -0.12387312 -0.50061898  0.69748504]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01707989 -0.10280264 -0.41576914  0.36455026]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0128794  -0.05975477 -1.08118573  1.77829032]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0646455   0.02823569 -1.50720868  2.62636749]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.12770247  0.13762422 -1.6464725   2.85883253]
+Episode: 70, total numsteps: 433, return: 13.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00935837  0.00614846  0.0057359   0.00830617]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00282754 -0.0210016   0.60194363 -1.35201436]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03243501 -0.08686224  0.87844693 -1.94463443]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.06990678 -0.16962861  0.99578411 -2.20461464]
+Episode: 71, total numsteps: 437, return: 4.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00340613  0.00385724 -0.00672517 -0.00952222]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00895459  0.03151271 -0.60962057  1.37803055]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.04896301  0.12189742 -1.38839314  3.12912608]
+Episode: 72, total numsteps: 440, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00868874  0.00928923  0.00291443  0.00893813]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02307408  0.04332667 -0.72010257  1.67570226]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.04947882  0.10399051 -0.60175515  1.37393324]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.07063202  0.15281847 -0.45738663  1.08175557]
+Episode: 73, total numsteps: 444, return: 4.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00301231  0.00510443 -0.00869202 -0.0066759 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00524748 -0.01491406  0.42053999 -0.98446685]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02420285 -0.05849001  0.52765664 -1.19972667]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04218558 -0.09913113  0.37286637 -0.84567875]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.07375801 -0.17210204  1.20240455 -2.78293982]
+Episode: 74, total numsteps: 449, return: 5.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-4.45733330e-03  1.00636503e-03  1.14817760e-03 -2.02709539e-05]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01555366  0.02678876 -0.55443121  1.27615043]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.05087921  0.10741926 -1.21015244  2.74709629]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.08256282  0.17832272 -0.37971873  0.84525395]
+Episode: 75, total numsteps: 453, return: 4.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00151073  0.0015141   0.00933325 -0.00083841]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0091201  -0.02215282  0.52082213 -1.17068952]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02233794 -0.05062051  0.14207111 -0.27127461]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02255237 -0.04947697 -0.13044877  0.32036603]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0196336  -0.04314929 -0.01608537  0.00168953]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03607094 -0.08323978  0.83521564 -1.9845098 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0495325  -0.11630334 -0.15739228  0.29021927]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03009834 -0.07687957 -0.81332383  1.67130186]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00676514 -0.03424869 -0.35570176  0.48428971]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01151791 -0.00658147 -0.55833811  0.89878862]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.04215859  0.04758114 -0.9731477   1.80675097]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.06244931  0.07601743 -0.04558307 -0.34764177]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.07388889  0.08600579 -0.5247024   0.83220002]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.08640927  0.10059245 -0.10313217 -0.08660164]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.07228128  0.05709331  0.80782762 -2.0716888 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02991301 -0.04587939  1.31046974 -3.08216243]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03037533 -0.18502648  1.70284332 -3.88312491]
+Episode: 76, total numsteps: 470, return: 17.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00674943 -0.00888256 -0.00228825  0.00120993]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01885557 -0.0371371   0.6058866  -1.39956766]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03382926 -0.07102038  0.14526456 -0.31717319]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04479333 -0.09651979  0.40233742 -0.95346809]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0729751  -0.16317624  1.00469617 -2.3680393 ]
+Episode: 77, total numsteps: 475, return: 5.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00240641 -0.00499963 -0.00201418  0.00894012]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01853063 -0.04213731  0.80591249 -1.84657901]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.06662399 -0.15143632  1.59589909 -3.60699281]
+Episode: 78, total numsteps: 478, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00297702  0.00169932 -0.00869403 -0.00895647]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00231172  0.01282308 -0.25507073  0.55935515]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01420085  0.03880312 -0.33958153  0.74217236]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01213694  0.03238736  0.44017196 -1.03937943]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 2.01501350e-03  4.30449189e-04  2.68713578e-01 -5.71235249e-01]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 3.28769385e-03  6.80865418e-05 -2.03356782e-01  5.37481192e-01]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02392679  0.06512995 -1.15472622  2.69621183]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.07816473  0.19000964 -1.55602077  3.55271162]
+Episode: 79, total numsteps: 486, return: 8.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00577203 -0.00724354  0.009675   -0.00994506]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02452388  0.03647132 -0.94455285  2.17311959]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.07535491  0.15199754 -1.59485495  3.59828079]
+Episode: 80, total numsteps: 489, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00268313 -0.00883155  0.00280021 -0.00906934]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00127856 -0.01230065  0.06725731 -0.16291664]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00405476 -0.00622425 -0.20522022  0.45921496]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00308865 -0.02384936  0.55993933 -1.31887109]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01366352 -0.04841797 -0.02848937  0.06570152]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01509813 -0.05264087  0.09978157 -0.27293252]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03023749 -0.08991629  0.65558056 -1.57866177]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.07343598 -0.1920383   1.50047932 -3.50932922]
+Episode: 81, total numsteps: 497, return: 8.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00863181 -0.00840115 -0.0045643   0.00152716]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02334524  0.02509808 -0.72911958  1.65663005]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.04067301  0.06290495 -0.14032585  0.26162066]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.03940055  0.05841231  0.20289752 -0.47683449]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.03461824  0.04858479  0.03707312 -0.02274399]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.05216595  0.092489   -0.91125662  2.19301822]
+Episode: 82, total numsteps: 503, return: 6.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00610897 -0.00465617 -0.00433658  0.00648964]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01589944 -0.02747047  0.49249137 -1.13556145]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01888618 -0.03366332 -0.34001054  0.7974147 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0019991   0.01369057 -0.7039277   1.56883282]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.03969903  0.09719745 -1.18033218  2.60594586]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.07690219  0.17773247 -0.68390494  1.45669974]
+Episode: 83, total numsteps: 509, return: 6.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00491897 -0.00746371  0.00612698  0.00662502]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01129774  0.030711   -0.81468008  1.88297602]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.04881179  0.11611983 -1.06124829  2.39514199]
+Episode: 84, total numsteps: 512, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00644348  0.00253896 -0.00606513 -0.00513015]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00196582 -0.01756845  0.4253746  -0.99035361]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01168757 -0.03965649  0.06250584 -0.13068304]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02197595 -0.06341537  0.45085679 -1.04870656]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04151921 -0.10892413  0.52678922 -1.23280164]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.07799582 -0.1942357   1.29371962 -3.01573101]
+Episode: 85, total numsteps: 518, return: 6.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00011988  0.0004444  -0.00041933  0.00082282]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00381644  0.00901405 -0.18391631  0.42342099]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01173484  0.02702496 -0.21225751  0.47989694]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02135761  0.04888238 -0.26907879  0.615367  ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01731745  0.0396635   0.46872957 -1.05495231]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01326362  0.03317635 -0.26323813  0.70478145]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02678694  0.06821261 -0.41299469  1.04888007]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0419094   0.10718398 -0.34410556  0.90948528]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0583049   0.15066747 -0.47575128  1.26749055]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.07358418  0.19432532 -0.28974455  0.92962031]
+Episode: 86, total numsteps: 528, return: 10.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00573671  0.00557161 -0.00444303  0.00825367]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00937402  0.01401527 -0.17695987  0.40995577]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00897023  0.01301517  0.19583769 -0.44811081]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00805003  0.01176485 -0.14853573  0.37382034]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00969961  0.01668148  0.06519218 -0.12005864]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00196926 -0.00859696  0.51716422 -1.13467378]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00775633 -0.01858342 -0.22490236  0.60880455]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00803806  0.0205642  -0.56438232  1.34589733]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01271532  0.03216152  0.32701726 -0.73426236]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01877522 -0.03838403  1.24549282 -2.77791624]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.08775161 -0.19150476  2.19810659 -4.86140222]
+Episode: 87, total numsteps: 539, return: 11.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00030311 -0.00392632 -0.00651232 -0.00029592]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01307892 -0.03408792  0.64349125 -1.49252851]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.05598632 -0.13248141  1.49899778 -3.41291848]
+Episode: 88, total numsteps: 542, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-2.47405400e-03  2.46187581e-03 -3.08083475e-05 -9.26080604e-03]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00609287 -0.01761464  0.42723558 -0.98480801]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03007026 -0.07222665  0.77126474 -1.74509331]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.06951121 -0.16133206  1.19979076 -2.70973777]
+Episode: 89, total numsteps: 546, return: 4.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0066619  -0.00896652  0.0065519   0.00625499]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01845126 -0.0354776   0.58130459 -1.31821184]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04164746 -0.08739164  0.57947888 -1.28805157]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.05390776 -0.11410049  0.03619349 -0.07091969]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03945615 -0.08239116 -0.75714745  1.64061534]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02586995 -0.05833102  0.07452549 -0.40537563]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03907869 -0.09874397  0.58449462 -1.60506314]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04959277 -0.13359792 -0.05544407 -0.16674166]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.06044111 -0.17237134  0.59539431 -1.75411369]
+Episode: 90, total numsteps: 555, return: 9.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00847966  0.00328802 -0.00678753 -0.00116141]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01361148 -0.00914766  0.26266378 -0.61447482]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0183007  -0.0198221  -0.02693207  0.06900084]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00586697  0.00876877 -0.59331748  1.34829225]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.03061209  0.09098163 -1.22923227  2.75602863]
+Episode: 91, total numsteps: 560, return: 5.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00121135  0.00264666 -0.00237725  0.00351356]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01829851  0.04210554 -0.84953992  1.94925187]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.06919169  0.15788317 -1.69176129  3.82620862]
+Episode: 92, total numsteps: 563, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00592185 -0.00293298  0.00086627 -0.00144698]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00744641 -0.03380832  0.665696   -1.5267381 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0346128  -0.09519894  0.69362045 -1.55421787]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04754647 -0.12352187 -0.04341418  0.1073359 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04709185 -0.12447678  0.02032848 -0.1517021 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04985244 -0.13707812  0.11742472 -0.47620449]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0546463  -0.15832487  0.12249295 -0.58870987]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04818302 -0.15821282 -0.44384847  0.57800538]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02826913 -0.13355545 -0.55217521  0.65868995]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02132139 -0.14491537  0.20194413 -1.20198454]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02493313 -0.18420935 -0.01974931 -0.77737254]
+Episode: 93, total numsteps: 574, return: 11.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00754949  0.00931656  0.00382591  0.0066607 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0097504  -0.02982762  0.85881135 -1.94399196]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03320364 -0.08104251  0.31706504 -0.64625859]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.05493279 -0.12849936  0.76816321 -1.71896008]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.08499813 -0.19634404  0.73630946 -1.68683035]
+Episode: 94, total numsteps: 579, return: 5.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00285079  0.00889792  0.00624894  0.00959012]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00822436  0.02245133 -0.27416534  0.66156721]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01745475  0.04469176 -0.18810636  0.45778222]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.03026481  0.07558257 -0.45191247  1.08365715]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.03376653  0.08572154  0.27398268 -0.55125036]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00655125  0.02835539  1.08555489 -2.30585912]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04170463 -0.0722261   1.32787139 -2.73549407]
+Episode: 95, total numsteps: 586, return: 7.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00605211 -0.00045661 -0.00228302  0.0022779 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00311589 -0.02173218  0.45942965 -1.05535078]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03454767 -0.09339659  1.11058069 -2.51896326]
+Episode: 96, total numsteps: 589, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00499561 -0.00799055 -0.00046767  0.00278944]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01410321  0.01299637 -0.4537004   1.03617679]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01270416  0.00855056  0.52024166 -1.22761954]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00352259 -0.02857572  0.2926936  -0.64425315]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0150799  -0.05385203  0.28568267 -0.62484703]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0137812  -0.04982798 -0.34849488  0.80684845]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01289608 -0.04934629  0.30181992 -0.76071126]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01845765 -0.06487357 -0.02225381 -0.02924425]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0252544  -0.0848744   0.36092971 -0.96123125]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02852019 -0.09818921 -0.19534229  0.27495317]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0150502  -0.0761987  -0.47779505  0.82161598]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00838072 -0.03553681 -0.69394382  1.21427537]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.04637873  0.03487205 -1.20541678  2.30438671]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.11276213  0.16726608 -2.10969487  4.30066224]
+Episode: 97, total numsteps: 603, return: 14.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00231969  0.00974879 -0.00188022 -0.00400369]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01555264 -0.03165279  0.89302624 -2.04531999]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04010159 -0.0862289   0.33778433 -0.71429761]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04025847 -0.08490524 -0.32768853  0.76010961]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02137433 -0.04344874 -0.61652319  1.31362474]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01964211  0.04480947 -1.4328395   3.09095328]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.07055963  0.15152932 -1.11637487  2.27893613]
+Episode: 98, total numsteps: 610, return: 7.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00627796 -0.0006662  -0.00453566 -0.00427018]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00858768 -0.00656859  0.11969487 -0.28803538]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02953755 -0.05521932  0.92560508 -2.12729454]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.08068978 -0.17168154  1.62928047 -3.68751586]
+Episode: 99, total numsteps: 614, return: 4.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00894312  0.00923473  0.00292474 -0.00442464]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02639798 -0.03078462  0.86743758 -1.97651216]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0644168  -0.11608385  1.03412992 -2.29923602]
+Episode: 100, total numsteps: 617, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00422738 -0.00566461 -0.00355831  0.00083473]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0143589   0.0368944  -0.92314413  2.105423  ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0668332   0.15554182 -1.69763938  3.81702627]
+Episode: 101, total numsteps: 620, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00197712 -0.00297952  0.00948269 -0.00659588]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01261174 -0.03607949  0.71797927 -1.63179326]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03846211 -0.09375242  0.57621068 -1.26859901]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0417703  -0.09955361 -0.40716008  0.94589137]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01437356 -0.03884684 -0.96233746  2.08700644]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01334509  0.01702301 -0.42659697  0.73609764]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.04395349  0.07734471 -1.10211363  2.26855909]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.09972088  0.19408123 -1.68390268  3.56350924]
+Episode: 102, total numsteps: 628, return: 8.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00227557 -0.00922917 -0.00816571 -0.00580008]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00632749 -0.01970539  0.2101722  -0.51294992]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02811641 -0.07093846  0.87754362 -2.03611649]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.05185228 -0.12549302  0.31280956 -0.7231248 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.06846981 -0.16533784  0.51771767 -1.26823973]
+Episode: 103, total numsteps: 633, return: 5.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00983372  0.00452849  0.00736076 -0.00901032]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00791195  0.00940798 -0.10314161  0.25031209]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00700848  0.01193301  0.05734588 -0.11837367]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02178987 -0.02128049  0.68014184 -1.52901275]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03753146 -0.05482987  0.10979589 -0.17469675]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04190432 -0.06256516  0.10894515 -0.21308585]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03033251 -0.03525055 -0.68548775  1.56018986]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00375206  0.02307475 -0.64482669  1.37004736]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01027286  0.04981564 -0.05917401 -0.00784783]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00713643  0.00481006  0.92726504 -2.22132381]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04289763 -0.07866929  0.862518   -1.9721754 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.06915237 -0.13805859  0.4532037  -1.02422263]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.09056038 -0.18796905  0.61711078 -1.47348719]
+Episode: 104, total numsteps: 646, return: 13.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00362877 -0.00120127 -0.0016716   0.0041651 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01172361  0.03427357 -0.76380438  1.75165771]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.04109777  0.10055025 -0.70634731  1.57763291]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.05743525  0.13662141 -0.11371658  0.25365864]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.04672299  0.11409482  0.64763394 -1.36352488]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-2.21830992e-03  2.02182891e-02  1.57699697e+00 -3.32533780e+00]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.05500528 -0.09560591  1.28711761 -2.49962577]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.09638996 -0.17167949  0.78607634 -1.33892417]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.11259402 -0.19236788  0.02749619  0.27568582]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.11162219 -0.18034722 -0.076205    0.32698936]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.12114991 -0.19938979  0.55011507 -1.25891353]
+Episode: 105, total numsteps: 657, return: 11.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00383362  0.00026936 -0.00478551 -0.00217192]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00992187 -0.03199314  0.69063385 -1.59472072]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04579526 -0.11378008  1.10247169 -2.49555176]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.07784377 -0.18561499  0.5044073  -1.13413281]
+Episode: 106, total numsteps: 661, return: 4.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00066652 -0.00684238 -0.00447626 -0.00159188]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01325778 -0.03649232  0.63225483 -1.46590982]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.05562807 -0.13368417  1.48337773 -3.3793264 ]
+Episode: 107, total numsteps: 664, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00054504  0.00600008  0.002859    0.0012498 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0124039  -0.0234561   0.64285058 -1.45927923]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04892916 -0.10572642  1.18232716 -2.65085717]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.08581383 -0.1872129   0.66614982 -1.46050662]
+Episode: 108, total numsteps: 668, return: 4.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00739735 -0.00605302 -0.00791834 -0.0021255 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02533138 -0.04836558  0.90196962 -2.09171507]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.05567657 -0.11761339  0.61783494 -1.39511951]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.07204196 -0.15502506  0.20288902 -0.49703954]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0891231  -0.19761374  0.6495572  -1.62212969]
+Episode: 109, total numsteps: 673, return: 5.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0072562   0.00111962  0.00147287 -0.00736813]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00787636  0.00245114 -0.03238235  0.07308016]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01483183  0.01845016 -0.31468215  0.72090607]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0255987   0.04273845 -0.22447529  0.5014612 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.030483    0.05366175 -0.02067036  0.05326984]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02583964  0.04412634  0.25213951 -0.52391252]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01863522  0.0311648   0.10890712 -0.13214055]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 1.06441010e-03 -8.82239809e-03  8.74214607e-01 -1.85130512e+00]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04912959 -0.11140267  1.52751144 -3.27358557]
+Episode: 110, total numsteps: 682, return: 9.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00432108  0.00113079 -0.00153636  0.00834964]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0020954   0.00650602 -0.10946361  0.25797329]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00692045 -0.00453804  0.34929352 -0.79756097]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01801078 -0.0290527   0.20625111 -0.43811505]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01742808 -0.02625009 -0.23388795  0.56473986]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0142746  -0.01898431  0.07492297 -0.18947387]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0350749  -0.06779485  0.96246401 -2.23050253]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.08541711 -0.18322268  1.55245088 -3.53655283]
+Episode: 111, total numsteps: 690, return: 8.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00711825 -0.00558062 -0.00666834  0.00831073]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00398977  0.0197129  -0.54727155  1.24393259]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01489911  0.04328354 -0.00071757 -0.04230098]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00685119  0.02380893  0.40216071 -0.92313465]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02354796 -0.04479994  1.11641771 -2.49811275]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.05380377 -0.10987117  0.40079933 -0.79493476]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.08429779 -0.1759823   1.12109917 -2.49391783]
+Episode: 112, total numsteps: 697, return: 7.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00685496  0.00514413 -0.00374966 -0.00277629]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01606616  0.02608699 -0.45556253  1.03931036]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.04043833  0.08132832 -0.76278068  1.72313697]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.05122197  0.10471497  0.21927991 -0.51595951]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02459975  0.04546011  1.11061635 -2.43471849]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00274369 -0.00923853  0.26056201 -0.33953691]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00574811 -0.00548995 -0.10908865  0.5157074 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01022788 -0.00586436  0.33148195 -0.51996423]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00486465  0.01678522 -0.5967197   1.6267002 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.03728218  0.12274483 -1.50759219  3.65674324]
+Episode: 113, total numsteps: 707, return: 10.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00107449  0.00851928 -0.00995886 -0.00675425]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01535784 -0.02546939  0.72213875 -1.67583551]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03740301 -0.07550078  0.38245945 -0.84785044]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04551529 -0.09337539  0.02481807 -0.06090783]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.05837679 -0.12469454  0.6162585  -1.48954512]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.07585799 -0.16863632  0.26017531 -0.72855079]
+Episode: 114, total numsteps: 713, return: 6.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00440424 -0.00211067 -0.00424379  0.00925791]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00097793  0.01028176 -0.2641753   0.60445157]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01955763  0.05258281 -0.66407896  1.50579799]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.05048583  0.12236583 -0.8824848   1.9888434 ]
+Episode: 115, total numsteps: 717, return: 4.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00471943  0.00428334  0.00928451  0.00525532]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02132124  0.04379545 -0.83692581  1.95014763]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.03979748  0.08613351 -0.09077529  0.20141173]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02892146  0.06219541  0.6328086  -1.38191099]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00552069  0.01384675  0.53854269 -1.04941742]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.023338   -0.04371454  0.90413034 -1.82867453]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.07371892 -0.14856272  1.61256273 -3.40520785]
+Episode: 116, total numsteps: 724, return: 7.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00418828  0.00446413  0.00610452 -0.00457573]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0128713  -0.01509455  0.42692446 -0.96374553]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03999114 -0.07612265  0.92813102 -2.08268888]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.06015268 -0.1197268   0.08442471 -0.13633432]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04938205 -0.09471927 -0.62141682  1.37199797]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03490971 -0.06678417 -0.10450016  0.04777037]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03908552 -0.08535487  0.31197476 -0.96531096]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03907976 -0.0958169  -0.30980357  0.42021296]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03997721 -0.11168577  0.35229677 -1.19332681]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.06605674 -0.18767936  0.94944376 -2.59554396]
+Episode: 117, total numsteps: 734, return: 10.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [0.00253373 0.00605772 0.00776459 0.00811668]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00354706  0.02127598 -0.31093933  0.74540681]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.03145019  0.08646494 -1.08207574  2.49974059]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0766403   0.18995545 -1.17826875  2.68996086]
+Episode: 118, total numsteps: 738, return: 4.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00807793 -0.00804732 -0.00247188 -0.00087216]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00972603 -0.01223197  0.08463954 -0.20630753]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01807624 -0.03193825  0.33234639 -0.77485109]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03458642 -0.07014006  0.49324886 -1.13741714]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03722825 -0.07640515 -0.35796769  0.79547136]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02804744 -0.05856409 -0.10238631  0.10941882]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03415585 -0.07885197  0.40617992 -1.11016152]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03614661 -0.09075761 -0.30380085  0.48948576]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02806152 -0.0826332  -0.10142452 -0.07394095]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03688619 -0.11662313  0.54051209 -1.60895415]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04634655 -0.15363244 -0.06419678 -0.26993558]
+Episode: 119, total numsteps: 749, return: 11.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00783371 -0.00161493 -0.00470176 -0.00960282]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02647764 -0.04548275  0.93419279 -2.16149916]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.07200078 -0.14938486  1.34125831 -3.03718017]
+Episode: 120, total numsteps: 752, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00422491  0.00561448 -0.00959658 -0.00670012]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01373349  0.02655934 -0.46457132  1.04321983]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02563749  0.05235858 -0.13239342  0.26310322]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01401748  0.02458312  0.71115205 -1.63157474]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00404711  0.00407175 -0.20890042  0.5712589 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 4.72743503e-04 -3.27503733e-03  4.32726831e-01 -9.19145015e-01]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0071436  -0.01459502 -0.09702029  0.33327335]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01535683 -0.02975799  0.50575731 -1.07452323]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04115781 -0.08504303  0.78414669 -1.69112856]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.08438915 -0.17976268  1.37531379 -3.03756679]
+Episode: 121, total numsteps: 762, return: 10.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00378063  0.00064022 -0.00273913  0.00765279]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00588128  0.00557947 -0.1020324   0.23706892]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0069912  -0.02419765  0.74317012 -1.70442486]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01940048 -0.05113696 -0.11889508  0.32292737]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 1.08667509e-03 -8.14518284e-03 -7.95410250e-01  1.81484539e+00]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01156734  0.01828855  0.158664   -0.4558652 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01115989 -0.03696704  0.9757575  -2.29167508]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03582837 -0.09390865  0.26179942 -0.59256198]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.06522609 -0.1621515   1.20427135 -2.7951013 ]
+Episode: 122, total numsteps: 771, return: 9.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00585045  0.00123269  0.00555635  0.00859216]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01001487 -0.03450981  0.78552534 -1.77737354]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.05733322 -0.14108565  1.57770623 -3.54036787]
+Episode: 123, total numsteps: 774, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00746961 -0.00728958  0.005836    0.00350693]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01185108  0.03790828 -0.96909424  2.23339185]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.05721389  0.14095949 -1.29880435  2.92597248]
+Episode: 124, total numsteps: 777, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00156793 -0.00948866 -0.00664037  0.00498922]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00981225 -0.03633208  0.57401866 -1.33341822]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02813038 -0.07827511  0.34361668 -0.78019304]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.05616245 -0.14295612  1.05555962 -2.43890549]
+Episode: 125, total numsteps: 781, return: 4.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0083199  -0.003747   -0.00489575  0.00492202]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01459993  0.01046018 -0.30829733  0.69850076]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.03919872  0.06625387 -0.92021939  2.08152315]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.05752769  0.10618072 -0.00087015 -0.04478196]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.04572573  0.07919049  0.58979578 -1.29373014]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02400334  0.03448827  0.49756468 -0.95458502]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0137383   0.02015145  0.0177268   0.21862045]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00554382 -0.01381484  0.94376562 -1.89414657]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03890015 -0.0777939   0.72614366 -1.32570002]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.05637969 -0.10428702  0.15060769 -0.02358991]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.05962353 -0.10067569  0.01187761  0.20169941]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.06906439 -0.11520267  0.45860146 -0.91473577]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.09824506 -0.1777584   0.9985638  -2.20294029]
+Episode: 126, total numsteps: 794, return: 13.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0028188  -0.00825624 -0.00259116 -0.0034634 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01488735 -0.04964153  0.88530523 -2.04449756]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.05701028 -0.14572585  1.22052529 -2.76498766]
+Episode: 127, total numsteps: 797, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00434043 -0.00359756  0.00387231  0.00077189]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01796642 -0.03471575  0.67555113 -1.54089952]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.06360368 -0.13833866  1.60295538 -3.62354092]
+Episode: 128, total numsteps: 800, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00775466  0.0046673  -0.00184163 -0.00030181]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01189518  0.04997984 -0.97775549  2.24233153]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.05181246  0.14025707 -1.01932441  2.2875659 ]
+Episode: 129, total numsteps: 803, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00057228  0.00743405 -0.00723928 -0.0015154 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01460311 -0.02817907  0.76389647 -1.76128651]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04504677 -0.09711787  0.75954169 -1.69981621]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.05856158 -0.12644903 -0.07980834  0.19862289]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.07289019 -0.16108473  0.79282567 -1.90422468]
+Episode: 130, total numsteps: 808, return: 5.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 6.98241150e-04 -1.27554336e-03  1.96056936e-03 -2.31380916e-05]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 2.23347854e-04  8.65993627e-06 -2.56313488e-02  6.35953258e-02]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01861686  0.04366464 -0.91384857  2.09850031]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.04143192  0.09470212 -0.23078724  0.48804901]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.04118601  0.09370531  0.24153151 -0.52390814]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01303711  0.0324354   1.16453089 -2.52642649]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01342123 -0.01904484  0.1629776  -0.09153608]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01738331 -0.01702603  0.03552506  0.18893474]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01023133  0.00986712 -0.39214523  1.14760019]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0209514   0.09061927 -1.16497129  2.87846298]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.05791256  0.18251357 -0.68731788  1.75417128]
+Episode: 131, total numsteps: 819, return: 11.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00172609  0.00373626 -0.00341355  0.00213802]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02027219  0.04643391 -0.92120646  2.11071169]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.07143767  0.1626016  -1.63438239  3.68938181]
+Episode: 132, total numsteps: 822, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00457117 -0.00738707 -0.00347096  0.00889409]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00867207 -0.01693617  0.20793619 -0.48134758]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00557892 -0.00964145 -0.36071028  0.82917208]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0008809   0.00415945  0.03598532 -0.12302685]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01422239  0.03360282 -0.70089459  1.57680386]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.03518268  0.07944337 -0.3494333   0.73679525]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.04305281  0.09560755 -0.04547998  0.08414183]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.06473533  0.14626699 -1.034767    2.42088026]
+Episode: 133, total numsteps: 830, return: 8.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00932043  0.00984778 -0.00914948  0.00653018]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01796231 -0.01049369  0.44004926 -1.01332692]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04573991 -0.0736818   0.94791735 -2.14141877]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.09161352 -0.1768065   1.34485481 -3.01736108]
+Episode: 134, total numsteps: 834, return: 4.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [0.00870552 0.00803889 0.00429883 0.00351239]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01908124 -0.01521555  0.51312654 -1.15456596]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0562807  -0.09898995  1.34452599 -3.02073137]
+Episode: 135, total numsteps: 837, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [4.39213233e-03 1.49771636e-03 5.76840160e-03 3.85920760e-05]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01397478  0.04450833 -0.92141564  2.12829874]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.06326196  0.15699188 -1.54090876  3.49141465]
+Episode: 136, total numsteps: 840, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00548125 -0.00811302  0.00816511  0.00509758]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02342686  0.03417153 -0.90288437  2.08778197]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.07486571  0.1515711  -1.66626858  3.77289533]
+Episode: 137, total numsteps: 843, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00645516  0.00644917 -0.00399306  0.0027131 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01651051  0.02955655 -0.49740635  1.14107301]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.04484544  0.09410669 -0.91864972  2.08424582]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.07185934  0.15484026 -0.43548066  0.9826212 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.07542468  0.16443519  0.25458351 -0.47969538]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0513191   0.11694884  0.95015922 -1.88782167]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01899718  0.058509    0.66784781 -1.05567831]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 1.57751378e-02 -1.82220379e-04  1.07062446e+00 -1.87929236e+00]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.07232932 -0.10516567  1.75550497 -3.36546231]
+Episode: 138, total numsteps: 852, return: 9.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00287694 -0.00571674 -0.00648782 -0.00858099]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01507912  0.02145909 -0.60199184  1.35350815]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.03309742  0.06069693 -0.30086917  0.62673997]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.05450977  0.10787724 -0.76853729  1.72452015]
+Episode: 139, total numsteps: 856, return: 4.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00851123 -0.0086182  -0.00820162  0.00668059]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01410967  0.00368946 -0.2710307   0.60277541]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.04417894  0.07170164 -1.22971772  2.77836719]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.09547455  0.18626043 -1.33589426  2.96638278]
+Episode: 140, total numsteps: 860, return: 4.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00035617 -0.00742832  0.00049989  0.0008526 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00979969  0.01600379 -0.50692667  1.15907859]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.04119751  0.08721082 -1.06182691  2.39587648]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.09019594  0.19724426 -1.38742167  3.11152506]
+Episode: 141, total numsteps: 864, return: 4.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-6.81593011e-05 -5.87027271e-03 -1.31204226e-03  7.41712907e-03]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00125971 -0.00302615 -0.05812361  0.13358057]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00393645 -0.01521076  0.31681569 -0.73303706]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0101001  -0.02902542 -0.00717068  0.02878361]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02692091 -0.06788865  0.84556814 -1.95055753]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0748493  -0.17760297  1.54806739 -3.52545914]
+Episode: 142, total numsteps: 870, return: 6.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-2.32529044e-03  7.97048582e-05  8.60484798e-03 -5.34397204e-03]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02038758  0.0424138  -0.90906266  2.10012164]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.04582433  0.09997402 -0.36622014  0.80912926]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.07089415  0.15728436 -0.88560736  2.04688002]
+Episode: 143, total numsteps: 874, return: 4.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00451015 -0.00032317  0.00574736 -0.00280653]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0079027  -0.00771322  0.16346246 -0.36310195]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03430323 -0.06785397  1.15369792 -2.6221962 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.07218119 -0.15235061  0.74375249 -1.6355882 ]
+Episode: 144, total numsteps: 878, return: 4.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00084717 -0.00263428  0.00732298  0.00829636]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00622961 -0.01408352  0.26111052 -0.57482868]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02392951 -0.05348907  0.62325656 -1.39136245]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03728509 -0.08203665  0.04732914 -0.06124717]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04314513 -0.09501225  0.24508335 -0.58263071]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.05482107 -0.12373537  0.33877663 -0.85511361]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.07479535 -0.17400059  0.65912783 -1.65467435]
+Episode: 145, total numsteps: 885, return: 7.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [0.00263643 0.0096204  0.00464111 0.00660848]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01211564  0.04457903 -0.74009229  1.72351812]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02259808  0.06858105  0.21183528 -0.48649808]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-1.54167582e-03  2.18614630e-02  8.39969311e-01 -1.84075038e+00]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04478618 -0.0789227   1.47539445 -3.19680053]
+Episode: 146, total numsteps: 890, return: 5.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00789441 -0.00456188  0.00973356 -0.00219172]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02667242 -0.04716914  0.92650632 -2.1062697 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.05924544 -0.11983368  0.70445823 -1.54981242]
+Episode: 147, total numsteps: 893, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-5.57491237e-05 -6.39352537e-03  6.42957570e-03 -3.26204747e-03]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00586352 -0.01968407  0.28877107 -0.65472364]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01974199 -0.05092902  0.40531811 -0.91000997]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04306694 -0.10371805  0.76033014 -1.72708308]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.06624663 -0.15636397  0.40126269 -0.92857553]
+Episode: 148, total numsteps: 898, return: 5.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00378689 -0.00563289 -0.00297274 -0.00231511]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-3.40360190e-05  2.75554545e-03 -1.87582578e-01  4.17506045e-01]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0215216   0.05141939 -0.88502875  2.00218384]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.07613498  0.17468553 -1.84117561  4.14215587]
+Episode: 149, total numsteps: 902, return: 4.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00526752 -0.00929873  0.00540418  0.00900709]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01574426  0.01561174 -0.52781466  1.22433759]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01851022  0.02133235  0.3860839  -0.90714664]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01542801  0.01490357 -0.22959427  0.5638565 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.03189733  0.05402405 -0.59321724  1.38787477]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.03623997  0.06450466  0.37232899 -0.83010629]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0208279   0.03211983  0.39890995 -0.79596925]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01177052 -0.03675206  1.22929999 -2.6351187 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.07175628 -0.16509408  1.76830039 -3.78308733]
+Episode: 150, total numsteps: 911, return: 9.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00547504 -0.00674697 -0.00304792 -0.00834468]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01692173  0.01899229 -0.56774966  1.2821977 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.04397512  0.07941553 -0.78512302  1.74365758]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.06012107  0.11384009 -0.02598094  0.01078915]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.06801329  0.13206694 -0.36748164  0.89119694]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.08432781  0.17294267 -0.44846168  1.15634532]
+Episode: 151, total numsteps: 917, return: 6.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00299466 -0.00262895  0.00124957  0.008117  ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00394656  0.01381803 -0.34737856  0.80625545]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00632133  0.01895253  0.22646052 -0.5297021 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01515479  0.03997598 -0.66519656  1.55531676]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.05251783  0.12619328 -1.2016801   2.75182197]
+Episode: 152, total numsteps: 922, return: 5.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [0.00723159 0.00843354 0.00870115 0.00179639]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01219973 -0.00198412  0.23910057 -0.51746231]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02215654 -0.02308618  0.2591005  -0.54147841]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02727775 -0.03249527 -0.00191227  0.06063967]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01251872  0.00321374 -0.73420649  1.70901132]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01831704  0.07336779 -0.80855207  1.81060285]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.03114724  0.10049047  0.16264184 -0.41591513]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02114537  0.07807411  0.33745537 -0.70547126]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00488002  0.0456184   0.47610282 -0.92084554]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0334727  -0.03402618  1.43960498 -3.04731264]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.10589987 -0.18765972  2.17808578 -4.62810682]
+Episode: 153, total numsteps: 933, return: 11.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 4.60057173e-05 -9.24769669e-03 -7.95117377e-03  4.78467897e-04]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01784795 -0.05121287  0.89539289 -2.07696913]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.06008922 -0.14793367  1.21641825 -2.76494081]
+Episode: 154, total numsteps: 936, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00712017 -0.00134731 -0.00992541 -0.00575394]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0118368  -0.01337717  0.24507842 -0.58991131]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01551957 -0.02247083 -0.0596515   0.12336506]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0256004  -0.0468213   0.56181747 -1.32497853]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03350891 -0.06575007 -0.16328977  0.35062178]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02568203 -0.05024483 -0.2282227   0.42664638]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03032171 -0.06624351  0.45787442 -1.20634561]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04678167 -0.11020801  0.3663023  -1.00361436]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.06552642 -0.16070628  0.57075385 -1.5226345 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.07257251 -0.1870713  -0.21471364  0.17270929]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.05592555 -0.16536594 -0.61711741  0.907603  ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04975713 -0.17513591  0.30515151 -1.36513604]
+Episode: 155, total numsteps: 948, return: 12.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00519941 -0.00683164 -0.00600847 -0.00428928]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-4.19881041e-04  5.33126704e-03 -2.74240552e-01  6.06272403e-01]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01063826  0.02737721 -0.23726011  0.50187064]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00914922  0.02213729  0.30988775 -0.74742486]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0145529  -0.03270472  0.87423473 -1.98787324]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.06232095 -0.14031951  1.51232015 -3.38823855]
+Episode: 156, total numsteps: 954, return: 6.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00218567  0.00672811 -0.0056221   0.00198936]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00850142  0.03112066 -0.52727958  1.20536481]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02395461  0.06573499 -0.24714615  0.54190418]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.03282383  0.08575658 -0.19683557  0.46430114]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.03823935  0.09980123 -0.07458888  0.24395179]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0527596   0.13764077 -0.64947338  1.63378855]
+Episode: 157, total numsteps: 960, return: 6.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00059881 -0.00110272  0.00160841  0.00628237]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01072224 -0.02408088  0.50319166 -1.14350116]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02507121 -0.05576288  0.21598109 -0.45679469]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.04402078 -0.09832864  0.73009511 -1.66157228]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.05514864 -0.12341531 -0.16962289  0.37174436]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.06660233 -0.15291324  0.73879551 -1.81877494]
+Episode: 158, total numsteps: 966, return: 6.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-5.65023887e-03 -5.53169824e-05 -8.04158878e-03  2.64751101e-04]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00684477  0.00200031 -0.05156778  0.10150429]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00789782 -0.03278784  0.78628958 -1.82049317]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02930279 -0.0812064   0.28693767 -0.62779948]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0300039  -0.08233724 -0.25001194  0.55438991]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03961272 -0.10731039  0.72690277 -1.77349395]
+Episode: 159, total numsteps: 972, return: 6.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00582016  0.00997118 -0.00048614 -0.00406793]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00706081  0.0071131   0.06236443 -0.13752515]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.00800377  0.04245878 -0.81296523  1.88277517]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.03614624  0.10663143 -0.59628813  1.34667474]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.06986079  0.18371343 -1.08781412  2.50121576]
+Episode: 160, total numsteps: 977, return: 5.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00159007 -0.00256496 -0.00765995  0.00048997]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01853233 -0.04239956  0.8523141  -1.97181851]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.05714558 -0.13048297  1.07864052 -2.4409853 ]
+Episode: 161, total numsteps: 980, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00598271  0.00782255  0.00956222 -0.00264551]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0111091   0.04824568 -0.86159034  2.00277356]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.05045847  0.13853549 -1.1060319   2.51969793]
+Episode: 162, total numsteps: 983, return: 3.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0049667  -0.00778358 -0.00127536  0.00614054]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.01287853  0.01050136 -0.39327479  0.89917673]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.03556698  0.06186681 -0.7407431   1.66778369]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.06081205  0.11799524 -0.52349605  1.15761932]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0916447   0.18794721 -1.01644373  2.33239984]
+Episode: 163, total numsteps: 988, return: 5.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.0053071   0.00699133  0.00423474 -0.00598114]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00556515 -0.01780536  0.53795099 -1.22165926]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.0184194  -0.04575943  0.10694595 -0.19628417]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02167881 -0.05186676  0.0562836  -0.11151569]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.02706744 -0.06436323  0.21275677 -0.51011854]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.03019426 -0.07299538 -0.05531633  0.06853069]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01713626 -0.04661929 -0.59640593  1.23971316]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.02181705  0.03578964 -1.35004989  2.87371852]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.07279881  0.14163181 -1.2014086   2.44514662]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [-0.10342736  0.19993925 -0.33557542  0.51542669]
+Episode: 164, total numsteps: 998, return: 10.0
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.00263503  0.00639384  0.00865741 -0.0067557 ]
+nextstate <class 'numpy.ndarray'>
+state shape <class 'numpy.ndarray'> [ 0.01755557 -0.02738546  0.73538585 -1.6654314 ]
+/home/harsh/arjun/robust-predictable-control/rpc.py:177: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /croot/libtorch_1751464468084/work/torch/csrc/utils/tensor_new.cpp:254.)
+  state = torch.FloatTensor(state).unsqueeze(0).to(self.device)
+Traceback (most recent call last):
+  File "/home/harsh/arjun/robust-predictable-control/train.py", line 239, in main
+    workspace.train()
+    ~~~~~~~~~~~~~~~^^
+  File "/home/harsh/arjun/robust-predictable-control/train.py", line 134, in train
+    self.eval()
+    ~~~~~~~~~^^
+  File "/home/harsh/arjun/robust-predictable-control/train.py", line 165, in eval
+    action = self.agent.get_action(state, True)
+  File "/home/harsh/arjun/robust-predictable-control/rpc.py", line 177, in get_action
+    state = torch.FloatTensor(state).unsqueeze(0).to(self.device)
+            ~~~~~~~~~~~~~~~~~^^^^^^^
+ValueError: expected sequence of length 4 at dim 1 (got 0)

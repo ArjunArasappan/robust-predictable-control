@@ -1,0 +1,1708 @@
+/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/gymnasium/envs/registration.py:512: DeprecationWarning: [33mWARN: The environment InvertedPendulum-v4 is out of date. You should consider upgrading to version `v5`.[0m
+  logger.deprecation(
+Namespace(agent='RPC', env_name='InvertedPendulum-v4', device='cuda', seed=1, num_train_steps=25000, learning_starts=5000, gamma=0.99, tau=0.005, env_buffer_size=100000, target_update_interval=1, log_interval=500, save_snapshot_interval=50000, eval_episode_interval=1000, num_eval_episodes=1, latent_dims=50, model_hidden_dims=256, model_num_layers=2, kl_constraint=10.0, lambda_init=1e-05, alpha_autotune=False, alpha_init=0.2, noise_factor=3.0, batch_size=256, seq_len=4, lr=0.0003)
+Episode: 1, total numsteps: 5, return: 5.0
+Episode: 2, total numsteps: 21, return: 16.0
+Episode: 3, total numsteps: 27, return: 6.0
+Episode: 4, total numsteps: 32, return: 5.0
+Episode: 5, total numsteps: 36, return: 4.0
+Episode: 6, total numsteps: 39, return: 3.0
+Episode: 7, total numsteps: 53, return: 14.0
+Episode: 8, total numsteps: 61, return: 8.0
+Episode: 9, total numsteps: 68, return: 7.0
+Episode: 10, total numsteps: 71, return: 3.0
+Episode: 11, total numsteps: 78, return: 7.0
+Episode: 12, total numsteps: 81, return: 3.0
+Episode: 13, total numsteps: 88, return: 7.0
+Episode: 14, total numsteps: 93, return: 5.0
+Episode: 15, total numsteps: 96, return: 3.0
+Episode: 16, total numsteps: 101, return: 5.0
+Episode: 17, total numsteps: 106, return: 5.0
+Episode: 18, total numsteps: 113, return: 7.0
+Episode: 19, total numsteps: 122, return: 9.0
+Episode: 20, total numsteps: 129, return: 7.0
+Episode: 21, total numsteps: 137, return: 8.0
+Episode: 22, total numsteps: 140, return: 3.0
+Episode: 23, total numsteps: 143, return: 3.0
+Episode: 24, total numsteps: 148, return: 5.0
+Episode: 25, total numsteps: 159, return: 11.0
+Episode: 26, total numsteps: 163, return: 4.0
+Episode: 27, total numsteps: 170, return: 7.0
+Episode: 28, total numsteps: 188, return: 18.0
+Episode: 29, total numsteps: 191, return: 3.0
+Episode: 30, total numsteps: 199, return: 8.0
+Episode: 31, total numsteps: 209, return: 10.0
+Episode: 32, total numsteps: 213, return: 4.0
+Episode: 33, total numsteps: 228, return: 15.0
+Episode: 34, total numsteps: 231, return: 3.0
+Episode: 35, total numsteps: 236, return: 5.0
+Episode: 36, total numsteps: 239, return: 3.0
+Episode: 37, total numsteps: 242, return: 3.0
+Episode: 38, total numsteps: 246, return: 4.0
+Episode: 39, total numsteps: 250, return: 4.0
+Episode: 40, total numsteps: 255, return: 5.0
+Episode: 41, total numsteps: 258, return: 3.0
+Episode: 42, total numsteps: 262, return: 4.0
+Episode: 43, total numsteps: 266, return: 4.0
+Episode: 44, total numsteps: 274, return: 8.0
+Episode: 45, total numsteps: 280, return: 6.0
+Episode: 46, total numsteps: 285, return: 5.0
+Episode: 47, total numsteps: 288, return: 3.0
+Episode: 48, total numsteps: 295, return: 7.0
+Episode: 49, total numsteps: 299, return: 4.0
+Episode: 50, total numsteps: 302, return: 3.0
+Episode: 51, total numsteps: 309, return: 7.0
+Episode: 52, total numsteps: 312, return: 3.0
+Episode: 53, total numsteps: 323, return: 11.0
+Episode: 54, total numsteps: 326, return: 3.0
+Episode: 55, total numsteps: 330, return: 4.0
+Episode: 56, total numsteps: 346, return: 16.0
+Episode: 57, total numsteps: 358, return: 12.0
+Episode: 58, total numsteps: 363, return: 5.0
+Episode: 59, total numsteps: 366, return: 3.0
+Episode: 60, total numsteps: 370, return: 4.0
+Episode: 61, total numsteps: 376, return: 6.0
+Episode: 62, total numsteps: 382, return: 6.0
+Episode: 63, total numsteps: 385, return: 3.0
+Episode: 64, total numsteps: 391, return: 6.0
+Episode: 65, total numsteps: 396, return: 5.0
+Episode: 66, total numsteps: 402, return: 6.0
+Episode: 67, total numsteps: 411, return: 9.0
+Episode: 68, total numsteps: 415, return: 4.0
+Episode: 69, total numsteps: 420, return: 5.0
+Episode: 70, total numsteps: 433, return: 13.0
+Episode: 71, total numsteps: 437, return: 4.0
+Episode: 72, total numsteps: 440, return: 3.0
+Episode: 73, total numsteps: 444, return: 4.0
+Episode: 74, total numsteps: 449, return: 5.0
+Episode: 75, total numsteps: 453, return: 4.0
+Episode: 76, total numsteps: 470, return: 17.0
+Episode: 77, total numsteps: 475, return: 5.0
+Episode: 78, total numsteps: 478, return: 3.0
+Episode: 79, total numsteps: 486, return: 8.0
+Episode: 80, total numsteps: 489, return: 3.0
+Episode: 81, total numsteps: 497, return: 8.0
+Episode: 82, total numsteps: 503, return: 6.0
+Episode: 83, total numsteps: 509, return: 6.0
+Episode: 84, total numsteps: 512, return: 3.0
+Episode: 85, total numsteps: 518, return: 6.0
+Episode: 86, total numsteps: 528, return: 10.0
+Episode: 87, total numsteps: 539, return: 11.0
+Episode: 88, total numsteps: 542, return: 3.0
+Episode: 89, total numsteps: 546, return: 4.0
+Episode: 90, total numsteps: 555, return: 9.0
+Episode: 91, total numsteps: 560, return: 5.0
+Episode: 92, total numsteps: 563, return: 3.0
+Episode: 93, total numsteps: 574, return: 11.0
+Episode: 94, total numsteps: 579, return: 5.0
+Episode: 95, total numsteps: 586, return: 7.0
+Episode: 96, total numsteps: 589, return: 3.0
+Episode: 97, total numsteps: 603, return: 14.0
+Episode: 98, total numsteps: 610, return: 7.0
+Episode: 99, total numsteps: 614, return: 4.0
+Episode: 100, total numsteps: 617, return: 3.0
+Episode: 101, total numsteps: 620, return: 3.0
+Episode: 102, total numsteps: 628, return: 8.0
+Episode: 103, total numsteps: 633, return: 5.0
+Episode: 104, total numsteps: 646, return: 13.0
+Episode: 105, total numsteps: 657, return: 11.0
+Episode: 106, total numsteps: 661, return: 4.0
+Episode: 107, total numsteps: 664, return: 3.0
+Episode: 108, total numsteps: 668, return: 4.0
+Episode: 109, total numsteps: 673, return: 5.0
+Episode: 110, total numsteps: 682, return: 9.0
+Episode: 111, total numsteps: 690, return: 8.0
+Episode: 112, total numsteps: 697, return: 7.0
+Episode: 113, total numsteps: 707, return: 10.0
+Episode: 114, total numsteps: 713, return: 6.0
+Episode: 115, total numsteps: 717, return: 4.0
+Episode: 116, total numsteps: 724, return: 7.0
+Episode: 117, total numsteps: 734, return: 10.0
+Episode: 118, total numsteps: 738, return: 4.0
+Episode: 119, total numsteps: 749, return: 11.0
+Episode: 120, total numsteps: 752, return: 3.0
+Episode: 121, total numsteps: 762, return: 10.0
+Episode: 122, total numsteps: 771, return: 9.0
+Episode: 123, total numsteps: 774, return: 3.0
+Episode: 124, total numsteps: 777, return: 3.0
+Episode: 125, total numsteps: 781, return: 4.0
+Episode: 126, total numsteps: 794, return: 13.0
+Episode: 127, total numsteps: 797, return: 3.0
+Episode: 128, total numsteps: 800, return: 3.0
+Episode: 129, total numsteps: 803, return: 3.0
+Episode: 130, total numsteps: 808, return: 5.0
+Episode: 131, total numsteps: 819, return: 11.0
+Episode: 132, total numsteps: 822, return: 3.0
+Episode: 133, total numsteps: 830, return: 8.0
+Episode: 134, total numsteps: 834, return: 4.0
+Episode: 135, total numsteps: 837, return: 3.0
+Episode: 136, total numsteps: 840, return: 3.0
+Episode: 137, total numsteps: 843, return: 3.0
+Episode: 138, total numsteps: 852, return: 9.0
+Episode: 139, total numsteps: 856, return: 4.0
+Episode: 140, total numsteps: 860, return: 4.0
+Episode: 141, total numsteps: 864, return: 4.0
+Episode: 142, total numsteps: 870, return: 6.0
+Episode: 143, total numsteps: 874, return: 4.0
+Episode: 144, total numsteps: 878, return: 4.0
+Episode: 145, total numsteps: 885, return: 7.0
+Episode: 146, total numsteps: 890, return: 5.0
+Episode: 147, total numsteps: 893, return: 3.0
+Episode: 148, total numsteps: 898, return: 5.0
+Episode: 149, total numsteps: 902, return: 4.0
+Episode: 150, total numsteps: 911, return: 9.0
+Episode: 151, total numsteps: 917, return: 6.0
+Episode: 152, total numsteps: 922, return: 5.0
+Episode: 153, total numsteps: 933, return: 11.0
+Episode: 154, total numsteps: 936, return: 3.0
+Episode: 155, total numsteps: 948, return: 12.0
+Episode: 156, total numsteps: 954, return: 6.0
+Episode: 157, total numsteps: 960, return: 6.0
+Episode: 158, total numsteps: 966, return: 6.0
+Episode: 159, total numsteps: 972, return: 6.0
+Episode: 160, total numsteps: 977, return: 5.0
+Episode: 161, total numsteps: 980, return: 3.0
+Episode: 162, total numsteps: 983, return: 3.0
+Episode: 163, total numsteps: 988, return: 5.0
+Episode: 164, total numsteps: 998, return: 10.0
+state debug <class 'numpy.ndarray'> 4 [-0.00376337 -0.00153347  0.00655405 -0.00181602]
+state debug <class 'numpy.ndarray'> 4 [-0.00548791  0.00298684 -0.09251501  0.22553668]
+state debug <class 'numpy.ndarray'> 4 [-0.01370875  0.02231068 -0.31808945  0.73725046]
+state debug <class 'numpy.ndarray'> 4 [-0.02878614  0.05694265 -0.43598924  0.99738621]
+state debug <class 'numpy.ndarray'> 4 [-0.04797704  0.10095162 -0.52396941  1.2084555 ]
+state debug <class 'numpy.ndarray'> 4 [-0.07343797  0.16027703 -0.74889827  1.76001485]
+state debug <class 'numpy.ndarray'> 4 [-0.00376337 -0.00153347  0.00655405 -0.00181602]
+Episode: 165, total numsteps: 1001, return: 3.0
+Episode: 166, total numsteps: 1004, return: 3.0
+Episode: 167, total numsteps: 1014, return: 10.0
+Episode: 168, total numsteps: 1017, return: 3.0
+Episode: 169, total numsteps: 1021, return: 4.0
+Episode: 170, total numsteps: 1029, return: 8.0
+Episode: 171, total numsteps: 1036, return: 7.0
+Episode: 172, total numsteps: 1040, return: 4.0
+Episode: 173, total numsteps: 1046, return: 6.0
+Episode: 174, total numsteps: 1051, return: 5.0
+Episode: 175, total numsteps: 1054, return: 3.0
+Episode: 176, total numsteps: 1057, return: 3.0
+Episode: 177, total numsteps: 1061, return: 4.0
+Episode: 178, total numsteps: 1065, return: 4.0
+Episode: 179, total numsteps: 1068, return: 3.0
+Episode: 180, total numsteps: 1071, return: 3.0
+Episode: 181, total numsteps: 1075, return: 4.0
+Episode: 182, total numsteps: 1083, return: 8.0
+Episode: 183, total numsteps: 1087, return: 4.0
+Episode: 184, total numsteps: 1095, return: 8.0
+Episode: 185, total numsteps: 1099, return: 4.0
+Episode: 186, total numsteps: 1103, return: 4.0
+Episode: 187, total numsteps: 1108, return: 5.0
+Episode: 188, total numsteps: 1112, return: 4.0
+Episode: 189, total numsteps: 1115, return: 3.0
+Episode: 190, total numsteps: 1120, return: 5.0
+Episode: 191, total numsteps: 1124, return: 4.0
+Episode: 192, total numsteps: 1131, return: 7.0
+Episode: 193, total numsteps: 1135, return: 4.0
+Episode: 194, total numsteps: 1142, return: 7.0
+Episode: 195, total numsteps: 1146, return: 4.0
+Episode: 196, total numsteps: 1153, return: 7.0
+Episode: 197, total numsteps: 1167, return: 14.0
+Episode: 198, total numsteps: 1175, return: 8.0
+Episode: 199, total numsteps: 1179, return: 4.0
+Episode: 200, total numsteps: 1186, return: 7.0
+Episode: 201, total numsteps: 1190, return: 4.0
+Episode: 202, total numsteps: 1195, return: 5.0
+Episode: 203, total numsteps: 1198, return: 3.0
+Episode: 204, total numsteps: 1202, return: 4.0
+Episode: 205, total numsteps: 1206, return: 4.0
+Episode: 206, total numsteps: 1210, return: 4.0
+Episode: 207, total numsteps: 1216, return: 6.0
+Episode: 208, total numsteps: 1222, return: 6.0
+Episode: 209, total numsteps: 1231, return: 9.0
+Episode: 210, total numsteps: 1243, return: 12.0
+Episode: 211, total numsteps: 1251, return: 8.0
+Episode: 212, total numsteps: 1257, return: 6.0
+Episode: 213, total numsteps: 1274, return: 17.0
+Episode: 214, total numsteps: 1278, return: 4.0
+Episode: 215, total numsteps: 1285, return: 7.0
+Episode: 216, total numsteps: 1288, return: 3.0
+Episode: 217, total numsteps: 1291, return: 3.0
+Episode: 218, total numsteps: 1295, return: 4.0
+Episode: 219, total numsteps: 1299, return: 4.0
+Episode: 220, total numsteps: 1303, return: 4.0
+Episode: 221, total numsteps: 1307, return: 4.0
+Episode: 222, total numsteps: 1311, return: 4.0
+Episode: 223, total numsteps: 1314, return: 3.0
+Episode: 224, total numsteps: 1317, return: 3.0
+Episode: 225, total numsteps: 1320, return: 3.0
+Episode: 226, total numsteps: 1325, return: 5.0
+Episode: 227, total numsteps: 1336, return: 11.0
+Episode: 228, total numsteps: 1345, return: 9.0
+Episode: 229, total numsteps: 1348, return: 3.0
+Episode: 230, total numsteps: 1352, return: 4.0
+Episode: 231, total numsteps: 1357, return: 5.0
+Episode: 232, total numsteps: 1360, return: 3.0
+Episode: 233, total numsteps: 1363, return: 3.0
+Episode: 234, total numsteps: 1367, return: 4.0
+Episode: 235, total numsteps: 1372, return: 5.0
+Episode: 236, total numsteps: 1389, return: 17.0
+Episode: 237, total numsteps: 1392, return: 3.0
+Episode: 238, total numsteps: 1396, return: 4.0
+Episode: 239, total numsteps: 1402, return: 6.0
+Episode: 240, total numsteps: 1407, return: 5.0
+Episode: 241, total numsteps: 1412, return: 5.0
+Episode: 242, total numsteps: 1418, return: 6.0
+Episode: 243, total numsteps: 1438, return: 20.0
+Episode: 244, total numsteps: 1446, return: 8.0
+Episode: 245, total numsteps: 1449, return: 3.0
+Episode: 246, total numsteps: 1459, return: 10.0
+Episode: 247, total numsteps: 1470, return: 11.0
+Episode: 248, total numsteps: 1477, return: 7.0
+Episode: 249, total numsteps: 1489, return: 12.0
+Episode: 250, total numsteps: 1494, return: 5.0
+Episode: 251, total numsteps: 1498, return: 4.0
+Episode: 252, total numsteps: 1508, return: 10.0
+Episode: 253, total numsteps: 1511, return: 3.0
+Episode: 254, total numsteps: 1518, return: 7.0
+Episode: 255, total numsteps: 1522, return: 4.0
+Episode: 256, total numsteps: 1545, return: 23.0
+Episode: 257, total numsteps: 1550, return: 5.0
+Episode: 258, total numsteps: 1553, return: 3.0
+Episode: 259, total numsteps: 1556, return: 3.0
+Episode: 260, total numsteps: 1565, return: 9.0
+Episode: 261, total numsteps: 1569, return: 4.0
+Episode: 262, total numsteps: 1574, return: 5.0
+Episode: 263, total numsteps: 1582, return: 8.0
+Episode: 264, total numsteps: 1597, return: 15.0
+Episode: 265, total numsteps: 1600, return: 3.0
+Episode: 266, total numsteps: 1603, return: 3.0
+Episode: 267, total numsteps: 1608, return: 5.0
+Episode: 268, total numsteps: 1611, return: 3.0
+Episode: 269, total numsteps: 1619, return: 8.0
+Episode: 270, total numsteps: 1623, return: 4.0
+Episode: 271, total numsteps: 1629, return: 6.0
+Episode: 272, total numsteps: 1633, return: 4.0
+Episode: 273, total numsteps: 1636, return: 3.0
+Episode: 274, total numsteps: 1640, return: 4.0
+Episode: 275, total numsteps: 1646, return: 6.0
+Episode: 276, total numsteps: 1655, return: 9.0
+Episode: 277, total numsteps: 1658, return: 3.0
+Episode: 278, total numsteps: 1667, return: 9.0
+Episode: 279, total numsteps: 1671, return: 4.0
+Episode: 280, total numsteps: 1675, return: 4.0
+Episode: 281, total numsteps: 1694, return: 19.0
+Episode: 282, total numsteps: 1700, return: 6.0
+Episode: 283, total numsteps: 1704, return: 4.0
+Episode: 284, total numsteps: 1708, return: 4.0
+Episode: 285, total numsteps: 1712, return: 4.0
+Episode: 286, total numsteps: 1715, return: 3.0
+Episode: 287, total numsteps: 1721, return: 6.0
+Episode: 288, total numsteps: 1725, return: 4.0
+Episode: 289, total numsteps: 1729, return: 4.0
+Episode: 290, total numsteps: 1732, return: 3.0
+Episode: 291, total numsteps: 1735, return: 3.0
+Episode: 292, total numsteps: 1741, return: 6.0
+Episode: 293, total numsteps: 1744, return: 3.0
+Episode: 294, total numsteps: 1749, return: 5.0
+Episode: 295, total numsteps: 1756, return: 7.0
+Episode: 296, total numsteps: 1761, return: 5.0
+Episode: 297, total numsteps: 1764, return: 3.0
+Episode: 298, total numsteps: 1770, return: 6.0
+Episode: 299, total numsteps: 1780, return: 10.0
+Episode: 300, total numsteps: 1793, return: 13.0
+Episode: 301, total numsteps: 1797, return: 4.0
+Episode: 302, total numsteps: 1803, return: 6.0
+Episode: 303, total numsteps: 1810, return: 7.0
+Episode: 304, total numsteps: 1815, return: 5.0
+Episode: 305, total numsteps: 1821, return: 6.0
+Episode: 306, total numsteps: 1825, return: 4.0
+Episode: 307, total numsteps: 1830, return: 5.0
+Episode: 308, total numsteps: 1836, return: 6.0
+Episode: 309, total numsteps: 1839, return: 3.0
+Episode: 310, total numsteps: 1844, return: 5.0
+Episode: 311, total numsteps: 1848, return: 4.0
+Episode: 312, total numsteps: 1867, return: 19.0
+Episode: 313, total numsteps: 1873, return: 6.0
+Episode: 314, total numsteps: 1877, return: 4.0
+Episode: 315, total numsteps: 1882, return: 5.0
+Episode: 316, total numsteps: 1886, return: 4.0
+Episode: 317, total numsteps: 1892, return: 6.0
+Episode: 318, total numsteps: 1897, return: 5.0
+Episode: 319, total numsteps: 1905, return: 8.0
+Episode: 320, total numsteps: 1919, return: 14.0
+Episode: 321, total numsteps: 1924, return: 5.0
+Episode: 322, total numsteps: 1938, return: 14.0
+Episode: 323, total numsteps: 1947, return: 9.0
+Episode: 324, total numsteps: 1953, return: 6.0
+Episode: 325, total numsteps: 1956, return: 3.0
+Episode: 326, total numsteps: 1960, return: 4.0
+Episode: 327, total numsteps: 1963, return: 3.0
+Episode: 328, total numsteps: 1966, return: 3.0
+Episode: 329, total numsteps: 1970, return: 4.0
+Episode: 330, total numsteps: 1977, return: 7.0
+Episode: 331, total numsteps: 1980, return: 3.0
+Episode: 332, total numsteps: 1985, return: 5.0
+Episode: 333, total numsteps: 1996, return: 11.0
+state debug <class 'numpy.ndarray'> 4 [ 0.00099187 -0.00944882  0.00507026  0.00076287]
+state debug <class 'numpy.ndarray'> 4 [-0.00176228 -0.00273047 -0.14239248  0.33184028]
+state debug <class 'numpy.ndarray'> 4 [-0.00681806  0.00871918 -0.11075068  0.24414558]
+state debug <class 'numpy.ndarray'> 4 [-0.01144137  0.0188793  -0.12057701  0.26557957]
+state debug <class 'numpy.ndarray'> 4 [-0.01737535  0.03217852 -0.1761665   0.40012262]
+state debug <class 'numpy.ndarray'> 4 [-0.02310163  0.04535543 -0.11062258  0.26329872]
+state debug <class 'numpy.ndarray'> 4 [-0.02955693  0.06116358 -0.21202597  0.52649001]
+state debug <class 'numpy.ndarray'> 4 [-0.03924958  0.08563427 -0.27278474  0.69936936]
+state debug <class 'numpy.ndarray'> 4 [-0.05069841  0.11573571 -0.3000327   0.81000036]
+state debug <class 'numpy.ndarray'> 4 [-0.06116859  0.14595253 -0.22424728  0.70841426]
+state debug <class 'numpy.ndarray'> 4 [-0.07178425  0.18000936 -0.30661426  0.99659527]
+state debug <class 'numpy.ndarray'> 4 [ 0.00099187 -0.00944882 -0.24386372  0.00076287]
+Episode: 334, total numsteps: 2003, return: 7.0
+Episode: 335, total numsteps: 2007, return: 4.0
+Episode: 336, total numsteps: 2011, return: 4.0
+Episode: 337, total numsteps: 2016, return: 5.0
+Episode: 338, total numsteps: 2025, return: 9.0
+Episode: 339, total numsteps: 2033, return: 8.0
+Episode: 340, total numsteps: 2037, return: 4.0
+Episode: 341, total numsteps: 2041, return: 4.0
+Episode: 342, total numsteps: 2046, return: 5.0
+Episode: 343, total numsteps: 2050, return: 4.0
+Episode: 344, total numsteps: 2059, return: 9.0
+Episode: 345, total numsteps: 2063, return: 4.0
+Episode: 346, total numsteps: 2073, return: 10.0
+Episode: 347, total numsteps: 2083, return: 10.0
+Episode: 348, total numsteps: 2098, return: 15.0
+Episode: 349, total numsteps: 2101, return: 3.0
+Episode: 350, total numsteps: 2104, return: 3.0
+Episode: 351, total numsteps: 2107, return: 3.0
+Episode: 352, total numsteps: 2115, return: 8.0
+Episode: 353, total numsteps: 2119, return: 4.0
+Episode: 354, total numsteps: 2123, return: 4.0
+Episode: 355, total numsteps: 2126, return: 3.0
+Episode: 356, total numsteps: 2129, return: 3.0
+Episode: 357, total numsteps: 2135, return: 6.0
+Episode: 358, total numsteps: 2141, return: 6.0
+Episode: 359, total numsteps: 2147, return: 6.0
+Episode: 360, total numsteps: 2150, return: 3.0
+Episode: 361, total numsteps: 2153, return: 3.0
+Episode: 362, total numsteps: 2161, return: 8.0
+Episode: 363, total numsteps: 2164, return: 3.0
+Episode: 364, total numsteps: 2169, return: 5.0
+Episode: 365, total numsteps: 2174, return: 5.0
+Episode: 366, total numsteps: 2179, return: 5.0
+Episode: 367, total numsteps: 2185, return: 6.0
+Episode: 368, total numsteps: 2189, return: 4.0
+Episode: 369, total numsteps: 2193, return: 4.0
+Episode: 370, total numsteps: 2196, return: 3.0
+Episode: 371, total numsteps: 2199, return: 3.0
+Episode: 372, total numsteps: 2203, return: 4.0
+Episode: 373, total numsteps: 2207, return: 4.0
+Episode: 374, total numsteps: 2213, return: 6.0
+Episode: 375, total numsteps: 2223, return: 10.0
+Episode: 376, total numsteps: 2226, return: 3.0
+Episode: 377, total numsteps: 2230, return: 4.0
+Episode: 378, total numsteps: 2236, return: 6.0
+Episode: 379, total numsteps: 2245, return: 9.0
+Episode: 380, total numsteps: 2248, return: 3.0
+Episode: 381, total numsteps: 2254, return: 6.0
+Episode: 382, total numsteps: 2257, return: 3.0
+Episode: 383, total numsteps: 2265, return: 8.0
+Episode: 384, total numsteps: 2272, return: 7.0
+Episode: 385, total numsteps: 2275, return: 3.0
+Episode: 386, total numsteps: 2278, return: 3.0
+Episode: 387, total numsteps: 2286, return: 8.0
+Episode: 388, total numsteps: 2290, return: 4.0
+Episode: 389, total numsteps: 2299, return: 9.0
+Episode: 390, total numsteps: 2306, return: 7.0
+Episode: 391, total numsteps: 2310, return: 4.0
+Episode: 392, total numsteps: 2315, return: 5.0
+Episode: 393, total numsteps: 2319, return: 4.0
+Episode: 394, total numsteps: 2325, return: 6.0
+Episode: 395, total numsteps: 2331, return: 6.0
+Episode: 396, total numsteps: 2337, return: 6.0
+Episode: 397, total numsteps: 2340, return: 3.0
+Episode: 398, total numsteps: 2350, return: 10.0
+Episode: 399, total numsteps: 2355, return: 5.0
+Episode: 400, total numsteps: 2358, return: 3.0
+Episode: 401, total numsteps: 2362, return: 4.0
+Episode: 402, total numsteps: 2365, return: 3.0
+Episode: 403, total numsteps: 2368, return: 3.0
+Episode: 404, total numsteps: 2372, return: 4.0
+Episode: 405, total numsteps: 2376, return: 4.0
+Episode: 406, total numsteps: 2389, return: 13.0
+Episode: 407, total numsteps: 2397, return: 8.0
+Episode: 408, total numsteps: 2401, return: 4.0
+Episode: 409, total numsteps: 2405, return: 4.0
+Episode: 410, total numsteps: 2409, return: 4.0
+Episode: 411, total numsteps: 2412, return: 3.0
+Episode: 412, total numsteps: 2420, return: 8.0
+Episode: 413, total numsteps: 2425, return: 5.0
+Episode: 414, total numsteps: 2430, return: 5.0
+Episode: 415, total numsteps: 2435, return: 5.0
+Episode: 416, total numsteps: 2448, return: 13.0
+Episode: 417, total numsteps: 2465, return: 17.0
+Episode: 418, total numsteps: 2475, return: 10.0
+Episode: 419, total numsteps: 2479, return: 4.0
+Episode: 420, total numsteps: 2486, return: 7.0
+Episode: 421, total numsteps: 2496, return: 10.0
+Episode: 422, total numsteps: 2501, return: 5.0
+Episode: 423, total numsteps: 2507, return: 6.0
+Episode: 424, total numsteps: 2511, return: 4.0
+Episode: 425, total numsteps: 2521, return: 10.0
+Episode: 426, total numsteps: 2525, return: 4.0
+Episode: 427, total numsteps: 2528, return: 3.0
+Episode: 428, total numsteps: 2531, return: 3.0
+Episode: 429, total numsteps: 2534, return: 3.0
+Episode: 430, total numsteps: 2540, return: 6.0
+Episode: 431, total numsteps: 2553, return: 13.0
+Episode: 432, total numsteps: 2558, return: 5.0
+Episode: 433, total numsteps: 2564, return: 6.0
+Episode: 434, total numsteps: 2582, return: 18.0
+Episode: 435, total numsteps: 2585, return: 3.0
+Episode: 436, total numsteps: 2589, return: 4.0
+Episode: 437, total numsteps: 2593, return: 4.0
+Episode: 438, total numsteps: 2598, return: 5.0
+Episode: 439, total numsteps: 2611, return: 13.0
+Episode: 440, total numsteps: 2622, return: 11.0
+Episode: 441, total numsteps: 2628, return: 6.0
+Episode: 442, total numsteps: 2632, return: 4.0
+Episode: 443, total numsteps: 2636, return: 4.0
+Episode: 444, total numsteps: 2642, return: 6.0
+Episode: 445, total numsteps: 2645, return: 3.0
+Episode: 446, total numsteps: 2651, return: 6.0
+Episode: 447, total numsteps: 2661, return: 10.0
+Episode: 448, total numsteps: 2665, return: 4.0
+Episode: 449, total numsteps: 2669, return: 4.0
+Episode: 450, total numsteps: 2682, return: 13.0
+Episode: 451, total numsteps: 2689, return: 7.0
+Episode: 452, total numsteps: 2694, return: 5.0
+Episode: 453, total numsteps: 2701, return: 7.0
+Episode: 454, total numsteps: 2706, return: 5.0
+Episode: 455, total numsteps: 2710, return: 4.0
+Episode: 456, total numsteps: 2715, return: 5.0
+Episode: 457, total numsteps: 2723, return: 8.0
+Episode: 458, total numsteps: 2727, return: 4.0
+Episode: 459, total numsteps: 2734, return: 7.0
+Episode: 460, total numsteps: 2742, return: 8.0
+Episode: 461, total numsteps: 2746, return: 4.0
+Episode: 462, total numsteps: 2750, return: 4.0
+Episode: 463, total numsteps: 2755, return: 5.0
+Episode: 464, total numsteps: 2760, return: 5.0
+Episode: 465, total numsteps: 2763, return: 3.0
+Episode: 466, total numsteps: 2776, return: 13.0
+Episode: 467, total numsteps: 2779, return: 3.0
+Episode: 468, total numsteps: 2782, return: 3.0
+Episode: 469, total numsteps: 2794, return: 12.0
+Episode: 470, total numsteps: 2799, return: 5.0
+Episode: 471, total numsteps: 2804, return: 5.0
+Episode: 472, total numsteps: 2808, return: 4.0
+Episode: 473, total numsteps: 2814, return: 6.0
+Episode: 474, total numsteps: 2826, return: 12.0
+Episode: 475, total numsteps: 2829, return: 3.0
+Episode: 476, total numsteps: 2834, return: 5.0
+Episode: 477, total numsteps: 2837, return: 3.0
+Episode: 478, total numsteps: 2841, return: 4.0
+Episode: 479, total numsteps: 2844, return: 3.0
+Episode: 480, total numsteps: 2848, return: 4.0
+Episode: 481, total numsteps: 2854, return: 6.0
+Episode: 482, total numsteps: 2857, return: 3.0
+Episode: 483, total numsteps: 2863, return: 6.0
+Episode: 484, total numsteps: 2872, return: 9.0
+Episode: 485, total numsteps: 2881, return: 9.0
+Episode: 486, total numsteps: 2886, return: 5.0
+Episode: 487, total numsteps: 2890, return: 4.0
+Episode: 488, total numsteps: 2898, return: 8.0
+Episode: 489, total numsteps: 2904, return: 6.0
+Episode: 490, total numsteps: 2908, return: 4.0
+Episode: 491, total numsteps: 2916, return: 8.0
+Episode: 492, total numsteps: 2926, return: 10.0
+Episode: 493, total numsteps: 2935, return: 9.0
+Episode: 494, total numsteps: 2941, return: 6.0
+Episode: 495, total numsteps: 2945, return: 4.0
+Episode: 496, total numsteps: 2948, return: 3.0
+Episode: 497, total numsteps: 2954, return: 6.0
+Episode: 498, total numsteps: 2957, return: 3.0
+Episode: 499, total numsteps: 2960, return: 3.0
+Episode: 500, total numsteps: 2963, return: 3.0
+Episode: 501, total numsteps: 2966, return: 3.0
+Episode: 502, total numsteps: 2972, return: 6.0
+Episode: 503, total numsteps: 2976, return: 4.0
+Episode: 504, total numsteps: 2986, return: 10.0
+Episode: 505, total numsteps: 2989, return: 3.0
+Episode: 506, total numsteps: 2995, return: 6.0
+state debug <class 'numpy.ndarray'> 4 [-0.00340537  0.00576857 -0.0039361  -0.00093004]
+state debug <class 'numpy.ndarray'> 4 [-0.00502831  0.00925188 -0.07700894  0.17334206]
+state debug <class 'numpy.ndarray'> 4 [-0.00982136  0.02016831 -0.16254344  0.37185121]
+state debug <class 'numpy.ndarray'> 4 [-0.02251172  0.04935974 -0.4713593   1.08323464]
+state debug <class 'numpy.ndarray'> 4 [-0.03866531  0.0863219  -0.33754506  0.77673533]
+state debug <class 'numpy.ndarray'> 4 [-0.05092286  0.1153587  -0.27605784  0.68229259]
+state debug <class 'numpy.ndarray'> 4 [-0.06598606  0.15330454 -0.47677157  1.21407505]
+state debug <class 'numpy.ndarray'> 4 [-0.08126056  0.19482467 -0.28844467  0.8757185 ]
+state debug <class 'numpy.ndarray'> 4 [-0.00340537  0.00576857  0.65703738 -0.00093004]
+Episode: 507, total numsteps: 3001, return: 6.0
+Episode: 508, total numsteps: 3005, return: 4.0
+Episode: 509, total numsteps: 3010, return: 5.0
+Episode: 510, total numsteps: 3013, return: 3.0
+Episode: 511, total numsteps: 3017, return: 4.0
+Episode: 512, total numsteps: 3025, return: 8.0
+Episode: 513, total numsteps: 3034, return: 9.0
+Episode: 514, total numsteps: 3045, return: 11.0
+Episode: 515, total numsteps: 3049, return: 4.0
+Episode: 516, total numsteps: 3054, return: 5.0
+Episode: 517, total numsteps: 3064, return: 10.0
+Episode: 518, total numsteps: 3067, return: 3.0
+Episode: 519, total numsteps: 3070, return: 3.0
+Episode: 520, total numsteps: 3077, return: 7.0
+Episode: 521, total numsteps: 3083, return: 6.0
+Episode: 522, total numsteps: 3086, return: 3.0
+Episode: 523, total numsteps: 3091, return: 5.0
+Episode: 524, total numsteps: 3095, return: 4.0
+Episode: 525, total numsteps: 3100, return: 5.0
+Episode: 526, total numsteps: 3105, return: 5.0
+Episode: 527, total numsteps: 3110, return: 5.0
+Episode: 528, total numsteps: 3113, return: 3.0
+Episode: 529, total numsteps: 3118, return: 5.0
+Episode: 530, total numsteps: 3122, return: 4.0
+Episode: 531, total numsteps: 3130, return: 8.0
+Episode: 532, total numsteps: 3139, return: 9.0
+Episode: 533, total numsteps: 3144, return: 5.0
+Episode: 534, total numsteps: 3156, return: 12.0
+Episode: 535, total numsteps: 3160, return: 4.0
+Episode: 536, total numsteps: 3164, return: 4.0
+Episode: 537, total numsteps: 3168, return: 4.0
+Episode: 538, total numsteps: 3178, return: 10.0
+Episode: 539, total numsteps: 3181, return: 3.0
+Episode: 540, total numsteps: 3187, return: 6.0
+Episode: 541, total numsteps: 3194, return: 7.0
+Episode: 542, total numsteps: 3204, return: 10.0
+Episode: 543, total numsteps: 3207, return: 3.0
+Episode: 544, total numsteps: 3211, return: 4.0
+Episode: 545, total numsteps: 3218, return: 7.0
+Episode: 546, total numsteps: 3222, return: 4.0
+Episode: 547, total numsteps: 3228, return: 6.0
+Episode: 548, total numsteps: 3235, return: 7.0
+Episode: 549, total numsteps: 3238, return: 3.0
+Episode: 550, total numsteps: 3247, return: 9.0
+Episode: 551, total numsteps: 3257, return: 10.0
+Episode: 552, total numsteps: 3262, return: 5.0
+Episode: 553, total numsteps: 3265, return: 3.0
+Episode: 554, total numsteps: 3269, return: 4.0
+Episode: 555, total numsteps: 3274, return: 5.0
+Episode: 556, total numsteps: 3278, return: 4.0
+Episode: 557, total numsteps: 3281, return: 3.0
+Episode: 558, total numsteps: 3285, return: 4.0
+Episode: 559, total numsteps: 3290, return: 5.0
+Episode: 560, total numsteps: 3299, return: 9.0
+Episode: 561, total numsteps: 3304, return: 5.0
+Episode: 562, total numsteps: 3307, return: 3.0
+Episode: 563, total numsteps: 3311, return: 4.0
+Episode: 564, total numsteps: 3326, return: 15.0
+Episode: 565, total numsteps: 3330, return: 4.0
+Episode: 566, total numsteps: 3338, return: 8.0
+Episode: 567, total numsteps: 3342, return: 4.0
+Episode: 568, total numsteps: 3348, return: 6.0
+Episode: 569, total numsteps: 3355, return: 7.0
+Episode: 570, total numsteps: 3373, return: 18.0
+Episode: 571, total numsteps: 3379, return: 6.0
+Episode: 572, total numsteps: 3386, return: 7.0
+Episode: 573, total numsteps: 3396, return: 10.0
+Episode: 574, total numsteps: 3402, return: 6.0
+Episode: 575, total numsteps: 3409, return: 7.0
+Episode: 576, total numsteps: 3417, return: 8.0
+Episode: 577, total numsteps: 3424, return: 7.0
+Episode: 578, total numsteps: 3430, return: 6.0
+Episode: 579, total numsteps: 3434, return: 4.0
+Episode: 580, total numsteps: 3445, return: 11.0
+Episode: 581, total numsteps: 3451, return: 6.0
+Episode: 582, total numsteps: 3455, return: 4.0
+Episode: 583, total numsteps: 3459, return: 4.0
+Episode: 584, total numsteps: 3465, return: 6.0
+Episode: 585, total numsteps: 3477, return: 12.0
+Episode: 586, total numsteps: 3484, return: 7.0
+Episode: 587, total numsteps: 3489, return: 5.0
+Episode: 588, total numsteps: 3495, return: 6.0
+Episode: 589, total numsteps: 3501, return: 6.0
+Episode: 590, total numsteps: 3504, return: 3.0
+Episode: 591, total numsteps: 3507, return: 3.0
+Episode: 592, total numsteps: 3526, return: 19.0
+Episode: 593, total numsteps: 3541, return: 15.0
+Episode: 594, total numsteps: 3544, return: 3.0
+Episode: 595, total numsteps: 3554, return: 10.0
+Episode: 596, total numsteps: 3560, return: 6.0
+Episode: 597, total numsteps: 3563, return: 3.0
+Episode: 598, total numsteps: 3566, return: 3.0
+Episode: 599, total numsteps: 3580, return: 14.0
+Episode: 600, total numsteps: 3584, return: 4.0
+Episode: 601, total numsteps: 3600, return: 16.0
+Episode: 602, total numsteps: 3604, return: 4.0
+Episode: 603, total numsteps: 3611, return: 7.0
+Episode: 604, total numsteps: 3617, return: 6.0
+Episode: 605, total numsteps: 3623, return: 6.0
+Episode: 606, total numsteps: 3627, return: 4.0
+Episode: 607, total numsteps: 3630, return: 3.0
+Episode: 608, total numsteps: 3637, return: 7.0
+Episode: 609, total numsteps: 3643, return: 6.0
+Episode: 610, total numsteps: 3649, return: 6.0
+Episode: 611, total numsteps: 3653, return: 4.0
+Episode: 612, total numsteps: 3671, return: 18.0
+Episode: 613, total numsteps: 3675, return: 4.0
+Episode: 614, total numsteps: 3679, return: 4.0
+Episode: 615, total numsteps: 3684, return: 5.0
+Episode: 616, total numsteps: 3689, return: 5.0
+Episode: 617, total numsteps: 3692, return: 3.0
+Episode: 618, total numsteps: 3701, return: 9.0
+Episode: 619, total numsteps: 3706, return: 5.0
+Episode: 620, total numsteps: 3715, return: 9.0
+Episode: 621, total numsteps: 3723, return: 8.0
+Episode: 622, total numsteps: 3734, return: 11.0
+Episode: 623, total numsteps: 3739, return: 5.0
+Episode: 624, total numsteps: 3743, return: 4.0
+Episode: 625, total numsteps: 3746, return: 3.0
+Episode: 626, total numsteps: 3752, return: 6.0
+Episode: 627, total numsteps: 3761, return: 9.0
+Episode: 628, total numsteps: 3767, return: 6.0
+Episode: 629, total numsteps: 3772, return: 5.0
+Episode: 630, total numsteps: 3775, return: 3.0
+Episode: 631, total numsteps: 3779, return: 4.0
+Episode: 632, total numsteps: 3786, return: 7.0
+Episode: 633, total numsteps: 3796, return: 10.0
+Episode: 634, total numsteps: 3800, return: 4.0
+Episode: 635, total numsteps: 3804, return: 4.0
+Episode: 636, total numsteps: 3808, return: 4.0
+Episode: 637, total numsteps: 3812, return: 4.0
+Episode: 638, total numsteps: 3816, return: 4.0
+Episode: 639, total numsteps: 3830, return: 14.0
+Episode: 640, total numsteps: 3839, return: 9.0
+Episode: 641, total numsteps: 3847, return: 8.0
+Episode: 642, total numsteps: 3852, return: 5.0
+Episode: 643, total numsteps: 3860, return: 8.0
+Episode: 644, total numsteps: 3873, return: 13.0
+Episode: 645, total numsteps: 3877, return: 4.0
+Episode: 646, total numsteps: 3884, return: 7.0
+Episode: 647, total numsteps: 3891, return: 7.0
+Episode: 648, total numsteps: 3897, return: 6.0
+Episode: 649, total numsteps: 3907, return: 10.0
+Episode: 650, total numsteps: 3910, return: 3.0
+Episode: 651, total numsteps: 3913, return: 3.0
+Episode: 652, total numsteps: 3919, return: 6.0
+Episode: 653, total numsteps: 3925, return: 6.0
+Episode: 654, total numsteps: 3941, return: 16.0
+Episode: 655, total numsteps: 3947, return: 6.0
+Episode: 656, total numsteps: 3951, return: 4.0
+Episode: 657, total numsteps: 3962, return: 11.0
+Episode: 658, total numsteps: 3972, return: 10.0
+Episode: 659, total numsteps: 3983, return: 11.0
+Episode: 660, total numsteps: 3990, return: 7.0
+Episode: 661, total numsteps: 3994, return: 4.0
+Episode: 662, total numsteps: 3999, return: 5.0
+state debug <class 'numpy.ndarray'> 4 [-0.00731917 -0.00193774 -0.0059309  -0.00475373]
+state debug <class 'numpy.ndarray'> 4 [-0.00662825 -0.00427192  0.04035703 -0.11092803]
+state debug <class 'numpy.ndarray'> 4 [-0.00758214 -0.00271528 -0.0876229   0.18491477]
+state debug <class 'numpy.ndarray'> 4 [-0.01214534  0.00692463 -0.14054615  0.29741222]
+state debug <class 'numpy.ndarray'> 4 [-0.02279899  0.03030484 -0.3916716   0.86811889]
+state debug <class 'numpy.ndarray'> 4 [-0.03680335  0.06091796 -0.30944908  0.67144747]
+state debug <class 'numpy.ndarray'> 4 [-0.05373771  0.09874343 -0.53698617  1.21899131]
+state debug <class 'numpy.ndarray'> 4 [-0.0772262   0.15272599 -0.63782964  1.48622749]
+state debug <class 'numpy.ndarray'> 4 [-0.00731917 -0.00193774 -0.0059309  -0.00475373]
+Episode: 663, total numsteps: 4004, return: 5.0
+Episode: 664, total numsteps: 4009, return: 5.0
+Episode: 665, total numsteps: 4020, return: 11.0
+Episode: 666, total numsteps: 4026, return: 6.0
+Episode: 667, total numsteps: 4030, return: 4.0
+Episode: 668, total numsteps: 4034, return: 4.0
+Episode: 669, total numsteps: 4051, return: 17.0
+Episode: 670, total numsteps: 4065, return: 14.0
+Episode: 671, total numsteps: 4073, return: 8.0
+Episode: 672, total numsteps: 4076, return: 3.0
+Episode: 673, total numsteps: 4081, return: 5.0
+Episode: 674, total numsteps: 4088, return: 7.0
+Episode: 675, total numsteps: 4091, return: 3.0
+Episode: 676, total numsteps: 4098, return: 7.0
+Episode: 677, total numsteps: 4102, return: 4.0
+Episode: 678, total numsteps: 4107, return: 5.0
+Episode: 679, total numsteps: 4113, return: 6.0
+Episode: 680, total numsteps: 4122, return: 9.0
+Episode: 681, total numsteps: 4128, return: 6.0
+Episode: 682, total numsteps: 4137, return: 9.0
+Episode: 683, total numsteps: 4142, return: 5.0
+Episode: 684, total numsteps: 4147, return: 5.0
+Episode: 685, total numsteps: 4165, return: 18.0
+Episode: 686, total numsteps: 4173, return: 8.0
+Episode: 687, total numsteps: 4196, return: 23.0
+Episode: 688, total numsteps: 4223, return: 27.0
+Episode: 689, total numsteps: 4226, return: 3.0
+Episode: 690, total numsteps: 4235, return: 9.0
+Episode: 691, total numsteps: 4241, return: 6.0
+Episode: 692, total numsteps: 4248, return: 7.0
+Episode: 693, total numsteps: 4252, return: 4.0
+Episode: 694, total numsteps: 4257, return: 5.0
+Episode: 695, total numsteps: 4261, return: 4.0
+Episode: 696, total numsteps: 4267, return: 6.0
+Episode: 697, total numsteps: 4275, return: 8.0
+Episode: 698, total numsteps: 4284, return: 9.0
+Episode: 699, total numsteps: 4288, return: 4.0
+Episode: 700, total numsteps: 4293, return: 5.0
+Episode: 701, total numsteps: 4299, return: 6.0
+Episode: 702, total numsteps: 4304, return: 5.0
+Episode: 703, total numsteps: 4312, return: 8.0
+Episode: 704, total numsteps: 4320, return: 8.0
+Episode: 705, total numsteps: 4325, return: 5.0
+Episode: 706, total numsteps: 4328, return: 3.0
+Episode: 707, total numsteps: 4332, return: 4.0
+Episode: 708, total numsteps: 4339, return: 7.0
+Episode: 709, total numsteps: 4347, return: 8.0
+Episode: 710, total numsteps: 4351, return: 4.0
+Episode: 711, total numsteps: 4359, return: 8.0
+Episode: 712, total numsteps: 4363, return: 4.0
+Episode: 713, total numsteps: 4370, return: 7.0
+Episode: 714, total numsteps: 4383, return: 13.0
+Episode: 715, total numsteps: 4388, return: 5.0
+Episode: 716, total numsteps: 4397, return: 9.0
+Episode: 717, total numsteps: 4408, return: 11.0
+Episode: 718, total numsteps: 4411, return: 3.0
+Episode: 719, total numsteps: 4415, return: 4.0
+Episode: 720, total numsteps: 4422, return: 7.0
+Episode: 721, total numsteps: 4425, return: 3.0
+Episode: 722, total numsteps: 4429, return: 4.0
+Episode: 723, total numsteps: 4433, return: 4.0
+Episode: 724, total numsteps: 4436, return: 3.0
+Episode: 725, total numsteps: 4447, return: 11.0
+Episode: 726, total numsteps: 4454, return: 7.0
+Episode: 727, total numsteps: 4463, return: 9.0
+Episode: 728, total numsteps: 4467, return: 4.0
+Episode: 729, total numsteps: 4471, return: 4.0
+Episode: 730, total numsteps: 4474, return: 3.0
+Episode: 731, total numsteps: 4477, return: 3.0
+Episode: 732, total numsteps: 4488, return: 11.0
+Episode: 733, total numsteps: 4492, return: 4.0
+Episode: 734, total numsteps: 4495, return: 3.0
+Episode: 735, total numsteps: 4500, return: 5.0
+Episode: 736, total numsteps: 4507, return: 7.0
+Episode: 737, total numsteps: 4512, return: 5.0
+Episode: 738, total numsteps: 4516, return: 4.0
+Episode: 739, total numsteps: 4529, return: 13.0
+Episode: 740, total numsteps: 4536, return: 7.0
+Episode: 741, total numsteps: 4544, return: 8.0
+Episode: 742, total numsteps: 4557, return: 13.0
+Episode: 743, total numsteps: 4561, return: 4.0
+Episode: 744, total numsteps: 4570, return: 9.0
+Episode: 745, total numsteps: 4577, return: 7.0
+Episode: 746, total numsteps: 4586, return: 9.0
+Episode: 747, total numsteps: 4589, return: 3.0
+Episode: 748, total numsteps: 4594, return: 5.0
+Episode: 749, total numsteps: 4603, return: 9.0
+Episode: 750, total numsteps: 4611, return: 8.0
+Episode: 751, total numsteps: 4616, return: 5.0
+Episode: 752, total numsteps: 4629, return: 13.0
+Episode: 753, total numsteps: 4642, return: 13.0
+Episode: 754, total numsteps: 4645, return: 3.0
+Episode: 755, total numsteps: 4648, return: 3.0
+Episode: 756, total numsteps: 4664, return: 16.0
+Episode: 757, total numsteps: 4668, return: 4.0
+Episode: 758, total numsteps: 4671, return: 3.0
+Episode: 759, total numsteps: 4678, return: 7.0
+Episode: 760, total numsteps: 4682, return: 4.0
+Episode: 761, total numsteps: 4686, return: 4.0
+Episode: 762, total numsteps: 4693, return: 7.0
+Episode: 763, total numsteps: 4699, return: 6.0
+Episode: 764, total numsteps: 4720, return: 21.0
+Episode: 765, total numsteps: 4725, return: 5.0
+Episode: 766, total numsteps: 4730, return: 5.0
+Episode: 767, total numsteps: 4733, return: 3.0
+Episode: 768, total numsteps: 4736, return: 3.0
+Episode: 769, total numsteps: 4742, return: 6.0
+Episode: 770, total numsteps: 4751, return: 9.0
+Episode: 771, total numsteps: 4765, return: 14.0
+Episode: 772, total numsteps: 4769, return: 4.0
+Episode: 773, total numsteps: 4772, return: 3.0
+Episode: 774, total numsteps: 4783, return: 11.0
+Episode: 775, total numsteps: 4787, return: 4.0
+Episode: 776, total numsteps: 4791, return: 4.0
+Episode: 777, total numsteps: 4795, return: 4.0
+Episode: 778, total numsteps: 4799, return: 4.0
+Episode: 779, total numsteps: 4803, return: 4.0
+Episode: 780, total numsteps: 4808, return: 5.0
+Episode: 781, total numsteps: 4812, return: 4.0
+Episode: 782, total numsteps: 4818, return: 6.0
+Episode: 783, total numsteps: 4822, return: 4.0
+Episode: 784, total numsteps: 4828, return: 6.0
+Episode: 785, total numsteps: 4831, return: 3.0
+Episode: 786, total numsteps: 4837, return: 6.0
+Episode: 787, total numsteps: 4840, return: 3.0
+Episode: 788, total numsteps: 4845, return: 5.0
+Episode: 789, total numsteps: 4850, return: 5.0
+Episode: 790, total numsteps: 4853, return: 3.0
+Episode: 791, total numsteps: 4856, return: 3.0
+Episode: 792, total numsteps: 4864, return: 8.0
+Episode: 793, total numsteps: 4869, return: 5.0
+Episode: 794, total numsteps: 4873, return: 4.0
+Episode: 795, total numsteps: 4878, return: 5.0
+Episode: 796, total numsteps: 4881, return: 3.0
+Episode: 797, total numsteps: 4887, return: 6.0
+Episode: 798, total numsteps: 4892, return: 5.0
+Episode: 799, total numsteps: 4896, return: 4.0
+Episode: 800, total numsteps: 4901, return: 5.0
+Episode: 801, total numsteps: 4905, return: 4.0
+Episode: 802, total numsteps: 4910, return: 5.0
+Episode: 803, total numsteps: 4923, return: 13.0
+Episode: 804, total numsteps: 4930, return: 7.0
+Episode: 805, total numsteps: 4934, return: 4.0
+Episode: 806, total numsteps: 4939, return: 5.0
+Episode: 807, total numsteps: 4944, return: 5.0
+Episode: 808, total numsteps: 4952, return: 8.0
+Episode: 809, total numsteps: 4957, return: 5.0
+Episode: 810, total numsteps: 4961, return: 4.0
+Episode: 811, total numsteps: 4965, return: 4.0
+Episode: 812, total numsteps: 4973, return: 8.0
+Episode: 813, total numsteps: 4984, return: 11.0
+Episode: 814, total numsteps: 4989, return: 5.0
+Episode: 815, total numsteps: 4992, return: 3.0
+Episode: 816, total numsteps: 4996, return: 4.0
+state debug <class 'numpy.ndarray'> 4 [ 0.00500729 -0.00439182 -0.00029618  0.00961474]
+state debug <class 'numpy.ndarray'> 4 [ 0.00345494 -0.00050793 -0.07712701  0.1829171 ]
+state debug <class 'numpy.ndarray'> 4 [-0.00106017  0.00995264 -0.14858358  0.33997863]
+state debug <class 'numpy.ndarray'> 4 [-0.01196088  0.0348759  -0.39602225  0.90309087]
+state debug <class 'numpy.ndarray'> 4 [-0.02462756  0.06344935 -0.23846236  0.53657061]
+state debug <class 'numpy.ndarray'> 4 [-0.03637062  0.09064132 -0.34871608  0.82416975]
+state debug <class 'numpy.ndarray'> 4 [-0.05028391  0.12438537 -0.34750363  0.86902025]
+state debug <class 'numpy.ndarray'> 4 [-0.06184489  0.15521566 -0.23149308  0.68153728]
+state debug <class 'numpy.ndarray'> 4 [-0.07214527  0.18700614 -0.28368755  0.91067937]
+state debug <class 'numpy.ndarray'> 4 [ 0.00500729 -0.00439182 -0.00029618  0.00961474]
+Episode: 817, total numsteps: 5001, return: 5.0
+state debug <class 'numpy.ndarray'> 4 [-0.00673097  0.00131058  0.00706713  0.00360834]
+state debug <class 'numpy.ndarray'> 4 [-0.00911822  0.00767215 -0.12607436  0.31140867]
+state debug <class 'numpy.ndarray'> 4 [-0.01480136  0.02146969 -0.15823894  0.3802368 ]
+state debug <class 'numpy.ndarray'> 4 [-0.02974091  0.05660046 -0.58774298  1.36884658]
+state debug <class 'numpy.ndarray'> 4 [-0.0590427   0.12439635 -0.87712498  2.02329737]
+Episode: 818, total numsteps: 5006, return: 5.0
+state debug <class 'numpy.ndarray'> 4 [-0.00471988 -0.00614664 -0.00778997 -0.00450366]
+state debug <class 'numpy.ndarray'> 4 [-0.00688588 -0.0021204  -0.10026388  0.20369053]
+state debug <class 'numpy.ndarray'> 4 [-0.01559502  0.01667079 -0.33472247  0.73214169]
+state debug <class 'numpy.ndarray'> 4 [-0.01607738  0.01576533  0.30831543 -0.75669589]
+state debug <class 'numpy.ndarray'> 4 [-0.01385018  0.00989762 -0.19499516  0.4453141 ]
+state debug <class 'numpy.ndarray'> 4 [-0.02463642  0.034378   -0.34424645  0.77879825]
+state debug <class 'numpy.ndarray'> 4 [-0.05178358  0.09627018 -1.01128661  2.30411834]
+state debug <class 'numpy.ndarray'> 4 [-0.07291742  0.1436486  -0.05068819  0.10939608]
+state debug <class 'numpy.ndarray'> 4 [-0.08660304  0.17715747 -0.63139417  1.54983364]
+Episode: 819, total numsteps: 5015, return: 9.0
+state debug <class 'numpy.ndarray'> 4 [ 0.00182725  0.00821633 -0.00462667  0.00494056]
+state debug <class 'numpy.ndarray'> 4 [ 0.00343345  0.00445106  0.08470321 -0.19119554]
+state debug <class 'numpy.ndarray'> 4 [ 0.01199205 -0.01483999  0.34269236 -0.76905027]
+state debug <class 'numpy.ndarray'> 4 [ 0.01598126 -0.02264096 -0.14131741  0.36151822]
+state debug <class 'numpy.ndarray'> 4 [ 0.02186501 -0.03555661  0.43362251 -0.99072579]
+state debug <class 'numpy.ndarray'> 4 [ 0.01933824 -0.02896184 -0.55659042  1.28993303]
+state debug <class 'numpy.ndarray'> 4 [-0.01845928  0.05674346 -1.33177259  2.98696624]
+state debug <class 'numpy.ndarray'> 4 [-0.05146191  0.12772187 -0.32450158  0.61458923]
+state debug <class 'numpy.ndarray'> 4 [-0.06811583  0.16244075 -0.50786792  1.1202518 ]
+Episode: 820, total numsteps: 5024, return: 9.0
+state debug <class 'numpy.ndarray'> 4 [ 0.00899246 -0.00267612  0.00548177  0.0098472 ]
+state debug <class 'numpy.ndarray'> 4 [ 0.02527234 -0.03940407  0.80623739 -1.82725059]
+state debug <class 'numpy.ndarray'> 4 [ 0.06054895 -0.11835497  0.9582101  -2.1303222 ]
+state debug <class 'numpy.ndarray'> 4 [ 0.07919998 -0.15856046 -0.02051907  0.07686157]
+state debug <class 'numpy.ndarray'> 4 [ 0.06802738 -0.13476208 -0.5372505   1.104691  ]
+state debug <class 'numpy.ndarray'> 4 [ 0.0516451  -0.10578022 -0.28330541  0.35960485]
+state debug <class 'numpy.ndarray'> 4 [ 0.05571116 -0.12900089  0.48379933 -1.49752142]
+state debug <class 'numpy.ndarray'> 4 [ 0.0555928  -0.14519651 -0.48570143  0.652719  ]
+state debug <class 'numpy.ndarray'> 4 [ 0.02108527 -0.08778975 -1.23911969  2.21086934]
+state debug <class 'numpy.ndarray'> 4 [-0.00948339 -0.04687274 -0.29312909 -0.12640533]
+state debug <class 'numpy.ndarray'> 4 [-1.18148207e-03 -9.88085381e-02  7.04857417e-01 -2.44497587e+00]
+state debug <class 'numpy.ndarray'> 4 [ 0.00823851 -0.15292115 -0.22842077 -0.30633751]
+Episode: 821, total numsteps: 5036, return: 12.0
+state debug <class 'numpy.ndarray'> 4 [-0.00512546  0.00095595  0.0075043  -0.0072371 ]
+state debug <class 'numpy.ndarray'> 4 [ 0.00123082 -0.01326684  0.30950761 -0.69702382]
+state debug <class 'numpy.ndarray'> 4 [-0.00610631  0.00486596 -0.67319842  1.57542334]
+state debug <class 'numpy.ndarray'> 4 [-0.0520917   0.11042929 -1.62309185  3.68779597]
+Episode: 822, total numsteps: 5040, return: 4.0
+state debug <class 'numpy.ndarray'> 4 [-0.00848373  0.00276653  0.00187978  0.00813157]
+state debug <class 'numpy.ndarray'> 4 [-0.00645893 -0.00133892  0.09909875 -0.21113975]
+state debug <class 'numpy.ndarray'> 4 [-0.0222243   0.03599697 -0.88441869  2.05298015]
+state debug <class 'numpy.ndarray'> 4 [-0.06631611  0.13685369 -1.31939362  2.99221706]
+Episode: 823, total numsteps: 5044, return: 4.0
+state debug <class 'numpy.ndarray'> 4 [0.00316531 0.00813943 0.00044245 0.0025241 ]
+state debug <class 'numpy.ndarray'> 4 [-0.01564327  0.05189125 -0.93807607  2.16231081]
+state debug <class 'numpy.ndarray'> 4 [-0.07199841  0.18052787 -1.87514206  4.25145583]
+Episode: 824, total numsteps: 5047, return: 3.0
+state debug <class 'numpy.ndarray'> 4 [ 0.00646594 -0.00174975 -0.00188105  0.00398369]
+state debug <class 'numpy.ndarray'> 4 [-0.00511865  0.02498712 -0.57577438  1.319521  ]
+state debug <class 'numpy.ndarray'> 4 [-0.04786611  0.12241991 -1.55819378  3.53336857]
+Episode: 825, total numsteps: 5050, return: 3.0
+state debug <class 'numpy.ndarray'> 4 [-0.00879147 -0.00075974 -0.00701406 -0.00068637]
+state debug <class 'numpy.ndarray'> 4 [-0.01560493  0.01431908 -0.33278032  0.74708753]
+state debug <class 'numpy.ndarray'> 4 [-0.04535777  0.08170879 -1.15259301  2.60706774]
+state debug <class 'numpy.ndarray'> 4 [-0.07134504  0.13875587 -0.15255543  0.2941352 ]
+state debug <class 'numpy.ndarray'> 4 [-0.09382379  0.19015909 -0.96794147  2.25280656]
+Episode: 826, total numsteps: 5055, return: 5.0
+state debug <class 'numpy.ndarray'> 4 [-0.00973066 -0.00897963  0.00072777 -0.00389216]
+state debug <class 'numpy.ndarray'> 4 [-0.0094954  -0.00974019  0.01100498 -0.03386947]
+state debug <class 'numpy.ndarray'> 4 [-0.02758657  0.03159314 -0.91295629  2.07865827]
+state debug <class 'numpy.ndarray'> 4 [-0.04714694  0.07418765 -0.06930341  0.08906178]
+state debug <class 'numpy.ndarray'> 4 [-0.04142763  0.05947688  0.35421257 -0.81514738]
+state debug <class 'numpy.ndarray'> 4 [-0.01253305 -0.00519459  1.08938718 -2.40971129]
+state debug <class 'numpy.ndarray'> 4 [ 0.01099122 -0.05298373  0.09163953 -0.02379983]
+state debug <class 'numpy.ndarray'> 4 [ 0.03462669 -0.10088297  1.08672099 -2.34503227]
+state debug <class 'numpy.ndarray'> 4 [ 0.06575812 -0.16590013  0.47409653 -0.94228872]
+Episode: 827, total numsteps: 5064, return: 9.0
+state debug <class 'numpy.ndarray'> 4 [ 0.00411078  0.00118573 -0.00028085  0.0071674 ]
+state debug <class 'numpy.ndarray'> 4 [ 0.01894108 -0.03276205  0.73973416 -1.68719728]
+state debug <class 'numpy.ndarray'> 4 [ 0.05175567 -0.10658911  0.90154671 -2.01306046]
+state debug <class 'numpy.ndarray'> 4 [ 0.07095042 -0.14837483  0.06270724 -0.11462767]
+state debug <class 'numpy.ndarray'> 4 [ 0.06450601 -0.13503645 -0.38393099  0.77236227]
+state debug <class 'numpy.ndarray'> 4 [ 0.06677186 -0.14767193  0.49389258 -1.37537034]
+Episode: 828, total numsteps: 5070, return: 6.0
+state debug <class 'numpy.ndarray'> 4 [-0.00901291  0.0087166  -0.00830947 -0.00903591]
+state debug <class 'numpy.ndarray'> 4 [ 0.0095991  -0.03520243  0.93627809 -2.16493233]
+state debug <class 'numpy.ndarray'> 4 [ 0.03265637 -0.08708616  0.22057135 -0.46514795]
+state debug <class 'numpy.ndarray'> 4 [ 0.02172553 -0.06131676 -0.76454023  1.72947876]
+state debug <class 'numpy.ndarray'> 4 [ 0.01129703 -0.04142113  0.23919915 -0.69755589]
+state debug <class 'numpy.ndarray'> 4 [ 0.03448776 -0.10077262  0.91841902 -2.25734427]
+Episode: 829, total numsteps: 5076, return: 6.0
+state debug <class 'numpy.ndarray'> 4 [ 0.00923535 -0.00675655 -0.00075981 -0.00271094]
+state debug <class 'numpy.ndarray'> 4 [ 0.02907266 -0.05283796  0.98969281 -2.27746021]
+state debug <class 'numpy.ndarray'> 4 [ 0.08824214 -0.18764831  1.9638253  -4.4436521 ]
+Episode: 830, total numsteps: 5079, return: 3.0
+state debug <class 'numpy.ndarray'> 4 [-0.00462755  0.00024864  0.0076254  -0.00151368]
+state debug <class 'numpy.ndarray'> 4 [ 0.01039296 -0.03376361  0.74135744 -1.68192944]
+state debug <class 'numpy.ndarray'> 4 [ 0.02005536 -0.05384197 -0.25409352  0.64068378]
+state debug <class 'numpy.ndarray'> 4 [ 0.01744157 -0.04721     0.1218679  -0.29477769]
+state debug <class 'numpy.ndarray'> 4 [ 0.00248243 -0.01376625 -0.86715841  1.94299453]
+state debug <class 'numpy.ndarray'> 4 [-0.016396    0.02531272 -0.08046148  0.04551683]
+state debug <class 'numpy.ndarray'> 4 [-0.0216967   0.03238504 -0.18430666  0.30584287]
+state debug <class 'numpy.ndarray'> 4 [-0.01073067  0.00259923  0.73004343 -1.77231592]
+state debug <class 'numpy.ndarray'> 4 [ 0.02480472 -0.08109412  1.04683657 -2.41836334]
+Episode: 831, total numsteps: 5088, return: 9.0
+state debug <class 'numpy.ndarray'> 4 [ 0.00259443  0.00910787 -0.00100592 -0.00349303]
+state debug <class 'numpy.ndarray'> 4 [-3.06154145e-04  1.57730707e-02 -1.43628516e-01  3.33341628e-01]
+state debug <class 'numpy.ndarray'> 4 [ 0.0078108  -0.00291858  0.54739741 -1.24950438]
+state debug <class 'numpy.ndarray'> 4 [ 0.04523419 -0.08753935  1.32187253 -2.97111896]
+Episode: 832, total numsteps: 5092, return: 4.0
+state debug <class 'numpy.ndarray'> 4 [-0.00033021  0.00593698  0.00377     0.0092595 ]
+state debug <class 'numpy.ndarray'> 4 [-0.01939927  0.05082192 -0.95438159  2.21185858]
+state debug <class 'numpy.ndarray'> 4 [-0.04235077  0.10301061 -0.19747019  0.43532582]
+state debug <class 'numpy.ndarray'> 4 [-0.05197686  0.12585317 -0.28380629  0.70730429]
+Episode: 833, total numsteps: 5096, return: 4.0
+state debug <class 'numpy.ndarray'> 4 [-0.00323767  0.00872373 -0.00238668 -0.00970581]
+state debug <class 'numpy.ndarray'> 4 [ 0.0151072  -0.03405719  0.91707784 -2.10798206]
+state debug <class 'numpy.ndarray'> 4 [ 0.03818065 -0.08550356  0.24039761 -0.49871736]
+state debug <class 'numpy.ndarray'> 4 [ 0.0654738  -0.14711025  1.12094381 -2.55949051]
+Episode: 834, total numsteps: 5100, return: 4.0
+state debug <class 'numpy.ndarray'> 4 [ 0.0028879   0.00876125 -0.00522959  0.00798153]
+state debug <class 'numpy.ndarray'> 4 [-0.01348241  0.04658324 -0.81094021  1.86380429]
+state debug <class 'numpy.ndarray'> 4 [-0.02580677  0.07381855  0.19028021 -0.46254847]
+state debug <class 'numpy.ndarray'> 4 [-0.03817538  0.10314801 -0.80511462  1.89953777]
+Episode: 835, total numsteps: 5104, return: 4.0
+state debug <class 'numpy.ndarray'> 4 [ 0.00681751 -0.00361888  0.00567605 -0.00349374]
+state debug <class 'numpy.ndarray'> 4 [ 0.01228002 -0.015883    0.26674888 -0.60369981]
+state debug <class 'numpy.ndarray'> 4 [ 0.03578263 -0.06932142  0.9068095  -2.05710497]
+state debug <class 'numpy.ndarray'> 4 [ 0.06627092 -0.13750364  0.62017799 -1.37630814]
+state debug <class 'numpy.ndarray'> 4 [ 0.07138385 -0.14865522 -0.36070318  0.78504172]
+state debug <class 'numpy.ndarray'> 4 [ 0.07697178 -0.16642904  0.63621009 -1.64110411]
+Episode: 836, total numsteps: 5110, return: 6.0
+state debug <class 'numpy.ndarray'> 4 [ 2.53247556e-03 -1.58043616e-06 -5.85902882e-03 -1.40258645e-03]
+state debug <class 'numpy.ndarray'> 4 [ 0.02221797 -0.04603294  0.9872582  -2.27650933]
+state debug <class 'numpy.ndarray'> 4 [ 0.045318   -0.09788977  0.17221604 -0.35595536]
+state debug <class 'numpy.ndarray'> 4 [ 0.06917457 -0.1524792   1.01739952 -2.351428  ]
+Episode: 837, total numsteps: 5114, return: 4.0
+state debug <class 'numpy.ndarray'> 4 [-0.00198311 -0.00841228  0.0075792  -0.00408562]
+state debug <class 'numpy.ndarray'> 4 [-0.02153565  0.03716558 -0.9823882   2.25960565]
+state debug <class 'numpy.ndarray'> 4 [-0.04515735  0.08990072 -0.20300934  0.41562688]
+state debug <class 'numpy.ndarray'> 4 [-0.07031973  0.14692014 -1.05190579  2.41358046]
+Episode: 838, total numsteps: 5118, return: 4.0
+state debug <class 'numpy.ndarray'> 4 [-0.00355495  0.00907505 -0.00204904 -0.00208687]
+state debug <class 'numpy.ndarray'> 4 [ 0.01568441 -0.03543683  0.96132515 -2.20102569]
+state debug <class 'numpy.ndarray'> 4 [ 0.0736493  -0.16685754  1.93255129 -4.35273948]
+Episode: 839, total numsteps: 5121, return: 3.0
+state debug <class 'numpy.ndarray'> 4 [ 0.00682752 -0.00309058  0.00906123 -0.00047888]
+state debug <class 'numpy.ndarray'> 4 [-0.0046109   0.02412132 -0.5793684   1.34738281]
+state debug <class 'numpy.ndarray'> 4 [-0.02151936  0.06269694 -0.26802878  0.59994678]
+state debug <class 'numpy.ndarray'> 4 [-0.04604571  0.11905683 -0.95610873  2.20353068]
+state debug <class 'numpy.ndarray'> 4 [-0.06903023  0.17233105 -0.19778008  0.49920029]
+state debug <class 'numpy.ndarray'> 4 [-0.05825415  0.1524344   0.73445747 -1.47283115]
+state debug <class 'numpy.ndarray'> 4 [-0.04671648  0.13854712 -0.15433164  0.74640867]
+state debug <class 'numpy.ndarray'> 4 [-0.03329537  0.12540511  0.82266808 -1.37778524]
+state debug <class 'numpy.ndarray'> 4 [-0.02068916  0.12051535 -0.18862196  1.09830256]
+state debug <class 'numpy.ndarray'> 4 [-0.02336162  0.15442245  0.05341808  0.61140327]
+state debug <class 'numpy.ndarray'> 4 [-0.00844898  0.1519603   0.69024429 -0.71660088]
+state debug <class 'numpy.ndarray'> 4 [ 0.01825176  0.12885478  0.64553265 -0.44666197]
+state debug <class 'numpy.ndarray'> 4 [ 0.04470253  0.1123455   0.67737657 -0.38287446]
+state debug <class 'numpy.ndarray'> 4 [ 0.05207641  0.14470775 -0.30487363  1.970987  ]
+Episode: 840, total numsteps: 5135, return: 14.0
+state debug <class 'numpy.ndarray'> 4 [-0.00243249 -0.00362675 -0.00379465  0.00949733]
+state debug <class 'numpy.ndarray'> 4 [-0.02242481  0.04253193 -0.99296498  2.27494987]
+state debug <class 'numpy.ndarray'> 4 [-0.04219564  0.08612234 -0.00052716 -0.05175641]
+state debug <class 'numpy.ndarray'> 4 [-0.03691349  0.07348797  0.26409397 -0.57529348]
+state debug <class 'numpy.ndarray'> 4 [-0.0450579   0.09549234 -0.66796921  1.64726651]
+state debug <class 'numpy.ndarray'> 4 [-0.06588846  0.14801119 -0.37583528  0.99947528]
+state debug <class 'numpy.ndarray'> 4 [-0.07059299  0.16615269  0.13834719 -0.07266778]
+Episode: 841, total numsteps: 5142, return: 7.0
+state debug <class 'numpy.ndarray'> 4 [-0.00024811 -0.00865649 -0.00844231  0.00558101]
+state debug <class 'numpy.ndarray'> 4 [ 0.01900711 -0.05381324  0.96829786 -2.23973519]
+state debug <class 'numpy.ndarray'> 4 [ 0.04681898 -0.11699807  0.42592337 -0.95221704]
+state debug <class 'numpy.ndarray'> 4 [ 0.0480736  -0.12005309 -0.36040807  0.77443767]
+state debug <class 'numpy.ndarray'> 4 [ 0.04554817 -0.11926869  0.23187471 -0.71434976]
+state debug <class 'numpy.ndarray'> 4 [ 0.07114807 -0.18662946  1.04469947 -2.63285877]
+Episode: 842, total numsteps: 5148, return: 6.0
+state debug <class 'numpy.ndarray'> 4 [ 0.00797546  0.00919654 -0.00855612 -0.00495563]
+state debug <class 'numpy.ndarray'> 4 [ 0.01422317 -0.00602039  0.32008053 -0.74848146]
+state debug <class 'numpy.ndarray'> 4 [ 0.02773923 -0.03694798  0.35621021 -0.80321801]
+state debug <class 'numpy.ndarray'> 4 [ 0.02960347 -0.04034546 -0.26072075  0.61271599]
+state debug <class 'numpy.ndarray'> 4 [ 0.03893791 -0.06275471  0.72407702 -1.70422202]
+state debug <class 'numpy.ndarray'> 4 [ 0.08752191 -0.17546642  1.70068487 -3.91037976]
+Episode: 843, total numsteps: 5154, return: 6.0
+state debug <class 'numpy.ndarray'> 4 [ 0.00658675  0.00646328  0.0064831  -0.00655766]
+state debug <class 'numpy.ndarray'> 4 [ 0.02538967 -0.03647445  0.93107338 -2.11872599]
+state debug <class 'numpy.ndarray'> 4 [ 0.04635208 -0.08222748  0.12125345 -0.20658266]
+state debug <class 'numpy.ndarray'> 4 [ 0.07073327 -0.13666684  1.09414693 -2.48926022]
+Episode: 844, total numsteps: 5158, return: 4.0
+state debug <class 'numpy.ndarray'> 4 [ 0.00526308  0.0047999   0.00808321 -0.00108357]
+state debug <class 'numpy.ndarray'> 4 [ 0.00375521  0.00910434 -0.08322664  0.21413881]
+state debug <class 'numpy.ndarray'> 4 [ 0.00387558  0.00968761  0.08862274 -0.17932908]
+state debug <class 'numpy.ndarray'> 4 [-0.01045374  0.04417533 -0.80237313  1.88090495]
+state debug <class 'numpy.ndarray'> 4 [-0.06195241  0.16305337 -1.76834218  4.04425366]
+Episode: 845, total numsteps: 5163, return: 5.0
+state debug <class 'numpy.ndarray'> 4 [ 0.00297956 -0.00597305  0.00488751 -0.00966521]
+state debug <class 'numpy.ndarray'> 4 [-0.00076637  0.00267542 -0.19165554  0.43752543]
+state debug <class 'numpy.ndarray'> 4 [-0.00757591  0.01784583 -0.14928522  0.32558348]
+state debug <class 'numpy.ndarray'> 4 [-0.0289562   0.06647502 -0.91756027  2.08930893]
+state debug <class 'numpy.ndarray'> 4 [-0.07220694  0.16427004 -1.24454615  2.80546557]
+Episode: 846, total numsteps: 5168, return: 5.0
+state debug <class 'numpy.ndarray'> 4 [ 0.00714654  0.00346818 -0.00372077 -0.00600262]
+state debug <class 'numpy.ndarray'> 4 [ 0.02568416 -0.03983201  0.92796326 -2.13709526]
+state debug <class 'numpy.ndarray'> 4 [ 0.0746843  -0.15126742  1.52029427 -3.43179801]
+Episode: 847, total numsteps: 5171, return: 3.0
+state debug <class 'numpy.ndarray'> 4 [-0.00056202  0.00482989  0.00855488  0.00927697]
+state debug <class 'numpy.ndarray'> 4 [-0.01650512  0.04292007 -0.80337128  1.87590634]
+state debug <class 'numpy.ndarray'> 4 [-0.05313089  0.12726088 -1.0281806   2.34910257]
+Episode: 848, total numsteps: 5174, return: 3.0
+state debug <class 'numpy.ndarray'> 4 [ 0.00081103 -0.00404682 -0.00750955  0.00455954]
+state debug <class 'numpy.ndarray'> 4 [ 0.02009349 -0.04913918  0.96877278 -2.23572565]
+state debug <class 'numpy.ndarray'> 4 [ 0.05488771 -0.12811487  0.77323265 -1.736243  ]
+Episode: 849, total numsteps: 5177, return: 3.0
+state debug <class 'numpy.ndarray'> 4 [ 0.00191485 -0.00561508  0.00070542 -0.00213714]
+state debug <class 'numpy.ndarray'> 4 [-0.01243898  0.02744794 -0.71641318  1.63855482]
+state debug <class 'numpy.ndarray'> 4 [-0.02766737  0.06092271 -0.04826773  0.06477095]
+state debug <class 'numpy.ndarray'> 4 [-0.04522953  0.10059888 -0.82724742  1.89900437]
+state debug <class 'numpy.ndarray'> 4 [-0.05976588  0.13399668  0.0958953  -0.19024247]
+state debug <class 'numpy.ndarray'> 4 [-0.05652934  0.13039798  0.06626419  0.00693945]
+state debug <class 'numpy.ndarray'> 4 [-0.0658215   0.16037968 -0.52867288  1.47530917]
+Episode: 850, total numsteps: 5184, return: 7.0
+state debug <class 'numpy.ndarray'> 4 [ 0.00588243 -0.00831762 -0.0061716  -0.00639701]
+state debug <class 'numpy.ndarray'> 4 [ 0.02071938 -0.04352377  0.74587144 -1.73606366]
+state debug <class 'numpy.ndarray'> 4 [ 0.06939921 -0.15541452  1.68434207 -3.84099589]
+Episode: 851, total numsteps: 5187, return: 3.0
+state debug <class 'numpy.ndarray'> 4 [-0.00039515 -0.00342228  0.0018517  -0.00028384]
+state debug <class 'numpy.ndarray'> 4 [-0.00901854  0.0166235  -0.43184912  0.99255057]
+state debug <class 'numpy.ndarray'> 4 [-0.02973869  0.06363485 -0.60437011  1.3617615 ]
+state debug <class 'numpy.ndarray'> 4 [-0.0724      0.16045979 -1.52490928  3.45977718]
+Episode: 852, total numsteps: 5191, return: 4.0
+state debug <class 'numpy.ndarray'> 4 [-0.003161    0.0037001   0.00145839 -0.00749726]
+state debug <class 'numpy.ndarray'> 4 [ 1.96627509e-04 -4.11557151e-03  1.65995342e-01 -3.79612869e-01]
+state debug <class 'numpy.ndarray'> 4 [ 0.02110814 -0.0519302   0.87776407 -1.99706147]
+state debug <class 'numpy.ndarray'> 4 [ 0.03768733 -0.08806013 -0.04436827  0.15134563]
+state debug <class 'numpy.ndarray'> 4 [ 0.05165425 -0.1199276   0.7399297  -1.72261984]
+state debug <class 'numpy.ndarray'> 4 [ 0.08404052 -0.19564679  0.87971779 -2.0713392 ]
+Episode: 853, total numsteps: 5197, return: 6.0
+state debug <class 'numpy.ndarray'> 4 [-0.00246541  0.00210227  0.00244366 -0.00080809]
+state debug <class 'numpy.ndarray'> 4 [ 0.00730649 -0.02020551  0.48484954 -1.10345781]
+state debug <class 'numpy.ndarray'> 4 [ 0.04647964 -0.10923129  1.47065455 -3.32891207]
+Episode: 854, total numsteps: 5200, return: 3.0
+state debug <class 'numpy.ndarray'> 4 [-0.00626952  0.00659285  0.00054554  0.00279894]
+state debug <class 'numpy.ndarray'> 4 [ 0.01001578 -0.03071149  0.81147907 -1.84913913]
+state debug <class 'numpy.ndarray'> 4 [ 0.02760007 -0.06906696  0.071416   -0.10190119]
+state debug <class 'numpy.ndarray'> 4 [ 0.04657273 -0.11138018  0.87449141 -1.99305203]
+Episode: 855, total numsteps: 5204, return: 4.0
+state debug <class 'numpy.ndarray'> 4 [ 0.00730734 -0.0090816  -0.00759303  0.00461067]
+state debug <class 'numpy.ndarray'> 4 [ 0.02272815 -0.04535137  0.77637292 -1.79934944]
+state debug <class 'numpy.ndarray'> 4 [ 0.03487721 -0.07275848 -0.16472358  0.39154368]
+state debug <class 'numpy.ndarray'> 4 [ 0.04576606 -0.09903082  0.70609837 -1.6797317 ]
+state debug <class 'numpy.ndarray'> 4 [ 0.08159769 -0.18371568  1.08456803 -2.55444186]
+Episode: 856, total numsteps: 5209, return: 5.0
+state debug <class 'numpy.ndarray'> 4 [-0.00795492 -0.00989405  0.00955336 -0.0090641 ]
+state debug <class 'numpy.ndarray'> 4 [-0.02217043  0.02331905 -0.71833281  1.65279748]
+state debug <class 'numpy.ndarray'> 4 [-0.04426779  0.07294535 -0.38882659  0.85018677]
+state debug <class 'numpy.ndarray'> 4 [-0.06278529  0.11428699 -0.53712008  1.21932123]
+state debug <class 'numpy.ndarray'> 4 [-0.07030373  0.13195675  0.15821546 -0.3096763 ]
+state debug <class 'numpy.ndarray'> 4 [-0.04694237  0.08325043  1.0087345  -2.1135319 ]
+state debug <class 'numpy.ndarray'> 4 [ 0.011632   -0.03969799  1.91885753 -4.03134776]
+state debug <class 'numpy.ndarray'> 4 [ 0.08282545 -0.18488335  1.64410286 -3.26744116]
+Episode: 857, total numsteps: 5217, return: 8.0
+state debug <class 'numpy.ndarray'> 4 [ 0.00721391  0.00961002 -0.00219562  0.002417  ]
+state debug <class 'numpy.ndarray'> 4 [ 0.02503917 -0.03146403  0.8909894  -2.03535443]
+state debug <class 'numpy.ndarray'> 4 [ 0.06401684 -0.11910921  1.05852752 -2.35804169]
+Episode: 858, total numsteps: 5220, return: 3.0
+state debug <class 'numpy.ndarray'> 4 [-0.00772822  0.00993514  0.00789395 -0.00415875]
+state debug <class 'numpy.ndarray'> 4 [ 0.00115674 -0.00980862  0.43522755 -0.97334729]
+state debug <class 'numpy.ndarray'> 4 [ 0.01729712 -0.04500217  0.37272938 -0.79580916]
+state debug <class 'numpy.ndarray'> 4 [ 0.04670449 -0.11026008  1.09549701 -2.45347642]
+Episode: 859, total numsteps: 5224, return: 4.0
+state debug <class 'numpy.ndarray'> 4 [-0.00851276  0.00551747  0.00999031 -0.00704814]
+state debug <class 'numpy.ndarray'> 4 [-0.00396131 -0.00421679  0.21704243 -0.47502778]
+state debug <class 'numpy.ndarray'> 4 [ 0.01176592 -0.03906827  0.56869674 -1.26315274]
+state debug <class 'numpy.ndarray'> 4 [ 0.05389028 -0.13368772  1.53404607 -3.4485517 ]
+Episode: 860, total numsteps: 5228, return: 4.0
+state debug <class 'numpy.ndarray'> 4 [ 0.00788114  0.00723814 -0.00577709 -0.00633605]
+state debug <class 'numpy.ndarray'> 4 [ 0.02703686 -0.03762422  0.96084574 -2.21416656]
+state debug <class 'numpy.ndarray'> 4 [ 0.04676123 -0.08152454  0.03002741 -0.02228472]
+state debug <class 'numpy.ndarray'> 4 [ 0.04231975 -0.07084708 -0.25144222  0.5503821 ]
+state debug <class 'numpy.ndarray'> 4 [ 0.04812092 -0.0871708   0.53870646 -1.34245742]
+state debug <class 'numpy.ndarray'> 4 [ 0.06542059 -0.13133236  0.32797526 -0.8815233 ]
+state debug <class 'numpy.ndarray'> 4 [ 0.06178271 -0.12971775 -0.50711764  0.93724976]
+state debug <class 'numpy.ndarray'> 4 [ 0.04687922 -0.10780888 -0.23945172  0.17248506]
+state debug <class 'numpy.ndarray'> 4 [ 0.02296596 -0.07005155 -0.95495068  1.70324243]
+state debug <class 'numpy.ndarray'> 4 [-0.0221512   0.01112579 -1.30127212  2.36241102]
+state debug <class 'numpy.ndarray'> 4 [-0.08298152  0.12377626 -1.73961556  3.27510565]
+Episode: 861, total numsteps: 5239, return: 11.0
+state debug <class 'numpy.ndarray'> 4 [-0.00598315 -0.00438558 -0.00158425 -0.00584779]
+state debug <class 'numpy.ndarray'> 4 [ 0.00349515 -0.0267011   0.47420043 -1.09888724]
+state debug <class 'numpy.ndarray'> 4 [ 0.03043118 -0.08841375  0.87202961 -1.98513184]
+state debug <class 'numpy.ndarray'> 4 [ 0.05047683 -0.13336722  0.13435855 -0.29799387]
+state debug <class 'numpy.ndarray'> 4 [ 0.06123374 -0.15968668  0.40268555 -1.01229164]
+state debug <class 'numpy.ndarray'> 4 [ 0.06056645 -0.16381623 -0.43311045  0.77952263]
+state debug <class 'numpy.ndarray'> 4 [ 0.02908346 -0.10398416 -1.14080356  2.20801709]
+state debug <class 'numpy.ndarray'> 4 [ 0.00093631 -0.05994236 -0.27004755  0.03051858]
+state debug <class 'numpy.ndarray'> 4 [-0.02696331 -0.02036961 -1.1229549   1.93034585]
+state debug <class 'numpy.ndarray'> 4 [-0.09037762  0.09730717 -2.04523401  3.9431378 ]
+Episode: 862, total numsteps: 5249, return: 10.0
+state debug <class 'numpy.ndarray'> 4 [-0.00358256  0.00146894  0.00193971  0.00998629]
+state debug <class 'numpy.ndarray'> 4 [ 0.0154539  -0.0418726   0.94717616 -2.15461367]
+state debug <class 'numpy.ndarray'> 4 [ 0.06514583 -0.15384712  1.5356565  -3.44130949]
+Episode: 863, total numsteps: 5252, return: 3.0
+state debug <class 'numpy.ndarray'> 4 [-0.00694897  0.00793634 -0.00515387 -0.0058697 ]
+state debug <class 'numpy.ndarray'> 4 [-0.0137235   0.02305145 -0.33266898  0.75389161]
+state debug <class 'numpy.ndarray'> 4 [-0.04230622  0.08816352 -1.09434761  2.48764351]
+state debug <class 'numpy.ndarray'> 4 [-0.07570306  0.16304801 -0.57947798  1.29166   ]
+Episode: 864, total numsteps: 5256, return: 4.0
+state debug <class 'numpy.ndarray'> 4 [0.00772024 0.0014401  0.00393873 0.00795048]
+state debug <class 'numpy.ndarray'> 4 [ 0.02519555 -0.03819137  0.86738365 -1.9691338 ]
+state debug <class 'numpy.ndarray'> 4 [ 0.04492899 -0.08117979  0.12315027 -0.21494995]
+state debug <class 'numpy.ndarray'> 4 [ 0.05990554 -0.11413227  0.62412645 -1.42093652]
+state debug <class 'numpy.ndarray'> 4 [ 0.07162529 -0.14125525 -0.03496097  0.03718665]
+state debug <class 'numpy.ndarray'> 4 [ 0.0866808  -0.17992461  0.7844328  -1.94629865]
+Episode: 865, total numsteps: 5262, return: 6.0
+state debug <class 'numpy.ndarray'> 4 [ 0.0052996   0.00508893 -0.00325178 -0.00364221]
+state debug <class 'numpy.ndarray'> 4 [ 0.01380987 -0.01488738  0.42761642 -0.98532842]
+state debug <class 'numpy.ndarray'> 4 [ 0.01188815 -0.00963226 -0.52039987  1.21824313]
+state debug <class 'numpy.ndarray'> 4 [ 0.00447625  0.00679453  0.14703294 -0.37131878]
+state debug <class 'numpy.ndarray'> 4 [ 0.02762066 -0.04740981  1.00795787 -2.32142831]
+state debug <class 'numpy.ndarray'> 4 [ 0.07381285 -0.15232967  1.30155412 -2.93284858]
+Episode: 866, total numsteps: 5268, return: 6.0
+state debug <class 'numpy.ndarray'> 4 [ 2.34729492e-05 -2.24129343e-03 -6.17298026e-03  4.61286147e-03]
+state debug <class 'numpy.ndarray'> 4 [ 0.00768647 -0.02034134  0.38825138 -0.90044341]
+state debug <class 'numpy.ndarray'> 4 [ 0.00574478 -0.01546758 -0.48231638  1.11683948]
+state debug <class 'numpy.ndarray'> 4 [-0.00263503  0.00265116  0.06097307 -0.18901595]
+state debug <class 'numpy.ndarray'> 4 [-0.01460243  0.02862833 -0.65720265  1.46948279]
+state debug <class 'numpy.ndarray'> 4 [-0.03375909  0.07005716 -0.30284671  0.62262691]
+state debug <class 'numpy.ndarray'> 4 [-0.0571118   0.12151196 -0.86312919  1.93933335]
+state debug <class 'numpy.ndarray'> 4 [-0.07992537  0.17263341 -0.28125224  0.64828695]
+Episode: 867, total numsteps: 5276, return: 8.0
+state debug <class 'numpy.ndarray'> 4 [0.00548354 0.00827872 0.00304436 0.00026779]
+state debug <class 'numpy.ndarray'> 4 [-0.00687412  0.03728998 -0.61916494  1.43552983]
+state debug <class 'numpy.ndarray'> 4 [-0.03641414  0.10500756 -0.85794595  1.95512494]
+Episode: 868, total numsteps: 5279, return: 3.0
+state debug <class 'numpy.ndarray'> 4 [-0.0028218  -0.00194929  0.00645506  0.00466653]
+state debug <class 'numpy.ndarray'> 4 [ 0.01512176 -0.04261849  0.88819662 -2.01717214]
+state debug <class 'numpy.ndarray'> 4 [ 0.06914733 -0.16464937  1.80914901 -4.06818189]
+Episode: 869, total numsteps: 5282, return: 3.0
+state debug <class 'numpy.ndarray'> 4 [-0.00794605  0.00185589  0.00787371  0.00688996]
+state debug <class 'numpy.ndarray'> 4 [-0.02181816  0.03495485 -0.69948996  1.63141595]
+state debug <class 'numpy.ndarray'> 4 [-0.05177804  0.10383381 -0.79926883  1.8227017 ]
+state debug <class 'numpy.ndarray'> 4 [-0.06457535  0.13290199  0.15491127 -0.33065117]
+state debug <class 'numpy.ndarray'> 4 [-0.06670546  0.14149366 -0.25985475  0.74650989]
+state debug <class 'numpy.ndarray'> 4 [-0.06534129  0.14634611  0.32598601 -0.4853489 ]
+state debug <class 'numpy.ndarray'> 4 [-0.05343471  0.13267429  0.26995346 -0.20462129]
+state debug <class 'numpy.ndarray'> 4 [-0.03786501  0.11619165  0.50825342 -0.61727805]
+state debug <class 'numpy.ndarray'> 4 [-0.01240576  0.08246321  0.76474229 -1.07001274]
+state debug <class 'numpy.ndarray'> 4 [ 0.03043107  0.01401613  1.37661898 -2.34926847]
+state debug <class 'numpy.ndarray'> 4 [ 0.09908079 -0.10871623  2.05432372 -3.78620973]
+Episode: 870, total numsteps: 5293, return: 11.0
+state debug <class 'numpy.ndarray'> 4 [-0.00242109  0.00648116  0.00687993  0.00239459]
+state debug <class 'numpy.ndarray'> 4 [ 0.00891256 -0.01881935  0.55831843 -1.2547331 ]
+state debug <class 'numpy.ndarray'> 4 [ 0.03939107 -0.08688368  0.96509636 -2.1479023 ]
+state debug <class 'numpy.ndarray'> 4 [ 0.06079052 -0.13271947  0.10954337 -0.18392129]
+state debug <class 'numpy.ndarray'> 4 [ 0.05233764 -0.11286587 -0.5307397   1.16286271]
+state debug <class 'numpy.ndarray'> 4 [ 0.05076678 -0.11466994  0.44855578 -1.21996863]
+state debug <class 'numpy.ndarray'> 4 [ 0.05119566 -0.12416355 -0.4237566   0.71549623]
+state debug <class 'numpy.ndarray'> 4 [ 0.02506102 -0.07737981 -0.88275172  1.62174126]
+state debug <class 'numpy.ndarray'> 4 [-0.02043119  0.0080052  -1.39180739  2.65039216]
+state debug <class 'numpy.ndarray'> 4 [-0.05804643  0.06991523 -0.49381072  0.4894601 ]
+state debug <class 'numpy.ndarray'> 4 [-0.09201814  0.12303294 -1.20243967  2.15040917]
+Episode: 871, total numsteps: 5304, return: 11.0
+state debug <class 'numpy.ndarray'> 4 [ 0.00753669 -0.00708172  0.00874115  0.00695058]
+state debug <class 'numpy.ndarray'> 4 [ 0.0130126  -0.01874867  0.26435564 -0.58428832]
+state debug <class 'numpy.ndarray'> 4 [ 0.04264008 -0.08583517  1.21418196 -2.74998338]
+state debug <class 'numpy.ndarray'> 4 [ 0.07670663 -0.16138265  0.49422039 -1.07085604]
+Episode: 872, total numsteps: 5308, return: 4.0
+state debug <class 'numpy.ndarray'> 4 [-1.91845254e-03  5.98660581e-03  6.14664490e-05  5.82132421e-03]
+state debug <class 'numpy.ndarray'> 4 [-0.00887952  0.02243542 -0.34716838  0.8085415 ]
+state debug <class 'numpy.ndarray'> 4 [-0.02921995  0.06931295 -0.66943962  1.53374328]
+state debug <class 'numpy.ndarray'> 4 [-0.06587115  0.15313439 -1.16179698  2.65360034]
+Episode: 873, total numsteps: 5312, return: 4.0
+state debug <class 'numpy.ndarray'> 4 [-0.00349055  0.00312122 -0.00860302  0.00961877]
+state debug <class 'numpy.ndarray'> 4 [-0.00661748  0.01001075 -0.147376    0.33169937]
+state debug <class 'numpy.ndarray'> 4 [-0.01082252  0.01926087 -0.06336099  0.13541435]
+state debug <class 'numpy.ndarray'> 4 [-0.01919582  0.03840535 -0.35458422  0.81591752]
+state debug <class 'numpy.ndarray'> 4 [-0.03549816  0.07585227 -0.46080314  1.06017632]
+state debug <class 'numpy.ndarray'> 4 [-0.06809147  0.15116738 -1.16638839  2.69199553]
+Episode: 874, total numsteps: 5318, return: 6.0
+state debug <class 'numpy.ndarray'> 4 [0.00428424 0.00811952 0.00316012 0.00360503]
+state debug <class 'numpy.ndarray'> 4 [ 0.00720483  0.00198399  0.14250385 -0.30723568]
+state debug <class 'numpy.ndarray'> 4 [ 0.02574247 -0.03958652  0.78280183 -1.75872451]
+state debug <class 'numpy.ndarray'> 4 [ 0.04046099 -0.07062344 -0.04303759  0.17245597]
+state debug <class 'numpy.ndarray'> 4 [ 0.05095735 -0.09329117  0.56582066 -1.28892699]
+state debug <class 'numpy.ndarray'> 4 [ 0.07788035 -0.15508353  0.78027146 -1.80399397]
+state debug <class 'numpy.ndarray'> 4 [ 0.09449377 -0.19501619  0.0544499  -0.22644364]
+Episode: 875, total numsteps: 5325, return: 7.0
+state debug <class 'numpy.ndarray'> 4 [ 0.00801546  0.00992164 -0.00255985 -0.00407705]
+state debug <class 'numpy.ndarray'> 4 [ 0.02391956 -0.02699668  0.79558932 -1.82343518]
+state debug <class 'numpy.ndarray'> 4 [ 0.05610436 -0.09943075  0.81484802 -1.81226817]
+state debug <class 'numpy.ndarray'> 4 [ 0.07548499 -0.14159538  0.157861   -0.32772551]
+state debug <class 'numpy.ndarray'> 4 [ 0.08171561 -0.1567175   0.15380938 -0.42994455]
+state debug <class 'numpy.ndarray'> 4 [ 0.09106311 -0.18357227  0.31318333 -0.91069616]
+Episode: 876, total numsteps: 5331, return: 6.0
+state debug <class 'numpy.ndarray'> 4 [ 0.00503487 -0.00036541  0.00999007  0.00124562]
+state debug <class 'numpy.ndarray'> 4 [-0.00706948  0.02858659 -0.61347998  1.43177216]
+state debug <class 'numpy.ndarray'> 4 [-0.02307282  0.06530216 -0.18907223  0.4260071 ]
+state debug <class 'numpy.ndarray'> 4 [-0.03547118  0.09427302 -0.43036547  1.01945667]
+state debug <class 'numpy.ndarray'> 4 [-0.04475517  0.11756974 -0.03578588  0.16279904]
+state debug <class 'numpy.ndarray'> 4 [-0.04650583  0.12680921 -0.0517262   0.29910995]
+state debug <class 'numpy.ndarray'> 4 [-0.0326108   0.1042245   0.74463183 -1.41055309]
+state debug <class 'numpy.ndarray'> 4 [-0.01472185  0.07846778  0.15229724  0.09781313]
+state debug <class 'numpy.ndarray'> 4 [-0.0177884   0.1048112  -0.30419569  1.20806633]
+state debug <class 'numpy.ndarray'> 4 [-0.02640546  0.14572852 -0.12811655  0.85150492]
+state debug <class 'numpy.ndarray'> 4 [-0.03393848  0.18710111 -0.24853337  1.21924054]
+Episode: 877, total numsteps: 5342, return: 11.0
+state debug <class 'numpy.ndarray'> 4 [-0.00783178 -0.00912078  0.00500236 -0.0030814 ]
+state debug <class 'numpy.ndarray'> 4 [-0.00437163 -0.0169057   0.16756517 -0.38237683]
+state debug <class 'numpy.ndarray'> 4 [ 0.00317495 -0.03404951  0.20994258 -0.47687682]
+state debug <class 'numpy.ndarray'> 4 [ 0.01379204 -0.05836402  0.320944   -0.73987558]
+state debug <class 'numpy.ndarray'> 4 [ 0.01106296 -0.05236843 -0.45483452  1.01639963]
+state debug <class 'numpy.ndarray'> 4 [ 0.00615607 -0.04429201  0.20691631 -0.58869042]
+state debug <class 'numpy.ndarray'> 4 [-5.31710783e-04 -3.35031493e-02 -5.38937555e-01  1.10672494e+00]
+state debug <class 'numpy.ndarray'> 4 [-0.0189009   0.00173668 -0.38082548  0.66827599]
+state debug <class 'numpy.ndarray'> 4 [-0.03091246  0.02043134 -0.2207221   0.27570715]
+state debug <class 'numpy.ndarray'> 4 [-0.0432493   0.03968813 -0.39583423  0.68511952]
+state debug <class 'numpy.ndarray'> 4 [-0.04733055  0.04005217  0.1896924  -0.64811056]
+state debug <class 'numpy.ndarray'> 4 [-0.03403755  0.00235091  0.47477434 -1.23629634]
+state debug <class 'numpy.ndarray'> 4 [-0.01543298 -0.04491867  0.45645861 -1.1378358 ]
+state debug <class 'numpy.ndarray'> 4 [-0.01108821 -0.0580043  -0.23640817  0.45816097]
+state debug <class 'numpy.ndarray'> 4 [-0.01199155 -0.0608762   0.1896783  -0.58762466]
+state debug <class 'numpy.ndarray'> 4 [ 9.27945498e-04 -9.71614192e-02  4.55841923e-01 -1.22422107e+00]
+state debug <class 'numpy.ndarray'> 4 [ 0.03324927 -0.17896032  1.15749057 -2.85189067]
+Episode: 878, total numsteps: 5359, return: 17.0
+state debug <class 'numpy.ndarray'> 4 [-0.00446141  0.00351474 -0.00517363 -0.00251882]
+state debug <class 'numpy.ndarray'> 4 [ 5.34359476e-04 -8.50642995e-03  2.54275594e-01 -5.92636680e-01]
+state debug <class 'numpy.ndarray'> 4 [ 0.0114675  -0.03351252  0.29274215 -0.6616329 ]
+state debug <class 'numpy.ndarray'> 4 [ 0.02810124 -0.07126606  0.53868027 -1.22517532]
+state debug <class 'numpy.ndarray'> 4 [ 0.03759445 -0.09257786 -0.06131102  0.1354144 ]
+state debug <class 'numpy.ndarray'> 4 [ 0.02272782 -0.06037015 -0.6808209   1.46388259]
+state debug <class 'numpy.ndarray'> 4 [ 0.00557559 -0.02758031 -0.17919565  0.19918995]
+state debug <class 'numpy.ndarray'> 4 [-0.00158811 -0.02028802 -0.17917178  0.16730521]
+state debug <class 'numpy.ndarray'> 4 [-0.00882302 -0.01394091 -0.18271506  0.15152188]
+state debug <class 'numpy.ndarray'> 4 [-0.02566084  0.01375749 -0.65802809  1.22380675]
+state debug <class 'numpy.ndarray'> 4 [-0.06031654  0.08102115 -1.0742116   2.13838676]
+state debug <class 'numpy.ndarray'> 4 [-0.09215673  0.14039241 -0.52149402  0.86260659]
+state debug <class 'numpy.ndarray'> 4 [-0.09807765  0.14248576  0.22289645 -0.73498865]
+state debug <class 'numpy.ndarray'> 4 [-0.08073951  0.09713164  0.64394602 -1.53211041]
+state debug <class 'numpy.ndarray'> 4 [-0.07233029  0.07906734 -0.2201726   0.59674978]
+state debug <class 'numpy.ndarray'> 4 [-0.06995676  0.07807979  0.33696859 -0.62914327]
+state debug <class 'numpy.ndarray'> 4 [-0.06410933  0.07255487 -0.04305126  0.33842521]
+state debug <class 'numpy.ndarray'> 4 [-0.0537082   0.05917861  0.56139416 -0.99166124]
+state debug <class 'numpy.ndarray'> 4 [-0.03863008  0.03860903  0.19425528 -0.05367993]
+state debug <class 'numpy.ndarray'> 4 [-0.039427    0.05701388 -0.23280882  0.96299256]
+state debug <class 'numpy.ndarray'> 4 [-0.05206036  0.10329789 -0.39896969  1.35424136]
+state debug <class 'numpy.ndarray'> 4 [-0.06480705  0.15066778 -0.23988655  1.02878383]
+state debug <class 'numpy.ndarray'> 4 [-0.05858736  0.15749476  0.54798229 -0.66178556]
+state debug <class 'numpy.ndarray'> 4 [-0.0358026   0.1325732   0.59177607 -0.59009934]
+state debug <class 'numpy.ndarray'> 4 [-0.01873376  0.12709873  0.26305457  0.30310488]
+state debug <class 'numpy.ndarray'> 4 [ 0.00613044  0.10839551  0.97842743 -1.22187021]
+state debug <class 'numpy.ndarray'> 4 [ 0.04845899  0.05537702  1.13866432 -1.43677193]
+state debug <class 'numpy.ndarray'> 4 [0.07884429 0.03533779 0.38367095 0.40561856]
+state debug <class 'numpy.ndarray'> 4 [ 0.10083915  0.03649081  0.71489063 -0.3372826 ]
+state debug <class 'numpy.ndarray'> 4 [ 0.13486688  0.01148284  0.98610191 -0.91014521]
+state debug <class 'numpy.ndarray'> 4 [0.16152363 0.005746   0.34917383 0.60098425]
+state debug <class 'numpy.ndarray'> 4 [ 0.18603488  0.00497511  0.8745087  -0.62250496]
+state debug <class 'numpy.ndarray'> 4 [ 0.21507376 -0.00546872  0.57873225  0.08826775]
+state debug <class 'numpy.ndarray'> 4 [0.22944442 0.01818229 0.14091503 1.08490753]
+state debug <class 'numpy.ndarray'> 4 [ 0.22181871  0.09147478 -0.52058032  2.57068442]
+state debug <class 'numpy.ndarray'> 4 [ 0.20088857  0.19369737 -0.52731404  2.55929079]
+Episode: 879, total numsteps: 5395, return: 36.0
+state debug <class 'numpy.ndarray'> 4 [-0.00241867  0.00559568  0.004395    0.00841357]
+state debug <class 'numpy.ndarray'> 4 [ 0.00597683 -0.01292949  0.41428103 -0.92522492]
+state debug <class 'numpy.ndarray'> 4 [ 0.01501621 -0.0318391   0.03945226 -0.03661059]
+state debug <class 'numpy.ndarray'> 4 [ 0.02705656 -0.05796437  0.56105848 -1.25721134]
+state debug <class 'numpy.ndarray'> 4 [ 0.0414238  -0.08942944  0.15949394 -0.33594366]
+state debug <class 'numpy.ndarray'> 4 [ 0.03548118 -0.07577319 -0.45492561  1.0032154 ]
+state debug <class 'numpy.ndarray'> 4 [ 0.0208552  -0.04620656 -0.27762953  0.48784021]
+state debug <class 'numpy.ndarray'> 4 [ 0.01159484 -0.03223817 -0.18605116  0.21707833]
+state debug <class 'numpy.ndarray'> 4 [ 0.01548026 -0.05047254  0.37853585 -1.11341243]
+state debug <class 'numpy.ndarray'> 4 [ 0.01440376 -0.05739974 -0.42929857  0.73941312]
+state debug <class 'numpy.ndarray'> 4 [-0.01137301 -0.00970544 -0.859103    1.64247748]
+state debug <class 'numpy.ndarray'> 4 [-0.02771365  0.01260376  0.03833302 -0.49254299]
+state debug <class 'numpy.ndarray'> 4 [-0.03205772  0.00722011 -0.25434937  0.21241696]
+state debug <class 'numpy.ndarray'> 4 [-0.05176024  0.03767416 -0.72959456  1.3007411 ]
+state debug <class 'numpy.ndarray'> 4 [-0.08613692  0.10110798 -0.98921293  1.87419582]
+state debug <class 'numpy.ndarray'> 4 [-0.12243449  0.16859351 -0.82760472  1.5191429 ]
+Episode: 880, total numsteps: 5411, return: 16.0
+state debug <class 'numpy.ndarray'> 4 [-0.00441525  0.00992215  0.00083996 -0.00274995]
+state debug <class 'numpy.ndarray'> 4 [-0.01579966  0.03639377 -0.56845132  1.31280138]
+state debug <class 'numpy.ndarray'> 4 [-0.02529693  0.05775967  0.09067639 -0.21818765]
+state debug <class 'numpy.ndarray'> 4 [-0.02314377  0.05372234  0.017397    0.01233518]
+state debug <class 'numpy.ndarray'> 4 [-0.01435727  0.03654587  0.42094857 -0.86252884]
+state debug <class 'numpy.ndarray'> 4 [-0.01264319  0.03849952 -0.33249822  0.93534014]
+state debug <class 'numpy.ndarray'> 4 [-0.0162707   0.05340623  0.14905477 -0.17121493]
+state debug <class 'numpy.ndarray'> 4 [-0.01615064  0.06119715 -0.14206698  0.55207164]
+state debug <class 'numpy.ndarray'> 4 [-0.02081177  0.08152129 -0.09152318  0.46939099]
+state debug <class 'numpy.ndarray'> 4 [-0.01827425  0.08707844  0.21724684 -0.18116089]
+state debug <class 'numpy.ndarray'> 4 [-0.02553074  0.11828916 -0.57723039  1.71907915]
+Episode: 881, total numsteps: 5422, return: 11.0
+state debug <class 'numpy.ndarray'> 4 [ 0.00882237 -0.00645681  0.00921815 -0.00956148]
+state debug <class 'numpy.ndarray'> 4 [ 0.01207579 -0.01357946  0.1530716  -0.343295  ]
+state debug <class 'numpy.ndarray'> 4 [ 0.01211044 -0.01312846 -0.15026296  0.3561117 ]
+state debug <class 'numpy.ndarray'> 4 [ 0.00789297 -0.00358367 -0.0611444   0.12623825]
+state debug <class 'numpy.ndarray'> 4 [ 0.01044605 -0.01023918  0.18802867 -0.45220861]
+state debug <class 'numpy.ndarray'> 4 [ 0.00926804 -0.00794623 -0.24541632  0.5531996 ]
+state debug <class 'numpy.ndarray'> 4 [ 0.00854686 -0.00748473  0.20769671 -0.5150403 ]
+state debug <class 'numpy.ndarray'> 4 [ 0.01769554 -0.02962664  0.25002845 -0.595301  ]
+state debug <class 'numpy.ndarray'> 4 [ 0.0200434  -0.03569192 -0.131148    0.27849408]
+state debug <class 'numpy.ndarray'> 4 [ 0.01951133 -0.03632507  0.10366475 -0.30214113]
+state debug <class 'numpy.ndarray'> 4 [ 0.02155545 -0.04388871 -0.00095901 -0.08069115]
+state debug <class 'numpy.ndarray'> 4 [ 0.02119194 -0.04705173 -0.01714288 -0.07814541]
+state debug <class 'numpy.ndarray'> 4 [ 0.01932231 -0.04819138 -0.0761557   0.01954113]
+state debug <class 'numpy.ndarray'> 4 [ 0.01490643 -0.04511182 -0.14451196  0.13343237]
+state debug <class 'numpy.ndarray'> 4 [-1.22833645e-03 -1.67949640e-02 -6.61064628e-01  1.27236557e+00]
+state debug <class 'numpy.ndarray'> 4 [-0.00870165 -0.0112399   0.2838496  -0.96219305]
+state debug <class 'numpy.ndarray'> 4 [-0.00815274 -0.02400137 -0.25417809  0.30371277]
+state debug <class 'numpy.ndarray'> 4 [-0.0088349  -0.03445906  0.21851958 -0.81289771]
+state debug <class 'numpy.ndarray'> 4 [-0.01722832 -0.0272206  -0.63532207  1.14887239]
+state debug <class 'numpy.ndarray'> 4 [-0.04236638  0.01650542 -0.62252204  1.04741389]
+state debug <class 'numpy.ndarray'> 4 [-0.07787396  0.08218009 -1.15179899  2.23094041]
+state debug <class 'numpy.ndarray'> 4 [-0.11057404  0.14003623 -0.48740132  0.69816782]
+state debug <class 'numpy.ndarray'> 4 [-0.12106986  0.14927325 -0.03910256 -0.22113241]
+state debug <class 'numpy.ndarray'> 4 [-0.13409655  0.16953731 -0.61006415  1.21670642]
+Episode: 882, total numsteps: 5446, return: 24.0
+state debug <class 'numpy.ndarray'> 4 [-0.0068077   0.00082047 -0.00458872  0.00458396]
+state debug <class 'numpy.ndarray'> 4 [-0.01435864  0.01806082 -0.37196537  0.84894291]
+state debug <class 'numpy.ndarray'> 4 [-0.03384377  0.06217386 -0.60222422  1.35786908]
+state debug <class 'numpy.ndarray'> 4 [-0.04789552  0.09319566 -0.10294629  0.21638743]
+state debug <class 'numpy.ndarray'> 4 [-0.04429619  0.08561082  0.28184744 -0.58605774]
+state debug <class 'numpy.ndarray'> 4 [-0.0411908   0.08312792 -0.12497647  0.44706848]
+state debug <class 'numpy.ndarray'> 4 [-0.03514061  0.07668053  0.42579217 -0.75408384]
+state debug <class 'numpy.ndarray'> 4 [-0.02394516  0.06212479  0.13535683  0.01297501]
+state debug <class 'numpy.ndarray'> 4 [-0.01881277  0.0644363   0.12134291  0.10184123]
+state debug <class 'numpy.ndarray'> 4 [-0.00882802  0.05778126  0.3772067  -0.42852701]
+state debug <class 'numpy.ndarray'> 4 [0.00086451 0.05458224 0.10851836 0.25838181]
+state debug <class 'numpy.ndarray'> 4 [ 0.00163367  0.07391595 -0.06969869  0.70567998]
+state debug <class 'numpy.ndarray'> 4 [ 0.00919133  0.07899988  0.4456725  -0.43429509]
+state debug <class 'numpy.ndarray'> 4 [ 0.02520564  0.06769105  0.35567737 -0.13742416]
+state debug <class 'numpy.ndarray'> 4 [ 0.0258104   0.09496499 -0.32315953  1.4825279 ]
+state debug <class 'numpy.ndarray'> 4 [ 0.00330227  0.17652047 -0.80078046  2.59066089]
+Episode: 883, total numsteps: 5462, return: 16.0
+state debug <class 'numpy.ndarray'> 4 [ 0.00184445 -0.00499394 -0.0009861  -0.00969522]
+state debug <class 'numpy.ndarray'> 4 [ 0.01257111 -0.03029835  0.5358444  -1.2430475 ]
+state debug <class 'numpy.ndarray'> 4 [ 0.02546773 -0.05961457  0.11119134 -0.24305966]
+state debug <class 'numpy.ndarray'> 4 [ 0.02030441 -0.04798549 -0.36798957  0.81223053]
+state debug <class 'numpy.ndarray'> 4 [ 0.00973236 -0.02670818 -0.16181841  0.26338365]
+state debug <class 'numpy.ndarray'> 4 [ 0.0064992  -0.02436662 -0.00050139 -0.14019647]
+state debug <class 'numpy.ndarray'> 4 [ 0.00511616 -0.02710067 -0.0683744   0.00095467]
+state debug <class 'numpy.ndarray'> 4 [-0.00898356 -0.00128101 -0.63515014  1.27737237]
+state debug <class 'numpy.ndarray'> 4 [-0.02220468  0.02042235 -0.02858198 -0.16748189]
+state debug <class 'numpy.ndarray'> 4 [-0.03305885  0.0367115  -0.51263508  0.96903004]
+state debug <class 'numpy.ndarray'> 4 [-0.04555329  0.05673261 -0.11396958  0.04923958]
+state debug <class 'numpy.ndarray'> 4 [-0.06044719  0.08353485 -0.62914418  1.27811543]
+state debug <class 'numpy.ndarray'> 4 [-0.08839166  0.1413253  -0.7683771   1.61704353]
+state debug <class 'numpy.ndarray'> 4 [-0.11059098  0.1875365  -0.3443744   0.71760631]
+state debug <class 'numpy.ndarray'> 4 [-0.11059113  0.18772235  0.34219042 -0.68863442]
+state debug <class 'numpy.ndarray'> 4 [-0.11133948  0.1970338  -0.37680521  1.12972598]
+Episode: 884, total numsteps: 5478, return: 16.0
+state debug <class 'numpy.ndarray'> 4 [ 0.00811728 -0.00897846 -0.00362451  0.00812987]
+state debug <class 'numpy.ndarray'> 4 [-6.78570881e-05  9.77659040e-03 -4.04570663e-01  9.20518517e-01]
+state debug <class 'numpy.ndarray'> 4 [-0.004593    0.01897747  0.17601346 -0.4394732 ]
+state debug <class 'numpy.ndarray'> 4 [ 0.01303011 -0.02223527  0.70407329 -1.61280009]
+state debug <class 'numpy.ndarray'> 4 [ 0.03203565 -0.06439787  0.24882341 -0.5196506 ]
+state debug <class 'numpy.ndarray'> 4 [ 0.03110855 -0.06073253 -0.29339416  0.68679727]
+state debug <class 'numpy.ndarray'> 4 [ 0.02295625 -0.04327277 -0.11526073  0.19635282]
+state debug <class 'numpy.ndarray'> 4 [ 0.00900366 -0.01480197 -0.58137802  1.21875116]
+state debug <class 'numpy.ndarray'> 4 [-0.012242    0.02786913 -0.48213508  0.92729722]
+state debug <class 'numpy.ndarray'> 4 [-0.03467277  0.07184111 -0.63959802  1.27475506]
+state debug <class 'numpy.ndarray'> 4 [-0.06609156  0.13632373 -0.9310072   1.9506507 ]
+Episode: 885, total numsteps: 5489, return: 11.0
+state debug <class 'numpy.ndarray'> 4 [0.00036032 0.0009007  0.00299056 0.00398892]
+state debug <class 'numpy.ndarray'> 4 [-0.0065568   0.01735558 -0.34789833  0.81064483]
+state debug <class 'numpy.ndarray'> 4 [-0.02641658  0.06304898 -0.6447839   1.47321235]
+state debug <class 'numpy.ndarray'> 4 [-0.0340298   0.07983832  0.26037793 -0.60037831]
+state debug <class 'numpy.ndarray'> 4 [-0.03273817  0.07889998 -0.19404921  0.5374029 ]
+state debug <class 'numpy.ndarray'> 4 [-0.02652174  0.06914911  0.50275495 -1.00564665]
+state debug <class 'numpy.ndarray'> 4 [-0.0203285   0.06327623 -0.19043927  0.68737083]
+state debug <class 'numpy.ndarray'> 4 [-0.01380761  0.05869158  0.51415148 -0.89546021]
+state debug <class 'numpy.ndarray'> 4 [ 0.00035284  0.03962403  0.19542304 -0.07292558]
+state debug <class 'numpy.ndarray'> 4 [0.00728172 0.0395765  0.15123161 0.06857555]
+state debug <class 'numpy.ndarray'> 4 [ 0.00662894  0.0584636  -0.18293622  0.86804847]
+state debug <class 'numpy.ndarray'> 4 [ 0.01183659  0.06455521  0.44096622 -0.54225309]
+state debug <class 'numpy.ndarray'> 4 [ 0.0139166   0.08045794 -0.33423567  1.31377787]
+state debug <class 'numpy.ndarray'> 4 [ 0.01863534  0.09160288  0.56663519 -0.72498808]
+state debug <class 'numpy.ndarray'> 4 [ 0.04989765  0.04521495  0.99619622 -1.59238952]
+state debug <class 'numpy.ndarray'> 4 [0.07467077 0.01873633 0.24564289 0.23810953]
+state debug <class 'numpy.ndarray'> 4 [ 0.09084483  0.01373641  0.56204612 -0.47904576]
+state debug <class 'numpy.ndarray'> 4 [ 0.09628099  0.03469117 -0.28748179  1.50275923]
+state debug <class 'numpy.ndarray'> 4 [ 0.10147174  0.05548003  0.54347115 -0.43134264]
+state debug <class 'numpy.ndarray'> 4 [ 0.11128051  0.06719794 -0.05097105  0.99915422]
+state debug <class 'numpy.ndarray'> 4 [ 0.10202524  0.12403321 -0.41110172  1.84017212]
+state debug <class 'numpy.ndarray'> 4 [0.09978518 0.16563582 0.29513903 0.27348519]
+Episode: 886, total numsteps: 5511, return: 22.0
+state debug <class 'numpy.ndarray'> 4 [-0.00354768 -0.00763262  0.00239621 -0.00059812]
+state debug <class 'numpy.ndarray'> 4 [-0.008502    0.00390036 -0.24944499  0.57150221]
+state debug <class 'numpy.ndarray'> 4 [-0.02830498  0.04898798 -0.73969156  1.6757158 ]
+state debug <class 'numpy.ndarray'> 4 [-0.0422122   0.07914884  0.04066234 -0.13498306]
+state debug <class 'numpy.ndarray'> 4 [-0.03869416  0.07099035  0.13517253 -0.27262532]
+state debug <class 'numpy.ndarray'> 4 [-0.03256504  0.06000559  0.17146781 -0.2786763 ]
+state debug <class 'numpy.ndarray'> 4 [-0.0350953   0.07189464 -0.29638728  0.85923561]
+state debug <class 'numpy.ndarray'> 4 [-0.03294785  0.07450969  0.40125418 -0.70588039]
+state debug <class 'numpy.ndarray'> 4 [-0.01767767  0.0501467   0.36295963 -0.51957369]
+state debug <class 'numpy.ndarray'> 4 [-0.00800048  0.04198363  0.12198359  0.10120235]
+state debug <class 'numpy.ndarray'> 4 [ 0.01014129  0.01611522  0.78339033 -1.37939565]
+state debug <class 'numpy.ndarray'> 4 [ 0.02472305  0.00131514 -0.05097193  0.60864594]
+state debug <class 'numpy.ndarray'> 4 [ 0.03978941 -0.01439216  0.80151405 -1.36932299]
+state debug <class 'numpy.ndarray'> 4 [ 0.06144495 -0.04402425  0.28381115 -0.13582716]
+state debug <class 'numpy.ndarray'> 4 [ 0.07771384 -0.06143465  0.52900978 -0.72964135]
+state debug <class 'numpy.ndarray'> 4 [ 0.09223829 -0.07569173  0.19868605  0.00339751]
+state debug <class 'numpy.ndarray'> 4 [ 0.0922209  -0.0585498  -0.19864391  0.84560895]
+state debug <class 'numpy.ndarray'> 4 [ 0.08189508 -0.02109713 -0.31805763  1.03187097]
+state debug <class 'numpy.ndarray'> 4 [ 0.07087907  0.01486886 -0.23379454  0.77707499]
+state debug <class 'numpy.ndarray'> 4 [ 0.07531449  0.01364918  0.45312248 -0.81594354]
+state debug <class 'numpy.ndarray'> 4 [ 0.07914423  0.01510853 -0.25906072  0.86559007]
+state debug <class 'numpy.ndarray'> 4 [ 0.07358676  0.03808992 -0.02016098  0.29616112]
+state debug <class 'numpy.ndarray'> 4 [ 0.08751562  0.01635551  0.71452571 -1.36426996]
+state debug <class 'numpy.ndarray'> 4 [ 0.10114237 -0.00200649 -0.03010936  0.41760894]
+state debug <class 'numpy.ndarray'> 4 [ 0.09627535  0.02274003 -0.21307439  0.81893355]
+state debug <class 'numpy.ndarray'> 4 [ 0.10260036  0.02085361  0.52671786 -0.88966538]
+state debug <class 'numpy.ndarray'> 4 [ 0.12321685 -0.01240457  0.50488352 -0.78130529]
+state debug <class 'numpy.ndarray'> 4 [ 1.25241866e-01 -1.11788558e-03 -4.00606254e-01  1.31845934e+00]
+state debug <class 'numpy.ndarray'> 4 [ 0.1246027   0.01480019  0.36551891 -0.49385069]
+state debug <class 'numpy.ndarray'> 4 [ 0.12343027  0.03230392 -0.4215608   1.34640715]
+state debug <class 'numpy.ndarray'> 4 [ 0.11426011  0.06770495 -0.03913845  0.44388834]
+state debug <class 'numpy.ndarray'> 4 [ 0.12037323  0.06859071  0.34347439 -0.38771315]
+state debug <class 'numpy.ndarray'> 4 [0.12781564 0.06924644 0.0298516  0.4094768 ]
+state debug <class 'numpy.ndarray'> 4 [ 0.14592086  0.04754225  0.87310381 -1.47348196]
+state debug <class 'numpy.ndarray'> 4 [ 0.16178552  0.03493617 -0.07621434  0.80909305]
+state debug <class 'numpy.ndarray'> 4 [0.16118058 0.06152862 0.0450001  0.5298489 ]
+state debug <class 'numpy.ndarray'> 4 [ 0.153354    0.10551801 -0.43503502  1.66087521]
+state debug <class 'numpy.ndarray'> 4 [0.15083365 0.13814766 0.30529506 0.00269584]
+state debug <class 'numpy.ndarray'> 4 [0.15937555 0.1491702  0.12245814 0.54284418]
+state debug <class 'numpy.ndarray'> 4 [ 0.17623328  0.14577592  0.71862142 -0.69611295]
+state debug <class 'numpy.ndarray'> 4 [0.19822465 0.13672403 0.38240112 0.22929868]
+state debug <class 'numpy.ndarray'> 4 [0.20792685 0.1609562  0.1035941  0.97577696]
+state debug <class 'numpy.ndarray'> 4 [ 0.22497537  0.17258785  0.74630935 -0.37207825]
+state debug <class 'numpy.ndarray'> 4 [0.24520463 0.18310672 0.26701519 0.88191188]
+Episode: 887, total numsteps: 5555, return: 44.0
+state debug <class 'numpy.ndarray'> 4 [ 0.00222311  0.00913098  0.00139296 -0.00606918]
+state debug <class 'numpy.ndarray'> 4 [-0.00836805  0.03367838 -0.52945773  1.22083496]
+state debug <class 'numpy.ndarray'> 4 [-0.02985194  0.08265494 -0.5455824   1.23729999]
+state debug <class 'numpy.ndarray'> 4 [-0.04483858  0.11674028 -0.20576668  0.48518001]
+state debug <class 'numpy.ndarray'> 4 [-0.0387231   0.10491197  0.50954202 -1.05807052]
+state debug <class 'numpy.ndarray'> 4 [-0.01685965  0.06215243  0.58434903 -1.08793166]
+state debug <class 'numpy.ndarray'> 4 [-0.00439201  0.04601627  0.04130589  0.25947995]
+state debug <class 'numpy.ndarray'> 4 [-0.01372529  0.08233762 -0.50640493  1.54462562]
+state debug <class 'numpy.ndarray'> 4 [-0.01910224  0.10992361  0.23406271 -0.13466957]
+state debug <class 'numpy.ndarray'> 4 [-0.0075492   0.10165888  0.34351218 -0.27819489]
+state debug <class 'numpy.ndarray'> 4 [ 0.00951535  0.08503467  0.5096218  -0.55258916]
+state debug <class 'numpy.ndarray'> 4 [ 0.02825388  0.06883546  0.42800652 -0.2644541 ]
+state debug <class 'numpy.ndarray'> 4 [ 0.05327065  0.04159371  0.82215695 -1.09186942]
+state debug <class 'numpy.ndarray'> 4 [ 0.0955578  -0.02192659  1.29179965 -2.08281082]
+state debug <class 'numpy.ndarray'> 4 [ 0.1306357  -0.06526332  0.46621695 -0.12139061]
+state debug <class 'numpy.ndarray'> 4 [ 0.13666043 -0.04204711 -0.1633991   1.26791664]
+state debug <class 'numpy.ndarray'> 4 [ 0.14255398 -0.02200703  0.45544808 -0.24109686]
+state debug <class 'numpy.ndarray'> 4 [ 0.15533918 -0.01923696  0.18470908  0.37155209]
+state debug <class 'numpy.ndarray'> 4 [ 0.15713459  0.00785822 -0.09450609  0.98004001]
+state debug <class 'numpy.ndarray'> 4 [ 0.15003129  0.0539404  -0.26090451  1.32800892]
+state debug <class 'numpy.ndarray'> 4 [ 0.13920906  0.10764925 -0.28107881  1.3672563 ]
+state debug <class 'numpy.ndarray'> 4 [0.13765354 0.14076577 0.20068734 0.3114897 ]
+state debug <class 'numpy.ndarray'> 4 [ 0.14131927  0.16545387 -0.01677101  0.9185656 ]
+state debug <class 'numpy.ndarray'> 4 [0.14685416 0.1901962  0.2919177  0.33261505]
+Episode: 888, total numsteps: 5579, return: 24.0
+state debug <class 'numpy.ndarray'> 4 [-0.00326012  0.00757541 -0.00478043 -0.00390008]
+state debug <class 'numpy.ndarray'> 4 [ 0.00376318 -0.00907245  0.35499635 -0.82033513]
+state debug <class 'numpy.ndarray'> 4 [ 0.00870294 -0.0198266  -0.10610867  0.26519305]
+state debug <class 'numpy.ndarray'> 4 [ 0.00530136 -0.01175545 -0.06431045  0.14168624]
+state debug <class 'numpy.ndarray'> 4 [ 0.00723188 -0.01681045  0.16011262 -0.38799742]
+state debug <class 'numpy.ndarray'> 4 [ 0.02082944 -0.04883212  0.51902585 -1.20760835]
+state debug <class 'numpy.ndarray'> 4 [ 0.03357089 -0.07831279  0.12016882 -0.28580404]
+state debug <class 'numpy.ndarray'> 4 [ 0.03446824 -0.08185003 -0.07460875  0.10271626]
+state debug <class 'numpy.ndarray'> 4 [ 0.01595815 -0.0435309  -0.84930014  1.79848402]
+state debug <class 'numpy.ndarray'> 4 [-6.77690609e-03 -6.67627087e-05 -2.90290795e-01  4.02424538e-01]
+state debug <class 'numpy.ndarray'> 4 [-0.01362984  0.00467187 -0.05331309 -0.15669767]
+state debug <class 'numpy.ndarray'> 4 [-0.01347825 -0.00660256  0.06072053 -0.40576158]
+state debug <class 'numpy.ndarray'> 4 [-0.01365499 -0.01650515 -0.06888559 -0.09569969]
+state debug <class 'numpy.ndarray'> 4 [-0.01750383 -0.0179827  -0.12334578  0.0198975 ]
+state debug <class 'numpy.ndarray'> 4 [-0.00931828 -0.04779709  0.53072158 -1.49475745]
+state debug <class 'numpy.ndarray'> 4 [-0.00012505 -0.0792055  -0.06809128 -0.10239692]
+state debug <class 'numpy.ndarray'> 4 [-0.00807931 -0.07255927 -0.328934    0.42864351]
+state debug <class 'numpy.ndarray'> 4 [-0.02385888 -0.05107573 -0.46012159  0.64680698]
+state debug <class 'numpy.ndarray'> 4 [-0.03653688 -0.03995068 -0.17507077 -0.07832179]
+state debug <class 'numpy.ndarray'> 4 [-0.04801495 -0.03337096 -0.39821638  0.40189659]
+state debug <class 'numpy.ndarray'> 4 [-0.07422942  0.00548537 -0.91150812  1.53289223]
+state debug <class 'numpy.ndarray'> 4 [-0.1160646   0.07782886 -1.18041973  2.08966993]
+state debug <class 'numpy.ndarray'> 4 [-0.14393817  0.11634378 -0.21808488 -0.12226477]
+state debug <class 'numpy.ndarray'> 4 [-0.14299499  0.09152371  0.26438262 -1.11074234]
+state debug <class 'numpy.ndarray'> 4 [-0.14462043  0.07795673 -0.34322427  0.40908277]
+state debug <class 'numpy.ndarray'> 4 [-0.14474088  0.0640275   0.33526751 -1.08785818]
+state debug <class 'numpy.ndarray'> 4 [-0.12704647  0.01289318  0.54981755 -1.47372672]
+state debug <class 'numpy.ndarray'> 4 [-0.11864248 -0.01295587 -0.1266218   0.1533288 ]
+state debug <class 'numpy.ndarray'> 4 [-0.13055818  0.00864483 -0.46838178  0.92021873]
+state debug <class 'numpy.ndarray'> 4 [-0.13632811  0.0147928   0.17741646 -0.59033952]
+state debug <class 'numpy.ndarray'> 4 [-0.13637709  0.00856213 -0.17843106  0.2655854 ]
+state debug <class 'numpy.ndarray'> 4 [-0.1456874   0.02412815 -0.28699391  0.51231731]
+state debug <class 'numpy.ndarray'> 4 [-0.15089868  0.03011209  0.02519451 -0.2018495 ]
+state debug <class 'numpy.ndarray'> 4 [-0.13243104 -0.01750292  0.89606926 -2.16105034]
+state debug <class 'numpy.ndarray'> 4 [-0.11375227 -0.06249148  0.04212417 -0.12706318]
+state debug <class 'numpy.ndarray'> 4 [-0.1179902  -0.05489541 -0.2532067   0.49965555]
+state debug <class 'numpy.ndarray'> 4 [-0.12541048 -0.04261316 -0.11859457  0.12208843]
+state debug <class 'numpy.ndarray'> 4 [-0.12350309 -0.05394067  0.21291409 -0.67933561]
+state debug <class 'numpy.ndarray'> 4 [-0.13132735 -0.04370658 -0.60153199  1.16747846]
+state debug <class 'numpy.ndarray'> 4 [-0.14068196 -0.03286887  0.13093051 -0.59891405]
+state debug <class 'numpy.ndarray'> 4 [-0.14643384 -0.03143485 -0.41661267  0.65333027]
+state debug <class 'numpy.ndarray'> 4 [-0.15364503 -0.02831219  0.05425358 -0.4807093 ]
+state debug <class 'numpy.ndarray'> 4 [-0.14888886 -0.05351969  0.18354457 -0.78034649]
+state debug <class 'numpy.ndarray'> 4 [-0.14502524 -0.07688601  0.01072363 -0.39817793]
+state debug <class 'numpy.ndarray'> 4 [-0.13522029 -0.11536114  0.47817961 -1.51604212]
+state debug <class 'numpy.ndarray'> 4 [-0.1314987  -0.14127448 -0.28851345  0.18932866]
+state debug <class 'numpy.ndarray'> 4 [-0.13869429 -0.14634882 -0.07213149 -0.4352469 ]
+state debug <class 'numpy.ndarray'> 4 [-0.14480285 -0.15858096 -0.23261018 -0.18255717]
+state debug <class 'numpy.ndarray'> 4 [-0.16361298 -0.14684777 -0.70678676  0.75896361]
+state debug <class 'numpy.ndarray'> 4 [-0.17742744 -0.15291896  0.01333249 -1.03815018]
+state debug <class 'numpy.ndarray'> 4 [-0.19211454 -0.16144397 -0.74483712  0.5866985 ]
+state debug <class 'numpy.ndarray'> 4 [-0.21898684 -0.14810654 -0.59966967  0.0893294 ]
+state debug <class 'numpy.ndarray'> 4 [-0.22919253 -0.17873306  0.0867129  -1.60022275]
+Episode: 889, total numsteps: 5632, return: 53.0
+state debug <class 'numpy.ndarray'> 4 [ 0.00886354 -0.00041843  0.00369319  0.00866934]
+state debug <class 'numpy.ndarray'> 4 [ 0.00415795  0.01115226 -0.23832945  0.56434497]
+state debug <class 'numpy.ndarray'> 4 [ 0.0078002   0.00297462  0.41825514 -0.95358145]
+state debug <class 'numpy.ndarray'> 4 [ 0.01516575 -0.01251634 -0.04795558  0.16030107]
+state debug <class 'numpy.ndarray'> 4 [ 0.02048866 -0.02318274  0.31298786 -0.68384219]
+state debug <class 'numpy.ndarray'> 4 [ 0.02559993 -0.03314874 -0.05588739  0.17146433]
+state debug <class 'numpy.ndarray'> 4 [ 0.02126312 -0.02217806 -0.16084269  0.37637667]
+state debug <class 'numpy.ndarray'> 4 [ 4.61118905e-04  2.53184304e-02 -8.77596089e-01  1.98510617e+00]
+state debug <class 'numpy.ndarray'> 4 [-0.01680182  0.06209617  0.01023668 -0.10828696]
+state debug <class 'numpy.ndarray'> 4 [-0.01779423  0.06225788 -0.0595316   0.11332883]
+state debug <class 'numpy.ndarray'> 4 [-0.00861088  0.04117633  0.51724528 -1.1543117 ]
+state debug <class 'numpy.ndarray'> 4 [0.00208147 0.01999616 0.01959343 0.07417797]
+state debug <class 'numpy.ndarray'> 4 [-0.00290044  0.03659582 -0.26793524  0.74950594]
+state debug <class 'numpy.ndarray'> 4 [ 0.00267975  0.02892155  0.5442503  -1.10883648]
+state debug <class 'numpy.ndarray'> 4 [ 0.0110704   0.01710955 -0.12205889  0.49357331]
+state debug <class 'numpy.ndarray'> 4 [ 0.00658846  0.03578234 -0.1024731   0.44447158]
+state debug <class 'numpy.ndarray'> 4 [ 0.01255964  0.03056114  0.39938541 -0.69069767]
+state debug <class 'numpy.ndarray'> 4 [ 0.02382522  0.01507229  0.16508325 -0.0950816 ]
+state debug <class 'numpy.ndarray'> 4 [ 0.02614168  0.02156611 -0.0485943   0.41390171]
+state debug <class 'numpy.ndarray'> 4 [ 0.03786105  0.00658632  0.63246266 -1.14412857]
+state debug <class 'numpy.ndarray'> 4 [ 0.04980621 -0.00706065 -0.03250163  0.43688109]
+state debug <class 'numpy.ndarray'> 4 [ 5.27170589e-02  1.60663730e-04  1.77127448e-01 -6.73080494e-02]
+state debug <class 'numpy.ndarray'> 4 [ 0.04921638  0.02201756 -0.35066571  1.1473163 ]
+state debug <class 'numpy.ndarray'> 4 [0.04468414 0.04529446 0.12181662 0.03706465]
+state debug <class 'numpy.ndarray'> 4 [ 0.05325454  0.03905981  0.30623065 -0.34469392]
+state debug <class 'numpy.ndarray'> 4 [ 0.06404406  0.02971871  0.23374471 -0.12722118]
+state debug <class 'numpy.ndarray'> 4 [ 0.08227185  0.00482545  0.6766261  -1.10875395]
+state debug <class 'numpy.ndarray'> 4 [ 0.09333869 -0.00136429 -0.12025937  0.77164949]
+state debug <class 'numpy.ndarray'> 4 [ 0.09598682  0.01152099  0.25104539 -0.11238743]
+state debug <class 'numpy.ndarray'> 4 [ 0.0893595   0.04586917 -0.57991032  1.80891354]
+state debug <class 'numpy.ndarray'> 4 [ 0.07778069  0.09053413 -0.00228829  0.45364193]
+state debug <class 'numpy.ndarray'> 4 [ 0.09104228  0.07919397  0.66343994 -1.00298883]
+state debug <class 'numpy.ndarray'> 4 [0.10769068 0.06430884 0.17104758 0.23888943]
+state debug <class 'numpy.ndarray'> 4 [ 0.11095342  0.0830703  -0.0075187   0.69628509]
+state debug <class 'numpy.ndarray'> 4 [ 0.10750653  0.11900304 -0.16475223  1.10123631]
+state debug <class 'numpy.ndarray'> 4 [ 0.11491581  0.132088    0.53239693 -0.42212196]
+state debug <class 'numpy.ndarray'> 4 [0.12604052 0.14132284 0.02574345 0.86717363]
+state debug <class 'numpy.ndarray'> 4 [0.13379746 0.1623793  0.36048284 0.19997276]
+state debug <class 'numpy.ndarray'> 4 [ 0.1621767   0.14131971  1.0570346  -1.23872967]
+state debug <class 'numpy.ndarray'> 4 [0.18724651 0.13497337 0.19964492 0.8911473 ]
+state debug <class 'numpy.ndarray'> 4 [0.19523467 0.17220333 0.1992321  0.97634976]
+state debug <class 'numpy.ndarray'> 4 [0.2124762  0.19237336 0.66074402 0.05035111]
+state debug <class 'numpy.ndarray'> 4 [ 0.24608728  0.18155319  1.01911783 -0.58507416]
+Episode: 890, total numsteps: 5675, return: 43.0
+state debug <class 'numpy.ndarray'> 4 [ 7.14807436e-03 -9.55849668e-03  2.21590695e-05  3.67972092e-03]
+state debug <class 'numpy.ndarray'> 4 [-0.00788674  0.02516965 -0.74970811  1.71536799]
+state debug <class 'numpy.ndarray'> 4 [-0.02046763  0.05241362  0.11681403 -0.31838923]
+state debug <class 'numpy.ndarray'> 4 [-0.01929998  0.04905611 -0.0576724   0.1434249 ]
+state debug <class 'numpy.ndarray'> 4 [-0.01788409  0.04698361  0.12790262 -0.24204231]
+state debug <class 'numpy.ndarray'> 4 [-0.01113144  0.03464564  0.20975352 -0.37543614]
+state debug <class 'numpy.ndarray'> 4 [-0.01036093  0.03824478 -0.16987325  0.54319038]
+state debug <class 'numpy.ndarray'> 4 [-0.01994853  0.06660346 -0.30948695  0.8755095 ]
+state debug <class 'numpy.ndarray'> 4 [-0.02330622  0.08122133  0.1396712  -0.12722429]
+state debug <class 'numpy.ndarray'> 4 [-0.01042405  0.06096051  0.50373443 -0.87966348]
+state debug <class 'numpy.ndarray'> 4 [-0.00396948  0.05935529 -0.17844574  0.77595344]
+state debug <class 'numpy.ndarray'> 4 [ 0.00448555  0.05479644  0.59859803 -0.98032118]
+state debug <class 'numpy.ndarray'> 4 [0.01951515 0.03813836 0.15482618 0.12889165]
+state debug <class 'numpy.ndarray'> 4 [0.02615156 0.04286529 0.17686397 0.10869881]
+state debug <class 'numpy.ndarray'> 4 [0.0343444  0.04533294 0.23257758 0.01649409]
+state debug <class 'numpy.ndarray'> 4 [ 0.04602625  0.04133975  0.3512286  -0.21370824]
+state debug <class 'numpy.ndarray'> 4 [ 0.05948707  0.03513892  0.32209611 -0.09914019]
+state debug <class 'numpy.ndarray'> 4 [ 0.07593277  0.02371584  0.49983678 -0.46911898]
+state debug <class 'numpy.ndarray'> 4 [ 0.0836162   0.03429762 -0.1135916   0.97981955]
+state debug <class 'numpy.ndarray'> 4 [ 0.09098547  0.04568905  0.47966001 -0.38852804]
+state debug <class 'numpy.ndarray'> 4 [ 0.11154489  0.02822006  0.5484849  -0.4870062 ]
+state debug <class 'numpy.ndarray'> 4 [ 0.1217081   0.03694999 -0.03830852  0.90556022]
+state debug <class 'numpy.ndarray'> 4 [ 0.13042407  0.0493357   0.47199578 -0.26710441]
+state debug <class 'numpy.ndarray'> 4 [ 0.13253407  0.07851493 -0.36369474  1.70288607]
+state debug <class 'numpy.ndarray'> 4 [0.12933485 0.12032078 0.20052857 0.41562899]
+state debug <class 'numpy.ndarray'> 4 [ 0.13166545  0.15177367 -0.08321052  1.15183693]
+state debug <class 'numpy.ndarray'> 4 [ 0.14445993  0.16273516  0.71981133 -0.57633296]
+state debug <class 'numpy.ndarray'> 4 [0.1605241  0.17222938 0.08583716 1.02972757]
+state debug <class 'numpy.ndarray'> 4 [ 0.18236709  0.17371221  1.00323285 -0.927795  ]
+state debug <class 'numpy.ndarray'> 4 [ 0.21608967  0.15527288  0.68436903 -0.00955754]
+state debug <class 'numpy.ndarray'> 4 [ 0.24904797  0.14499191  0.96302237 -0.49990743]
+state debug <class 'numpy.ndarray'> 4 [0.28004245 0.14534284 0.58819946 0.5035774 ]
+state debug <class 'numpy.ndarray'> 4 [0.30561265 0.16298248 0.68973841 0.38376606]
+state debug <class 'numpy.ndarray'> 4 [0.3285874  0.19142596 0.45970118 1.03387084]
+Episode: 891, total numsteps: 5709, return: 34.0
+state debug <class 'numpy.ndarray'> 4 [-0.00724164 -0.00642895  0.00550529  0.00476259]
+state debug <class 'numpy.ndarray'> 4 [-0.00741014 -0.00543165 -0.0138865   0.0447372 ]
+state debug <class 'numpy.ndarray'> 4 [-0.00395952 -0.01300732  0.18584312 -0.41851385]
+state debug <class 'numpy.ndarray'> 4 [-0.0072984  -0.0046616  -0.35103255  0.82009444]
+state debug <class 'numpy.ndarray'> 4 [-0.02575978  0.03748887 -0.57204507  1.28898474]
+state debug <class 'numpy.ndarray'> 4 [-0.03496154  0.05693303  0.10901415 -0.29019409]
+state debug <class 'numpy.ndarray'> 4 [-0.01817081  0.01799924  0.72930269 -1.64590337]
+state debug <class 'numpy.ndarray'> 4 [ 0.00102884 -0.0228278   0.23331985 -0.42069473]
+state debug <class 'numpy.ndarray'> 4 [ 0.00162256 -0.01944554 -0.20215598  0.57649627]
+state debug <class 'numpy.ndarray'> 4 [-0.00023582 -0.01165899  0.10793566 -0.17510887]
+state debug <class 'numpy.ndarray'> 4 [-0.00637375  0.0054761  -0.41330974  1.01851729]
+state debug <class 'numpy.ndarray'> 4 [-0.01162234  0.01928469  0.14854342 -0.30664165]
+state debug <class 'numpy.ndarray'> 4 [ 0.00363627 -0.01381646  0.61340894 -1.34048941]
+state debug <class 'numpy.ndarray'> 4 [ 0.01587299 -0.03793735  0.00119731  0.10900003]
+state debug <class 'numpy.ndarray'> 4 [ 0.00459118 -0.00818603 -0.56395629  1.36708073]
+state debug <class 'numpy.ndarray'> 4 [-0.01463473  0.03733725 -0.39886876  0.92432695]
+state debug <class 'numpy.ndarray'> 4 [-0.01741164  0.0437024   0.2575273  -0.5834787 ]
+state debug <class 'numpy.ndarray'> 4 [-0.0038767   0.01429565  0.41931038 -0.88847346]
+state debug <class 'numpy.ndarray'> 4 [ 4.14817062e-03  1.24426518e-04 -1.61853149e-02  1.62398874e-01]
+state debug <class 'numpy.ndarray'> 4 [ 0.00604808  0.00060937  0.11071218 -0.13389492]
+state debug <class 'numpy.ndarray'> 4 [ 0.01622089 -0.01784115  0.39726524 -0.78314284]
+state debug <class 'numpy.ndarray'> 4 [ 0.02806575 -0.03934749  0.19615213 -0.30327487]
+state debug <class 'numpy.ndarray'> 4 [ 0.02122074 -0.01795256 -0.53631542  1.35434993]
+state debug <class 'numpy.ndarray'> 4 [ 0.0126598   0.00481753  0.10546653 -0.18971267]
+Traceback (most recent call last):
+  File "/home/harsh/arjun/robust-predictable-control/train.py", line 250, in main
+    workspace.train()
+    ~~~~~~~~~~~~~~~^^
+  File "/home/harsh/arjun/robust-predictable-control/train.py", line 132, in train
+    self.agent.update(self._global_step)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/harsh/arjun/robust-predictable-control/rpc.py", line 197, in update
+    critic_loss = self.critic_loss(state_batch, action_batch, reward_batch, kl.detach(), next_state_batch, z_next_dist.sample(), discount_batch, step, metrics)
+  File "/home/harsh/arjun/robust-predictable-control/rpc.py", line 243, in critic_loss
+    Q1, Q2 = self.critic(state_batch, action_batch)
+             ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/harsh/arjun/robust-predictable-control/rpc.py", line 76, in forward
+    q1 = self.Q1(x_a)
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/torch/nn/modules/container.py", line 250, in forward
+    input = module(input)
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/torch/nn/modules/linear.py", line 125, in forward
+    return F.linear(input, self.weight, self.bias)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

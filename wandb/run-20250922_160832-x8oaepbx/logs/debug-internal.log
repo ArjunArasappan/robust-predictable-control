@@ -1,0 +1,8 @@
+{"time":"2025-09-22T16:08:32.806415247-04:00","level":"INFO","msg":"stream: starting","core version":"0.22.0"}
+{"time":"2025-09-22T16:08:33.033364483-04:00","level":"INFO","msg":"stream: created new stream","id":"x8oaepbx"}
+{"time":"2025-09-22T16:08:33.03341938-04:00","level":"INFO","msg":"stream: started","id":"x8oaepbx"}
+{"time":"2025-09-22T16:08:33.033435782-04:00","level":"INFO","msg":"writer: started","stream_id":"x8oaepbx"}
+{"time":"2025-09-22T16:08:33.033473465-04:00","level":"INFO","msg":"sender: started","stream_id":"x8oaepbx"}
+{"time":"2025-09-22T16:08:33.033536437-04:00","level":"INFO","msg":"handler: started","stream_id":"x8oaepbx"}
+{"time":"2025-09-22T16:08:47.075626136-04:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-09-22T16:08:47.264075657-04:00","level":"INFO","msg":"stream: closing","id":"x8oaepbx"}

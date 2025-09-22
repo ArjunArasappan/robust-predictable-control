@@ -1,0 +1,189 @@
+/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/gymnasium/envs/registration.py:512: DeprecationWarning: [33mWARN: The environment InvertedPendulum-v4 is out of date. You should consider upgrading to version `v5`.[0m
+  logger.deprecation(
+Namespace(agent='RPC', env_name='InvertedPendulum-v4', device='cuda', seed=1, num_train_steps=25000, learning_starts=5000, gamma=0.99, tau=0.005, env_buffer_size=100000, target_update_interval=1, log_interval=500, save_snapshot_interval=50000, eval_episode_interval=1000, num_eval_episodes=1, latent_dims=50, model_hidden_dims=256, model_num_layers=2, kl_constraint=10.0, lambda_init=1e-05, alpha_autotune=False, alpha_init=0.2, noise_factor=3.0, batch_size=256, seq_len=4, lr=0.0003, record_eval=True, video_dir='videos', video_fps=30)
+Episode: 1, total numsteps: 5, return: 5.0
+Episode: 2, total numsteps: 21, return: 16.0
+Episode: 3, total numsteps: 27, return: 6.0
+Episode: 4, total numsteps: 32, return: 5.0
+Episode: 5, total numsteps: 36, return: 4.0
+Episode: 6, total numsteps: 39, return: 3.0
+Episode: 7, total numsteps: 53, return: 14.0
+Episode: 8, total numsteps: 61, return: 8.0
+Episode: 9, total numsteps: 68, return: 7.0
+Episode: 10, total numsteps: 71, return: 3.0
+Episode: 11, total numsteps: 78, return: 7.0
+Episode: 12, total numsteps: 81, return: 3.0
+Episode: 13, total numsteps: 88, return: 7.0
+Episode: 14, total numsteps: 93, return: 5.0
+Episode: 15, total numsteps: 96, return: 3.0
+Episode: 16, total numsteps: 101, return: 5.0
+Episode: 17, total numsteps: 106, return: 5.0
+Episode: 18, total numsteps: 113, return: 7.0
+Episode: 19, total numsteps: 122, return: 9.0
+Episode: 20, total numsteps: 129, return: 7.0
+Episode: 21, total numsteps: 137, return: 8.0
+Episode: 22, total numsteps: 140, return: 3.0
+Episode: 23, total numsteps: 143, return: 3.0
+Episode: 24, total numsteps: 148, return: 5.0
+Episode: 25, total numsteps: 159, return: 11.0
+Episode: 26, total numsteps: 163, return: 4.0
+Episode: 27, total numsteps: 170, return: 7.0
+Episode: 28, total numsteps: 188, return: 18.0
+Episode: 29, total numsteps: 191, return: 3.0
+Episode: 30, total numsteps: 199, return: 8.0
+Episode: 31, total numsteps: 209, return: 10.0
+Episode: 32, total numsteps: 213, return: 4.0
+Episode: 33, total numsteps: 228, return: 15.0
+Episode: 34, total numsteps: 231, return: 3.0
+Episode: 35, total numsteps: 236, return: 5.0
+Episode: 36, total numsteps: 239, return: 3.0
+Episode: 37, total numsteps: 242, return: 3.0
+Episode: 38, total numsteps: 246, return: 4.0
+Episode: 39, total numsteps: 250, return: 4.0
+Episode: 40, total numsteps: 255, return: 5.0
+Episode: 41, total numsteps: 258, return: 3.0
+Episode: 42, total numsteps: 262, return: 4.0
+Episode: 43, total numsteps: 266, return: 4.0
+Episode: 44, total numsteps: 274, return: 8.0
+Episode: 45, total numsteps: 280, return: 6.0
+Episode: 46, total numsteps: 285, return: 5.0
+Episode: 47, total numsteps: 288, return: 3.0
+Episode: 48, total numsteps: 295, return: 7.0
+Episode: 49, total numsteps: 299, return: 4.0
+Episode: 50, total numsteps: 302, return: 3.0
+Episode: 51, total numsteps: 309, return: 7.0
+Episode: 52, total numsteps: 312, return: 3.0
+Episode: 53, total numsteps: 323, return: 11.0
+Episode: 54, total numsteps: 326, return: 3.0
+Episode: 55, total numsteps: 330, return: 4.0
+Episode: 56, total numsteps: 346, return: 16.0
+Episode: 57, total numsteps: 358, return: 12.0
+Episode: 58, total numsteps: 363, return: 5.0
+Episode: 59, total numsteps: 366, return: 3.0
+Episode: 60, total numsteps: 370, return: 4.0
+Episode: 61, total numsteps: 376, return: 6.0
+Episode: 62, total numsteps: 382, return: 6.0
+Episode: 63, total numsteps: 385, return: 3.0
+Episode: 64, total numsteps: 391, return: 6.0
+Episode: 65, total numsteps: 396, return: 5.0
+Episode: 66, total numsteps: 402, return: 6.0
+Episode: 67, total numsteps: 411, return: 9.0
+Episode: 68, total numsteps: 415, return: 4.0
+Episode: 69, total numsteps: 420, return: 5.0
+Episode: 70, total numsteps: 433, return: 13.0
+Episode: 71, total numsteps: 437, return: 4.0
+Episode: 72, total numsteps: 440, return: 3.0
+Episode: 73, total numsteps: 444, return: 4.0
+Episode: 74, total numsteps: 449, return: 5.0
+Episode: 75, total numsteps: 453, return: 4.0
+Episode: 76, total numsteps: 470, return: 17.0
+Episode: 77, total numsteps: 475, return: 5.0
+Episode: 78, total numsteps: 478, return: 3.0
+Episode: 79, total numsteps: 486, return: 8.0
+Episode: 80, total numsteps: 489, return: 3.0
+Episode: 81, total numsteps: 497, return: 8.0
+Episode: 82, total numsteps: 503, return: 6.0
+Episode: 83, total numsteps: 509, return: 6.0
+Episode: 84, total numsteps: 512, return: 3.0
+Episode: 85, total numsteps: 518, return: 6.0
+Episode: 86, total numsteps: 528, return: 10.0
+Episode: 87, total numsteps: 539, return: 11.0
+Episode: 88, total numsteps: 542, return: 3.0
+Episode: 89, total numsteps: 546, return: 4.0
+Episode: 90, total numsteps: 555, return: 9.0
+Episode: 91, total numsteps: 560, return: 5.0
+Episode: 92, total numsteps: 563, return: 3.0
+Episode: 93, total numsteps: 574, return: 11.0
+Episode: 94, total numsteps: 579, return: 5.0
+Episode: 95, total numsteps: 586, return: 7.0
+Episode: 96, total numsteps: 589, return: 3.0
+Episode: 97, total numsteps: 603, return: 14.0
+Episode: 98, total numsteps: 610, return: 7.0
+Episode: 99, total numsteps: 614, return: 4.0
+Episode: 100, total numsteps: 617, return: 3.0
+Episode: 101, total numsteps: 620, return: 3.0
+Episode: 102, total numsteps: 628, return: 8.0
+Episode: 103, total numsteps: 633, return: 5.0
+Episode: 104, total numsteps: 646, return: 13.0
+Episode: 105, total numsteps: 657, return: 11.0
+Episode: 106, total numsteps: 661, return: 4.0
+Episode: 107, total numsteps: 664, return: 3.0
+Episode: 108, total numsteps: 668, return: 4.0
+Episode: 109, total numsteps: 673, return: 5.0
+Episode: 110, total numsteps: 682, return: 9.0
+Episode: 111, total numsteps: 690, return: 8.0
+Episode: 112, total numsteps: 697, return: 7.0
+Episode: 113, total numsteps: 707, return: 10.0
+Episode: 114, total numsteps: 713, return: 6.0
+Episode: 115, total numsteps: 717, return: 4.0
+Episode: 116, total numsteps: 724, return: 7.0
+Episode: 117, total numsteps: 734, return: 10.0
+Episode: 118, total numsteps: 738, return: 4.0
+Episode: 119, total numsteps: 749, return: 11.0
+Episode: 120, total numsteps: 752, return: 3.0
+Episode: 121, total numsteps: 762, return: 10.0
+Episode: 122, total numsteps: 771, return: 9.0
+Episode: 123, total numsteps: 774, return: 3.0
+Episode: 124, total numsteps: 777, return: 3.0
+Episode: 125, total numsteps: 781, return: 4.0
+Episode: 126, total numsteps: 794, return: 13.0
+Episode: 127, total numsteps: 797, return: 3.0
+Episode: 128, total numsteps: 800, return: 3.0
+Episode: 129, total numsteps: 803, return: 3.0
+Episode: 130, total numsteps: 808, return: 5.0
+Episode: 131, total numsteps: 819, return: 11.0
+Episode: 132, total numsteps: 822, return: 3.0
+Episode: 133, total numsteps: 830, return: 8.0
+Episode: 134, total numsteps: 834, return: 4.0
+Episode: 135, total numsteps: 837, return: 3.0
+Episode: 136, total numsteps: 840, return: 3.0
+Episode: 137, total numsteps: 843, return: 3.0
+Episode: 138, total numsteps: 852, return: 9.0
+Episode: 139, total numsteps: 856, return: 4.0
+Episode: 140, total numsteps: 860, return: 4.0
+Episode: 141, total numsteps: 864, return: 4.0
+Episode: 142, total numsteps: 870, return: 6.0
+Episode: 143, total numsteps: 874, return: 4.0
+Episode: 144, total numsteps: 878, return: 4.0
+Episode: 145, total numsteps: 885, return: 7.0
+Episode: 146, total numsteps: 890, return: 5.0
+Episode: 147, total numsteps: 893, return: 3.0
+Episode: 148, total numsteps: 898, return: 5.0
+Episode: 149, total numsteps: 902, return: 4.0
+Episode: 150, total numsteps: 911, return: 9.0
+Episode: 151, total numsteps: 917, return: 6.0
+Episode: 152, total numsteps: 922, return: 5.0
+Episode: 153, total numsteps: 933, return: 11.0
+Episode: 154, total numsteps: 936, return: 3.0
+Episode: 155, total numsteps: 948, return: 12.0
+Episode: 156, total numsteps: 954, return: 6.0
+Episode: 157, total numsteps: 960, return: 6.0
+Episode: 158, total numsteps: 966, return: 6.0
+Episode: 159, total numsteps: 972, return: 6.0
+Episode: 160, total numsteps: 977, return: 5.0
+Episode: 161, total numsteps: 980, return: 3.0
+Episode: 162, total numsteps: 983, return: 3.0
+Episode: 163, total numsteps: 988, return: 5.0
+Episode: 164, total numsteps: 998, return: 10.0
+Traceback (most recent call last):
+  File "/home/harsh/arjun/robust-predictable-control/train.py", line 297, in main
+    workspace.train()
+    ~~~~~~~~~~~~~~~^^
+  File "/home/harsh/arjun/robust-predictable-control/train.py", line 165, in train
+    self.eval()
+    ~~~~~~~~~^^
+  File "/home/harsh/arjun/robust-predictable-control/train.py", line 232, in eval
+    self._save_and_log_video(frames, tag="eval")
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/harsh/arjun/robust-predictable-control/train.py", line 116, in _save_and_log_video
+    imageio.mimsave(out_path, arr, fps=self.args.video_fps)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/imageio/v2.py", line 494, in mimwrite
+    with imopen(uri, "wI", **imopen_args) as file:
+         ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/imageio/core/imopen.py", line 281, in imopen
+    raise err_type(err_msg)
+ValueError: Could not find a backend to open `videos/eval_step999.mp4`` with iomode `wI`.
+Based on the extension, the following plugins might add capable backends:
+  FFMPEG:  pip install imageio[ffmpeg]
+  pyav:  pip install imageio[pyav]

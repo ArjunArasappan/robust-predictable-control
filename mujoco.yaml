@@ -1,0 +1,28 @@
+rpc_params:
+  env_name : 'InvertedPendulum-v4'
+  device : 'cuda'
+  seed : 1
+  num_train_steps : 25000
+  learning_starts : 5000
+  gamma : 0.99
+  alpha : 0.2
+  tau : 0.005
+  
+  env_buffer_size : 100000
+
+  target_update_interval : 1
+  log_interval : 500
+  save_snapshot_interval : 50000
+  eval_episode_interval : 1000
+  num_eval_episodes : 1
+  
+  latent_dims : 50
+  model_hidden_dims : 256
+  model_num_layers : 2
+  kl_constraint : 1
+  lambda_init : 0.00001
+  alpha_autotune : False
+  noise_factor : 1
+  batch_size : 256
+  seq_len : 4
+  lr : 0.0003

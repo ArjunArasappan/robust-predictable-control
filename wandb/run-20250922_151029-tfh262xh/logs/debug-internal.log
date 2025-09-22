@@ -1,0 +1,16 @@
+{"time":"2025-09-22T15:10:30.058162285-04:00","level":"INFO","msg":"stream: starting","core version":"0.22.0"}
+{"time":"2025-09-22T15:10:30.308861935-04:00","level":"INFO","msg":"stream: created new stream","id":"tfh262xh"}
+{"time":"2025-09-22T15:10:30.308912082-04:00","level":"INFO","msg":"stream: started","id":"tfh262xh"}
+{"time":"2025-09-22T15:10:30.308930678-04:00","level":"INFO","msg":"writer: started","stream_id":"tfh262xh"}
+{"time":"2025-09-22T15:10:30.308960787-04:00","level":"INFO","msg":"handler: started","stream_id":"tfh262xh"}
+{"time":"2025-09-22T15:10:30.308999031-04:00","level":"INFO","msg":"sender: started","stream_id":"tfh262xh"}
+{"time":"2025-09-22T15:10:30.369809884-04:00","level":"ERROR","msg":"HTTP error","status":403,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2025-09-22T15:10:30.369897194-04:00","level":"ERROR","msg":"runupserter: failed to init run","error":"returned error 403: {\"data\":{\"upsertBucket\":null},\"errors\":[{\"message\":\"permission denied\",\"path\":[\"upsertBucket\"],\"extensions\":{\"code\":\"PERMISSION_ERROR\"}}]}"}
+{"time":"2025-09-22T15:10:30.379173552-04:00","level":"INFO","msg":"stream: closing","id":"tfh262xh"}
+{"time":"2025-09-22T15:10:30.379615449-04:00","level":"ERROR","msg":"sender: uploadConfigFile: stream: no run"}
+{"time":"2025-09-22T15:10:30.473719918-04:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2025-09-22T15:10:30.473775105-04:00","level":"ERROR","msg":"runfiles: CreateRunFiles returned error: returned error 404: {\"data\":{\"createRunFiles\":null},\"errors\":[{\"message\":\"project raj19/rpc not found during createRunFiles\",\"path\":[\"createRunFiles\"]}]}"}
+{"time":"2025-09-22T15:10:30.473886401-04:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-09-22T15:10:30.473908293-04:00","level":"INFO","msg":"handler: closed","stream_id":"tfh262xh"}
+{"time":"2025-09-22T15:10:30.473982688-04:00","level":"INFO","msg":"sender: closed","stream_id":"tfh262xh"}
+{"time":"2025-09-22T15:10:30.473998769-04:00","level":"INFO","msg":"stream: closed","id":"tfh262xh"}

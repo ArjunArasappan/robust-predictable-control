@@ -1,0 +1,16 @@
+{"time":"2025-09-22T15:10:38.020715204-04:00","level":"INFO","msg":"stream: starting","core version":"0.22.0"}
+{"time":"2025-09-22T15:10:38.251088777-04:00","level":"INFO","msg":"stream: created new stream","id":"nnhxct08"}
+{"time":"2025-09-22T15:10:38.251145497-04:00","level":"INFO","msg":"stream: started","id":"nnhxct08"}
+{"time":"2025-09-22T15:10:38.251157491-04:00","level":"INFO","msg":"writer: started","stream_id":"nnhxct08"}
+{"time":"2025-09-22T15:10:38.251192769-04:00","level":"INFO","msg":"sender: started","stream_id":"nnhxct08"}
+{"time":"2025-09-22T15:10:38.251238528-04:00","level":"INFO","msg":"handler: started","stream_id":"nnhxct08"}
+{"time":"2025-09-22T15:10:38.291718356-04:00","level":"ERROR","msg":"HTTP error","status":403,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2025-09-22T15:10:38.291838218-04:00","level":"ERROR","msg":"runupserter: failed to init run","error":"returned error 403: {\"data\":{\"upsertBucket\":null},\"errors\":[{\"message\":\"permission denied\",\"path\":[\"upsertBucket\"],\"extensions\":{\"code\":\"PERMISSION_ERROR\"}}]}"}
+{"time":"2025-09-22T15:10:38.30121957-04:00","level":"INFO","msg":"stream: closing","id":"nnhxct08"}
+{"time":"2025-09-22T15:10:38.301597443-04:00","level":"ERROR","msg":"sender: uploadConfigFile: stream: no run"}
+{"time":"2025-09-22T15:10:38.391043814-04:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2025-09-22T15:10:38.391106085-04:00","level":"ERROR","msg":"runfiles: CreateRunFiles returned error: returned error 404: {\"data\":{\"createRunFiles\":null},\"errors\":[{\"message\":\"project arjaras/rpc not found during createRunFiles\",\"path\":[\"createRunFiles\"]}]}"}
+{"time":"2025-09-22T15:10:38.391225787-04:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-09-22T15:10:38.391248942-04:00","level":"INFO","msg":"handler: closed","stream_id":"nnhxct08"}
+{"time":"2025-09-22T15:10:38.39129928-04:00","level":"INFO","msg":"sender: closed","stream_id":"nnhxct08"}
+{"time":"2025-09-22T15:10:38.391310371-04:00","level":"INFO","msg":"stream: closed","id":"nnhxct08"}

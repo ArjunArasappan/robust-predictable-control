@@ -1,0 +1,16 @@
+{"time":"2025-09-22T15:05:21.568238859-04:00","level":"INFO","msg":"stream: starting","core version":"0.22.0"}
+{"time":"2025-09-22T15:05:21.804311635-04:00","level":"INFO","msg":"stream: created new stream","id":"uxjy0yds"}
+{"time":"2025-09-22T15:05:21.804376401-04:00","level":"INFO","msg":"stream: started","id":"uxjy0yds"}
+{"time":"2025-09-22T15:05:21.804398664-04:00","level":"INFO","msg":"writer: started","stream_id":"uxjy0yds"}
+{"time":"2025-09-22T15:05:21.804438732-04:00","level":"INFO","msg":"sender: started","stream_id":"uxjy0yds"}
+{"time":"2025-09-22T15:05:21.804485583-04:00","level":"INFO","msg":"handler: started","stream_id":"uxjy0yds"}
+{"time":"2025-09-22T15:05:21.930232777-04:00","level":"ERROR","msg":"HTTP error","status":403,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2025-09-22T15:05:21.930388358-04:00","level":"ERROR","msg":"runupserter: failed to init run","error":"returned error 403: {\"data\":{\"upsertBucket\":null},\"errors\":[{\"message\":\"permission denied\",\"path\":[\"upsertBucket\"],\"extensions\":{\"code\":\"PERMISSION_ERROR\"}}]}"}
+{"time":"2025-09-22T15:05:21.939536948-04:00","level":"INFO","msg":"stream: closing","id":"uxjy0yds"}
+{"time":"2025-09-22T15:05:21.939982212-04:00","level":"ERROR","msg":"sender: uploadConfigFile: stream: no run"}
+{"time":"2025-09-22T15:05:22.135887286-04:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2025-09-22T15:05:22.135955819-04:00","level":"ERROR","msg":"runfiles: CreateRunFiles returned error: returned error 404: {\"data\":{\"createRunFiles\":null},\"errors\":[{\"message\":\"project raj19/rpc not found during createRunFiles\",\"path\":[\"createRunFiles\"]}]}"}
+{"time":"2025-09-22T15:05:22.136067796-04:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-09-22T15:05:22.136091432-04:00","level":"INFO","msg":"handler: closed","stream_id":"uxjy0yds"}
+{"time":"2025-09-22T15:05:22.136173582-04:00","level":"INFO","msg":"sender: closed","stream_id":"uxjy0yds"}
+{"time":"2025-09-22T15:05:22.136198079-04:00","level":"INFO","msg":"stream: closed","id":"uxjy0yds"}
