@@ -1,5 +1,5 @@
 rpc_params:
-  env_name : 'InvertedPendulum-v4'
+  env_name : 'HalfCheetah-v5'
   device : 'cuda'
   seed : 1
   num_train_steps : 25000

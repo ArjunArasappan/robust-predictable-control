@@ -1,2 +1,7 @@
-wandb/
+videos/
 checkpoints/
+runs/
+logs/
+*.mp4
+
+__pycache__/*

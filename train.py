@@ -44,6 +44,9 @@ def parse_args(config):
     parser.add_argument('--seq_len', type=int, default=config['seq_len'])
     parser.add_argument('--lr', type=float, default=config['lr'])
     
+    parser.add_argument('--record_eval', action='store_true', help='save & log eval videos', default=True)
+    parser.add_argument('--video_dir', type=str, default='videos')
+    parser.add_argument('--video_fps', type=int, default=30)
 
     
     args = parser.parse_args()
@@ -85,11 +88,57 @@ class MujocoWorkspace:
         self._best_eval_returns = -np.inf
 
     def setup(self):
-        self.train_env = gym.make(self.args.env_name)
-        self.eval_env = gym.make(self.args.env_name)        
-        self.robust_env = gym.make(self.args.env_name)
-        self.checkpoint_path = os.path.join(self.work_dir,'checkpoints/' + self.args.agent +'_' + self.args.env_name + '/' + str(datetime.datetime.now())) 
+        # self.train_env = gym.make(self.args.env_name)
+        # self.eval_env = gym.make(self.args.env_name)        
+        # self.robust_env = gym.make(self.args.env_name)
+        # self.checkpoint_path = os.path.join(self.work_dir,'checkpoints/' + self.args.agent +'_' + self.args.env_name + '/' + str(datetime.datetime.now())) 
+        # os.makedirs(self.checkpoint_path, exist_ok=True)
+        
+        self.train_env  = gym.make(self.args.env_name)  # no rendering needed here
+        self.eval_env   = gym.make(self.args.env_name, render_mode="rgb_array")
+        self.robust_env = gym.make(self.args.env_name, render_mode="rgb_array")
+        self.checkpoint_path = os.path.join(
+                self.work_dir, 'checkpoints',
+                f"{self.args.agent}_{self.args.env_name}",
+                str(datetime.datetime.now()))
         os.makedirs(self.checkpoint_path, exist_ok=True)
+
+        # videos folder
+        Path(self.args.video_dir).mkdir(parents=True, exist_ok=True)
+        
+    def _save_and_log_video(self, frames, tag):
+        if not frames:
+            return
+
+        import imageio.v2 as imageio
+        import numpy as np
+
+        arr = np.stack(frames, axis=0).astype(np.uint8)
+
+        # make a unique subdir for this run
+        run_id = wandb.run.id if wandb.run is not None else datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+        video_subdir = Path(self.args.video_dir) / f"{self.args.env_name}_{self.args.agent}_{run_id}"
+        video_subdir.mkdir(parents=True, exist_ok=True)
+
+        out_path = video_subdir / f"{tag}_step{self._global_step}.mp4"
+
+        # use ffmpeg backend for reliability
+        imageio.mimsave(
+            out_path,
+            arr,
+            fps=self.args.video_fps,
+            codec="libx264",
+            format="ffmpeg"
+        )
+
+        # log to wandb with cross-reference to directory
+        wandb.log({
+            f"{tag}/video": wandb.Video(str(out_path), fps=self.args.video_fps, format="mp4"),
+            f"{tag}/video_path": str(out_path)  # helpful cross-check
+        }, step=self._global_step)
+
+
+
 
     def set_seeds_everywhere(self):
         random.seed(self.args.seed)
@@ -164,28 +213,46 @@ class MujocoWorkspace:
  
     def eval(self):
         steps, returns = 0, 0
+        record_first = self.args.record_eval
+        frames = []  # only for the first episode
+
         for e in range(self.args.num_eval_episodes):
-            done = False 
+            done = False
             state, info = self.eval_env.reset()
+            if record_first and e == 0:
+                frame = self.eval_env.render()   # (H,W,C) uint8
+                if frame is not None:
+                    frames.append(frame)
+
             while not done:
                 with torch.no_grad():
                     action = self.agent.get_action(state, True)
-                    
+
                 next_state, reward, terminated, truncated, info = self.eval_env.step(action)
                 done = bool(terminated or truncated)
 
-                returns += reward
+                returns += float(reward)
                 steps += 1
                 state = next_state
 
-        if returns/self.args.num_eval_episodes >= self._best_eval_returns:
-            self.save_snapshot(best=True)
-            self._best_eval_returns = returns/self.args.num_eval_episodes
+                if record_first and e == 0:
+                    frame = self.eval_env.render()
+                    if frame is not None:
+                        frames.append(frame)
 
-        eval_metrics = {}
-        eval_metrics['eval_episodic_return'] = returns/self.args.num_eval_episodes
-        eval_metrics['eval_episodic_length'] = steps/self.args.num_eval_episodes
-        wandb.log(eval_metrics, step = self._global_step)
+        avg_return = returns / self.args.num_eval_episodes
+        if avg_return >= self._best_eval_returns:
+            self.save_snapshot(best=True)
+            self._best_eval_returns = avg_return
+
+        wandb.log({
+            'eval/episodic_return': avg_return,
+            'eval/episodic_length': steps / self.args.num_eval_episodes
+        }, step=self._global_step)
+
+        if record_first:
+            self._save_and_log_video(frames, tag="eval")
+
 
     def eval_robustness(self):
         steps, returns = 0, 0
