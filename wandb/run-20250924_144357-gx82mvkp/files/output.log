@@ -1,0 +1,17 @@
+Namespace(agent='RPC', env_name='highway-v0', device='cuda', seed=1, num_train_steps=500000, learning_starts=10000, gamma=0.99, tau=0.005, env_buffer_size=1000000, target_update_interval=1, log_interval=500, save_snapshot_interval=50000, eval_episode_interval=1000, num_eval_episodes=1, latent_dims=50, model_hidden_dims=256, model_num_layers=2, kl_constraint=10.0, lambda_init=1e-05, alpha_autotune=True, alpha_init=0.2, noise_factor=3.0, batch_size=256, seq_len=4, lr=0.0003, record_eval=True, video_dir='videos', video_fps=30)
+Traceback (most recent call last):
+  File "/home/harsh/arjun/robust-predictable-control/train_2.py", line 386, in main
+    workspace = RLWorkspace(args)
+  File "/home/harsh/arjun/robust-predictable-control/train_2.py", line 97, in __init__
+    self.agent = make_agent(self.train_env, self.device, self.args)
+                 ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harsh/arjun/robust-predictable-control/train_2.py", line 68, in make_agent
+    agent = RPCAgent(env, device, num_states, num_actions, args.gamma, args.tau,
+                        args.env_buffer_size, args.target_update_interval,
+    ...<2 lines>...
+                        args.alpha_init, args.alpha_autotune,
+                        args.batch_size, args.lr)
+  File "/home/harsh/arjun/robust-predictable-control/rpc.py", line 136, in __init__
+    self.low = torch.tensor(env.action_space.low, device=device)
+                            ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Discrete' object has no attribute 'low'

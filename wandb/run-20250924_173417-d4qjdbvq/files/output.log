@@ -1,0 +1,99 @@
+Namespace(agent='RPC', env_name='Walker2d-v5', device='cuda', seed=1, num_train_steps=500000, learning_starts=10000, gamma=0.99, tau=0.005, env_buffer_size=1000000, target_update_interval=1, log_interval=500, save_snapshot_interval=50000, eval_episode_interval=1000, num_eval_episodes=1, latent_dims=50, model_hidden_dims=256, model_num_layers=2, kl_constraint=5.0, lambda_init=1e-05, alpha_autotune=False, alpha_init=0.2, noise_factor=3.0, batch_size=256, seq_len=4, lr=0.0003, record_eval=True, video_dir='videos', video_fps=30)
+Episode: 1, total numsteps: 17, return: 0.4
+Episode: 2, total numsteps: 41, return: 7.04
+Episode: 3, total numsteps: 61, return: -4.89
+Episode: 4, total numsteps: 78, return: 3.26
+Episode: 5, total numsteps: 97, return: 6.68
+Episode: 6, total numsteps: 113, return: 1.04
+Episode: 7, total numsteps: 126, return: 2.14
+Episode: 8, total numsteps: 143, return: 0.54
+Episode: 9, total numsteps: 166, return: 8.34
+Episode: 10, total numsteps: 198, return: 11.86
+Episode: 11, total numsteps: 212, return: 1.99
+Episode: 12, total numsteps: 230, return: -2.91
+Episode: 13, total numsteps: 258, return: 0.63
+Episode: 14, total numsteps: 274, return: -1.48
+Episode: 15, total numsteps: 288, return: -1.83
+Episode: 16, total numsteps: 324, return: 8.73
+Episode: 17, total numsteps: 337, return: -2.36
+Episode: 18, total numsteps: 351, return: -1.97
+Episode: 19, total numsteps: 363, return: -2.83
+Episode: 20, total numsteps: 383, return: 8.46
+Episode: 21, total numsteps: 397, return: -1.32
+Episode: 22, total numsteps: 422, return: 5.66
+Episode: 23, total numsteps: 441, return: -7.39
+Episode: 24, total numsteps: 456, return: 3.94
+Episode: 25, total numsteps: 467, return: -2.54
+Episode: 26, total numsteps: 486, return: -6.92
+Episode: 27, total numsteps: 498, return: -0.83
+Episode: 28, total numsteps: 523, return: 14.94
+Episode: 29, total numsteps: 540, return: -3.09
+Episode: 30, total numsteps: 554, return: -0.16
+Episode: 31, total numsteps: 601, return: 22.23
+Episode: 32, total numsteps: 615, return: 2.42
+Episode: 33, total numsteps: 632, return: 2.1
+Episode: 34, total numsteps: 658, return: 0.42
+Episode: 35, total numsteps: 673, return: -1.33
+Episode: 36, total numsteps: 690, return: 4.47
+Episode: 37, total numsteps: 710, return: 3.46
+Episode: 38, total numsteps: 724, return: 1.86
+Episode: 39, total numsteps: 738, return: -1.84
+Episode: 40, total numsteps: 770, return: 7.51
+Episode: 41, total numsteps: 788, return: -0.91
+Episode: 42, total numsteps: 811, return: -2.47
+Episode: 43, total numsteps: 836, return: 2.71
+Episode: 44, total numsteps: 861, return: 12.77
+Episode: 45, total numsteps: 876, return: -5.16
+Episode: 46, total numsteps: 905, return: 12.88
+Episode: 47, total numsteps: 920, return: -2.16
+Episode: 48, total numsteps: 930, return: -0.9
+Episode: 49, total numsteps: 951, return: -1.29
+Episode: 50, total numsteps: 982, return: 15.45
+/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/glfw/__init__.py:917: GLFWError: (65550) b'X11: The DISPLAY environment variable is missing'
+  warnings.warn(message, GLFWError)
+/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/glfw/__init__.py:917: GLFWError: (65537) b'The GLFW library is not initialized'
+  warnings.warn(message, GLFWError)
+Traceback (most recent call last):
+  File "/home/harsh/arjun/robust-predictable-control/train.py", line 348, in main
+    workspace.train()
+    ~~~~~~~~~~~~~~~^^
+  File "/home/harsh/arjun/robust-predictable-control/train.py", line 216, in train
+    self.eval()
+    ~~~~~~~~~^^
+  File "/home/harsh/arjun/robust-predictable-control/train.py", line 252, in eval
+    frame = self.eval_env.render()   # (H,W,C) uint8
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/gymnasium/core.py", line 337, in render
+    return self.env.render()
+           ~~~~~~~~~~~~~~~^^
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/gymnasium/wrappers/common.py", line 409, in render
+    return super().render()
+           ~~~~~~~~~~~~~~^^
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/gymnasium/core.py", line 337, in render
+    return self.env.render()
+           ~~~~~~~~~~~~~~~^^
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/gymnasium/wrappers/common.py", line 301, in render
+    return env_render_passive_checker(self.env)
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/gymnasium/utils/passive_env_checker.py", line 361, in env_render_passive_checker
+    result = env.render()
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/gymnasium/envs/mujoco/mujoco_env.py", line 158, in render
+    return self.mujoco_renderer.render(self.render_mode)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/gymnasium/envs/mujoco/mujoco_rendering.py", line 761, in render
+    viewer = self._get_viewer(render_mode=render_mode)
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/gymnasium/envs/mujoco/mujoco_rendering.py", line 785, in _get_viewer
+    self.viewer = OffScreenViewer(
+                  ~~~~~~~~~~~~~~~^
+        self.model,
+        ^^^^^^^^^^^
+    ...<4 lines>...
+        self._vopt,
+        ^^^^^^^^^^^
+    )
+    ^
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/gymnasium/envs/mujoco/mujoco_rendering.py", line 189, in __init__
+    super().__init__(model, data, width, height, max_geom, visual_options)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/gymnasium/envs/mujoco/mujoco_rendering.py", line 74, in __init__
+    self.con = mujoco.MjrContext(self.model, mujoco.mjtFontScale.mjFONTSCALE_150)
+               ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+mujoco.FatalError: an OpenGL platform library has not been loaded into this process, this most likely means that a valid OpenGL context has not been created before mjr_makeContext was called

@@ -1,0 +1,128 @@
+[INFO] Using run: sweet-oath-220 (pd8l22k1)
+Namespace(agent='RPC', env_name='Walker2d-v5', device='cuda', seed=1, num_train_steps=1000000, learning_starts=20000, gamma=0.99, tau=0.005, env_buffer_size=1000000, target_update_interval=1, log_interval=500, save_snapshot_interval=10000, eval_episode_interval=10000, num_eval_episodes=5, latent_dims=16, model_hidden_dims=256, model_num_layers=2, kl_constraint=1, lambda_init=1e-05, alpha_autotune=True, alpha_init=0.2, noise_factor=2, batch_size=256, seq_len=4, lr=0.0003, record_eval=True, video_dir='videos', video_fps=30, use_rpc=1)
+RPC: True
+[save_snapshot] saved /home/harsh/arjun/robust-predictable-control/checkpoints/RPC_Walker2d-v5/pd8l22k1/0.pt
+Episode: 1, total numsteps: 17, return: 0.4
+Episode: 2, total numsteps: 41, return: 7.04
+Episode: 3, total numsteps: 61, return: -4.89
+Episode: 4, total numsteps: 78, return: 3.26
+Episode: 5, total numsteps: 97, return: 6.68
+Episode: 6, total numsteps: 113, return: 1.04
+Episode: 7, total numsteps: 126, return: 2.14
+Episode: 8, total numsteps: 143, return: 0.54
+Episode: 9, total numsteps: 166, return: 8.34
+Episode: 10, total numsteps: 198, return: 11.86
+Episode: 11, total numsteps: 212, return: 1.99
+Episode: 12, total numsteps: 230, return: -2.91
+Episode: 13, total numsteps: 258, return: 0.63
+Episode: 14, total numsteps: 274, return: -1.48
+Episode: 15, total numsteps: 288, return: -1.83
+Episode: 16, total numsteps: 324, return: 8.73
+Episode: 17, total numsteps: 337, return: -2.36
+Episode: 18, total numsteps: 351, return: -1.97
+Episode: 19, total numsteps: 363, return: -2.83
+Episode: 20, total numsteps: 383, return: 8.46
+Episode: 21, total numsteps: 397, return: -1.32
+Episode: 22, total numsteps: 422, return: 5.66
+Episode: 23, total numsteps: 441, return: -7.39
+Episode: 24, total numsteps: 456, return: 3.94
+Episode: 25, total numsteps: 467, return: -2.54
+Episode: 26, total numsteps: 486, return: -6.92
+Episode: 27, total numsteps: 498, return: -0.83
+Episode: 28, total numsteps: 523, return: 14.94
+Episode: 29, total numsteps: 540, return: -3.09
+Episode: 30, total numsteps: 554, return: -0.16
+Episode: 31, total numsteps: 601, return: 22.23
+Episode: 32, total numsteps: 615, return: 2.42
+Episode: 33, total numsteps: 632, return: 2.1
+Episode: 34, total numsteps: 658, return: 0.42
+Episode: 35, total numsteps: 673, return: -1.33
+Episode: 36, total numsteps: 690, return: 4.47
+Episode: 37, total numsteps: 710, return: 3.46
+Episode: 38, total numsteps: 724, return: 1.86
+Episode: 39, total numsteps: 738, return: -1.84
+Episode: 40, total numsteps: 770, return: 7.51
+Episode: 41, total numsteps: 788, return: -0.91
+Episode: 42, total numsteps: 811, return: -2.47
+Episode: 43, total numsteps: 836, return: 2.71
+Episode: 44, total numsteps: 861, return: 12.77
+Episode: 45, total numsteps: 876, return: -5.16
+Episode: 46, total numsteps: 905, return: 12.88
+Episode: 47, total numsteps: 920, return: -2.16
+Episode: 48, total numsteps: 930, return: -0.9
+Episode: 49, total numsteps: 951, return: -1.29
+Episode: 50, total numsteps: 982, return: 15.45
+Episode: 51, total numsteps: 1005, return: 9.35
+Episode: 52, total numsteps: 1054, return: 24.43
+Episode: 53, total numsteps: 1078, return: 1.55
+Episode: 54, total numsteps: 1107, return: 5.23
+Episode: 55, total numsteps: 1133, return: -4.66
+Episode: 56, total numsteps: 1152, return: -0.74
+Episode: 57, total numsteps: 1166, return: 2.69
+Episode: 58, total numsteps: 1176, return: -4.52
+Episode: 59, total numsteps: 1188, return: -3.64
+Episode: 60, total numsteps: 1201, return: 1.02
+Episode: 61, total numsteps: 1223, return: 1.07
+Episode: 62, total numsteps: 1266, return: 12.76
+Episode: 63, total numsteps: 1287, return: 0.25
+Episode: 64, total numsteps: 1305, return: 0.7
+Episode: 65, total numsteps: 1325, return: -1.82
+Episode: 66, total numsteps: 1342, return: -1.94
+Episode: 67, total numsteps: 1375, return: 4.18
+Episode: 68, total numsteps: 1395, return: -1.69
+Episode: 69, total numsteps: 1420, return: 1.56
+Episode: 70, total numsteps: 1445, return: 4.39
+Episode: 71, total numsteps: 1460, return: -2.66
+Episode: 72, total numsteps: 1512, return: 16.8
+Episode: 73, total numsteps: 1541, return: -11.5
+Episode: 74, total numsteps: 1554, return: 0.44
+Episode: 75, total numsteps: 1569, return: 1.43
+Episode: 76, total numsteps: 1590, return: -0.42
+Episode: 77, total numsteps: 1617, return: 5.64
+Episode: 78, total numsteps: 1638, return: 4.96
+Episode: 79, total numsteps: 1650, return: -3.38
+Episode: 80, total numsteps: 1664, return: -7.52
+Episode: 81, total numsteps: 1699, return: -0.5
+Episode: 82, total numsteps: 1725, return: -1.17
+Episode: 83, total numsteps: 1751, return: 0.08
+Episode: 84, total numsteps: 1786, return: 0.83
+Episode: 85, total numsteps: 1800, return: 1.31
+Episode: 86, total numsteps: 1814, return: -0.46
+Episode: 87, total numsteps: 1826, return: -0.92
+Episode: 88, total numsteps: 1839, return: 0.86
+Episode: 89, total numsteps: 1859, return: -2.9
+Episode: 90, total numsteps: 1882, return: -7.52
+Episode: 91, total numsteps: 1909, return: 5.15
+Episode: 92, total numsteps: 1925, return: -5.33
+Episode: 93, total numsteps: 1947, return: 4.43
+Episode: 94, total numsteps: 1983, return: 22.22
+Episode: 95, total numsteps: 2003, return: -1.65
+Episode: 96, total numsteps: 2022, return: 0.86
+Episode: 97, total numsteps: 2037, return: 1.27
+Episode: 98, total numsteps: 2054, return: -1.2
+Episode: 99, total numsteps: 2066, return: -1.93
+Episode: 100, total numsteps: 2082, return: -8.82
+Episode: 101, total numsteps: 2095, return: 2.11
+Episode: 102, total numsteps: 2131, return: 6.09
+Episode: 103, total numsteps: 2140, return: -1.57
+Episode: 104, total numsteps: 2153, return: -3.99
+Traceback (most recent call last):
+  File "/home/harsh/arjun/robust-predictable-control/train.py", line 443, in main
+    workspace.train()
+  File "/home/harsh/arjun/robust-predictable-control/train.py", line 215, in train
+    next_state, reward, terminated, truncated, info = self.train_env.step(action)
+  File "/home/harsh/miniconda3/envs/torch-cu121/lib/python3.10/site-packages/gymnasium/wrappers/common.py", line 125, in step
+    observation, reward, terminated, truncated, info = self.env.step(action)
+  File "/home/harsh/miniconda3/envs/torch-cu121/lib/python3.10/site-packages/gymnasium/wrappers/common.py", line 393, in step
+    return super().step(action)
+  File "/home/harsh/miniconda3/envs/torch-cu121/lib/python3.10/site-packages/gymnasium/core.py", line 327, in step
+    return self.env.step(action)
+  File "/home/harsh/miniconda3/envs/torch-cu121/lib/python3.10/site-packages/gymnasium/wrappers/common.py", line 285, in step
+    return self.env.step(action)
+  File "/home/harsh/miniconda3/envs/torch-cu121/lib/python3.10/site-packages/gymnasium/envs/mujoco/walker2d_v5.py", line 287, in step
+    self.do_simulation(action, self.frame_skip)
+  File "/home/harsh/miniconda3/envs/torch-cu121/lib/python3.10/site-packages/gymnasium/envs/mujoco/mujoco_env.py", line 199, in do_simulation
+    self._step_mujoco_simulation(ctrl, n_frames)
+  File "/home/harsh/miniconda3/envs/torch-cu121/lib/python3.10/site-packages/gymnasium/envs/mujoco/mujoco_env.py", line 147, in _step_mujoco_simulation
+    mujoco.mj_step(self.model, self.data, nstep=n_frames)
+KeyboardInterrupt

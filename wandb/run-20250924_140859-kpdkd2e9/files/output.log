@@ -1,0 +1,959 @@
+Namespace(agent='RPC', env_name='Walker2d-v5', device='cuda', seed=1, num_train_steps=500000, learning_starts=10000, gamma=0.99, tau=0.005, env_buffer_size=1000000, target_update_interval=1, log_interval=500, save_snapshot_interval=50000, eval_episode_interval=1000, num_eval_episodes=1, latent_dims=50, model_hidden_dims=256, model_num_layers=2, kl_constraint=10.0, lambda_init=1e-05, alpha_autotune=False, alpha_init=0.2, noise_factor=3.0, batch_size=256, seq_len=4, lr=0.0003, record_eval=True, video_dir='videos', video_fps=30)
+Episode: 1, total numsteps: 17, return: 0.4
+Episode: 2, total numsteps: 41, return: 7.04
+Episode: 3, total numsteps: 61, return: -4.89
+Episode: 4, total numsteps: 78, return: 3.26
+Episode: 5, total numsteps: 97, return: 6.68
+Episode: 6, total numsteps: 113, return: 1.04
+Episode: 7, total numsteps: 126, return: 2.14
+Episode: 8, total numsteps: 143, return: 0.54
+Episode: 9, total numsteps: 166, return: 8.34
+Episode: 10, total numsteps: 198, return: 11.86
+Episode: 11, total numsteps: 212, return: 1.99
+Episode: 12, total numsteps: 230, return: -2.91
+Episode: 13, total numsteps: 258, return: 0.63
+Episode: 14, total numsteps: 274, return: -1.48
+Episode: 15, total numsteps: 288, return: -1.83
+Episode: 16, total numsteps: 324, return: 8.73
+Episode: 17, total numsteps: 337, return: -2.36
+Episode: 18, total numsteps: 351, return: -1.97
+Episode: 19, total numsteps: 363, return: -2.83
+Episode: 20, total numsteps: 383, return: 8.46
+Episode: 21, total numsteps: 397, return: -1.32
+Episode: 22, total numsteps: 422, return: 5.66
+Episode: 23, total numsteps: 441, return: -7.39
+Episode: 24, total numsteps: 456, return: 3.94
+Episode: 25, total numsteps: 467, return: -2.54
+Episode: 26, total numsteps: 486, return: -6.92
+Episode: 27, total numsteps: 498, return: -0.83
+Episode: 28, total numsteps: 523, return: 14.94
+Episode: 29, total numsteps: 540, return: -3.09
+Episode: 30, total numsteps: 554, return: -0.16
+Episode: 31, total numsteps: 601, return: 22.23
+Episode: 32, total numsteps: 615, return: 2.42
+Episode: 33, total numsteps: 632, return: 2.1
+Episode: 34, total numsteps: 658, return: 0.42
+Episode: 35, total numsteps: 673, return: -1.33
+Episode: 36, total numsteps: 690, return: 4.47
+Episode: 37, total numsteps: 710, return: 3.46
+Episode: 38, total numsteps: 724, return: 1.86
+Episode: 39, total numsteps: 738, return: -1.84
+Episode: 40, total numsteps: 770, return: 7.51
+Episode: 41, total numsteps: 788, return: -0.91
+Episode: 42, total numsteps: 811, return: -2.47
+Episode: 43, total numsteps: 836, return: 2.71
+Episode: 44, total numsteps: 861, return: 12.77
+Episode: 45, total numsteps: 876, return: -5.16
+Episode: 46, total numsteps: 905, return: 12.88
+Episode: 47, total numsteps: 920, return: -2.16
+Episode: 48, total numsteps: 930, return: -0.9
+Episode: 49, total numsteps: 951, return: -1.29
+Episode: 50, total numsteps: 982, return: 15.45
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 51, total numsteps: 1005, return: 9.35
+Episode: 52, total numsteps: 1054, return: 24.43
+Episode: 53, total numsteps: 1078, return: 1.55
+Episode: 54, total numsteps: 1107, return: 5.23
+Episode: 55, total numsteps: 1133, return: -4.66
+Episode: 56, total numsteps: 1152, return: -0.74
+Episode: 57, total numsteps: 1166, return: 2.69
+Episode: 58, total numsteps: 1176, return: -4.52
+Episode: 59, total numsteps: 1188, return: -3.64
+Episode: 60, total numsteps: 1201, return: 1.02
+Episode: 61, total numsteps: 1223, return: 1.07
+Episode: 62, total numsteps: 1266, return: 12.76
+Episode: 63, total numsteps: 1287, return: 0.25
+Episode: 64, total numsteps: 1305, return: 0.7
+Episode: 65, total numsteps: 1325, return: -1.82
+Episode: 66, total numsteps: 1342, return: -1.94
+Episode: 67, total numsteps: 1375, return: 4.18
+Episode: 68, total numsteps: 1395, return: -1.69
+Episode: 69, total numsteps: 1420, return: 1.56
+Episode: 70, total numsteps: 1445, return: 4.39
+Episode: 71, total numsteps: 1460, return: -2.66
+Episode: 72, total numsteps: 1512, return: 16.8
+Episode: 73, total numsteps: 1541, return: -11.5
+Episode: 74, total numsteps: 1554, return: 0.44
+Episode: 75, total numsteps: 1569, return: 1.43
+Episode: 76, total numsteps: 1590, return: -0.42
+Episode: 77, total numsteps: 1617, return: 5.64
+Episode: 78, total numsteps: 1638, return: 4.96
+Episode: 79, total numsteps: 1650, return: -3.38
+Episode: 80, total numsteps: 1664, return: -7.52
+Episode: 81, total numsteps: 1699, return: -0.5
+Episode: 82, total numsteps: 1725, return: -1.17
+Episode: 83, total numsteps: 1751, return: 0.08
+Episode: 84, total numsteps: 1786, return: 0.83
+Episode: 85, total numsteps: 1800, return: 1.31
+Episode: 86, total numsteps: 1814, return: -0.46
+Episode: 87, total numsteps: 1826, return: -0.92
+Episode: 88, total numsteps: 1839, return: 0.86
+Episode: 89, total numsteps: 1859, return: -2.9
+Episode: 90, total numsteps: 1882, return: -7.52
+Episode: 91, total numsteps: 1909, return: 5.15
+Episode: 92, total numsteps: 1925, return: -5.33
+Episode: 93, total numsteps: 1947, return: 4.43
+Episode: 94, total numsteps: 1983, return: 22.22
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 95, total numsteps: 2003, return: -1.65
+Episode: 96, total numsteps: 2022, return: 0.86
+Episode: 97, total numsteps: 2037, return: 1.27
+Episode: 98, total numsteps: 2054, return: -1.2
+Episode: 99, total numsteps: 2066, return: -1.93
+Episode: 100, total numsteps: 2082, return: -8.82
+Episode: 101, total numsteps: 2095, return: 2.11
+Episode: 102, total numsteps: 2131, return: 6.09
+Episode: 103, total numsteps: 2140, return: -1.57
+Episode: 104, total numsteps: 2153, return: -3.99
+Episode: 105, total numsteps: 2165, return: -1.96
+Episode: 106, total numsteps: 2184, return: -1.9
+Episode: 107, total numsteps: 2215, return: 15.57
+Episode: 108, total numsteps: 2244, return: 1.7
+Episode: 109, total numsteps: 2263, return: 1.55
+Episode: 110, total numsteps: 2282, return: 5.47
+Episode: 111, total numsteps: 2306, return: -5.24
+Episode: 112, total numsteps: 2320, return: 3.46
+Episode: 113, total numsteps: 2337, return: -0.98
+Episode: 114, total numsteps: 2354, return: 0.73
+Episode: 115, total numsteps: 2374, return: -10.17
+Episode: 116, total numsteps: 2397, return: -4.38
+Episode: 117, total numsteps: 2410, return: -0.68
+Episode: 118, total numsteps: 2432, return: -0.99
+Episode: 119, total numsteps: 2473, return: 9.47
+Episode: 120, total numsteps: 2490, return: -0.11
+Episode: 121, total numsteps: 2509, return: -4.75
+Episode: 122, total numsteps: 2527, return: 3.83
+Episode: 123, total numsteps: 2546, return: -2.15
+Episode: 124, total numsteps: 2561, return: -3.28
+Episode: 125, total numsteps: 2593, return: -4.75
+Episode: 126, total numsteps: 2612, return: -1.47
+Episode: 127, total numsteps: 2665, return: 33.22
+Episode: 128, total numsteps: 2686, return: -3.52
+Episode: 129, total numsteps: 2706, return: -5.97
+Episode: 130, total numsteps: 2717, return: -4.23
+Episode: 131, total numsteps: 2752, return: 21.85
+Episode: 132, total numsteps: 2772, return: 2.61
+Episode: 133, total numsteps: 2786, return: 0.76
+Episode: 134, total numsteps: 2796, return: -0.72
+Episode: 135, total numsteps: 2817, return: -1.85
+Episode: 136, total numsteps: 2837, return: -5.51
+Episode: 137, total numsteps: 2853, return: 1.58
+Episode: 138, total numsteps: 2871, return: -4.3
+Episode: 139, total numsteps: 2884, return: -1.7
+Episode: 140, total numsteps: 2896, return: -0.74
+Episode: 141, total numsteps: 2910, return: -0.38
+Episode: 142, total numsteps: 2930, return: 4.42
+Episode: 143, total numsteps: 2960, return: 4.36
+Episode: 144, total numsteps: 2979, return: 1.51
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 145, total numsteps: 3006, return: -0.48
+Episode: 146, total numsteps: 3018, return: -5.7
+Episode: 147, total numsteps: 3037, return: 4.06
+Episode: 148, total numsteps: 3061, return: 13.92
+Episode: 149, total numsteps: 3094, return: 1.73
+Episode: 150, total numsteps: 3129, return: 10.08
+Episode: 151, total numsteps: 3139, return: -1.51
+Episode: 152, total numsteps: 3156, return: 2.48
+Episode: 153, total numsteps: 3172, return: -1.09
+Episode: 154, total numsteps: 3183, return: -2.7
+Episode: 155, total numsteps: 3218, return: -0.57
+Episode: 156, total numsteps: 3233, return: 4.31
+Episode: 157, total numsteps: 3259, return: 13.02
+Episode: 158, total numsteps: 3271, return: -1.59
+Episode: 159, total numsteps: 3295, return: -4.25
+Episode: 160, total numsteps: 3320, return: 9.01
+Episode: 161, total numsteps: 3339, return: -0.07
+Episode: 162, total numsteps: 3363, return: 11.09
+Episode: 163, total numsteps: 3374, return: 0.1
+Episode: 164, total numsteps: 3421, return: 9.58
+Episode: 165, total numsteps: 3444, return: -7.24
+Episode: 166, total numsteps: 3465, return: -9.86
+Episode: 167, total numsteps: 3504, return: 4.58
+Episode: 168, total numsteps: 3527, return: 6.95
+Episode: 169, total numsteps: 3547, return: -6.89
+Episode: 170, total numsteps: 3570, return: -1.09
+Episode: 171, total numsteps: 3584, return: 1.48
+Episode: 172, total numsteps: 3596, return: -7.11
+Episode: 173, total numsteps: 3621, return: 1.35
+Episode: 174, total numsteps: 3647, return: -0.3
+Episode: 175, total numsteps: 3663, return: 2.11
+Episode: 176, total numsteps: 3704, return: 2.51
+Episode: 177, total numsteps: 3713, return: -2.43
+Episode: 178, total numsteps: 3737, return: 5.88
+Episode: 179, total numsteps: 3749, return: -1.69
+Episode: 180, total numsteps: 3776, return: -3.49
+Episode: 181, total numsteps: 3805, return: 3.11
+Episode: 182, total numsteps: 3821, return: -0.93
+Episode: 183, total numsteps: 3837, return: 5.26
+Episode: 184, total numsteps: 3868, return: 8.82
+Episode: 185, total numsteps: 3887, return: -4.71
+Episode: 186, total numsteps: 3900, return: -0.5
+Episode: 187, total numsteps: 3928, return: 1.95
+Episode: 188, total numsteps: 3944, return: 3.79
+Episode: 189, total numsteps: 3986, return: 5.73
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 190, total numsteps: 4006, return: -3.3
+Episode: 191, total numsteps: 4026, return: 1.66
+Episode: 192, total numsteps: 4045, return: 5.54
+Episode: 193, total numsteps: 4063, return: 5.11
+Episode: 194, total numsteps: 4081, return: -2.09
+Episode: 195, total numsteps: 4096, return: 0.92
+Episode: 196, total numsteps: 4119, return: 7.2
+Episode: 197, total numsteps: 4133, return: 0.83
+Episode: 198, total numsteps: 4152, return: 0.96
+Episode: 199, total numsteps: 4166, return: 3.48
+Episode: 200, total numsteps: 4216, return: 35.35
+Episode: 201, total numsteps: 4237, return: 0.73
+Episode: 202, total numsteps: 4250, return: 0.69
+Episode: 203, total numsteps: 4267, return: 2.09
+Episode: 204, total numsteps: 4297, return: 9.35
+Episode: 205, total numsteps: 4312, return: 2.52
+Episode: 206, total numsteps: 4344, return: 1.59
+Episode: 207, total numsteps: 4373, return: -5.1
+Episode: 208, total numsteps: 4406, return: 4.43
+Episode: 209, total numsteps: 4437, return: 3.46
+Episode: 210, total numsteps: 4451, return: 0.11
+Episode: 211, total numsteps: 4465, return: 1.21
+Episode: 212, total numsteps: 4478, return: -3.54
+Episode: 213, total numsteps: 4496, return: -0.57
+Episode: 214, total numsteps: 4518, return: -3.0
+Episode: 215, total numsteps: 4543, return: -2.43
+Episode: 216, total numsteps: 4571, return: 5.25
+Episode: 217, total numsteps: 4583, return: -0.46
+Episode: 218, total numsteps: 4634, return: 24.09
+Episode: 219, total numsteps: 4650, return: 4.61
+Episode: 220, total numsteps: 4667, return: -2.66
+Episode: 221, total numsteps: 4689, return: 11.6
+Episode: 222, total numsteps: 4709, return: -1.13
+Episode: 223, total numsteps: 4725, return: 4.72
+Episode: 224, total numsteps: 4738, return: -6.61
+Episode: 225, total numsteps: 4754, return: -3.49
+Episode: 226, total numsteps: 4782, return: -0.16
+Episode: 227, total numsteps: 4806, return: -8.04
+Episode: 228, total numsteps: 4828, return: -5.0
+Episode: 229, total numsteps: 4877, return: 15.47
+Episode: 230, total numsteps: 4897, return: -6.98
+Episode: 231, total numsteps: 4914, return: 0.88
+Episode: 232, total numsteps: 4939, return: 1.72
+Episode: 233, total numsteps: 4959, return: -6.25
+Episode: 234, total numsteps: 4972, return: 1.34
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 235, total numsteps: 5005, return: 5.8
+Episode: 236, total numsteps: 5020, return: 0.6
+Episode: 237, total numsteps: 5057, return: 1.93
+Episode: 238, total numsteps: 5092, return: 6.2
+Episode: 239, total numsteps: 5115, return: 2.34
+Episode: 240, total numsteps: 5131, return: 2.44
+Episode: 241, total numsteps: 5147, return: 2.89
+Episode: 242, total numsteps: 5167, return: 8.03
+Episode: 243, total numsteps: 5190, return: 2.03
+Episode: 244, total numsteps: 5203, return: 2.43
+Episode: 245, total numsteps: 5225, return: 9.06
+Episode: 246, total numsteps: 5255, return: 17.08
+Episode: 247, total numsteps: 5285, return: 1.61
+Episode: 248, total numsteps: 5311, return: -1.58
+Episode: 249, total numsteps: 5334, return: -4.76
+Episode: 250, total numsteps: 5361, return: -2.18
+Episode: 251, total numsteps: 5369, return: -4.13
+Episode: 252, total numsteps: 5383, return: 2.9
+Episode: 253, total numsteps: 5432, return: 9.96
+Episode: 254, total numsteps: 5457, return: -2.64
+Episode: 255, total numsteps: 5479, return: 6.34
+Episode: 256, total numsteps: 5489, return: -1.94
+Episode: 257, total numsteps: 5509, return: 4.56
+Episode: 258, total numsteps: 5536, return: 12.72
+Episode: 259, total numsteps: 5567, return: 7.7
+Episode: 260, total numsteps: 5604, return: -0.79
+Episode: 261, total numsteps: 5629, return: -0.85
+Episode: 262, total numsteps: 5644, return: -3.36
+Episode: 263, total numsteps: 5674, return: 6.95
+Episode: 264, total numsteps: 5690, return: 3.2
+Episode: 265, total numsteps: 5711, return: 6.81
+Episode: 266, total numsteps: 5722, return: -3.41
+Episode: 267, total numsteps: 5734, return: -2.25
+Episode: 268, total numsteps: 5760, return: 0.04
+Episode: 269, total numsteps: 5769, return: -2.28
+Episode: 270, total numsteps: 5779, return: -0.31
+Episode: 271, total numsteps: 5795, return: -8.19
+Episode: 272, total numsteps: 5820, return: 7.81
+Episode: 273, total numsteps: 5833, return: 2.68
+Episode: 274, total numsteps: 5851, return: 4.77
+Episode: 275, total numsteps: 5867, return: -5.94
+Episode: 276, total numsteps: 5877, return: -0.94
+Episode: 277, total numsteps: 5897, return: 2.0
+Episode: 278, total numsteps: 5918, return: 3.66
+Episode: 279, total numsteps: 5949, return: 11.73
+Episode: 280, total numsteps: 5962, return: -2.09
+Episode: 281, total numsteps: 5986, return: -5.7
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 282, total numsteps: 6010, return: 3.63
+Episode: 283, total numsteps: 6021, return: -1.1
+Episode: 284, total numsteps: 6037, return: -2.12
+Episode: 285, total numsteps: 6054, return: -1.63
+Episode: 286, total numsteps: 6088, return: 4.39
+Episode: 287, total numsteps: 6116, return: 5.1
+Episode: 288, total numsteps: 6127, return: -3.9
+Episode: 289, total numsteps: 6140, return: 2.12
+Episode: 290, total numsteps: 6172, return: 0.36
+Episode: 291, total numsteps: 6190, return: 3.11
+Episode: 292, total numsteps: 6207, return: 0.09
+Episode: 293, total numsteps: 6228, return: 6.55
+Episode: 294, total numsteps: 6246, return: -6.48
+Episode: 295, total numsteps: 6262, return: 1.09
+Episode: 296, total numsteps: 6287, return: -5.56
+Episode: 297, total numsteps: 6300, return: -5.03
+Episode: 298, total numsteps: 6339, return: 13.81
+Episode: 299, total numsteps: 6354, return: -6.93
+Episode: 300, total numsteps: 6384, return: 15.5
+Episode: 301, total numsteps: 6400, return: -0.66
+Episode: 302, total numsteps: 6431, return: 14.87
+Episode: 303, total numsteps: 6446, return: -8.49
+Episode: 304, total numsteps: 6461, return: 1.04
+Episode: 305, total numsteps: 6481, return: 8.7
+Episode: 306, total numsteps: 6493, return: 1.89
+Episode: 307, total numsteps: 6509, return: 1.96
+Episode: 308, total numsteps: 6532, return: -3.42
+Episode: 309, total numsteps: 6571, return: 22.19
+Episode: 310, total numsteps: 6593, return: 5.27
+Episode: 311, total numsteps: 6608, return: 4.97
+Episode: 312, total numsteps: 6643, return: 11.47
+Episode: 313, total numsteps: 6672, return: 2.29
+Episode: 314, total numsteps: 6687, return: -2.12
+Episode: 315, total numsteps: 6704, return: -0.89
+Episode: 316, total numsteps: 6729, return: 3.86
+Episode: 317, total numsteps: 6755, return: -1.86
+Episode: 318, total numsteps: 6767, return: -0.09
+Episode: 319, total numsteps: 6804, return: 10.69
+Episode: 320, total numsteps: 6819, return: 1.76
+Episode: 321, total numsteps: 6836, return: 0.56
+Episode: 322, total numsteps: 6869, return: 4.69
+Episode: 323, total numsteps: 6887, return: -3.96
+Episode: 324, total numsteps: 6901, return: -1.16
+Episode: 325, total numsteps: 6924, return: 1.19
+Episode: 326, total numsteps: 6960, return: -0.86
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 327, total numsteps: 7014, return: 31.0
+Episode: 328, total numsteps: 7033, return: 2.6
+Episode: 329, total numsteps: 7049, return: -0.8
+Episode: 330, total numsteps: 7065, return: -6.39
+Episode: 331, total numsteps: 7098, return: 15.7
+Episode: 332, total numsteps: 7110, return: 0.75
+Episode: 333, total numsteps: 7128, return: -9.42
+Episode: 334, total numsteps: 7163, return: 7.05
+Episode: 335, total numsteps: 7183, return: -1.45
+Episode: 336, total numsteps: 7207, return: -2.26
+Episode: 337, total numsteps: 7218, return: -1.16
+Episode: 338, total numsteps: 7234, return: 0.95
+Episode: 339, total numsteps: 7251, return: -2.53
+Episode: 340, total numsteps: 7270, return: -4.33
+Episode: 341, total numsteps: 7289, return: -3.57
+Episode: 342, total numsteps: 7316, return: -3.56
+Episode: 343, total numsteps: 7370, return: 29.65
+Episode: 344, total numsteps: 7385, return: 0.25
+Episode: 345, total numsteps: 7409, return: 0.61
+Episode: 346, total numsteps: 7426, return: 3.69
+Episode: 347, total numsteps: 7482, return: 30.62
+Episode: 348, total numsteps: 7499, return: 3.89
+Episode: 349, total numsteps: 7516, return: 1.2
+Episode: 350, total numsteps: 7527, return: -3.52
+Episode: 351, total numsteps: 7548, return: 0.77
+Episode: 352, total numsteps: 7586, return: 16.65
+Episode: 353, total numsteps: 7600, return: 1.68
+Episode: 354, total numsteps: 7628, return: 1.08
+Episode: 355, total numsteps: 7650, return: -2.56
+Episode: 356, total numsteps: 7680, return: -4.0
+Episode: 357, total numsteps: 7695, return: -0.34
+Episode: 358, total numsteps: 7709, return: -0.08
+Episode: 359, total numsteps: 7741, return: 4.72
+Episode: 360, total numsteps: 7770, return: 4.81
+Episode: 361, total numsteps: 7787, return: -5.89
+Episode: 362, total numsteps: 7806, return: 0.51
+Episode: 363, total numsteps: 7833, return: -2.79
+Episode: 364, total numsteps: 7866, return: 7.6
+Episode: 365, total numsteps: 7879, return: -6.24
+Episode: 366, total numsteps: 7897, return: 2.47
+Episode: 367, total numsteps: 7907, return: -1.13
+Episode: 368, total numsteps: 7929, return: 2.99
+Episode: 369, total numsteps: 7955, return: 3.93
+Episode: 370, total numsteps: 7974, return: 4.79
+Episode: 371, total numsteps: 7996, return: -0.38
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 372, total numsteps: 8010, return: 2.19
+Episode: 373, total numsteps: 8027, return: -2.47
+Episode: 374, total numsteps: 8053, return: 3.66
+Episode: 375, total numsteps: 8080, return: 4.66
+Episode: 376, total numsteps: 8091, return: -0.68
+Episode: 377, total numsteps: 8118, return: 5.4
+Episode: 378, total numsteps: 8127, return: -4.74
+Episode: 379, total numsteps: 8148, return: 1.0
+Episode: 380, total numsteps: 8182, return: 9.58
+Episode: 381, total numsteps: 8199, return: 4.15
+Episode: 382, total numsteps: 8217, return: 0.96
+Episode: 383, total numsteps: 8243, return: -1.85
+Episode: 384, total numsteps: 8254, return: -4.24
+Episode: 385, total numsteps: 8266, return: -8.69
+Episode: 386, total numsteps: 8300, return: -2.44
+Episode: 387, total numsteps: 8318, return: -3.01
+Episode: 388, total numsteps: 8364, return: 27.76
+Episode: 389, total numsteps: 8380, return: -1.54
+Episode: 390, total numsteps: 8409, return: 13.24
+Episode: 391, total numsteps: 8434, return: -2.49
+Episode: 392, total numsteps: 8449, return: 0.2
+Episode: 393, total numsteps: 8465, return: 0.33
+Episode: 394, total numsteps: 8479, return: 0.98
+Episode: 395, total numsteps: 8493, return: 2.01
+Episode: 396, total numsteps: 8521, return: 10.19
+Episode: 397, total numsteps: 8546, return: 5.93
+Episode: 398, total numsteps: 8555, return: -2.72
+Episode: 399, total numsteps: 8576, return: -2.22
+Episode: 400, total numsteps: 8593, return: -0.43
+Episode: 401, total numsteps: 8617, return: -0.91
+Episode: 402, total numsteps: 8632, return: 2.72
+Episode: 403, total numsteps: 8669, return: 5.09
+Episode: 404, total numsteps: 8682, return: -3.68
+Episode: 405, total numsteps: 8703, return: 3.48
+Episode: 406, total numsteps: 8718, return: 0.8
+Episode: 407, total numsteps: 8730, return: 1.79
+Episode: 408, total numsteps: 8752, return: 3.78
+Episode: 409, total numsteps: 8776, return: 5.83
+Episode: 410, total numsteps: 8789, return: -2.29
+Episode: 411, total numsteps: 8806, return: -0.7
+Episode: 412, total numsteps: 8829, return: -1.76
+Episode: 413, total numsteps: 8846, return: -1.91
+Episode: 414, total numsteps: 8886, return: 6.41
+Episode: 415, total numsteps: 8907, return: 2.83
+Episode: 416, total numsteps: 8922, return: -0.22
+Episode: 417, total numsteps: 8938, return: 1.33
+Episode: 418, total numsteps: 8954, return: -0.92
+Episode: 419, total numsteps: 8980, return: -0.28
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 420, total numsteps: 9003, return: 0.11
+Episode: 421, total numsteps: 9022, return: -3.49
+Episode: 422, total numsteps: 9034, return: 1.57
+Episode: 423, total numsteps: 9067, return: 21.52
+Episode: 424, total numsteps: 9094, return: 6.04
+Episode: 425, total numsteps: 9113, return: -3.46
+Episode: 426, total numsteps: 9149, return: 7.25
+Episode: 427, total numsteps: 9160, return: -5.25
+Episode: 428, total numsteps: 9188, return: 15.43
+Episode: 429, total numsteps: 9203, return: -2.09
+Episode: 430, total numsteps: 9215, return: -0.12
+Episode: 431, total numsteps: 9243, return: -4.79
+Episode: 432, total numsteps: 9256, return: -4.63
+Episode: 433, total numsteps: 9276, return: 7.73
+Episode: 434, total numsteps: 9288, return: -2.87
+Episode: 435, total numsteps: 9301, return: -0.94
+Episode: 436, total numsteps: 9334, return: 9.12
+Episode: 437, total numsteps: 9362, return: -2.17
+Episode: 438, total numsteps: 9381, return: 5.46
+Episode: 439, total numsteps: 9415, return: 5.45
+Episode: 440, total numsteps: 9431, return: -0.36
+Episode: 441, total numsteps: 9446, return: 0.91
+Episode: 442, total numsteps: 9470, return: 2.31
+Episode: 443, total numsteps: 9484, return: 2.88
+Episode: 444, total numsteps: 9500, return: -0.4
+Episode: 445, total numsteps: 9552, return: 19.82
+Episode: 446, total numsteps: 9565, return: -2.39
+Episode: 447, total numsteps: 9580, return: -0.8
+Episode: 448, total numsteps: 9591, return: -3.27
+Episode: 449, total numsteps: 9605, return: -4.55
+Episode: 450, total numsteps: 9630, return: 1.5
+Episode: 451, total numsteps: 9645, return: -4.9
+Episode: 452, total numsteps: 9665, return: -2.58
+Episode: 453, total numsteps: 9679, return: -2.84
+Episode: 454, total numsteps: 9715, return: 9.95
+Episode: 455, total numsteps: 9730, return: 0.04
+Episode: 456, total numsteps: 9762, return: 5.49
+Episode: 457, total numsteps: 9793, return: 10.77
+Episode: 458, total numsteps: 9816, return: -0.49
+Episode: 459, total numsteps: 9839, return: 4.63
+Episode: 460, total numsteps: 9850, return: -0.22
+Episode: 461, total numsteps: 9868, return: 4.85
+Episode: 462, total numsteps: 9906, return: 5.22
+Episode: 463, total numsteps: 9922, return: 2.08
+Episode: 464, total numsteps: 9946, return: 1.38
+Episode: 465, total numsteps: 9970, return: 1.27
+Episode: 466, total numsteps: 9984, return: -2.53
+Episode: 467, total numsteps: 9996, return: -3.37
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 468, total numsteps: 10017, return: 5.15
+Episode: 469, total numsteps: 10035, return: -0.62
+Episode: 470, total numsteps: 10094, return: 27.08
+Episode: 471, total numsteps: 10182, return: 4.37
+Episode: 472, total numsteps: 10426, return: 112.14
+Episode: 473, total numsteps: 10597, return: 5.53
+Episode: 474, total numsteps: 10772, return: 21.41
+Episode: 475, total numsteps: 10898, return: 228.54
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 476, total numsteps: 11064, return: 284.44
+Episode: 477, total numsteps: 11245, return: 292.08
+Episode: 478, total numsteps: 11788, return: 653.83
+Episode: 479, total numsteps: 11960, return: 295.27
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 480, total numsteps: 12352, return: 508.58
+Episode: 481, total numsteps: 12513, return: 281.73
+Episode: 482, total numsteps: 12713, return: 315.48
+Episode: 483, total numsteps: 12916, return: 324.8
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 484, total numsteps: 13078, return: 269.87
+Episode: 485, total numsteps: 13328, return: 378.38
+Episode: 486, total numsteps: 13557, return: 362.65
+Episode: 487, total numsteps: 13776, return: 351.38
+Episode: 488, total numsteps: 13929, return: 280.23
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 489, total numsteps: 14106, return: 301.9
+Episode: 490, total numsteps: 14399, return: 191.12
+Episode: 491, total numsteps: 14618, return: 345.69
+Episode: 492, total numsteps: 14753, return: 257.35
+Episode: 493, total numsteps: 14917, return: 266.57
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 494, total numsteps: 15249, return: 466.75
+Episode: 495, total numsteps: 15576, return: 186.67
+Episode: 496, total numsteps: 15849, return: 399.11
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 497, total numsteps: 16062, return: 328.56
+Episode: 498, total numsteps: 16235, return: 293.98
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 499, total numsteps: 17235, return: 1042.03
+Episode: 500, total numsteps: 17423, return: 305.23
+Episode: 501, total numsteps: 17552, return: 232.72
+Episode: 502, total numsteps: 17741, return: 286.44
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 503, total numsteps: 18190, return: 494.21
+Episode: 504, total numsteps: 18441, return: 379.37
+Episode: 505, total numsteps: 18852, return: 542.94
+Episode: 506, total numsteps: 18967, return: 183.11
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 507, total numsteps: 19093, return: 189.4
+Episode: 508, total numsteps: 19244, return: 265.67
+Episode: 509, total numsteps: 19381, return: 263.89
+Episode: 510, total numsteps: 19508, return: 230.98
+Episode: 511, total numsteps: 19678, return: 291.95
+Episode: 512, total numsteps: 19906, return: 363.12
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 513, total numsteps: 20137, return: 113.06
+Episode: 514, total numsteps: 20279, return: 252.51
+Episode: 515, total numsteps: 20420, return: 256.85
+Episode: 516, total numsteps: 20539, return: 214.64
+Episode: 517, total numsteps: 20646, return: 209.14
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 518, total numsteps: 21221, return: 626.03
+Episode: 519, total numsteps: 21371, return: 265.6
+Episode: 520, total numsteps: 21680, return: 389.68
+Episode: 521, total numsteps: 21778, return: 190.1
+Episode: 522, total numsteps: 21977, return: 310.58
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 523, total numsteps: 22164, return: 327.3
+Episode: 524, total numsteps: 22363, return: 329.65
+Episode: 525, total numsteps: 22486, return: 210.35
+Episode: 526, total numsteps: 22802, return: 505.59
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 527, total numsteps: 23169, return: 512.63
+Episode: 528, total numsteps: 23409, return: 398.12
+Episode: 529, total numsteps: 23946, return: 775.87
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 530, total numsteps: 24117, return: 338.25
+Episode: 531, total numsteps: 24345, return: 400.01
+Episode: 532, total numsteps: 24508, return: 308.58
+Episode: 533, total numsteps: 24833, return: 420.46
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 534, total numsteps: 25011, return: 304.83
+Episode: 535, total numsteps: 25159, return: 286.85
+Episode: 536, total numsteps: 25303, return: 295.66
+Episode: 537, total numsteps: 25510, return: 378.67
+Episode: 538, total numsteps: 25693, return: 332.64
+Episode: 539, total numsteps: 25929, return: 407.97
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 540, total numsteps: 26041, return: 32.4
+Episode: 541, total numsteps: 26212, return: 388.92
+Episode: 542, total numsteps: 26395, return: 365.82
+Episode: 543, total numsteps: 26592, return: 388.96
+Episode: 544, total numsteps: 26839, return: 437.06
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 545, total numsteps: 27203, return: 552.37
+Episode: 546, total numsteps: 27335, return: 11.76
+Episode: 547, total numsteps: 27464, return: 304.18
+Episode: 548, total numsteps: 27678, return: 359.62
+Episode: 549, total numsteps: 27923, return: 429.5
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 550, total numsteps: 28117, return: 401.6
+Episode: 551, total numsteps: 28351, return: 429.85
+Episode: 552, total numsteps: 28568, return: 395.94
+Episode: 553, total numsteps: 28829, return: 464.08
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 554, total numsteps: 29029, return: 384.66
+Episode: 555, total numsteps: 29264, return: 406.89
+Episode: 556, total numsteps: 29462, return: 385.64
+Episode: 557, total numsteps: 29684, return: 429.23
+Episode: 558, total numsteps: 29986, return: 507.51
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 559, total numsteps: 30218, return: 402.61
+Episode: 560, total numsteps: 30382, return: 310.58
+Episode: 561, total numsteps: 30605, return: 402.25
+Episode: 562, total numsteps: 30786, return: 355.17
+Episode: 563, total numsteps: 30950, return: 344.7
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 564, total numsteps: 31124, return: 317.37
+Episode: 565, total numsteps: 31318, return: 371.13
+Episode: 566, total numsteps: 31501, return: 331.83
+Episode: 567, total numsteps: 31696, return: 362.12
+Episode: 568, total numsteps: 31900, return: 374.39
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 569, total numsteps: 32060, return: 292.78
+Episode: 570, total numsteps: 32280, return: 365.78
+Episode: 571, total numsteps: 32497, return: 379.47
+Episode: 572, total numsteps: 32696, return: 370.47
+Episode: 573, total numsteps: 32926, return: 417.02
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 574, total numsteps: 33120, return: 347.97
+Episode: 575, total numsteps: 33379, return: 436.43
+Episode: 576, total numsteps: 33588, return: 369.49
+Episode: 577, total numsteps: 33811, return: 391.16
+Episode: 578, total numsteps: 33995, return: 346.76
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 579, total numsteps: 34222, return: 405.77
+Episode: 580, total numsteps: 34446, return: 401.15
+Episode: 581, total numsteps: 34695, return: 408.47
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 582, total numsteps: 35008, return: 513.67
+Episode: 583, total numsteps: 35367, return: 580.35
+Episode: 584, total numsteps: 35598, return: 412.36
+Episode: 585, total numsteps: 35927, return: 521.14
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 586, total numsteps: 36132, return: 369.08
+Episode: 587, total numsteps: 36339, return: 400.77
+Episode: 588, total numsteps: 36535, return: 351.39
+Episode: 589, total numsteps: 36665, return: 45.33
+Episode: 590, total numsteps: 36828, return: 317.73
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 591, total numsteps: 37013, return: 329.76
+Episode: 592, total numsteps: 37143, return: 259.1
+Episode: 593, total numsteps: 37298, return: 302.71
+Episode: 594, total numsteps: 37385, return: 185.33
+Episode: 595, total numsteps: 37675, return: 351.42
+Episode: 596, total numsteps: 37968, return: 443.55
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 597, total numsteps: 38127, return: 298.58
+Episode: 598, total numsteps: 38353, return: 15.29
+Episode: 599, total numsteps: 38525, return: 295.25
+Episode: 600, total numsteps: 38668, return: 251.15
+Episode: 601, total numsteps: 38843, return: 304.01
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 602, total numsteps: 39043, return: 328.84
+Episode: 603, total numsteps: 39236, return: 306.89
+Episode: 604, total numsteps: 39436, return: 318.85
+Episode: 605, total numsteps: 39826, return: 478.53
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 606, total numsteps: 40005, return: 342.95
+Episode: 607, total numsteps: 40297, return: 419.31
+Episode: 608, total numsteps: 40549, return: 400.01
+Episode: 609, total numsteps: 40787, return: 389.1
+Episode: 610, total numsteps: 40931, return: 253.93
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 611, total numsteps: 41100, return: 298.66
+Episode: 612, total numsteps: 41284, return: 329.9
+Episode: 613, total numsteps: 41484, return: 348.3
+Episode: 614, total numsteps: 41608, return: 232.23
+Episode: 615, total numsteps: 41768, return: 295.7
+Episode: 616, total numsteps: 41908, return: 270.48
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 617, total numsteps: 42098, return: 315.01
+Episode: 618, total numsteps: 42262, return: 291.65
+Episode: 619, total numsteps: 42612, return: 429.85
+Episode: 620, total numsteps: 42753, return: 244.6
+Episode: 621, total numsteps: 42934, return: 319.56
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 622, total numsteps: 43094, return: 273.21
+Episode: 623, total numsteps: 43320, return: 353.61
+Episode: 624, total numsteps: 43486, return: 303.4
+Episode: 625, total numsteps: 43641, return: 309.27
+Episode: 626, total numsteps: 43775, return: 279.03
+Episode: 627, total numsteps: 43934, return: 281.45
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 628, total numsteps: 44105, return: 300.68
+Episode: 629, total numsteps: 44261, return: 289.48
+Episode: 630, total numsteps: 44442, return: 304.79
+Episode: 631, total numsteps: 44614, return: 336.24
+Episode: 632, total numsteps: 44755, return: 257.03
+Episode: 633, total numsteps: 44997, return: 372.95
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 634, total numsteps: 45122, return: 232.08
+Episode: 635, total numsteps: 45323, return: 358.92
+Episode: 636, total numsteps: 45463, return: 264.3
+Episode: 637, total numsteps: 45661, return: 348.8
+Episode: 638, total numsteps: 45799, return: 248.53
+Episode: 639, total numsteps: 45969, return: 304.1
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 640, total numsteps: 46174, return: 336.53
+Episode: 641, total numsteps: 46378, return: 353.8
+Episode: 642, total numsteps: 46541, return: 93.71
+Episode: 643, total numsteps: 46721, return: 336.39
+Episode: 644, total numsteps: 46928, return: 362.34
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 645, total numsteps: 47094, return: 322.41
+Episode: 646, total numsteps: 47341, return: 382.05
+Episode: 647, total numsteps: 47618, return: 417.42
+Episode: 648, total numsteps: 47794, return: 326.52
+Episode: 649, total numsteps: 47981, return: 316.33
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 650, total numsteps: 48112, return: 244.19
+Episode: 651, total numsteps: 48327, return: 372.81
+Episode: 652, total numsteps: 48473, return: 274.78
+Episode: 653, total numsteps: 48610, return: 268.78
+Episode: 654, total numsteps: 48841, return: 345.99
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 655, total numsteps: 49027, return: 347.29
+Episode: 656, total numsteps: 49240, return: 344.29
+Episode: 657, total numsteps: 49466, return: 410.24
+Episode: 658, total numsteps: 49610, return: 240.91
+Episode: 659, total numsteps: 49762, return: 305.69
+Episode: 660, total numsteps: 49961, return: 354.92
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 661, total numsteps: 50107, return: 294.32
+Episode: 662, total numsteps: 50271, return: 287.02
+Episode: 663, total numsteps: 50383, return: 207.55
+Episode: 664, total numsteps: 50641, return: 453.06
+Episode: 665, total numsteps: 50797, return: 287.26
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 666, total numsteps: 51018, return: 378.89
+Episode: 667, total numsteps: 51215, return: 335.12
+Episode: 668, total numsteps: 51367, return: 302.87
+Episode: 669, total numsteps: 51538, return: 327.04
+Episode: 670, total numsteps: 51731, return: 338.75
+Episode: 671, total numsteps: 51908, return: 319.0
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 672, total numsteps: 52070, return: 307.6
+Episode: 673, total numsteps: 52266, return: 367.0
+Episode: 674, total numsteps: 52493, return: 387.04
+Episode: 675, total numsteps: 52714, return: 394.49
+Episode: 676, total numsteps: 52851, return: 273.11
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 677, total numsteps: 53100, return: 409.29
+Episode: 678, total numsteps: 53238, return: 281.75
+Episode: 679, total numsteps: 53442, return: 386.41
+Episode: 680, total numsteps: 53648, return: 366.75
+Episode: 681, total numsteps: 53770, return: 219.1
+Episode: 682, total numsteps: 53965, return: 318.41
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 683, total numsteps: 54120, return: 307.63
+Episode: 684, total numsteps: 54277, return: 310.78
+Episode: 685, total numsteps: 54434, return: 275.09
+Episode: 686, total numsteps: 54670, return: 489.82
+Episode: 687, total numsteps: 54851, return: 297.78
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 688, total numsteps: 55000, return: 284.54
+Episode: 689, total numsteps: 55166, return: 297.47
+Episode: 690, total numsteps: 55330, return: 305.67
+Episode: 691, total numsteps: 55509, return: 342.48
+Episode: 692, total numsteps: 55651, return: 279.93
+Episode: 693, total numsteps: 55815, return: 283.94
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 694, total numsteps: 56018, return: 391.65
+Episode: 695, total numsteps: 56204, return: 356.93
+Episode: 696, total numsteps: 56392, return: 342.17
+Episode: 697, total numsteps: 56625, return: 378.89
+Episode: 698, total numsteps: 56809, return: 373.46
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 699, total numsteps: 57015, return: 402.32
+Episode: 700, total numsteps: 57190, return: 346.87
+Episode: 701, total numsteps: 57344, return: 293.35
+Episode: 702, total numsteps: 57443, return: -14.43
+Episode: 703, total numsteps: 57583, return: 264.61
+Episode: 704, total numsteps: 57730, return: 262.24
+Episode: 705, total numsteps: 57924, return: 364.56
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 706, total numsteps: 58112, return: 84.73
+Episode: 707, total numsteps: 58325, return: 396.99
+Episode: 708, total numsteps: 58506, return: -25.87
+Episode: 709, total numsteps: 58693, return: 385.65
+Episode: 710, total numsteps: 58906, return: 366.34
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 711, total numsteps: 59042, return: 253.39
+Episode: 712, total numsteps: 59353, return: 503.66
+Episode: 713, total numsteps: 59540, return: 356.75
+Episode: 714, total numsteps: 59850, return: 452.73
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 715, total numsteps: 60056, return: 405.65
+Episode: 716, total numsteps: 60302, return: 54.8
+Episode: 717, total numsteps: 60496, return: 375.14
+Episode: 718, total numsteps: 60734, return: 468.07
+Episode: 719, total numsteps: 60937, return: 379.59
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 720, total numsteps: 61176, return: 400.67
+Episode: 721, total numsteps: 61423, return: 421.81
+Episode: 722, total numsteps: 61650, return: 408.81
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 723, total numsteps: 62253, return: 510.37
+Episode: 724, total numsteps: 62528, return: 530.52
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 725, total numsteps: 63528, return: 998.28
+Episode: 726, total numsteps: 63703, return: 303.8
+Episode: 727, total numsteps: 63900, return: 413.74
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 728, total numsteps: 64009, return: 248.88
+Episode: 729, total numsteps: 64228, return: 406.91
+Episode: 730, total numsteps: 64449, return: 477.03
+Episode: 731, total numsteps: 64622, return: 327.31
+Episode: 732, total numsteps: 64819, return: 358.01
+Episode: 733, total numsteps: 64991, return: 321.24
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 734, total numsteps: 65179, return: 338.2
+Episode: 735, total numsteps: 65414, return: 445.39
+Episode: 736, total numsteps: 65731, return: 221.94
+Episode: 737, total numsteps: 65960, return: 410.8
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 738, total numsteps: 66144, return: 361.12
+Episode: 739, total numsteps: 66368, return: 433.0
+Episode: 740, total numsteps: 66631, return: 466.08
+Episode: 741, total numsteps: 66831, return: 372.16
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 742, total numsteps: 67039, return: 418.42
+Episode: 743, total numsteps: 67201, return: 324.93
+Episode: 744, total numsteps: 67403, return: 358.87
+Episode: 745, total numsteps: 67597, return: 373.27
+Episode: 746, total numsteps: 67764, return: 396.16
+Episode: 747, total numsteps: 67992, return: 372.39
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 748, total numsteps: 68121, return: 248.43
+Episode: 749, total numsteps: 68314, return: 362.33
+Episode: 750, total numsteps: 68531, return: 392.57
+Episode: 751, total numsteps: 68699, return: 325.58
+Episode: 752, total numsteps: 68908, return: 443.88
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 753, total numsteps: 69130, return: 510.65
+Episode: 754, total numsteps: 69349, return: 401.96
+Episode: 755, total numsteps: 69557, return: 381.63
+Episode: 756, total numsteps: 69780, return: 456.94
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 757, total numsteps: 70021, return: 415.67
+Episode: 758, total numsteps: 70352, return: 576.28
+Episode: 759, total numsteps: 70606, return: 514.11
+Episode: 760, total numsteps: 70766, return: 305.08
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 761, total numsteps: 71062, return: 561.29
+Episode: 762, total numsteps: 71265, return: 391.23
+Episode: 763, total numsteps: 71515, return: 390.67
+Episode: 764, total numsteps: 71694, return: 344.27
+Episode: 765, total numsteps: 71866, return: 349.11
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 766, total numsteps: 72040, return: 339.22
+Episode: 767, total numsteps: 72245, return: 405.16
+Episode: 768, total numsteps: 72404, return: 323.71
+Episode: 769, total numsteps: 72573, return: 334.96
+Episode: 770, total numsteps: 72807, return: 432.82
+Episode: 771, total numsteps: 72979, return: 326.14
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 772, total numsteps: 73194, return: 358.94
+Episode: 773, total numsteps: 73403, return: 493.98
+Episode: 774, total numsteps: 73567, return: 320.88
+Episode: 775, total numsteps: 73774, return: 385.95
+Episode: 776, total numsteps: 73960, return: 317.71
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 777, total numsteps: 74158, return: 328.62
+Episode: 778, total numsteps: 74408, return: 484.9
+Episode: 779, total numsteps: 74602, return: 40.0
+Episode: 780, total numsteps: 74804, return: 396.63
+Episode: 781, total numsteps: 74972, return: 305.2
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 782, total numsteps: 75112, return: 262.79
+Episode: 783, total numsteps: 75288, return: 313.0
+Episode: 784, total numsteps: 75493, return: 345.42
+Episode: 785, total numsteps: 75698, return: 488.95
+Episode: 786, total numsteps: 75799, return: 159.16
+Episode: 787, total numsteps: 75962, return: 317.91
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 788, total numsteps: 76169, return: 412.48
+Episode: 789, total numsteps: 76332, return: 340.71
+Episode: 790, total numsteps: 76578, return: 419.67
+Episode: 791, total numsteps: 76806, return: 385.13
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 792, total numsteps: 77046, return: 497.58
+Episode: 793, total numsteps: 77260, return: 343.28
+Episode: 794, total numsteps: 77471, return: 346.08
+Episode: 795, total numsteps: 77671, return: 373.05
+Episode: 796, total numsteps: 77886, return: 420.99
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 797, total numsteps: 78079, return: 366.39
+Episode: 798, total numsteps: 78224, return: 281.88
+Episode: 799, total numsteps: 78378, return: 317.7
+Episode: 800, total numsteps: 78586, return: 417.62
+Episode: 801, total numsteps: 78769, return: 320.4
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 802, total numsteps: 79043, return: 453.78
+Episode: 803, total numsteps: 79226, return: 326.15
+Episode: 804, total numsteps: 79408, return: 409.58
+Episode: 805, total numsteps: 79638, return: 416.35
+Episode: 806, total numsteps: 79812, return: 375.5
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 807, total numsteps: 80015, return: 382.38
+Episode: 808, total numsteps: 80204, return: 361.87
+Episode: 809, total numsteps: 80343, return: 242.62
+Episode: 810, total numsteps: 80552, return: 374.55
+Episode: 811, total numsteps: 80797, return: 461.6
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 812, total numsteps: 81036, return: 426.21
+Episode: 813, total numsteps: 81180, return: 320.72
+Episode: 814, total numsteps: 81451, return: 380.94
+Episode: 815, total numsteps: 81655, return: 461.68
+Episode: 816, total numsteps: 81974, return: 623.11
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 817, total numsteps: 82168, return: 467.24
+Episode: 818, total numsteps: 82472, return: 614.52
+Episode: 819, total numsteps: 82710, return: 514.15
+Episode: 820, total numsteps: 82960, return: 545.31
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 821, total numsteps: 83163, return: 507.56
+Episode: 822, total numsteps: 83365, return: 414.3
+Episode: 823, total numsteps: 83543, return: 365.86
+Episode: 824, total numsteps: 83725, return: 352.67
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 825, total numsteps: 84023, return: 588.62
+Episode: 826, total numsteps: 84319, return: 537.33
+Episode: 827, total numsteps: 84525, return: 345.03
+Episode: 828, total numsteps: 84712, return: 414.18
+Episode: 829, total numsteps: 84970, return: 498.97
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 830, total numsteps: 85120, return: 304.58
+Episode: 831, total numsteps: 85271, return: 329.24
+Episode: 832, total numsteps: 85512, return: 525.84
+Episode: 833, total numsteps: 85722, return: 436.07
+Episode: 834, total numsteps: 85915, return: 492.41
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 835, total numsteps: 86125, return: 500.71
+Episode: 836, total numsteps: 86315, return: 460.91
+Episode: 837, total numsteps: 86644, return: 614.25
+Episode: 838, total numsteps: 86906, return: 629.59
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 839, total numsteps: 87108, return: 424.65
+Episode: 840, total numsteps: 87329, return: 430.89
+Episode: 841, total numsteps: 87510, return: 384.96
+Episode: 842, total numsteps: 87688, return: 363.26
+Episode: 843, total numsteps: 87896, return: 390.81
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 844, total numsteps: 88080, return: 460.2
+Episode: 845, total numsteps: 88295, return: 462.26
+Episode: 846, total numsteps: 88505, return: 451.67
+Episode: 847, total numsteps: 88769, return: 465.94
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+Episode: 848, total numsteps: 89017, return: 527.62
+Traceback (most recent call last):
+  File "/home/harsh/arjun/robust-predictable-control/train.py", line 348, in main
+    workspace.train()
+    ~~~~~~~~~~~~~~~^^
+  File "/home/harsh/arjun/robust-predictable-control/train.py", line 212, in train
+    self.agent.update(self._global_step)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/harsh/arjun/robust-predictable-control/rpc.py", line 196, in update
+    kl, z_dist, z_next_dist, _ = self.kl_loss(state_batch, action_batch, next_state_batch, step, metrics)
+                                 ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harsh/arjun/robust-predictable-control/rpc.py", line 222, in kl_loss
+    z_dist = self.encoder(state_batch)
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/harsh/arjun/robust-predictable-control/rpc.py", line 25, in forward
+    mean = 30 * torch.tanh(mean / 30)
+                ~~~~~~~~~~^^^^^^^^^^^
+KeyboardInterrupt

@@ -1,0 +1,46 @@
+Namespace(agent='RPC', env_name='Walker2d-v5', device='cuda', seed=1, num_train_steps=1000000, learning_starts=10000, gamma=0.99, tau=0.005, env_buffer_size=1000000, target_update_interval=1, log_interval=500, save_snapshot_interval=50000, eval_episode_interval=10000, num_eval_episodes=5, latent_dims=16, model_hidden_dims=256, model_num_layers=2, kl_constraint=1, lambda_init=1e-05, alpha_autotune=True, alpha_init=0.2, noise_factor=3, batch_size=256, seq_len=4, lr=0.0003, record_eval=True, video_dir='videos', video_fps=30, constrain_kl=True)
+True
+Episode: 1, total numsteps: 17, return: 0.4
+Episode: 2, total numsteps: 41, return: 7.04
+Episode: 3, total numsteps: 61, return: -4.89
+Episode: 4, total numsteps: 78, return: 3.26
+Episode: 5, total numsteps: 97, return: 6.68
+Episode: 6, total numsteps: 113, return: 1.04
+Episode: 7, total numsteps: 126, return: 2.14
+Episode: 8, total numsteps: 143, return: 0.54
+Episode: 9, total numsteps: 166, return: 8.34
+Episode: 10, total numsteps: 198, return: 11.86
+Episode: 11, total numsteps: 212, return: 1.99
+Episode: 12, total numsteps: 230, return: -2.91
+Episode: 13, total numsteps: 258, return: 0.63
+Episode: 14, total numsteps: 274, return: -1.48
+Episode: 15, total numsteps: 288, return: -1.83
+Traceback (most recent call last):
+  File "/home/harsh/arjun/robust-predictable-control/train.py", line 364, in main
+    workspace.train()
+    ~~~~~~~~~~~~~~~^^
+  File "/home/harsh/arjun/robust-predictable-control/train.py", line 211, in train
+    next_state, reward, terminated, truncated, info = self.train_env.step(action)
+                                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/gymnasium/wrappers/common.py", line 125, in step
+    observation, reward, terminated, truncated, info = self.env.step(action)
+                                                       ~~~~~~~~~~~~~^^^^^^^^
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/gymnasium/wrappers/common.py", line 393, in step
+    return super().step(action)
+           ~~~~~~~~~~~~^^^^^^^^
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/gymnasium/core.py", line 327, in step
+    return self.env.step(action)
+           ~~~~~~~~~~~~~^^^^^^^^
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/gymnasium/wrappers/common.py", line 285, in step
+    return self.env.step(action)
+           ~~~~~~~~~~~~~^^^^^^^^
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/gymnasium/envs/mujoco/walker2d_v5.py", line 287, in step
+    self.do_simulation(action, self.frame_skip)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/gymnasium/envs/mujoco/mujoco_env.py", line 199, in do_simulation
+    self._step_mujoco_simulation(ctrl, n_frames)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/gymnasium/envs/mujoco/mujoco_env.py", line 147, in _step_mujoco_simulation
+    mujoco.mj_step(self.model, self.data, nstep=n_frames)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

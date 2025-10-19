@@ -1,0 +1,122 @@
+_wandb:
+    value:
+        cli_version: 0.22.0
+        e:
+            b41q7urglbnh2mrs9v7hcnagowi5misf:
+                args:
+                    - --use_rpc=0
+                codePath: train.py
+                codePathLocal: train.py
+                cpu_count: 64
+                cpu_count_logical: 128
+                cudaVersion: "12.6"
+                disk:
+                    /:
+                        total: "1967316500480"
+                        used: "1576748466176"
+                email: arasarjun@gmail.com
+                executable: /home/harsh/miniconda3/envs/rpc/bin/python
+                git:
+                    commit: 6313e4bbdbcdfb4a6f19e1857c57b55ba3b1d4ea
+                    remote: git@github-arjun:ArjunArasappan/robust-predictable-control.git
+                gpu: NVIDIA GeForce GTX TITAN X
+                gpu_count: 3
+                gpu_nvidia:
+                    - architecture: Maxwell
+                      cudaCores: 3072
+                      memoryTotal: "12884901888"
+                      name: NVIDIA GeForce GTX TITAN X
+                      uuid: GPU-6e8597d2-552d-bc54-1d20-ffc5e8243557
+                    - architecture: Maxwell
+                      cudaCores: 3072
+                      memoryTotal: "12884901888"
+                      name: NVIDIA GeForce GTX TITAN X
+                      uuid: GPU-43623189-b519-379d-f7f8-d54ae693a083
+                    - architecture: Ampere
+                      cudaCores: 10496
+                      memoryTotal: "25769803776"
+                      name: NVIDIA GeForce RTX 3090
+                      uuid: GPU-ec5b0442-372a-1654-65ac-8250d1e85de0
+                host: rl-server
+                memory:
+                    total: "270108143616"
+                os: Linux-5.15.0-139-generic-x86_64-with-glibc2.31
+                program: /home/harsh/arjun/robust-predictable-control/train.py
+                python: CPython 3.13.7
+                root: /home/harsh/arjun/robust-predictable-control
+                startedAt: "2025-10-15T19:17:37.774076Z"
+                writerId: b41q7urglbnh2mrs9v7hcnagowi5misf
+        m: []
+        python_version: 3.13.7
+        t:
+            "1":
+                - 1
+            "2":
+                - 1
+            "3":
+                - 14
+                - 16
+                - 17
+                - 61
+            "4": 3.13.7
+            "5": 0.22.0
+            "12": 0.22.0
+            "13": linux-x86_64
+agent:
+    value: RPC
+alpha_autotune:
+    value: true
+alpha_init:
+    value: 0.2
+batch_size:
+    value: 256
+device:
+    value: cuda
+env_buffer_size:
+    value: 1000000
+env_name:
+    value: Walker2d-v5
+eval_episode_interval:
+    value: 10000
+gamma:
+    value: 0.99
+kl_constraint:
+    value: 1
+lambda_init:
+    value: 1e-05
+latent_dims:
+    value: 16
+learning_starts:
+    value: 10000
+log_interval:
+    value: 500
+lr:
+    value: 0.0003
+model_hidden_dims:
+    value: 256
+model_num_layers:
+    value: 2
+noise_factor:
+    value: 1
+num_eval_episodes:
+    value: 5
+num_train_steps:
+    value: 1000000
+record_eval:
+    value: true
+save_snapshot_interval:
+    value: 50000
+seed:
+    value: 1
+seq_len:
+    value: 4
+target_update_interval:
+    value: 1
+tau:
+    value: 0.005
+use_rpc:
+    value: 0
+video_dir:
+    value: videos
+video_fps:
+    value: 30

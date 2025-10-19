@@ -1,0 +1,18 @@
+Namespace(agent='RPC', env_name='HalfCheetah-v5', device='cuda', seed=53, num_train_steps=1000000, learning_starts=10000, gamma=0.99, tau=0.005, env_buffer_size=1000000, target_update_interval=1, log_interval=500, save_snapshot_interval=50000, eval_episode_interval=10000, num_eval_episodes=5, latent_dims=16, model_hidden_dims=256, model_num_layers=2, kl_constraint=0.1, lambda_init=1e-05, alpha_autotune=True, alpha_init=0.2, noise_factor=1, batch_size=256, seq_len=4, lr=0.0003, record_eval=True, video_dir='videos', video_fps=30)
+Episode: 1, total numsteps: 1000, return: -184.82
+Episode: 2, total numsteps: 2000, return: -324.83
+Episode: 3, total numsteps: 3000, return: -223.83
+Episode: 4, total numsteps: 4000, return: -230.65
+Episode: 5, total numsteps: 5000, return: -255.55
+Episode: 6, total numsteps: 6000, return: -171.46
+Episode: 7, total numsteps: 7000, return: -303.63
+Episode: 8, total numsteps: 8000, return: -457.6
+Episode: 9, total numsteps: 9000, return: -223.46
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[HalfCheetah-v5] runs sorted by time:
+   RPC_93_kl0.1_qzrz7rks
+   RPC_24_kl0.1_s6i654r8
+   RPC_53_kl0.1_svsrqe8j
+   RPC_24_kl0.1_pt4rbc96
+   RPC_53_kl0.1_y3l4lybt
+Episode: 10, total numsteps: 10000, return: -237.64

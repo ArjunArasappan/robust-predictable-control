@@ -1,0 +1,83 @@
+[INFO] Using run_id / name: test_eval_d1e0afhy
+Namespace(agent='RPC', env_name='Walker2d-v5', device='cuda', seed=1, num_train_steps=10500, learning_starts=10000, gamma=0.99, tau=0.005, env_buffer_size=1000000, target_update_interval=1, log_interval=500, save_snapshot_interval=100, eval_episode_interval=10000, num_eval_episodes=5, latent_dims=16, model_hidden_dims=256, model_num_layers=2, kl_constraint=1, lambda_init=1e-05, alpha_autotune=True, alpha_init=0.2, noise_factor=1, batch_size=256, seq_len=4, lr=0.0003, record_eval=True, video_dir='videos', video_fps=30, use_rpc=1)
+RPC: True
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-01_11-21-29.552191
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-09-24_17-35-47.787334
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-09-24_17-34-01.535727
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-09-30_15-43-09.763907
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-09-30_14-52-14.795887
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-02_04-04-00.644838
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-01_11-19-54.593412
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-09-25_10-55-37.769416
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-09-30_15-43-09.702757
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-09-30_15-43-06.254677
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-02_09-10-15.413442
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-09-24_14-40-51.200276
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-09-24_14-57-41.739127
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-09-30_15-44-23.762303
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-15_15-15-47.359893
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-09-30_15-43-09.739905
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-01_11-50-15.741457
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-09-25_10-54-02.973933
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-15_16-03-05.735273
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-09-24_17-38-19.283553
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-09-25_10-54-29.051219
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-09-30_15-44-26.831330
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-01_22-44-17.106398
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-09-24_17-44-44.464353
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-09-24_11-55-18.287629
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-01_11-53-56.534500
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-02_09-19-08.051633
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-01_17-20-19.030783
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-09-24_17-34-18.666323
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-09-30_15-27-13.175269
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-09-30_15-43-01.811971
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-09-24_17-32-43.168531
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-09-30_15-42-58.559298
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-02_09-04-37.596086
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-09-30_15-43-46.474608
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-09-30_15-43-06.175388
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-01_11-27-35.049562
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-09-30_15-43-06.215060
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-09-30_15-44-26.976641
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-01_22-30-46.464062
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-01_17-07-53.558064
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-01_11-27-11.813154
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-09-24_14-09-00.258974
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-02_03-46-17.646129
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-15_15-17-38.593985
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-02_14-39-58.759492
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-01_11-36-23.998758
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-09-30_15-35-20.098108
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-09-24_17-32-13.044348
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-15_15-18-32.309093
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-09-30_14-52-14.811169
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-02_14-29-54.712829
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-01_01-38-05.073897
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-09-30_15-44-16.636323
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-09-24_13-47-44.478794
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-01_11-23-59.830512
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-09-24_14-30-27.235386
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-01_01-45-36.503161
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-01_22-30-58.504174
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-01_11-18-47.606724
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-02_03-51-56.396265
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-09-24_13-57-45.846302
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-01_11-24-20.627244
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-09-30_15-44-26.862692
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-01_01-41-09.856995
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-02_14-23-04.267465
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-09-30_14-52-14.917888
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-09-24_17-38-13.556187
+Renamed → ../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-01_17-09-47.965958
+Traceback (most recent call last):
+  File "/home/harsh/arjun/robust-predictable-control/eval_rpc.py", line 412, in main
+    workspace.salvage_weights()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/harsh/arjun/robust-predictable-control/eval_rpc.py", line 374, in salvage_weights
+    with snapshot.open('rb') as f:
+         ~~~~~~~~~~~~~^^^^^^
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '../robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-01 11:18:47.606724/best.pt'

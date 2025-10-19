@@ -130,7 +130,7 @@ class RPCAgent(object):
     def __init__(self, env, device, num_states, num_actions, gamma, tau, env_buffer_size,
                 target_update_interval, log_interval, 
                 latent_dims, model_hidden_dims, model_num_layers, kl_constraint, lambda_init, 
-                alpha, alpha_autotune, batch_size, lr):
+                alpha, alpha_autotune, batch_size, lr, use_rpc = True):
 
         self.device = device 
         self.low = torch.tensor(env.action_space.low, device=device)
@@ -138,6 +138,9 @@ class RPCAgent(object):
         self.gamma = gamma 
         self.alpha_autotune = alpha_autotune
         self.tau = tau
+        self.use_rpc = use_rpc
+        
+        print("RPC:", self.use_rpc)
 
         self.target_update_interval = target_update_interval
         self.log_interval = log_interval
@@ -181,59 +184,114 @@ class RPCAgent(object):
             else:
                 action, _, _ = self.actor.get_action(z)   
         return action.cpu().numpy()[0]
+    
+    def get_action_open_loop(self, prev_z_dist, eval=False):
+        # print('state debug', type(state), len(state), state)
+        with torch.no_grad():
+            sample = prev_z_dist.sample()
+            self.model(sample)
+            state = torch.FloatTensor(state).unsqueeze(0).to(self.device)
+            z = self.encoder(state).sample()     
+            if eval:
+                action = self.actor.get_action(z, eval)       
+            else:
+                action, _, _ = self.actor.get_action(z)   
+        return action.cpu().numpy()[0]
+    
+    def get_state_latent(self, state):
+        with torch.no_grad():
+            state = torch.FloatTensor(state).unsqueeze(0).to(self.device)
+            z = self.encoder(state).sample()
+            return z     
+
 
     def update(self, step):
         metrics = {}
 
         state_batch, action_batch, reward_batch, next_state_batch, done_batch = self.env_buffer.sample(self.batch_size)
-        state_batch = torch.FloatTensor(state_batch).to(self.device)
+        state_batch  = torch.FloatTensor(state_batch).to(self.device)
         next_state_batch = torch.FloatTensor(next_state_batch).to(self.device)
         action_batch = torch.FloatTensor(action_batch).to(self.device)
-        reward_batch = torch.FloatTensor(reward_batch).to(self.device)
-        done_batch = torch.FloatTensor(done_batch).to(self.device)  
-        discount_batch = self.gamma*(1-done_batch)
+        reward_batch    = torch.FloatTensor(reward_batch).to(self.device)
+        done_batch      = torch.FloatTensor(done_batch).to(self.device)
+        discount_batch  = self.gamma * (1 - done_batch)
 
-        kl, z_dist, z_next_dist, _ = self.kl_loss(state_batch, action_batch, next_state_batch, step, metrics)
-        critic_loss = self.critic_loss(state_batch, action_batch, reward_batch, kl.detach(), next_state_batch, z_next_dist.sample(), discount_batch, step, metrics)
+        if self.use_rpc:
+            kl, z_dist, z_next_dist, _ = self.kl_loss(state_batch, action_batch, next_state_batch, step, metrics)
+            kl_for_target = kl.detach()              
+            kl_for_loss   = kl.mean()            
+        else:
+            z_dist       = self.encoder(state_batch)
+            z_next_dist  = self.encoder(next_state_batch)
+
+            with torch.no_grad():
+                z_batch   = z_dist.rsample()      
+                z_prior   = self.model(z_batch.detach(), action_batch)
+                kl_diag   = td.kl_divergence(z_next_dist, z_prior)
+
+            if step % self.log_interval == 0:
+                metrics['kl_predictor']     = kl_diag.mean().item()
+                metrics['posterior_entropy']= z_next_dist.entropy().mean().item()
+                metrics['prior_entropy']    = z_prior.entropy().mean().item()
+
+            kl_for_target = torch.zeros_like(kl_diag)
+            kl_for_loss   = None                    
+
+        critic_loss = self.critic_loss(
+            state_batch, action_batch, reward_batch,
+            kl_for_target, next_state_batch, z_next_dist.sample(),
+            discount_batch, step, metrics
+        )
         actor_loss, log_pi = self.actor_loss(state_batch, z_dist.rsample(), step, metrics)
-        
+
         self.encoder_opt.zero_grad()
         self.critic_opt.zero_grad()
         self.model_opt.zero_grad()
         self.actor_opt.zero_grad()
-        (self.lambda_cost*kl.mean() + actor_loss + critic_loss).backward()
-        self.actor_opt.step()
-        self.encoder_opt.step()
-        self.critic_opt.step()
-        self.model_opt.step()
 
-        if step%self.target_update_interval==0:
+        if self.use_rpc:
+            (self.lambda_cost * kl_for_loss + actor_loss + critic_loss).backward()
+            self.actor_opt.step()
+            self.encoder_opt.step()
+            self.critic_opt.step()
+            self.model_opt.step()
+        else:
+            (actor_loss + critic_loss).backward()
+            self.actor_opt.step()
+            self.encoder_opt.step()
+            self.critic_opt.step()
+
+        if step % self.target_update_interval == 0:
             soft_update(self.critic_target, self.critic, self.tau)
 
-        self.update_dual_parameter(kl.detach(), step, metrics)
+        if self.use_rpc:
+            self.update_dual_parameter(kl_for_target, step, metrics)
 
         if self.alpha_autotune:
             self.update_alpha(log_pi, step, metrics)
 
-        if step%self.log_interval==0:
-            wandb.log(metrics, step=step)            
+        if step % self.log_interval == 0:
+            wandb.log(metrics, step=step)
 
     def kl_loss(self, state_batch, action_batch, next_state_batch, step, metrics):
-        z_dist = self.encoder(state_batch)
-        z_batch = z_dist.sample()
+        z_dist        = self.encoder(state_batch)
+        z_batch       = z_dist.rsample()         
 
-        z_next_dist = self.encoder(next_state_batch)
-        z_next_prior_dist = self.model(z_batch, action_batch)
+        z_next_dist   = self.encoder(next_state_batch)
+        z_next_prior  = self.model(z_batch, action_batch)
 
-        kl = td.kl_divergence(z_next_dist, z_next_prior_dist)
+        kl = td.kl_divergence(z_next_dist, z_next_prior)
 
-        if step%self.log_interval==0:
-            metrics['kl_predictor'] = kl.mean().item()
+        if step % self.log_interval == 0:
+            metrics['kl_predictor']      = kl.mean().item()
             metrics['posterior_entropy'] = z_next_dist.entropy().mean().item()
-            metrics['prior_entropy'] = z_next_prior_dist.entropy().mean().item()
-        return kl, z_dist, z_next_dist, z_next_prior_dist
+            metrics['prior_entropy']     = z_next_prior.entropy().mean().item()
+
+        return kl, z_dist, z_next_dist, z_next_prior
+
 
     def critic_loss(self, state_batch, action_batch, reward_batch, kl, next_state_batch, z_next_batch, discount_batch, step, metrics):
+        
         with torch.no_grad():    
             next_action_batch, next_log_pi, _ = self.actor.get_action(z_next_batch)
             target_Q1, target_Q2 = self.critic_target(next_state_batch, next_action_batch)

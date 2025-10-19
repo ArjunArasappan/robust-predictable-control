@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/home/harsh/arjun/robust-predictable-control/train_2.py", line 190, in main
+    workspace = HighwayWorkspace(args)
+  File "/home/harsh/arjun/robust-predictable-control/train_2.py", line 85, in __init__
+    self.agent = make_agent(self.train_env, self.device, self.args)
+                 ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harsh/arjun/robust-predictable-control/train_2.py", line 60, in make_agent
+    return RPCAgent(env, device, num_states, num_actions, args.gamma, args.tau,
+                    args.env_buffer_size, args.target_update_interval,
+    ...<2 lines>...
+                    args.alpha_init, args.alpha_autotune,
+                    args.batch_size, args.lr)
+  File "/home/harsh/arjun/robust-predictable-control/rpc.py", line 136, in __init__
+    self.low = torch.tensor(env.action_space.low, device=device)
+                            ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Discrete' object has no attribute 'low'

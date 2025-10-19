@@ -1,0 +1,58 @@
+Namespace(agent='RPC', env_name='HalfCheetah-v5', device='cuda', seed=53, num_train_steps=1000000, learning_starts=10000, gamma=0.99, tau=0.005, env_buffer_size=1000000, target_update_interval=1, log_interval=500, save_snapshot_interval=50000, eval_episode_interval=10000, num_eval_episodes=5, latent_dims=16, model_hidden_dims=256, model_num_layers=2, kl_constraint=0.1, lambda_init=1e-05, alpha_autotune=True, alpha_init=0.2, noise_factor=1, batch_size=256, seq_len=4, lr=0.0003, record_eval=True, video_dir='videos', video_fps=30)
+Episode: 1, total numsteps: 1000, return: -184.82
+Episode: 2, total numsteps: 2000, return: -324.83
+Episode: 3, total numsteps: 3000, return: -223.83
+Episode: 4, total numsteps: 4000, return: -230.65
+Episode: 5, total numsteps: 5000, return: -255.55
+Episode: 6, total numsteps: 6000, return: -171.46
+Episode: 7, total numsteps: 7000, return: -303.63
+Episode: 8, total numsteps: 8000, return: -457.6
+Episode: 9, total numsteps: 9000, return: -223.46
+/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/glfw/__init__.py:917: GLFWError: (65550) b'X11: The DISPLAY environment variable is missing'
+  warnings.warn(message, GLFWError)
+/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/glfw/__init__.py:917: GLFWError: (65537) b'The GLFW library is not initialized'
+  warnings.warn(message, GLFWError)
+Traceback (most recent call last):
+  File "/home/harsh/arjun/robust-predictable-control/train.py", line 361, in main
+    workspace.train()
+    ~~~~~~~~~~~~~~~^^
+  File "/home/harsh/arjun/robust-predictable-control/train.py", line 229, in train
+    self.eval()
+    ~~~~~~~~~^^
+  File "/home/harsh/arjun/robust-predictable-control/train.py", line 265, in eval
+    frame = self.eval_env.render()   # (H,W,C) uint8
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/gymnasium/core.py", line 337, in render
+    return self.env.render()
+           ~~~~~~~~~~~~~~~^^
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/gymnasium/wrappers/common.py", line 409, in render
+    return super().render()
+           ~~~~~~~~~~~~~~^^
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/gymnasium/core.py", line 337, in render
+    return self.env.render()
+           ~~~~~~~~~~~~~~~^^
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/gymnasium/wrappers/common.py", line 301, in render
+    return env_render_passive_checker(self.env)
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/gymnasium/utils/passive_env_checker.py", line 361, in env_render_passive_checker
+    result = env.render()
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/gymnasium/envs/mujoco/mujoco_env.py", line 158, in render
+    return self.mujoco_renderer.render(self.render_mode)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/gymnasium/envs/mujoco/mujoco_rendering.py", line 761, in render
+    viewer = self._get_viewer(render_mode=render_mode)
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/gymnasium/envs/mujoco/mujoco_rendering.py", line 785, in _get_viewer
+    self.viewer = OffScreenViewer(
+                  ~~~~~~~~~~~~~~~^
+        self.model,
+        ^^^^^^^^^^^
+    ...<4 lines>...
+        self._vopt,
+        ^^^^^^^^^^^
+    )
+    ^
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/gymnasium/envs/mujoco/mujoco_rendering.py", line 189, in __init__
+    super().__init__(model, data, width, height, max_geom, visual_options)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/gymnasium/envs/mujoco/mujoco_rendering.py", line 74, in __init__
+    self.con = mujoco.MjrContext(self.model, mujoco.mjtFontScale.mjFONTSCALE_150)
+               ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+mujoco.FatalError: an OpenGL platform library has not been loaded into this process, this most likely means that a valid OpenGL context has not been created before mjr_makeContext was called

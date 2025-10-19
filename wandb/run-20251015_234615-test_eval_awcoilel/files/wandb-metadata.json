@@ -1,0 +1,17 @@
+{
+  "os": "Linux-5.15.0-139-generic-x86_64-with-glibc2.31",
+  "python": "CPython 3.13.7",
+  "startedAt": "2025-10-16T03:46:15.735728Z",
+  "program": "/home/harsh/arjun/robust-predictable-control/eval_rpc.py",
+  "codePath": "eval_rpc.py",
+  "codePathLocal": "eval_rpc.py",
+  "git": {
+    "remote": "git@github-arjun:ArjunArasappan/robust-predictable-control.git",
+    "commit": "6313e4bbdbcdfb4a6f19e1857c57b55ba3b1d4ea"
+  },
+  "email": "arasarjun@gmail.com",
+  "root": "/home/harsh/arjun/robust-predictable-control",
+  "host": "rl-server",
+  "executable": "/home/harsh/miniconda3/envs/rpc/bin/python",
+  "writerId": "s9zp0by1orbyjxewo1jifjcj5gom3c0l"
+}

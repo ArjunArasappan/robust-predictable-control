@@ -1,0 +1,33 @@
+Namespace(agent='RPC', env_name='Walker2d-v5', device='cuda', seed=1, num_train_steps=1000000, learning_starts=10000, gamma=0.99, tau=0.005, env_buffer_size=1000000, target_update_interval=1, log_interval=500, save_snapshot_interval=50000, eval_episode_interval=10000, num_eval_episodes=5, latent_dims=16, model_hidden_dims=256, model_num_layers=2, kl_constraint=1, lambda_init=1e-05, alpha_autotune=True, alpha_init=0.2, noise_factor=3, batch_size=256, seq_len=4, lr=0.0003, record_eval=True, video_dir='videos', video_fps=30, constrain_kl=True)
+True
+Traceback (most recent call last):
+  File "/home/harsh/arjun/robust-predictable-control/train.py", line 363, in main
+    workspace = MujocoWorkspace(args)
+  File "/home/harsh/arjun/robust-predictable-control/train.py", line 88, in __init__
+    self.agent = make_agent(self.train_env, self.device, self.args)
+                 ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harsh/arjun/robust-predictable-control/train.py", line 63, in make_agent
+    agent = RPCAgent(env, device, num_states, num_actions, args.gamma, args.tau,
+                        args.env_buffer_size, args.target_update_interval,
+    ...<2 lines>...
+                        args.alpha_init, args.alpha_autotune,
+                        args.batch_size, args.lr, args.constrain_kl)
+  File "/home/harsh/arjun/robust-predictable-control/rpc.py", line 153, in __init__
+    self.actor = Actor(latent_dims, num_actions, env).to(device)
+                 ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/harsh/arjun/robust-predictable-control/rpc.py", line 95, in __init__
+    self.apply(weight_init)
+    ~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1032, in apply
+    module.apply(fn)
+    ~~~~~~~~~~~~^^^^
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1033, in apply
+    fn(self)
+    ~~^^^^^^
+  File "/home/harsh/arjun/robust-predictable-control/utils.py", line 74, in weight_init
+    nn.init.orthogonal_(m.weight.data)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/harsh/miniconda3/envs/rpc/lib/python3.13/site-packages/torch/nn/init.py", line 610, in orthogonal_
+    q, r = torch.linalg.qr(flattened)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyboardInterrupt

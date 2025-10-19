@@ -1,0 +1,5 @@
+[INFO] Using run: copper-fire-223 (a5jycs0y)
+Traceback (most recent call last):
+  File "/home/harsh/arjun/robust-predictable-control/train.py", line 432, in main
+    workspace = MujocoWorkspace(args, run_tag=run_tag)
+TypeError: MujocoWorkspace.__init__() got an unexpected keyword argument 'run_tag'

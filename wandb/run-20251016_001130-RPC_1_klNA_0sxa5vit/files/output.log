@@ -1,0 +1,68 @@
+[INFO] Using run_id / name: RPC_1_klNA_0sxa5vit
+Namespace(agent='RPC', env_name='Walker2d-v5', device='cuda', seed=1, num_train_steps=10500, learning_starts=10000, gamma=0.99, tau=0.005, env_buffer_size=1000000, target_update_interval=1, log_interval=500, save_snapshot_interval=10000, eval_episode_interval=10000, num_eval_episodes=5, latent_dims=16, model_hidden_dims=256, model_num_layers=2, kl_constraint=None, lambda_init=1e-05, alpha_autotune=True, alpha_init=0.2, noise_factor=1, batch_size=256, seq_len=4, lr=0.0003, record_eval=True, video_dir='videos', video_fps=30, use_rpc=0)
+RPC: False
+RPC: True
+[load_snapshot] loaded checkpoints/RPC_Walker2d-v5/RPC_1_kl1_ix8in5b7/9500.pt @ step 9500
+[save_snapshot] saved /home/harsh/arjun/robust-predictable-control/checkpoints/RPC_Walker2d-v5/RPC_1_klNA_0sxa5vit/9500.pt
+Episode: 445, total numsteps: 9517, return: 0.4
+Episode: 446, total numsteps: 9541, return: 7.04
+Episode: 447, total numsteps: 9561, return: -4.89
+Episode: 448, total numsteps: 9578, return: 3.26
+Episode: 449, total numsteps: 9597, return: 6.68
+[save_snapshot] saved /home/harsh/arjun/robust-predictable-control/checkpoints/RPC_Walker2d-v5/RPC_1_klNA_0sxa5vit/9600.pt
+Episode: 450, total numsteps: 9613, return: 1.04
+Episode: 451, total numsteps: 9626, return: 2.14
+Episode: 452, total numsteps: 9643, return: 0.54
+Episode: 453, total numsteps: 9666, return: 8.34
+Episode: 454, total numsteps: 9698, return: 11.86
+[save_snapshot] saved /home/harsh/arjun/robust-predictable-control/checkpoints/RPC_Walker2d-v5/RPC_1_klNA_0sxa5vit/9700.pt
+Episode: 455, total numsteps: 9712, return: 1.99
+Episode: 456, total numsteps: 9730, return: -2.91
+Episode: 457, total numsteps: 9758, return: 0.63
+Episode: 458, total numsteps: 9774, return: -1.48
+Episode: 459, total numsteps: 9788, return: -1.83
+[save_snapshot] saved /home/harsh/arjun/robust-predictable-control/checkpoints/RPC_Walker2d-v5/RPC_1_klNA_0sxa5vit/9800.pt
+Episode: 460, total numsteps: 9824, return: 8.73
+Episode: 461, total numsteps: 9837, return: -2.36
+Episode: 462, total numsteps: 9851, return: -1.97
+Episode: 463, total numsteps: 9863, return: -2.83
+Episode: 464, total numsteps: 9883, return: 8.46
+Episode: 465, total numsteps: 9897, return: -1.32
+[save_snapshot] saved /home/harsh/arjun/robust-predictable-control/checkpoints/RPC_Walker2d-v5/RPC_1_klNA_0sxa5vit/9900.pt
+Episode: 466, total numsteps: 9922, return: 5.66
+Episode: 467, total numsteps: 9941, return: -7.39
+Episode: 468, total numsteps: 9956, return: 3.94
+Episode: 469, total numsteps: 9967, return: -2.54
+Episode: 470, total numsteps: 9986, return: -6.92
+Episode: 471, total numsteps: 9998, return: -0.83
+[save_snapshot] saved /home/harsh/arjun/robust-predictable-control/checkpoints/RPC_Walker2d-v5/RPC_1_klNA_0sxa5vit/best.pt
+[34m[1mwandb[0m: [33mWARNING[0m `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_1_kl1.0_RPC_1_klNA_0sxa5vit
+   RPC_1_kl1.0_RPC_1_kl1_pk1f1v06
+   RPC_1_kl1.0_RPC_1_kl1_ix8in5b7
+   RPC_1_kl1.0_RPC_1_kl1_vl4bpqty
+   RPC_1_kl1.0_RPC_1_kl1_5t9hs01s
+[save_snapshot] saved /home/harsh/arjun/robust-predictable-control/checkpoints/RPC_Walker2d-v5/RPC_1_klNA_0sxa5vit/10000.pt
+Episode: 472, total numsteps: 10014, return: 4.53
+Episode: 473, total numsteps: 10029, return: 1.68
+Episode: 474, total numsteps: 10063, return: 8.59
+Episode: 475, total numsteps: 10075, return: -0.6
+Episode: 476, total numsteps: 10085, return: -3.32
+[save_snapshot] saved /home/harsh/arjun/robust-predictable-control/checkpoints/RPC_Walker2d-v5/RPC_1_klNA_0sxa5vit/10100.pt
+Episode: 477, total numsteps: 10103, return: 5.09
+Episode: 478, total numsteps: 10136, return: 5.7
+Episode: 479, total numsteps: 10163, return: 3.77
+Episode: 480, total numsteps: 10174, return: 0.37
+[save_snapshot] saved /home/harsh/arjun/robust-predictable-control/checkpoints/RPC_Walker2d-v5/RPC_1_klNA_0sxa5vit/10200.pt
+Episode: 481, total numsteps: 10215, return: 17.95
+Episode: 482, total numsteps: 10226, return: 0.21
+Episode: 483, total numsteps: 10254, return: 9.85
+Episode: 484, total numsteps: 10290, return: 11.43
+[save_snapshot] saved /home/harsh/arjun/robust-predictable-control/checkpoints/RPC_Walker2d-v5/RPC_1_klNA_0sxa5vit/10300.pt
+Episode: 485, total numsteps: 10380, return: 35.09
+[save_snapshot] saved /home/harsh/arjun/robust-predictable-control/checkpoints/RPC_Walker2d-v5/RPC_1_klNA_0sxa5vit/10400.pt
+Episode: 486, total numsteps: 10412, return: -2.18
+Episode: 487, total numsteps: 10447, return: 8.61
+Episode: 488, total numsteps: 10479, return: 7.36
+[save_snapshot] saved /home/harsh/arjun/robust-predictable-control/checkpoints/RPC_Walker2d-v5/RPC_1_klNA_0sxa5vit/10500.pt

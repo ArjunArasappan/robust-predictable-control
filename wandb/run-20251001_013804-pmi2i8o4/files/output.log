@@ -1,0 +1,3499 @@
+Namespace(agent='RPC', env_name='Walker2d-v5', device='cuda', seed=93, num_train_steps=500000, learning_starts=10000, gamma=0.99, tau=0.005, env_buffer_size=1000000, target_update_interval=1, log_interval=500, save_snapshot_interval=50000, eval_episode_interval=10000, num_eval_episodes=5, latent_dims=16, model_hidden_dims=256, model_num_layers=2, kl_constraint=0.3, lambda_init=1e-05, alpha_autotune=True, alpha_init=0.2, noise_factor=3, batch_size=256, seq_len=4, lr=0.0003, record_eval=True, video_dir='videos', video_fps=30)
+Episode: 1, total numsteps: 45, return: 5.13
+Episode: 2, total numsteps: 62, return: 0.94
+Episode: 3, total numsteps: 92, return: 6.38
+Episode: 4, total numsteps: 112, return: -2.09
+Episode: 5, total numsteps: 152, return: 11.86
+Episode: 6, total numsteps: 169, return: -5.18
+Episode: 7, total numsteps: 192, return: 5.31
+Episode: 8, total numsteps: 207, return: -1.3
+Episode: 9, total numsteps: 218, return: -0.84
+Episode: 10, total numsteps: 235, return: 3.89
+Episode: 11, total numsteps: 268, return: 0.13
+Episode: 12, total numsteps: 286, return: 1.29
+Episode: 13, total numsteps: 297, return: 0.32
+Episode: 14, total numsteps: 309, return: 0.31
+Episode: 15, total numsteps: 326, return: 0.16
+Episode: 16, total numsteps: 353, return: 5.27
+Episode: 17, total numsteps: 379, return: 3.17
+Episode: 18, total numsteps: 392, return: 2.81
+Episode: 19, total numsteps: 410, return: 0.65
+Episode: 20, total numsteps: 431, return: -3.87
+Episode: 21, total numsteps: 445, return: 0.8
+Episode: 22, total numsteps: 474, return: 5.46
+Episode: 23, total numsteps: 488, return: -1.77
+Episode: 24, total numsteps: 508, return: 2.15
+Episode: 25, total numsteps: 544, return: 14.27
+Episode: 26, total numsteps: 577, return: 5.16
+Episode: 27, total numsteps: 603, return: -0.25
+Episode: 28, total numsteps: 626, return: 6.06
+Episode: 29, total numsteps: 639, return: -2.02
+Episode: 30, total numsteps: 671, return: 4.5
+Episode: 31, total numsteps: 687, return: 0.7
+Episode: 32, total numsteps: 711, return: -3.51
+Episode: 33, total numsteps: 741, return: 11.59
+Episode: 34, total numsteps: 763, return: -1.51
+Episode: 35, total numsteps: 790, return: -4.26
+Episode: 36, total numsteps: 812, return: 7.19
+Episode: 37, total numsteps: 840, return: 0.2
+Episode: 38, total numsteps: 853, return: -2.42
+Episode: 39, total numsteps: 863, return: -1.11
+Episode: 40, total numsteps: 878, return: 3.63
+Episode: 41, total numsteps: 893, return: 1.12
+Episode: 42, total numsteps: 908, return: -2.18
+Episode: 43, total numsteps: 933, return: -1.19
+Episode: 44, total numsteps: 951, return: 3.25
+Episode: 45, total numsteps: 978, return: -4.82
+Episode: 46, total numsteps: 992, return: -3.39
+Episode: 47, total numsteps: 1010, return: -5.28
+Episode: 48, total numsteps: 1034, return: 1.91
+Episode: 49, total numsteps: 1049, return: 4.16
+Episode: 50, total numsteps: 1066, return: -1.38
+Episode: 51, total numsteps: 1085, return: 0.66
+Episode: 52, total numsteps: 1108, return: -3.85
+Episode: 53, total numsteps: 1126, return: -8.88
+Episode: 54, total numsteps: 1156, return: -0.96
+Episode: 55, total numsteps: 1176, return: 0.12
+Episode: 56, total numsteps: 1199, return: 0.1
+Episode: 57, total numsteps: 1252, return: 3.6
+Episode: 58, total numsteps: 1272, return: -5.24
+Episode: 59, total numsteps: 1297, return: -2.12
+Episode: 60, total numsteps: 1310, return: -5.86
+Episode: 61, total numsteps: 1341, return: -1.67
+Episode: 62, total numsteps: 1359, return: -2.4
+Episode: 63, total numsteps: 1374, return: -2.04
+Episode: 64, total numsteps: 1389, return: 4.23
+Episode: 65, total numsteps: 1413, return: -2.8
+Episode: 66, total numsteps: 1429, return: 2.49
+Episode: 67, total numsteps: 1442, return: -0.76
+Episode: 68, total numsteps: 1460, return: -1.27
+Episode: 69, total numsteps: 1469, return: -2.17
+Episode: 70, total numsteps: 1496, return: 11.74
+Episode: 71, total numsteps: 1513, return: -0.3
+Episode: 72, total numsteps: 1524, return: 0.32
+Episode: 73, total numsteps: 1539, return: -0.17
+Episode: 74, total numsteps: 1559, return: -6.64
+Episode: 75, total numsteps: 1571, return: -3.36
+Episode: 76, total numsteps: 1608, return: 20.34
+Episode: 77, total numsteps: 1622, return: 2.01
+Episode: 78, total numsteps: 1655, return: 13.91
+Episode: 79, total numsteps: 1680, return: 6.66
+Episode: 80, total numsteps: 1696, return: -0.84
+Episode: 81, total numsteps: 1718, return: 4.19
+Episode: 82, total numsteps: 1744, return: 3.41
+Episode: 83, total numsteps: 1760, return: -4.11
+Episode: 84, total numsteps: 1787, return: 5.97
+Episode: 85, total numsteps: 1841, return: 6.78
+Episode: 86, total numsteps: 1852, return: -1.49
+Episode: 87, total numsteps: 1868, return: -6.68
+Episode: 88, total numsteps: 1882, return: -2.8
+Episode: 89, total numsteps: 1902, return: -4.17
+Episode: 90, total numsteps: 1935, return: 18.21
+Episode: 91, total numsteps: 1959, return: -4.81
+Episode: 92, total numsteps: 1981, return: -1.86
+Episode: 93, total numsteps: 1995, return: -7.31
+Episode: 94, total numsteps: 2016, return: 10.29
+Episode: 95, total numsteps: 2032, return: 3.58
+Episode: 96, total numsteps: 2056, return: -2.77
+Episode: 97, total numsteps: 2077, return: 6.37
+Episode: 98, total numsteps: 2088, return: -0.96
+Episode: 99, total numsteps: 2119, return: 19.66
+Episode: 100, total numsteps: 2150, return: 4.01
+Episode: 101, total numsteps: 2178, return: 8.99
+Episode: 102, total numsteps: 2194, return: -1.87
+Episode: 103, total numsteps: 2207, return: -2.16
+Episode: 104, total numsteps: 2233, return: 4.93
+Episode: 105, total numsteps: 2268, return: 3.21
+Episode: 106, total numsteps: 2299, return: -4.95
+Episode: 107, total numsteps: 2312, return: -2.87
+Episode: 108, total numsteps: 2328, return: 4.39
+Episode: 109, total numsteps: 2338, return: -0.72
+Episode: 110, total numsteps: 2351, return: 1.95
+Episode: 111, total numsteps: 2380, return: 5.06
+Episode: 112, total numsteps: 2392, return: -4.15
+Episode: 113, total numsteps: 2406, return: -0.74
+Episode: 114, total numsteps: 2427, return: -0.86
+Episode: 115, total numsteps: 2452, return: -1.41
+Episode: 116, total numsteps: 2478, return: 2.96
+Episode: 117, total numsteps: 2496, return: 7.06
+Episode: 118, total numsteps: 2511, return: -2.0
+Episode: 119, total numsteps: 2523, return: 2.67
+Episode: 120, total numsteps: 2551, return: 5.98
+Episode: 121, total numsteps: 2564, return: 1.38
+Episode: 122, total numsteps: 2583, return: 3.28
+Episode: 123, total numsteps: 2618, return: 17.84
+Episode: 124, total numsteps: 2628, return: -1.49
+Episode: 125, total numsteps: 2644, return: -3.79
+Episode: 126, total numsteps: 2661, return: 2.97
+Episode: 127, total numsteps: 2677, return: -4.58
+Episode: 128, total numsteps: 2708, return: 3.89
+Episode: 129, total numsteps: 2725, return: 2.26
+Episode: 130, total numsteps: 2753, return: 14.53
+Episode: 131, total numsteps: 2768, return: -5.49
+Episode: 132, total numsteps: 2791, return: 10.03
+Episode: 133, total numsteps: 2803, return: -1.78
+Episode: 134, total numsteps: 2821, return: -10.34
+Episode: 135, total numsteps: 2841, return: -4.8
+Episode: 136, total numsteps: 2878, return: 4.51
+Episode: 137, total numsteps: 2901, return: 1.67
+Episode: 138, total numsteps: 2920, return: 1.58
+Episode: 139, total numsteps: 2930, return: -2.22
+Episode: 140, total numsteps: 2951, return: 6.75
+Episode: 141, total numsteps: 2970, return: -0.57
+Episode: 142, total numsteps: 2982, return: -3.35
+Episode: 143, total numsteps: 3004, return: -2.23
+Episode: 144, total numsteps: 3030, return: 5.86
+Episode: 145, total numsteps: 3065, return: 8.17
+Episode: 146, total numsteps: 3087, return: 7.54
+Episode: 147, total numsteps: 3105, return: -8.43
+Episode: 148, total numsteps: 3116, return: -4.16
+Episode: 149, total numsteps: 3132, return: 0.75
+Episode: 150, total numsteps: 3161, return: -0.94
+Episode: 151, total numsteps: 3181, return: 3.79
+Episode: 152, total numsteps: 3201, return: -1.76
+Episode: 153, total numsteps: 3212, return: -0.89
+Episode: 154, total numsteps: 3234, return: 4.74
+Episode: 155, total numsteps: 3257, return: -4.74
+Episode: 156, total numsteps: 3284, return: 5.46
+Episode: 157, total numsteps: 3295, return: 1.93
+Episode: 158, total numsteps: 3314, return: -4.01
+Episode: 159, total numsteps: 3329, return: -3.95
+Episode: 160, total numsteps: 3344, return: 0.99
+Episode: 161, total numsteps: 3357, return: 0.42
+Episode: 162, total numsteps: 3381, return: -1.63
+Episode: 163, total numsteps: 3402, return: -6.14
+Episode: 164, total numsteps: 3437, return: 8.35
+Episode: 165, total numsteps: 3452, return: -2.57
+Episode: 166, total numsteps: 3472, return: -0.44
+Episode: 167, total numsteps: 3487, return: 1.66
+Episode: 168, total numsteps: 3519, return: 4.49
+Episode: 169, total numsteps: 3529, return: -2.12
+Episode: 170, total numsteps: 3550, return: 6.08
+Episode: 171, total numsteps: 3571, return: -1.13
+Episode: 172, total numsteps: 3588, return: 3.98
+Episode: 173, total numsteps: 3610, return: 1.93
+Episode: 174, total numsteps: 3619, return: -2.3
+Episode: 175, total numsteps: 3637, return: 3.05
+Episode: 176, total numsteps: 3656, return: 2.82
+Episode: 177, total numsteps: 3670, return: 1.83
+Episode: 178, total numsteps: 3682, return: -4.08
+Episode: 179, total numsteps: 3713, return: 10.29
+Episode: 180, total numsteps: 3727, return: 0.4
+Episode: 181, total numsteps: 3744, return: 0.24
+Episode: 182, total numsteps: 3754, return: -2.52
+Episode: 183, total numsteps: 3775, return: -3.58
+Episode: 184, total numsteps: 3791, return: -5.94
+Episode: 185, total numsteps: 3836, return: 20.69
+Episode: 186, total numsteps: 3853, return: -6.35
+Episode: 187, total numsteps: 3863, return: -4.42
+Episode: 188, total numsteps: 3877, return: -1.71
+Episode: 189, total numsteps: 3898, return: 10.0
+Episode: 190, total numsteps: 3908, return: -1.22
+Episode: 191, total numsteps: 3925, return: 3.04
+Episode: 192, total numsteps: 3944, return: -3.68
+Episode: 193, total numsteps: 3957, return: 0.17
+Episode: 194, total numsteps: 3995, return: 7.42
+Episode: 195, total numsteps: 4010, return: 3.55
+Episode: 196, total numsteps: 4034, return: 7.14
+Episode: 197, total numsteps: 4050, return: -1.68
+Episode: 198, total numsteps: 4083, return: 6.43
+Episode: 199, total numsteps: 4107, return: 4.87
+Episode: 200, total numsteps: 4122, return: -2.75
+Episode: 201, total numsteps: 4162, return: 15.75
+Episode: 202, total numsteps: 4178, return: 3.25
+Episode: 203, total numsteps: 4213, return: 10.91
+Episode: 204, total numsteps: 4234, return: -8.79
+Episode: 205, total numsteps: 4252, return: -0.8
+Episode: 206, total numsteps: 4271, return: 2.41
+Episode: 207, total numsteps: 4286, return: 1.18
+Episode: 208, total numsteps: 4304, return: 4.35
+Episode: 209, total numsteps: 4316, return: -0.96
+Episode: 210, total numsteps: 4329, return: -2.97
+Episode: 211, total numsteps: 4342, return: -4.02
+Episode: 212, total numsteps: 4355, return: 1.51
+Episode: 213, total numsteps: 4381, return: 3.28
+Episode: 214, total numsteps: 4414, return: 11.83
+Episode: 215, total numsteps: 4437, return: 8.73
+Episode: 216, total numsteps: 4454, return: 1.67
+Episode: 217, total numsteps: 4465, return: -1.1
+Episode: 218, total numsteps: 4481, return: -6.88
+Episode: 219, total numsteps: 4501, return: -3.92
+Episode: 220, total numsteps: 4543, return: 15.56
+Episode: 221, total numsteps: 4555, return: -2.69
+Episode: 222, total numsteps: 4567, return: 0.37
+Episode: 223, total numsteps: 4583, return: -4.66
+Episode: 224, total numsteps: 4606, return: 2.25
+Episode: 225, total numsteps: 4631, return: -10.27
+Episode: 226, total numsteps: 4649, return: -3.8
+Episode: 227, total numsteps: 4672, return: 5.68
+Episode: 228, total numsteps: 4685, return: 2.36
+Episode: 229, total numsteps: 4711, return: 4.5
+Episode: 230, total numsteps: 4741, return: 7.59
+Episode: 231, total numsteps: 4755, return: -0.54
+Episode: 232, total numsteps: 4767, return: -2.35
+Episode: 233, total numsteps: 4792, return: 12.1
+Episode: 234, total numsteps: 4808, return: 3.33
+Episode: 235, total numsteps: 4830, return: -1.4
+Episode: 236, total numsteps: 4854, return: -3.84
+Episode: 237, total numsteps: 4877, return: 5.79
+Episode: 238, total numsteps: 4901, return: -1.2
+Episode: 239, total numsteps: 4928, return: 2.95
+Episode: 240, total numsteps: 4955, return: -2.09
+Episode: 241, total numsteps: 4977, return: -4.88
+Episode: 242, total numsteps: 4988, return: -0.92
+Episode: 243, total numsteps: 5024, return: 16.89
+Episode: 244, total numsteps: 5053, return: 1.52
+Episode: 245, total numsteps: 5075, return: 3.45
+Episode: 246, total numsteps: 5101, return: -5.55
+Episode: 247, total numsteps: 5120, return: -1.55
+Episode: 248, total numsteps: 5142, return: -6.75
+Episode: 249, total numsteps: 5156, return: 1.4
+Episode: 250, total numsteps: 5173, return: -4.94
+Episode: 251, total numsteps: 5187, return: -3.44
+Episode: 252, total numsteps: 5210, return: 4.48
+Episode: 253, total numsteps: 5232, return: 2.85
+Episode: 254, total numsteps: 5246, return: 0.83
+Episode: 255, total numsteps: 5271, return: 0.64
+Episode: 256, total numsteps: 5299, return: 6.45
+Episode: 257, total numsteps: 5315, return: -2.41
+Episode: 258, total numsteps: 5337, return: -4.17
+Episode: 259, total numsteps: 5353, return: -0.18
+Episode: 260, total numsteps: 5370, return: 0.35
+Episode: 261, total numsteps: 5385, return: -3.54
+Episode: 262, total numsteps: 5409, return: -1.36
+Episode: 263, total numsteps: 5440, return: 10.75
+Episode: 264, total numsteps: 5453, return: -3.69
+Episode: 265, total numsteps: 5482, return: -4.47
+Episode: 266, total numsteps: 5500, return: -0.27
+Episode: 267, total numsteps: 5512, return: -3.54
+Episode: 268, total numsteps: 5528, return: 0.9
+Episode: 269, total numsteps: 5552, return: 5.1
+Episode: 270, total numsteps: 5568, return: -3.62
+Episode: 271, total numsteps: 5586, return: 1.68
+Episode: 272, total numsteps: 5602, return: -0.36
+Episode: 273, total numsteps: 5616, return: 4.07
+Episode: 274, total numsteps: 5633, return: -0.15
+Episode: 275, total numsteps: 5664, return: 4.71
+Episode: 276, total numsteps: 5688, return: 3.16
+Episode: 277, total numsteps: 5707, return: 5.09
+Episode: 278, total numsteps: 5732, return: -1.62
+Episode: 279, total numsteps: 5758, return: -5.6
+Episode: 280, total numsteps: 5774, return: 3.43
+Episode: 281, total numsteps: 5805, return: 8.6
+Episode: 282, total numsteps: 5829, return: -1.58
+Episode: 283, total numsteps: 5854, return: -4.56
+Episode: 284, total numsteps: 5868, return: 0.82
+Episode: 285, total numsteps: 5879, return: -4.65
+Episode: 286, total numsteps: 5894, return: -0.99
+Episode: 287, total numsteps: 5910, return: 0.39
+Episode: 288, total numsteps: 5925, return: 1.72
+Episode: 289, total numsteps: 5945, return: -7.62
+Episode: 290, total numsteps: 5967, return: -4.92
+Episode: 291, total numsteps: 5976, return: -2.71
+Episode: 292, total numsteps: 5998, return: 5.61
+Episode: 293, total numsteps: 6006, return: -2.51
+Episode: 294, total numsteps: 6021, return: 3.11
+Episode: 295, total numsteps: 6035, return: -6.5
+Episode: 296, total numsteps: 6051, return: 0.76
+Episode: 297, total numsteps: 6070, return: 6.83
+Episode: 298, total numsteps: 6086, return: 2.64
+Episode: 299, total numsteps: 6103, return: -2.68
+Episode: 300, total numsteps: 6132, return: 9.52
+Episode: 301, total numsteps: 6150, return: -2.27
+Episode: 302, total numsteps: 6165, return: -0.64
+Episode: 303, total numsteps: 6178, return: 0.7
+Episode: 304, total numsteps: 6192, return: 4.0
+Episode: 305, total numsteps: 6207, return: -1.44
+Episode: 306, total numsteps: 6270, return: 8.91
+Episode: 307, total numsteps: 6293, return: 2.48
+Episode: 308, total numsteps: 6321, return: 3.66
+Episode: 309, total numsteps: 6344, return: 2.88
+Episode: 310, total numsteps: 6371, return: -1.01
+Episode: 311, total numsteps: 6381, return: -3.65
+Episode: 312, total numsteps: 6414, return: 4.45
+Episode: 313, total numsteps: 6425, return: -2.91
+Episode: 314, total numsteps: 6441, return: 2.81
+Episode: 315, total numsteps: 6456, return: 3.37
+Episode: 316, total numsteps: 6482, return: -4.39
+Episode: 317, total numsteps: 6497, return: -0.54
+Episode: 318, total numsteps: 6515, return: 6.0
+Episode: 319, total numsteps: 6533, return: 6.06
+Episode: 320, total numsteps: 6567, return: 13.1
+Episode: 321, total numsteps: 6588, return: -5.35
+Episode: 322, total numsteps: 6624, return: 8.79
+Episode: 323, total numsteps: 6643, return: -4.84
+Episode: 324, total numsteps: 6667, return: 1.92
+Episode: 325, total numsteps: 6679, return: -7.07
+Episode: 326, total numsteps: 6691, return: 1.7
+Episode: 327, total numsteps: 6707, return: -2.67
+Episode: 328, total numsteps: 6725, return: 6.84
+Episode: 329, total numsteps: 6747, return: 0.18
+Episode: 330, total numsteps: 6767, return: 2.09
+Episode: 331, total numsteps: 6793, return: 3.08
+Episode: 332, total numsteps: 6811, return: 6.51
+Episode: 333, total numsteps: 6824, return: 1.27
+Episode: 334, total numsteps: 6834, return: -2.56
+Episode: 335, total numsteps: 6865, return: 0.77
+Episode: 336, total numsteps: 6900, return: 4.77
+Episode: 337, total numsteps: 6945, return: 2.45
+Episode: 338, total numsteps: 6960, return: 3.12
+Episode: 339, total numsteps: 6973, return: -1.31
+Episode: 340, total numsteps: 6986, return: -1.75
+Episode: 341, total numsteps: 7003, return: -3.95
+Episode: 342, total numsteps: 7022, return: -0.28
+Episode: 343, total numsteps: 7035, return: 0.4
+Episode: 344, total numsteps: 7057, return: 0.23
+Episode: 345, total numsteps: 7077, return: 6.48
+Episode: 346, total numsteps: 7094, return: -0.69
+Episode: 347, total numsteps: 7126, return: 10.6
+Episode: 348, total numsteps: 7141, return: 1.82
+Episode: 349, total numsteps: 7156, return: 0.7
+Episode: 350, total numsteps: 7172, return: -2.09
+Episode: 351, total numsteps: 7192, return: -3.3
+Episode: 352, total numsteps: 7204, return: -5.1
+Episode: 353, total numsteps: 7217, return: 1.77
+Episode: 354, total numsteps: 7246, return: -2.77
+Episode: 355, total numsteps: 7265, return: 4.3
+Episode: 356, total numsteps: 7297, return: 17.26
+Episode: 357, total numsteps: 7316, return: -6.72
+Episode: 358, total numsteps: 7342, return: 2.17
+Episode: 359, total numsteps: 7369, return: -9.8
+Episode: 360, total numsteps: 7383, return: -0.06
+Episode: 361, total numsteps: 7413, return: 9.34
+Episode: 362, total numsteps: 7426, return: -0.27
+Episode: 363, total numsteps: 7444, return: 3.42
+Episode: 364, total numsteps: 7459, return: -3.25
+Episode: 365, total numsteps: 7493, return: 13.89
+Episode: 366, total numsteps: 7523, return: 5.88
+Episode: 367, total numsteps: 7536, return: -0.33
+Episode: 368, total numsteps: 7548, return: 0.13
+Episode: 369, total numsteps: 7559, return: -1.7
+Episode: 370, total numsteps: 7577, return: 4.83
+Episode: 371, total numsteps: 7593, return: 2.06
+Episode: 372, total numsteps: 7608, return: 1.43
+Episode: 373, total numsteps: 7617, return: -1.68
+Episode: 374, total numsteps: 7628, return: 0.87
+Episode: 375, total numsteps: 7646, return: 4.16
+Episode: 376, total numsteps: 7679, return: 9.71
+Episode: 377, total numsteps: 7710, return: 14.83
+Episode: 378, total numsteps: 7731, return: 9.83
+Episode: 379, total numsteps: 7749, return: 6.33
+Episode: 380, total numsteps: 7766, return: 0.72
+Episode: 381, total numsteps: 7792, return: -4.37
+Episode: 382, total numsteps: 7806, return: 2.84
+Episode: 383, total numsteps: 7817, return: -5.73
+Episode: 384, total numsteps: 7846, return: 1.35
+Episode: 385, total numsteps: 7877, return: 8.4
+Episode: 386, total numsteps: 7892, return: 0.53
+Episode: 387, total numsteps: 7926, return: 5.74
+Episode: 388, total numsteps: 7950, return: 6.29
+Episode: 389, total numsteps: 7978, return: -0.41
+Episode: 390, total numsteps: 8009, return: 11.21
+Episode: 391, total numsteps: 8028, return: 4.42
+Episode: 392, total numsteps: 8049, return: -0.1
+Episode: 393, total numsteps: 8069, return: -0.55
+Episode: 394, total numsteps: 8099, return: -0.25
+Episode: 395, total numsteps: 8125, return: -3.39
+Episode: 396, total numsteps: 8146, return: -6.68
+Episode: 397, total numsteps: 8160, return: -1.5
+Episode: 398, total numsteps: 8215, return: 23.5
+Episode: 399, total numsteps: 8233, return: -0.24
+Episode: 400, total numsteps: 8253, return: 7.04
+Episode: 401, total numsteps: 8271, return: -3.92
+Episode: 402, total numsteps: 8287, return: 1.94
+Episode: 403, total numsteps: 8310, return: 0.04
+Episode: 404, total numsteps: 8322, return: 1.72
+Episode: 405, total numsteps: 8338, return: 2.54
+Episode: 406, total numsteps: 8352, return: -9.99
+Episode: 407, total numsteps: 8380, return: 4.01
+Episode: 408, total numsteps: 8402, return: -2.32
+Episode: 409, total numsteps: 8428, return: 1.1
+Episode: 410, total numsteps: 8452, return: 9.99
+Episode: 411, total numsteps: 8488, return: 9.75
+Episode: 412, total numsteps: 8564, return: 5.94
+Episode: 413, total numsteps: 8583, return: 6.49
+Episode: 414, total numsteps: 8602, return: -0.53
+Episode: 415, total numsteps: 8629, return: 3.32
+Episode: 416, total numsteps: 8659, return: 2.89
+Episode: 417, total numsteps: 8687, return: 5.08
+Episode: 418, total numsteps: 8707, return: 2.27
+Episode: 419, total numsteps: 8722, return: -1.77
+Episode: 420, total numsteps: 8737, return: -1.45
+Episode: 421, total numsteps: 8756, return: 4.35
+Episode: 422, total numsteps: 8771, return: -1.11
+Episode: 423, total numsteps: 8791, return: 8.6
+Episode: 424, total numsteps: 8807, return: -7.36
+Episode: 425, total numsteps: 8827, return: 9.26
+Episode: 426, total numsteps: 8842, return: 0.35
+Episode: 427, total numsteps: 8867, return: -2.68
+Episode: 428, total numsteps: 8887, return: -2.27
+Episode: 429, total numsteps: 8906, return: 4.95
+Episode: 430, total numsteps: 8924, return: 1.82
+Episode: 431, total numsteps: 8950, return: 4.2
+Episode: 432, total numsteps: 8978, return: 7.08
+Episode: 433, total numsteps: 9001, return: -3.53
+Episode: 434, total numsteps: 9020, return: 0.94
+Episode: 435, total numsteps: 9037, return: 2.55
+Episode: 436, total numsteps: 9059, return: -6.19
+Episode: 437, total numsteps: 9073, return: -1.44
+Episode: 438, total numsteps: 9093, return: -3.88
+Episode: 439, total numsteps: 9111, return: 9.05
+Episode: 440, total numsteps: 9135, return: -3.23
+Episode: 441, total numsteps: 9184, return: 21.37
+Episode: 442, total numsteps: 9208, return: 0.12
+Episode: 443, total numsteps: 9225, return: -0.97
+Episode: 444, total numsteps: 9258, return: 0.2
+Episode: 445, total numsteps: 9268, return: -1.04
+Episode: 446, total numsteps: 9291, return: 9.07
+Episode: 447, total numsteps: 9304, return: -1.05
+Episode: 448, total numsteps: 9333, return: 9.72
+Episode: 449, total numsteps: 9356, return: 0.12
+Episode: 450, total numsteps: 9374, return: -1.41
+Episode: 451, total numsteps: 9394, return: 4.53
+Episode: 452, total numsteps: 9422, return: 8.9
+Episode: 453, total numsteps: 9432, return: -2.31
+Episode: 454, total numsteps: 9455, return: 9.46
+Episode: 455, total numsteps: 9490, return: -3.16
+Episode: 456, total numsteps: 9509, return: 7.52
+Episode: 457, total numsteps: 9532, return: -8.16
+Episode: 458, total numsteps: 9561, return: 5.81
+Episode: 459, total numsteps: 9574, return: 2.18
+Episode: 460, total numsteps: 9597, return: 3.39
+Episode: 461, total numsteps: 9625, return: 1.76
+Episode: 462, total numsteps: 9657, return: -2.23
+Episode: 463, total numsteps: 9677, return: -2.02
+Episode: 464, total numsteps: 9712, return: 6.37
+Episode: 465, total numsteps: 9737, return: -4.72
+Episode: 466, total numsteps: 9757, return: -2.4
+Episode: 467, total numsteps: 9779, return: 3.69
+Episode: 468, total numsteps: 9797, return: 0.05
+Episode: 469, total numsteps: 9809, return: 0.26
+Episode: 470, total numsteps: 9828, return: -2.43
+Episode: 471, total numsteps: 9843, return: -3.24
+Episode: 472, total numsteps: 9853, return: -2.49
+Episode: 473, total numsteps: 9867, return: 3.25
+Episode: 474, total numsteps: 9875, return: -4.12
+Episode: 475, total numsteps: 9899, return: -3.06
+Episode: 476, total numsteps: 9921, return: 3.98
+Episode: 477, total numsteps: 9937, return: -3.82
+Episode: 478, total numsteps: 9957, return: 3.21
+Episode: 479, total numsteps: 9966, return: -2.93
+Episode: 480, total numsteps: 9988, return: 7.41
+Episode: 481, total numsteps: 9998, return: -1.92
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_93_kl0.1_zlabhh8e
+   RPC_1_kl65.0_3ak314qp
+   RPC_53_kl0.1_un0r9ump
+   RPC_1_kl75.0_s5er7ua0
+Episode: 482, total numsteps: 10014, return: -2.42
+Episode: 483, total numsteps: 10029, return: 0.01
+Episode: 484, total numsteps: 10044, return: -2.44
+Episode: 485, total numsteps: 10065, return: 2.95
+Episode: 486, total numsteps: 10098, return: 11.24
+Episode: 487, total numsteps: 10160, return: 33.59
+Episode: 488, total numsteps: 10221, return: 13.72
+Episode: 489, total numsteps: 10247, return: 1.23
+Episode: 490, total numsteps: 10274, return: 13.34
+Episode: 491, total numsteps: 10382, return: 60.03
+Episode: 492, total numsteps: 10396, return: -2.42
+Episode: 493, total numsteps: 10432, return: -4.36
+Episode: 494, total numsteps: 10487, return: 25.99
+Episode: 495, total numsteps: 10564, return: 20.38
+Episode: 496, total numsteps: 10691, return: 54.27
+Episode: 497, total numsteps: 10753, return: -3.37
+Episode: 498, total numsteps: 10883, return: -11.85
+Episode: 499, total numsteps: 10962, return: -12.88
+Episode: 500, total numsteps: 11039, return: -10.72
+Episode: 501, total numsteps: 11160, return: 4.57
+Episode: 502, total numsteps: 11347, return: 71.03
+Episode: 503, total numsteps: 11515, return: 2.67
+Episode: 504, total numsteps: 11736, return: 82.11
+Episode: 505, total numsteps: 11924, return: 23.16
+Episode: 506, total numsteps: 12924, return: 884.34
+Episode: 507, total numsteps: 13160, return: 104.84
+Episode: 508, total numsteps: 13428, return: 395.46
+Episode: 509, total numsteps: 13671, return: 385.34
+Episode: 510, total numsteps: 13843, return: 276.96
+Episode: 511, total numsteps: 14052, return: 333.33
+Episode: 512, total numsteps: 14208, return: 267.51
+Episode: 513, total numsteps: 14435, return: 358.12
+Episode: 514, total numsteps: 15332, return: 664.66
+Episode: 515, total numsteps: 16021, return: 609.81
+Episode: 516, total numsteps: 16120, return: -0.9
+Episode: 517, total numsteps: 16247, return: 13.49
+Episode: 518, total numsteps: 16375, return: 16.24
+Episode: 519, total numsteps: 16553, return: 305.83
+Episode: 520, total numsteps: 16691, return: 4.73
+Episode: 521, total numsteps: 16840, return: 229.03
+Episode: 522, total numsteps: 17000, return: 238.05
+Episode: 523, total numsteps: 17102, return: -16.79
+Episode: 524, total numsteps: 17271, return: 48.46
+Episode: 525, total numsteps: 17608, return: 434.84
+Episode: 526, total numsteps: 17718, return: 196.19
+Episode: 527, total numsteps: 17855, return: 241.16
+Episode: 528, total numsteps: 17976, return: 208.35
+Episode: 529, total numsteps: 18084, return: 38.24
+Episode: 530, total numsteps: 18216, return: 45.25
+Episode: 531, total numsteps: 18366, return: 6.17
+Episode: 532, total numsteps: 18696, return: 137.83
+Episode: 533, total numsteps: 18877, return: 214.25
+Episode: 534, total numsteps: 19109, return: 314.67
+Episode: 535, total numsteps: 19375, return: 186.74
+Episode: 536, total numsteps: 19507, return: 13.86
+Episode: 537, total numsteps: 19679, return: 244.17
+Episode: 538, total numsteps: 19816, return: 214.18
+Episode: 539, total numsteps: 19923, return: 19.16
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_1_kl65.0_3ak314qp
+   RPC_24_kl0.3_e2mfrnnq
+   RPC_53_kl0.1_un0r9ump
+   RPC_1_kl75.0_s5er7ua0
+Episode: 540, total numsteps: 20076, return: 260.93
+Episode: 541, total numsteps: 20221, return: 232.49
+Episode: 542, total numsteps: 20380, return: 231.86
+Episode: 543, total numsteps: 20548, return: 260.26
+Episode: 544, total numsteps: 20724, return: 246.93
+Episode: 545, total numsteps: 20844, return: 205.64
+Episode: 546, total numsteps: 20998, return: 234.06
+Episode: 547, total numsteps: 21135, return: 234.33
+Episode: 548, total numsteps: 21284, return: 215.28
+Episode: 549, total numsteps: 21429, return: 225.89
+Episode: 550, total numsteps: 21546, return: 173.36
+Episode: 551, total numsteps: 21731, return: 264.91
+Episode: 552, total numsteps: 21865, return: 212.52
+Episode: 553, total numsteps: 21991, return: 223.7
+Episode: 554, total numsteps: 22347, return: 428.69
+Episode: 555, total numsteps: 22539, return: 276.19
+Episode: 556, total numsteps: 22715, return: 275.7
+Episode: 557, total numsteps: 22890, return: 273.89
+Episode: 558, total numsteps: 23036, return: 229.57
+Episode: 559, total numsteps: 23179, return: 217.57
+Episode: 560, total numsteps: 23336, return: 263.7
+Episode: 561, total numsteps: 23507, return: 257.3
+Episode: 562, total numsteps: 23716, return: 276.06
+Episode: 563, total numsteps: 23825, return: 186.05
+Episode: 564, total numsteps: 23978, return: 249.59
+Episode: 565, total numsteps: 24153, return: 273.99
+Episode: 566, total numsteps: 24325, return: 272.55
+Episode: 567, total numsteps: 24466, return: 227.33
+Episode: 568, total numsteps: 24671, return: 282.17
+Episode: 569, total numsteps: 24802, return: 217.0
+Episode: 570, total numsteps: 24985, return: 284.1
+Episode: 571, total numsteps: 25985, return: 876.01
+Episode: 572, total numsteps: 26155, return: 270.29
+Episode: 573, total numsteps: 26286, return: 229.92
+Episode: 574, total numsteps: 26473, return: 297.84
+Episode: 575, total numsteps: 26646, return: 278.66
+Episode: 576, total numsteps: 26906, return: 360.55
+Episode: 577, total numsteps: 27135, return: 335.28
+Episode: 578, total numsteps: 27491, return: 488.33
+Episode: 579, total numsteps: 27732, return: 87.2
+Episode: 580, total numsteps: 27891, return: 280.34
+Episode: 581, total numsteps: 28094, return: 319.04
+Episode: 582, total numsteps: 28341, return: 134.91
+Episode: 583, total numsteps: 28485, return: 240.02
+Episode: 584, total numsteps: 28622, return: 256.98
+Episode: 585, total numsteps: 28841, return: 348.48
+Episode: 586, total numsteps: 29002, return: 300.47
+Episode: 587, total numsteps: 29117, return: 52.19
+Episode: 588, total numsteps: 29236, return: 215.48
+Episode: 589, total numsteps: 29421, return: 302.5
+Episode: 590, total numsteps: 29582, return: 258.05
+Episode: 591, total numsteps: 29699, return: 216.57
+Episode: 592, total numsteps: 29898, return: 296.29
+Episode: 593, total numsteps: 29968, return: 22.51
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_1_kl65.0_3ak314qp
+   RPC_24_kl0.3_e2mfrnnq
+   RPC_1_kl75.0_s5er7ua0
+   RPC_53_kl0.3_1dpadcwr
+Episode: 594, total numsteps: 30079, return: 13.45
+Episode: 595, total numsteps: 30171, return: 47.71
+Episode: 596, total numsteps: 30287, return: 14.52
+Episode: 597, total numsteps: 30371, return: -13.66
+Episode: 598, total numsteps: 30400, return: -2.42
+Episode: 599, total numsteps: 30493, return: 2.68
+Episode: 600, total numsteps: 30516, return: -5.5
+Episode: 601, total numsteps: 30540, return: -0.47
+Episode: 602, total numsteps: 30567, return: -4.56
+Episode: 603, total numsteps: 30596, return: 1.94
+Episode: 604, total numsteps: 30628, return: 0.32
+Episode: 605, total numsteps: 30653, return: -3.47
+Episode: 606, total numsteps: 30683, return: 1.48
+Episode: 607, total numsteps: 30790, return: -11.03
+Episode: 608, total numsteps: 30817, return: -2.73
+Episode: 609, total numsteps: 30908, return: -13.39
+Episode: 610, total numsteps: 30939, return: -5.3
+Episode: 611, total numsteps: 31043, return: -16.85
+Episode: 612, total numsteps: 31115, return: -16.53
+Episode: 613, total numsteps: 31231, return: -22.63
+Episode: 614, total numsteps: 31305, return: 7.33
+Episode: 615, total numsteps: 31857, return: 653.38
+Episode: 616, total numsteps: 32065, return: 324.92
+Episode: 617, total numsteps: 32256, return: 303.75
+Episode: 618, total numsteps: 32409, return: 269.52
+Episode: 619, total numsteps: 32629, return: 320.51
+Episode: 620, total numsteps: 32713, return: 151.94
+Episode: 621, total numsteps: 32907, return: 275.76
+Episode: 622, total numsteps: 33035, return: 219.82
+Episode: 623, total numsteps: 33156, return: 221.12
+Episode: 624, total numsteps: 33251, return: 177.28
+Episode: 625, total numsteps: 33344, return: 176.18
+Episode: 626, total numsteps: 33456, return: 214.07
+Episode: 627, total numsteps: 33551, return: 174.5
+Episode: 628, total numsteps: 33703, return: 238.39
+Episode: 629, total numsteps: 33823, return: 205.58
+Episode: 630, total numsteps: 33933, return: 199.19
+Episode: 631, total numsteps: 34100, return: 261.46
+Episode: 632, total numsteps: 34346, return: 338.36
+Episode: 633, total numsteps: 34492, return: 241.62
+Episode: 634, total numsteps: 34689, return: 309.52
+Episode: 635, total numsteps: 34815, return: 209.09
+Episode: 636, total numsteps: 34967, return: 266.7
+Episode: 637, total numsteps: 35207, return: 334.93
+Episode: 638, total numsteps: 35414, return: 322.33
+Episode: 639, total numsteps: 35651, return: 339.95
+Episode: 640, total numsteps: 35931, return: 322.59
+Episode: 641, total numsteps: 36107, return: 261.06
+Episode: 642, total numsteps: 36239, return: 224.85
+Episode: 643, total numsteps: 36370, return: 214.92
+Episode: 644, total numsteps: 36503, return: 207.08
+Episode: 645, total numsteps: 36752, return: 340.95
+Episode: 646, total numsteps: 36918, return: 258.16
+Episode: 647, total numsteps: 37054, return: 220.93
+Episode: 648, total numsteps: 37195, return: 255.32
+Episode: 649, total numsteps: 37314, return: 208.05
+Episode: 650, total numsteps: 37561, return: 388.57
+Episode: 651, total numsteps: 37711, return: 249.11
+Episode: 652, total numsteps: 37839, return: 195.08
+Episode: 653, total numsteps: 38008, return: 264.74
+Episode: 654, total numsteps: 38135, return: 214.85
+Episode: 655, total numsteps: 38262, return: 217.83
+Episode: 656, total numsteps: 38365, return: 195.11
+Episode: 657, total numsteps: 38617, return: 361.6
+Episode: 658, total numsteps: 38883, return: 364.33
+Episode: 659, total numsteps: 39213, return: 451.26
+Episode: 660, total numsteps: 39374, return: 272.43
+Episode: 661, total numsteps: 39559, return: 274.02
+Episode: 662, total numsteps: 39710, return: 246.41
+Episode: 663, total numsteps: 39854, return: 254.44
+Episode: 664, total numsteps: 39980, return: 235.54
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_1_kl65.0_3ak314qp
+   RPC_24_kl0.3_e2mfrnnq
+   RPC_1_kl75.0_s5er7ua0
+   RPC_53_kl0.3_1dpadcwr
+Episode: 665, total numsteps: 40264, return: 370.74
+Episode: 666, total numsteps: 40381, return: 200.63
+Episode: 667, total numsteps: 40553, return: 283.71
+Episode: 668, total numsteps: 40736, return: 295.84
+Episode: 669, total numsteps: 40972, return: 354.46
+Episode: 670, total numsteps: 41156, return: 89.61
+Episode: 671, total numsteps: 41311, return: 262.53
+Episode: 672, total numsteps: 41515, return: 326.83
+Episode: 673, total numsteps: 41656, return: 256.99
+Episode: 674, total numsteps: 41846, return: 296.34
+Episode: 675, total numsteps: 42011, return: 277.58
+Episode: 676, total numsteps: 42171, return: 268.89
+Episode: 677, total numsteps: 42312, return: 244.24
+Episode: 678, total numsteps: 42512, return: 318.51
+Episode: 679, total numsteps: 42664, return: 266.23
+Episode: 680, total numsteps: 42864, return: 323.93
+Episode: 681, total numsteps: 43074, return: 312.44
+Episode: 682, total numsteps: 43254, return: 295.49
+Episode: 683, total numsteps: 43401, return: 261.45
+Episode: 684, total numsteps: 43627, return: 100.89
+Episode: 685, total numsteps: 43855, return: 96.53
+Episode: 686, total numsteps: 44148, return: 412.99
+Episode: 687, total numsteps: 44501, return: 393.38
+Episode: 688, total numsteps: 44733, return: 351.96
+Episode: 689, total numsteps: 45118, return: 502.47
+Episode: 690, total numsteps: 45221, return: 202.3
+Episode: 691, total numsteps: 45392, return: 289.7
+Episode: 692, total numsteps: 45629, return: 358.96
+Episode: 693, total numsteps: 45801, return: 290.9
+Episode: 694, total numsteps: 46268, return: 585.35
+Episode: 695, total numsteps: 46447, return: 297.39
+Episode: 696, total numsteps: 46648, return: 322.03
+Episode: 697, total numsteps: 46957, return: 432.35
+Episode: 698, total numsteps: 47307, return: 147.99
+Episode: 699, total numsteps: 47583, return: 125.12
+Episode: 700, total numsteps: 47909, return: 448.25
+Episode: 701, total numsteps: 48135, return: 347.8
+Episode: 702, total numsteps: 48360, return: 85.29
+Episode: 703, total numsteps: 48571, return: 128.4
+Episode: 704, total numsteps: 48827, return: 388.35
+Episode: 705, total numsteps: 49163, return: 194.92
+Episode: 706, total numsteps: 49345, return: 303.33
+Episode: 707, total numsteps: 49583, return: 360.25
+Episode: 708, total numsteps: 49909, return: 445.75
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_1_kl65.0_3ak314qp
+   RPC_24_kl0.3_e2mfrnnq
+   RPC_1_kl75.0_s5er7ua0
+   RPC_53_kl0.3_1dpadcwr
+Episode: 709, total numsteps: 50073, return: 98.41
+Episode: 710, total numsteps: 50330, return: 135.82
+Episode: 711, total numsteps: 50503, return: 103.38
+Episode: 712, total numsteps: 50757, return: 88.41
+Episode: 713, total numsteps: 51029, return: 392.23
+Episode: 714, total numsteps: 51226, return: 63.68
+Episode: 715, total numsteps: 51411, return: 95.0
+Episode: 716, total numsteps: 51641, return: 350.99
+Episode: 717, total numsteps: 51905, return: 135.97
+Episode: 718, total numsteps: 52153, return: 369.61
+Episode: 719, total numsteps: 52405, return: 111.49
+Episode: 720, total numsteps: 52579, return: 85.4
+Episode: 721, total numsteps: 52801, return: 343.52
+Episode: 722, total numsteps: 53034, return: 352.82
+Episode: 723, total numsteps: 53332, return: 418.0
+Episode: 724, total numsteps: 53458, return: 236.99
+Episode: 725, total numsteps: 53658, return: 64.65
+Episode: 726, total numsteps: 53780, return: 228.69
+Episode: 727, total numsteps: 54005, return: 338.43
+Episode: 728, total numsteps: 54251, return: 130.97
+Episode: 729, total numsteps: 54464, return: 332.76
+Episode: 730, total numsteps: 54669, return: 84.37
+Episode: 731, total numsteps: 54804, return: 248.15
+Episode: 732, total numsteps: 55042, return: 179.34
+Episode: 733, total numsteps: 55225, return: 289.32
+Episode: 734, total numsteps: 55451, return: 348.02
+Episode: 735, total numsteps: 55598, return: 263.45
+Episode: 736, total numsteps: 55843, return: 134.75
+Episode: 737, total numsteps: 56037, return: 314.41
+Episode: 738, total numsteps: 56175, return: 252.29
+Episode: 739, total numsteps: 56287, return: 214.91
+Episode: 740, total numsteps: 56405, return: 223.62
+Episode: 741, total numsteps: 56565, return: 278.53
+Episode: 742, total numsteps: 56705, return: 254.63
+Episode: 743, total numsteps: 56919, return: 335.99
+Episode: 744, total numsteps: 57115, return: 318.68
+Episode: 745, total numsteps: 57318, return: 328.46
+Episode: 746, total numsteps: 57496, return: 298.58
+Episode: 747, total numsteps: 57690, return: 319.39
+Episode: 748, total numsteps: 57948, return: 168.87
+Episode: 749, total numsteps: 58124, return: 295.76
+Episode: 750, total numsteps: 58330, return: 323.47
+Episode: 751, total numsteps: 58553, return: 344.47
+Episode: 752, total numsteps: 58706, return: 270.64
+Episode: 753, total numsteps: 58952, return: 189.6
+Episode: 754, total numsteps: 59117, return: 283.07
+Episode: 755, total numsteps: 59273, return: 275.23
+Episode: 756, total numsteps: 59430, return: 274.32
+Episode: 757, total numsteps: 59616, return: 302.96
+Episode: 758, total numsteps: 59735, return: 227.94
+Episode: 759, total numsteps: 59845, return: 213.75
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_24_kl0.3_e2mfrnnq
+   RPC_1_kl75.0_s5er7ua0
+   RPC_53_kl0.3_1dpadcwr
+   RPC_1_kl65.0_3ak314qp
+Episode: 760, total numsteps: 60022, return: 296.58
+Episode: 761, total numsteps: 60169, return: 261.76
+Episode: 762, total numsteps: 60269, return: 197.81
+Episode: 763, total numsteps: 60474, return: 130.23
+Episode: 764, total numsteps: 60616, return: 257.14
+Episode: 765, total numsteps: 60788, return: 290.47
+Episode: 766, total numsteps: 60978, return: 298.9
+Episode: 767, total numsteps: 61165, return: 307.16
+Episode: 768, total numsteps: 61383, return: 159.32
+Episode: 769, total numsteps: 61546, return: 281.48
+Episode: 770, total numsteps: 61730, return: 303.58
+Episode: 771, total numsteps: 61915, return: 304.62
+Episode: 772, total numsteps: 62139, return: 160.88
+Episode: 773, total numsteps: 62336, return: 294.68
+Episode: 774, total numsteps: 62584, return: 489.21
+Episode: 775, total numsteps: 62751, return: 260.8
+Episode: 776, total numsteps: 62948, return: 129.63
+Episode: 777, total numsteps: 63178, return: 316.61
+Episode: 778, total numsteps: 63385, return: 353.18
+Episode: 779, total numsteps: 63545, return: 289.91
+Episode: 780, total numsteps: 63809, return: 210.59
+Episode: 781, total numsteps: 63960, return: 264.71
+Episode: 782, total numsteps: 64155, return: 350.73
+Episode: 783, total numsteps: 64333, return: 299.04
+Episode: 784, total numsteps: 64450, return: 220.0
+Episode: 785, total numsteps: 64570, return: 229.1
+Episode: 786, total numsteps: 64775, return: 360.63
+Episode: 787, total numsteps: 64885, return: 213.63
+Episode: 788, total numsteps: 65050, return: 281.59
+Episode: 789, total numsteps: 65193, return: 259.66
+Episode: 790, total numsteps: 65343, return: 267.23
+Episode: 791, total numsteps: 65483, return: 253.72
+Episode: 792, total numsteps: 65810, return: 269.64
+Episode: 793, total numsteps: 65983, return: 290.38
+Episode: 794, total numsteps: 66165, return: 300.46
+Episode: 795, total numsteps: 66350, return: 302.2
+Episode: 796, total numsteps: 66507, return: 274.09
+Episode: 797, total numsteps: 66650, return: 258.14
+Episode: 798, total numsteps: 66781, return: 240.13
+Episode: 799, total numsteps: 66890, return: 211.92
+Episode: 800, total numsteps: 67025, return: 248.62
+Episode: 801, total numsteps: 67163, return: 251.57
+Episode: 802, total numsteps: 67331, return: 287.9
+Episode: 803, total numsteps: 67458, return: 236.65
+Episode: 804, total numsteps: 67572, return: 216.97
+Episode: 805, total numsteps: 67697, return: 234.15
+Episode: 806, total numsteps: 67799, return: 198.89
+Episode: 807, total numsteps: 67984, return: 303.91
+Episode: 808, total numsteps: 68070, return: 170.2
+Episode: 809, total numsteps: 68212, return: 255.56
+Episode: 810, total numsteps: 68333, return: 227.92
+Episode: 811, total numsteps: 68495, return: 276.52
+Episode: 812, total numsteps: 68631, return: 249.89
+Episode: 813, total numsteps: 68748, return: 219.12
+Episode: 814, total numsteps: 68882, return: 245.42
+Episode: 815, total numsteps: 68997, return: 217.95
+Episode: 816, total numsteps: 69102, return: 203.7
+Episode: 817, total numsteps: 69371, return: 189.26
+Episode: 818, total numsteps: 69530, return: 276.49
+Episode: 819, total numsteps: 69700, return: 284.62
+Episode: 820, total numsteps: 69846, return: 263.39
+Episode: 821, total numsteps: 69980, return: 240.32
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_24_kl0.3_e2mfrnnq
+   RPC_1_kl75.0_s5er7ua0
+   RPC_53_kl0.3_1dpadcwr
+   RPC_1_kl65.0_3ak314qp
+Episode: 822, total numsteps: 70093, return: 215.31
+Episode: 823, total numsteps: 70194, return: 188.66
+Episode: 824, total numsteps: 70402, return: 329.75
+Episode: 825, total numsteps: 70495, return: 180.79
+Episode: 826, total numsteps: 70612, return: 225.6
+Episode: 827, total numsteps: 70735, return: 231.63
+Episode: 828, total numsteps: 70894, return: 274.26
+Episode: 829, total numsteps: 71083, return: 309.71
+Episode: 830, total numsteps: 71261, return: 291.56
+Episode: 831, total numsteps: 71358, return: 189.55
+Episode: 832, total numsteps: 71455, return: 191.56
+Episode: 833, total numsteps: 71552, return: 191.3
+Episode: 834, total numsteps: 71668, return: 223.26
+Episode: 835, total numsteps: 71784, return: 223.81
+Episode: 836, total numsteps: 71906, return: 230.98
+Episode: 837, total numsteps: 72036, return: 241.46
+Episode: 838, total numsteps: 72168, return: 244.04
+Episode: 839, total numsteps: 72257, return: 174.35
+Episode: 840, total numsteps: 72389, return: 241.65
+Episode: 841, total numsteps: 72500, return: 213.5
+Episode: 842, total numsteps: 72609, return: 211.61
+Episode: 843, total numsteps: 72828, return: 340.51
+Episode: 844, total numsteps: 72931, return: 201.78
+Episode: 845, total numsteps: 73029, return: 189.42
+Episode: 846, total numsteps: 73138, return: 210.45
+Episode: 847, total numsteps: 73237, return: 190.81
+Episode: 848, total numsteps: 73347, return: 214.74
+Episode: 849, total numsteps: 73466, return: 226.5
+Episode: 850, total numsteps: 73577, return: 214.61
+Episode: 851, total numsteps: 73699, return: 230.99
+Episode: 852, total numsteps: 73946, return: 367.07
+Episode: 853, total numsteps: 74095, return: 264.84
+Episode: 854, total numsteps: 74280, return: 305.97
+Episode: 855, total numsteps: 74417, return: 252.45
+Episode: 856, total numsteps: 74534, return: 223.9
+Episode: 857, total numsteps: 74657, return: 232.74
+Episode: 858, total numsteps: 74802, return: 260.87
+Episode: 859, total numsteps: 74939, return: 250.51
+Episode: 860, total numsteps: 75032, return: 184.13
+Episode: 861, total numsteps: 75168, return: 246.66
+Episode: 862, total numsteps: 75300, return: 246.47
+Episode: 863, total numsteps: 75403, return: 199.53
+Episode: 864, total numsteps: 75519, return: 222.73
+Episode: 865, total numsteps: 75676, return: 275.73
+Episode: 866, total numsteps: 75812, return: 250.75
+Episode: 867, total numsteps: 75918, return: 207.41
+Episode: 868, total numsteps: 76031, return: 217.43
+Episode: 869, total numsteps: 76118, return: 169.05
+Episode: 870, total numsteps: 76292, return: 296.07
+Episode: 871, total numsteps: 76402, return: 213.27
+Episode: 872, total numsteps: 76520, return: 224.95
+Episode: 873, total numsteps: 76611, return: 179.9
+Episode: 874, total numsteps: 76744, return: 244.9
+Episode: 875, total numsteps: 76857, return: 217.98
+Episode: 876, total numsteps: 76983, return: 234.74
+Episode: 877, total numsteps: 77081, return: 193.13
+Episode: 878, total numsteps: 77189, return: 210.53
+Episode: 879, total numsteps: 77353, return: 280.88
+Episode: 880, total numsteps: 77561, return: 327.6
+Episode: 881, total numsteps: 78007, return: 350.83
+Episode: 882, total numsteps: 78136, return: 241.22
+Episode: 883, total numsteps: 78242, return: 206.51
+Episode: 884, total numsteps: 78524, return: 400.14
+Episode: 885, total numsteps: 78627, return: 203.16
+Episode: 886, total numsteps: 78769, return: 258.28
+Episode: 887, total numsteps: 78878, return: 210.96
+Episode: 888, total numsteps: 79001, return: 232.58
+Episode: 889, total numsteps: 79152, return: 266.23
+Episode: 890, total numsteps: 79265, return: 218.19
+Episode: 891, total numsteps: 79384, return: 227.64
+Episode: 892, total numsteps: 79500, return: 221.96
+Episode: 893, total numsteps: 79594, return: 186.98
+Episode: 894, total numsteps: 79696, return: 201.82
+Episode: 895, total numsteps: 79870, return: 295.54
+Episode: 896, total numsteps: 79981, return: 215.98
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_24_kl0.3_e2mfrnnq
+   RPC_1_kl75.0_s5er7ua0
+   RPC_53_kl0.3_1dpadcwr
+   RPC_1_kl65.0_3ak314qp
+Episode: 897, total numsteps: 80138, return: 274.3
+Episode: 898, total numsteps: 80257, return: 226.89
+Episode: 899, total numsteps: 80379, return: 231.89
+Episode: 900, total numsteps: 80463, return: 165.28
+Episode: 901, total numsteps: 80559, return: 190.77
+Episode: 902, total numsteps: 80664, return: 205.24
+Episode: 903, total numsteps: 80780, return: 222.53
+Episode: 904, total numsteps: 80897, return: 224.26
+Episode: 905, total numsteps: 81001, return: 203.91
+Episode: 906, total numsteps: 81143, return: 255.11
+Episode: 907, total numsteps: 81255, return: 217.89
+Episode: 908, total numsteps: 81339, return: 166.37
+Episode: 909, total numsteps: 81489, return: 265.61
+Episode: 910, total numsteps: 81631, return: 256.47
+Episode: 911, total numsteps: 81735, return: 203.31
+Episode: 912, total numsteps: 81865, return: 242.02
+Episode: 913, total numsteps: 81979, return: 219.35
+Episode: 914, total numsteps: 82093, return: 219.52
+Episode: 915, total numsteps: 82282, return: 309.97
+Episode: 916, total numsteps: 82409, return: 237.74
+Episode: 917, total numsteps: 82554, return: 260.26
+Episode: 918, total numsteps: 82689, return: 249.24
+Episode: 919, total numsteps: 82799, return: 212.31
+Episode: 920, total numsteps: 82908, return: 209.51
+Episode: 921, total numsteps: 83052, return: 258.77
+Episode: 922, total numsteps: 83179, return: 238.64
+Episode: 923, total numsteps: 83310, return: 242.92
+Episode: 924, total numsteps: 83432, return: 233.19
+Episode: 925, total numsteps: 83517, return: 163.42
+Episode: 926, total numsteps: 83615, return: 191.85
+Episode: 927, total numsteps: 83736, return: 228.84
+Episode: 928, total numsteps: 83847, return: 215.13
+Episode: 929, total numsteps: 83975, return: 239.85
+Episode: 930, total numsteps: 84079, return: 204.03
+Episode: 931, total numsteps: 84226, return: 263.79
+Episode: 932, total numsteps: 84336, return: 213.17
+Episode: 933, total numsteps: 84440, return: 201.35
+Episode: 934, total numsteps: 84537, return: 186.81
+Episode: 935, total numsteps: 84653, return: 220.45
+Episode: 936, total numsteps: 84776, return: 232.63
+Episode: 937, total numsteps: 84896, return: 226.48
+Episode: 938, total numsteps: 84988, return: 179.78
+Episode: 939, total numsteps: 85079, return: 178.58
+Episode: 940, total numsteps: 85191, return: 218.42
+Episode: 941, total numsteps: 85305, return: 220.51
+Episode: 942, total numsteps: 85467, return: 276.83
+Episode: 943, total numsteps: 85589, return: 232.64
+Episode: 944, total numsteps: 85751, return: 280.18
+Episode: 945, total numsteps: 85846, return: 188.89
+Episode: 946, total numsteps: 85989, return: 258.17
+Episode: 947, total numsteps: 86142, return: 268.91
+Episode: 948, total numsteps: 86261, return: 225.64
+Episode: 949, total numsteps: 86395, return: 248.6
+Episode: 950, total numsteps: 86499, return: 203.02
+Episode: 951, total numsteps: 86620, return: 229.64
+Episode: 952, total numsteps: 86757, return: 251.19
+Episode: 953, total numsteps: 86879, return: 231.15
+Episode: 954, total numsteps: 86970, return: 179.18
+Episode: 955, total numsteps: 87216, return: 368.71
+Episode: 956, total numsteps: 87325, return: 210.35
+Episode: 957, total numsteps: 87414, return: 176.81
+Episode: 958, total numsteps: 87537, return: 230.94
+Episode: 959, total numsteps: 87701, return: 282.93
+Episode: 960, total numsteps: 87802, return: 200.27
+Episode: 961, total numsteps: 87906, return: 205.26
+Episode: 962, total numsteps: 88024, return: 227.38
+Episode: 963, total numsteps: 88120, return: 190.07
+Episode: 964, total numsteps: 88208, return: 172.42
+Episode: 965, total numsteps: 88312, return: 203.65
+Episode: 966, total numsteps: 88448, return: 249.17
+Episode: 967, total numsteps: 88616, return: 287.46
+Episode: 968, total numsteps: 88733, return: 223.36
+Episode: 969, total numsteps: 88845, return: 216.8
+Episode: 970, total numsteps: 88945, return: 197.38
+Episode: 971, total numsteps: 89068, return: 234.62
+Episode: 972, total numsteps: 89217, return: 263.13
+Episode: 973, total numsteps: 89325, return: 209.58
+Episode: 974, total numsteps: 89433, return: 210.42
+Episode: 975, total numsteps: 89549, return: 222.4
+Episode: 976, total numsteps: 89652, return: 201.24
+Episode: 977, total numsteps: 89751, return: 194.43
+Episode: 978, total numsteps: 89910, return: 274.93
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_24_kl0.3_e2mfrnnq
+   RPC_1_kl75.0_s5er7ua0
+   RPC_53_kl0.3_1dpadcwr
+   RPC_1_kl65.0_3ak314qp
+Episode: 979, total numsteps: 90010, return: 197.67
+Episode: 980, total numsteps: 90139, return: 241.64
+Episode: 981, total numsteps: 90259, return: 227.1
+Episode: 982, total numsteps: 90370, return: 215.27
+Episode: 983, total numsteps: 90475, return: 204.9
+Episode: 984, total numsteps: 90566, return: 181.17
+Episode: 985, total numsteps: 90673, return: 206.77
+Episode: 986, total numsteps: 90811, return: 252.18
+Episode: 987, total numsteps: 90908, return: 193.06
+Episode: 988, total numsteps: 91026, return: 224.94
+Episode: 989, total numsteps: 91111, return: 166.37
+Episode: 990, total numsteps: 91227, return: 222.22
+Episode: 991, total numsteps: 91339, return: 216.89
+Episode: 992, total numsteps: 91446, return: 209.79
+Episode: 993, total numsteps: 91542, return: 188.52
+Episode: 994, total numsteps: 91642, return: 196.43
+Episode: 995, total numsteps: 91757, return: 221.66
+Episode: 996, total numsteps: 91867, return: 214.32
+Episode: 997, total numsteps: 91975, return: 207.55
+Episode: 998, total numsteps: 92093, return: 226.02
+Episode: 999, total numsteps: 92204, return: 216.31
+Episode: 1000, total numsteps: 92325, return: 230.33
+Episode: 1001, total numsteps: 92437, return: 218.33
+Episode: 1002, total numsteps: 92550, return: 219.13
+Episode: 1003, total numsteps: 92657, return: 205.6
+Episode: 1004, total numsteps: 92791, return: 244.46
+Episode: 1005, total numsteps: 92890, return: 193.58
+Episode: 1006, total numsteps: 93024, return: 248.69
+Episode: 1007, total numsteps: 93132, return: 208.88
+Episode: 1008, total numsteps: 93258, return: 237.19
+Episode: 1009, total numsteps: 93369, return: 214.4
+Episode: 1010, total numsteps: 93475, return: 205.47
+Episode: 1011, total numsteps: 93576, return: 200.4
+Episode: 1012, total numsteps: 93690, return: 221.4
+Episode: 1013, total numsteps: 93799, return: 212.57
+Episode: 1014, total numsteps: 93919, return: 230.01
+Episode: 1015, total numsteps: 94020, return: 195.96
+Episode: 1016, total numsteps: 94144, return: 232.26
+Episode: 1017, total numsteps: 94242, return: 194.29
+Episode: 1018, total numsteps: 94356, return: 219.8
+Episode: 1019, total numsteps: 94448, return: 180.7
+Episode: 1020, total numsteps: 94580, return: 243.79
+Episode: 1021, total numsteps: 94706, return: 240.05
+Episode: 1022, total numsteps: 94790, return: 163.88
+Episode: 1023, total numsteps: 94906, return: 223.76
+Episode: 1024, total numsteps: 95000, return: 187.29
+Episode: 1025, total numsteps: 95091, return: 180.24
+Episode: 1026, total numsteps: 95204, return: 220.24
+Episode: 1027, total numsteps: 95346, return: 255.82
+Episode: 1028, total numsteps: 95456, return: 212.74
+Episode: 1029, total numsteps: 95546, return: 173.59
+Episode: 1030, total numsteps: 95648, return: 197.64
+Episode: 1031, total numsteps: 95758, return: 213.93
+Episode: 1032, total numsteps: 95855, return: 191.64
+Episode: 1033, total numsteps: 95956, return: 197.17
+Episode: 1034, total numsteps: 96074, return: 226.17
+Episode: 1035, total numsteps: 96172, return: 192.23
+Episode: 1036, total numsteps: 96269, return: 194.94
+Episode: 1037, total numsteps: 96362, return: 181.26
+Episode: 1038, total numsteps: 96439, return: 149.64
+Episode: 1039, total numsteps: 96528, return: 172.65
+Episode: 1040, total numsteps: 96635, return: 210.47
+Episode: 1041, total numsteps: 96757, return: 231.09
+Episode: 1042, total numsteps: 96865, return: 214.88
+Episode: 1043, total numsteps: 96971, return: 209.97
+Episode: 1044, total numsteps: 97086, return: 222.6
+Episode: 1045, total numsteps: 97197, return: 216.06
+Episode: 1046, total numsteps: 97303, return: 209.81
+Episode: 1047, total numsteps: 97421, return: 225.07
+Episode: 1048, total numsteps: 97516, return: 187.32
+Episode: 1049, total numsteps: 97640, return: 233.23
+Episode: 1050, total numsteps: 97758, return: 225.55
+Episode: 1051, total numsteps: 97858, return: 197.24
+Episode: 1052, total numsteps: 97962, return: 203.91
+Episode: 1053, total numsteps: 98099, return: 250.52
+Episode: 1054, total numsteps: 98201, return: 200.72
+Episode: 1055, total numsteps: 98305, return: 203.06
+Episode: 1056, total numsteps: 98401, return: 189.26
+Episode: 1057, total numsteps: 98514, return: 217.76
+Episode: 1058, total numsteps: 98642, return: 235.95
+Episode: 1059, total numsteps: 98737, return: 186.34
+Episode: 1060, total numsteps: 98833, return: 190.46
+Episode: 1061, total numsteps: 98946, return: 219.4
+Episode: 1062, total numsteps: 99060, return: 219.28
+Episode: 1063, total numsteps: 99158, return: 192.81
+Episode: 1064, total numsteps: 99296, return: 250.8
+Episode: 1065, total numsteps: 99410, return: 220.51
+Episode: 1066, total numsteps: 99516, return: 208.0
+Episode: 1067, total numsteps: 99623, return: 205.9
+Episode: 1068, total numsteps: 99730, return: 208.24
+Episode: 1069, total numsteps: 99825, return: 187.99
+Episode: 1070, total numsteps: 99927, return: 201.08
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_24_kl0.3_e2mfrnnq
+   RPC_1_kl75.0_s5er7ua0
+   RPC_53_kl0.3_1dpadcwr
+   RPC_1_kl65.0_3ak314qp
+Episode: 1071, total numsteps: 100012, return: 168.31
+Episode: 1072, total numsteps: 100113, return: 196.72
+Episode: 1073, total numsteps: 100213, return: 196.89
+Episode: 1074, total numsteps: 100311, return: 197.52
+Episode: 1075, total numsteps: 100428, return: 224.97
+Episode: 1076, total numsteps: 100522, return: 186.97
+Episode: 1077, total numsteps: 100680, return: 271.64
+Episode: 1078, total numsteps: 100844, return: 278.26
+Episode: 1079, total numsteps: 100944, return: 195.97
+Episode: 1080, total numsteps: 101054, return: 212.98
+Episode: 1081, total numsteps: 101155, return: 197.07
+Episode: 1082, total numsteps: 101267, return: 220.84
+Episode: 1083, total numsteps: 101389, return: 229.78
+Episode: 1084, total numsteps: 101489, return: 196.39
+Episode: 1085, total numsteps: 101643, return: 269.18
+Episode: 1086, total numsteps: 101769, return: 236.63
+Episode: 1087, total numsteps: 101865, return: 189.24
+Episode: 1088, total numsteps: 101980, return: 221.7
+Episode: 1089, total numsteps: 102113, return: 245.78
+Episode: 1090, total numsteps: 102212, return: 196.4
+Episode: 1091, total numsteps: 102349, return: 248.01
+Episode: 1092, total numsteps: 102443, return: 185.68
+Episode: 1093, total numsteps: 102557, return: 220.22
+Episode: 1094, total numsteps: 102711, return: 272.34
+Episode: 1095, total numsteps: 102821, return: 213.32
+Episode: 1096, total numsteps: 102955, return: 246.56
+Episode: 1097, total numsteps: 103076, return: 229.94
+Episode: 1098, total numsteps: 103178, return: 198.52
+Episode: 1099, total numsteps: 103270, return: 181.03
+Episode: 1100, total numsteps: 103358, return: 174.81
+Episode: 1101, total numsteps: 103459, return: 200.14
+Episode: 1102, total numsteps: 103577, return: 225.9
+Episode: 1103, total numsteps: 103701, return: 234.19
+Episode: 1104, total numsteps: 103828, return: 237.49
+Episode: 1105, total numsteps: 103917, return: 177.34
+Episode: 1106, total numsteps: 104006, return: 179.5
+Episode: 1107, total numsteps: 104122, return: 220.91
+Episode: 1108, total numsteps: 104211, return: 172.13
+Episode: 1109, total numsteps: 104334, return: 232.65
+Episode: 1110, total numsteps: 104460, return: 236.51
+Episode: 1111, total numsteps: 104554, return: 184.98
+Episode: 1112, total numsteps: 104685, return: 244.11
+Episode: 1113, total numsteps: 104805, return: 229.06
+Episode: 1114, total numsteps: 104924, return: 225.47
+Episode: 1115, total numsteps: 105045, return: 230.74
+Episode: 1116, total numsteps: 105153, return: 211.61
+Episode: 1117, total numsteps: 105260, return: 212.06
+Episode: 1118, total numsteps: 105383, return: 233.96
+Episode: 1119, total numsteps: 105495, return: 217.04
+Episode: 1120, total numsteps: 105597, return: 204.07
+Episode: 1121, total numsteps: 105720, return: 232.57
+Episode: 1122, total numsteps: 105807, return: 173.34
+Episode: 1123, total numsteps: 105923, return: 222.46
+Episode: 1124, total numsteps: 106032, return: 211.62
+Episode: 1125, total numsteps: 106145, return: 218.65
+Episode: 1126, total numsteps: 106254, return: 212.51
+Episode: 1127, total numsteps: 106367, return: 220.41
+Episode: 1128, total numsteps: 106484, return: 224.43
+Episode: 1129, total numsteps: 106601, return: 226.31
+Episode: 1130, total numsteps: 106706, return: 205.89
+Episode: 1131, total numsteps: 106803, return: 191.97
+Episode: 1132, total numsteps: 106913, return: 214.6
+Episode: 1133, total numsteps: 106998, return: 168.59
+Episode: 1134, total numsteps: 107150, return: 270.68
+Episode: 1135, total numsteps: 107298, return: 264.99
+Episode: 1136, total numsteps: 107429, return: 241.77
+Episode: 1137, total numsteps: 107525, return: 191.21
+Episode: 1138, total numsteps: 107664, return: 251.6
+Episode: 1139, total numsteps: 107826, return: 283.81
+Episode: 1140, total numsteps: 107957, return: 243.31
+Episode: 1141, total numsteps: 108072, return: 221.58
+Episode: 1142, total numsteps: 108177, return: 204.89
+Episode: 1143, total numsteps: 108266, return: 175.13
+Episode: 1144, total numsteps: 108372, return: 206.16
+Episode: 1145, total numsteps: 108462, return: 179.56
+Episode: 1146, total numsteps: 108619, return: 274.16
+Episode: 1147, total numsteps: 108736, return: 223.59
+Episode: 1148, total numsteps: 108849, return: 219.65
+Episode: 1149, total numsteps: 108991, return: 259.24
+Episode: 1150, total numsteps: 109103, return: 216.51
+Episode: 1151, total numsteps: 109224, return: 228.52
+Episode: 1152, total numsteps: 109323, return: 195.29
+Episode: 1153, total numsteps: 109419, return: 191.29
+Episode: 1154, total numsteps: 109515, return: 190.84
+Episode: 1155, total numsteps: 109641, return: 237.91
+Episode: 1156, total numsteps: 109738, return: 191.34
+Episode: 1157, total numsteps: 109839, return: 199.56
+Episode: 1158, total numsteps: 109948, return: 212.83
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_24_kl0.3_e2mfrnnq
+   RPC_1_kl75.0_s5er7ua0
+   RPC_53_kl0.3_1dpadcwr
+   RPC_1_kl65.0_3ak314qp
+Episode: 1159, total numsteps: 110057, return: 215.81
+Episode: 1160, total numsteps: 110166, return: 213.09
+Episode: 1161, total numsteps: 110272, return: 207.34
+Episode: 1162, total numsteps: 110404, return: 245.25
+Episode: 1163, total numsteps: 110522, return: 226.75
+Episode: 1164, total numsteps: 110622, return: 198.5
+Episode: 1165, total numsteps: 110746, return: 234.6
+Episode: 1166, total numsteps: 110831, return: 168.37
+Episode: 1167, total numsteps: 110915, return: 164.5
+Episode: 1168, total numsteps: 111002, return: 169.35
+Episode: 1169, total numsteps: 111099, return: 191.95
+Episode: 1170, total numsteps: 111229, return: 243.15
+Episode: 1171, total numsteps: 111332, return: 201.73
+Episode: 1172, total numsteps: 111464, return: 241.59
+Episode: 1173, total numsteps: 111606, return: 256.8
+Episode: 1174, total numsteps: 111723, return: 223.58
+Episode: 1175, total numsteps: 111831, return: 212.53
+Episode: 1176, total numsteps: 111951, return: 228.26
+Episode: 1177, total numsteps: 112040, return: 174.33
+Episode: 1178, total numsteps: 112141, return: 198.49
+Episode: 1179, total numsteps: 112281, return: 256.79
+Episode: 1180, total numsteps: 112404, return: 232.81
+Episode: 1181, total numsteps: 112507, return: 202.3
+Episode: 1182, total numsteps: 112629, return: 232.02
+Episode: 1183, total numsteps: 112724, return: 187.8
+Episode: 1184, total numsteps: 112832, return: 211.75
+Episode: 1185, total numsteps: 112942, return: 213.4
+Episode: 1186, total numsteps: 113052, return: 213.72
+Episode: 1187, total numsteps: 113162, return: 215.12
+Episode: 1188, total numsteps: 113282, return: 229.32
+Episode: 1189, total numsteps: 113391, return: 211.87
+Episode: 1190, total numsteps: 113498, return: 209.52
+Episode: 1191, total numsteps: 113589, return: 180.15
+Episode: 1192, total numsteps: 113707, return: 225.3
+Episode: 1193, total numsteps: 113817, return: 214.78
+Episode: 1194, total numsteps: 113919, return: 200.66
+Episode: 1195, total numsteps: 114019, return: 196.86
+Episode: 1196, total numsteps: 114132, return: 217.96
+Episode: 1197, total numsteps: 114246, return: 221.68
+Episode: 1198, total numsteps: 114377, return: 242.83
+Episode: 1199, total numsteps: 114476, return: 195.76
+Episode: 1200, total numsteps: 114616, return: 254.2
+Episode: 1201, total numsteps: 114709, return: 184.79
+Episode: 1202, total numsteps: 114809, return: 196.84
+Episode: 1203, total numsteps: 114909, return: 197.47
+Episode: 1204, total numsteps: 115011, return: 200.31
+Episode: 1205, total numsteps: 115119, return: 211.71
+Episode: 1206, total numsteps: 115256, return: 249.63
+Episode: 1207, total numsteps: 115371, return: 223.9
+Episode: 1208, total numsteps: 115453, return: 161.94
+Episode: 1209, total numsteps: 115562, return: 213.18
+Episode: 1210, total numsteps: 115661, return: 197.03
+Episode: 1211, total numsteps: 115779, return: 226.28
+Episode: 1212, total numsteps: 115876, return: 191.42
+Episode: 1213, total numsteps: 115990, return: 220.71
+Episode: 1214, total numsteps: 116118, return: 240.66
+Episode: 1215, total numsteps: 116216, return: 192.43
+Episode: 1216, total numsteps: 116326, return: 213.0
+Episode: 1217, total numsteps: 116427, return: 199.97
+Episode: 1218, total numsteps: 116526, return: 195.97
+Episode: 1219, total numsteps: 116618, return: 182.92
+Episode: 1220, total numsteps: 116743, return: 235.08
+Episode: 1221, total numsteps: 116883, return: 253.06
+Episode: 1222, total numsteps: 116993, return: 214.18
+Episode: 1223, total numsteps: 117092, return: 195.26
+Episode: 1224, total numsteps: 117208, return: 224.19
+Episode: 1225, total numsteps: 117302, return: 187.48
+Episode: 1226, total numsteps: 117423, return: 230.74
+Episode: 1227, total numsteps: 117519, return: 189.43
+Episode: 1228, total numsteps: 117607, return: 175.0
+Episode: 1229, total numsteps: 117709, return: 201.77
+Episode: 1230, total numsteps: 117812, return: 200.1
+Episode: 1231, total numsteps: 117907, return: 188.94
+Episode: 1232, total numsteps: 118005, return: 194.38
+Episode: 1233, total numsteps: 118102, return: 192.51
+Episode: 1234, total numsteps: 118206, return: 203.39
+Episode: 1235, total numsteps: 118361, return: 271.25
+Episode: 1236, total numsteps: 118456, return: 188.13
+Episode: 1237, total numsteps: 118584, return: 240.64
+Episode: 1238, total numsteps: 118684, return: 197.59
+Episode: 1239, total numsteps: 118787, return: 203.76
+Episode: 1240, total numsteps: 118904, return: 224.73
+Episode: 1241, total numsteps: 119033, return: 241.06
+Episode: 1242, total numsteps: 119138, return: 207.4
+Episode: 1243, total numsteps: 119246, return: 210.99
+Episode: 1244, total numsteps: 119351, return: 206.1
+Episode: 1245, total numsteps: 119476, return: 235.85
+Episode: 1246, total numsteps: 119585, return: 211.95
+Episode: 1247, total numsteps: 119675, return: 178.83
+Episode: 1248, total numsteps: 119771, return: 191.37
+Episode: 1249, total numsteps: 119868, return: 193.05
+Episode: 1250, total numsteps: 119965, return: 193.42
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_24_kl0.3_e2mfrnnq
+   RPC_1_kl75.0_s5er7ua0
+   RPC_53_kl0.3_1dpadcwr
+   RPC_1_kl65.0_3ak314qp
+Episode: 1251, total numsteps: 120068, return: 203.66
+Episode: 1252, total numsteps: 120163, return: 187.52
+Episode: 1253, total numsteps: 120265, return: 203.03
+Episode: 1254, total numsteps: 120397, return: 243.62
+Episode: 1255, total numsteps: 120479, return: 162.82
+Episode: 1256, total numsteps: 120593, return: 220.41
+Episode: 1257, total numsteps: 120707, return: 219.89
+Episode: 1258, total numsteps: 120868, return: 278.88
+Episode: 1259, total numsteps: 120972, return: 204.1
+Episode: 1260, total numsteps: 121066, return: 188.46
+Episode: 1261, total numsteps: 121190, return: 233.8
+Episode: 1262, total numsteps: 121278, return: 174.96
+Episode: 1263, total numsteps: 121379, return: 198.87
+Episode: 1264, total numsteps: 121506, return: 238.59
+Episode: 1265, total numsteps: 121604, return: 194.13
+Episode: 1266, total numsteps: 121709, return: 206.42
+Episode: 1267, total numsteps: 121846, return: 251.1
+Episode: 1268, total numsteps: 121963, return: 223.8
+Episode: 1269, total numsteps: 122073, return: 213.21
+Episode: 1270, total numsteps: 122178, return: 205.45
+Episode: 1271, total numsteps: 122275, return: 191.75
+Episode: 1272, total numsteps: 122371, return: 190.64
+Episode: 1273, total numsteps: 122457, return: 172.11
+Episode: 1274, total numsteps: 122599, return: 255.97
+Episode: 1275, total numsteps: 122688, return: 175.94
+Episode: 1276, total numsteps: 122791, return: 202.43
+Episode: 1277, total numsteps: 122896, return: 205.96
+Episode: 1278, total numsteps: 123008, return: 216.3
+Episode: 1279, total numsteps: 123127, return: 224.49
+Episode: 1280, total numsteps: 123218, return: 181.03
+Episode: 1281, total numsteps: 123302, return: 165.49
+Episode: 1282, total numsteps: 123395, return: 184.48
+Episode: 1283, total numsteps: 123499, return: 204.55
+Episode: 1284, total numsteps: 123603, return: 204.2
+Episode: 1285, total numsteps: 123726, return: 234.71
+Episode: 1286, total numsteps: 123831, return: 206.4
+Episode: 1287, total numsteps: 123953, return: 231.43
+Episode: 1288, total numsteps: 124058, return: 207.53
+Episode: 1289, total numsteps: 124147, return: 175.26
+Episode: 1290, total numsteps: 124289, return: 258.27
+Episode: 1291, total numsteps: 124389, return: 197.59
+Episode: 1292, total numsteps: 124476, return: 172.49
+Episode: 1293, total numsteps: 124582, return: 208.48
+Episode: 1294, total numsteps: 124667, return: 167.23
+Episode: 1295, total numsteps: 124779, return: 217.23
+Episode: 1296, total numsteps: 124911, return: 244.81
+Episode: 1297, total numsteps: 125017, return: 206.34
+Episode: 1298, total numsteps: 125124, return: 208.05
+Episode: 1299, total numsteps: 125232, return: 210.43
+Episode: 1300, total numsteps: 125357, return: 234.95
+Episode: 1301, total numsteps: 125458, return: 198.92
+Episode: 1302, total numsteps: 125577, return: 227.2
+Episode: 1303, total numsteps: 125665, return: 173.54
+Episode: 1304, total numsteps: 125768, return: 203.8
+Episode: 1305, total numsteps: 125885, return: 224.17
+Episode: 1306, total numsteps: 125991, return: 206.85
+Episode: 1307, total numsteps: 126087, return: 187.43
+Episode: 1308, total numsteps: 126184, return: 192.91
+Episode: 1309, total numsteps: 126273, return: 177.79
+Episode: 1310, total numsteps: 126384, return: 216.66
+Episode: 1311, total numsteps: 126523, return: 253.5
+Episode: 1312, total numsteps: 126639, return: 222.7
+Episode: 1313, total numsteps: 126744, return: 207.06
+Episode: 1314, total numsteps: 126857, return: 217.96
+Episode: 1315, total numsteps: 126955, return: 195.53
+Episode: 1316, total numsteps: 127068, return: 217.94
+Episode: 1317, total numsteps: 127172, return: 204.53
+Episode: 1318, total numsteps: 127310, return: 251.45
+Episode: 1319, total numsteps: 127403, return: 183.96
+Episode: 1320, total numsteps: 127510, return: 209.33
+Episode: 1321, total numsteps: 127626, return: 222.39
+Episode: 1322, total numsteps: 127714, return: 174.43
+Episode: 1323, total numsteps: 127807, return: 185.12
+Episode: 1324, total numsteps: 127933, return: 238.0
+Episode: 1325, total numsteps: 128042, return: 212.49
+Episode: 1326, total numsteps: 128145, return: 202.25
+Episode: 1327, total numsteps: 128246, return: 198.06
+Episode: 1328, total numsteps: 128409, return: 281.09
+Episode: 1329, total numsteps: 128495, return: 170.66
+Episode: 1330, total numsteps: 128615, return: 228.06
+Episode: 1331, total numsteps: 128736, return: 228.48
+Episode: 1332, total numsteps: 128843, return: 210.15
+Episode: 1333, total numsteps: 128934, return: 179.08
+Episode: 1334, total numsteps: 129101, return: 286.46
+Episode: 1335, total numsteps: 129201, return: 196.37
+Episode: 1336, total numsteps: 129294, return: 184.82
+Episode: 1337, total numsteps: 129397, return: 202.51
+Episode: 1338, total numsteps: 129480, return: 162.46
+Episode: 1339, total numsteps: 129564, return: 165.69
+Episode: 1340, total numsteps: 129648, return: 167.91
+Episode: 1341, total numsteps: 129789, return: 255.51
+Episode: 1342, total numsteps: 129893, return: 204.33
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_24_kl0.3_e2mfrnnq
+   RPC_1_kl75.0_s5er7ua0
+   RPC_53_kl0.3_1dpadcwr
+   RPC_1_kl65.0_3ak314qp
+Episode: 1343, total numsteps: 130000, return: 209.38
+Episode: 1344, total numsteps: 130098, return: 193.71
+Episode: 1345, total numsteps: 130215, return: 223.54
+Episode: 1346, total numsteps: 130302, return: 171.58
+Episode: 1347, total numsteps: 130416, return: 219.77
+Episode: 1348, total numsteps: 130504, return: 175.85
+Episode: 1349, total numsteps: 130599, return: 188.19
+Episode: 1350, total numsteps: 130717, return: 225.68
+Episode: 1351, total numsteps: 130822, return: 206.88
+Episode: 1352, total numsteps: 130962, return: 253.6
+Episode: 1353, total numsteps: 131058, return: 190.31
+Episode: 1354, total numsteps: 131170, return: 218.1
+Episode: 1355, total numsteps: 131287, return: 224.14
+Episode: 1356, total numsteps: 131389, return: 201.59
+Episode: 1357, total numsteps: 131541, return: 270.06
+Episode: 1358, total numsteps: 131663, return: 231.82
+Episode: 1359, total numsteps: 131756, return: 185.02
+Episode: 1360, total numsteps: 131975, return: 341.52
+Episode: 1361, total numsteps: 132083, return: 213.69
+Episode: 1362, total numsteps: 132197, return: 220.65
+Episode: 1363, total numsteps: 132302, return: 206.44
+Episode: 1364, total numsteps: 132388, return: 171.49
+Episode: 1365, total numsteps: 132490, return: 201.09
+Episode: 1366, total numsteps: 132594, return: 204.13
+Episode: 1367, total numsteps: 132698, return: 205.09
+Episode: 1368, total numsteps: 132798, return: 197.53
+Episode: 1369, total numsteps: 132888, return: 178.06
+Episode: 1370, total numsteps: 133008, return: 228.73
+Episode: 1371, total numsteps: 133117, return: 212.24
+Episode: 1372, total numsteps: 133203, return: 169.9
+Episode: 1373, total numsteps: 133315, return: 217.2
+Episode: 1374, total numsteps: 133426, return: 217.04
+Episode: 1375, total numsteps: 133534, return: 210.98
+Episode: 1376, total numsteps: 133637, return: 203.38
+Episode: 1377, total numsteps: 133734, return: 193.35
+Episode: 1378, total numsteps: 133859, return: 235.79
+Episode: 1379, total numsteps: 133967, return: 210.78
+Episode: 1380, total numsteps: 134088, return: 230.18
+Episode: 1381, total numsteps: 134204, return: 224.52
+Episode: 1382, total numsteps: 134327, return: 235.13
+Episode: 1383, total numsteps: 134435, return: 210.63
+Episode: 1384, total numsteps: 134549, return: 221.68
+Episode: 1385, total numsteps: 134660, return: 214.74
+Episode: 1386, total numsteps: 134790, return: 244.4
+Episode: 1387, total numsteps: 134902, return: 216.44
+Episode: 1388, total numsteps: 135015, return: 218.38
+Episode: 1389, total numsteps: 135120, return: 206.74
+Episode: 1390, total numsteps: 135232, return: 218.62
+Episode: 1391, total numsteps: 135322, return: 180.28
+Episode: 1392, total numsteps: 135419, return: 191.13
+Episode: 1393, total numsteps: 135499, return: 156.93
+Episode: 1394, total numsteps: 135586, return: 172.82
+Episode: 1395, total numsteps: 135685, return: 195.58
+Episode: 1396, total numsteps: 135789, return: 205.08
+Episode: 1397, total numsteps: 135932, return: 260.87
+Episode: 1398, total numsteps: 136039, return: 211.01
+Episode: 1399, total numsteps: 136149, return: 215.29
+Episode: 1400, total numsteps: 136251, return: 199.99
+Episode: 1401, total numsteps: 136365, return: 219.16
+Episode: 1402, total numsteps: 136458, return: 185.45
+Episode: 1403, total numsteps: 136561, return: 203.91
+Episode: 1404, total numsteps: 136655, return: 187.13
+Episode: 1405, total numsteps: 136781, return: 237.69
+Episode: 1406, total numsteps: 136911, return: 244.51
+Episode: 1407, total numsteps: 137021, return: 215.49
+Episode: 1408, total numsteps: 137145, return: 234.47
+Episode: 1409, total numsteps: 137265, return: 229.91
+Episode: 1410, total numsteps: 137359, return: 187.44
+Episode: 1411, total numsteps: 137485, return: 235.87
+Episode: 1412, total numsteps: 137606, return: 231.87
+Episode: 1413, total numsteps: 137720, return: 221.86
+Episode: 1414, total numsteps: 137851, return: 243.31
+Episode: 1415, total numsteps: 137972, return: 231.56
+Episode: 1416, total numsteps: 138085, return: 219.63
+Episode: 1417, total numsteps: 138212, return: 238.76
+Episode: 1418, total numsteps: 138314, return: 201.06
+Episode: 1419, total numsteps: 138436, return: 232.62
+Episode: 1420, total numsteps: 138611, return: 296.4
+Episode: 1421, total numsteps: 138705, return: 188.53
+Episode: 1422, total numsteps: 138827, return: 231.05
+Episode: 1423, total numsteps: 139075, return: 374.2
+Episode: 1424, total numsteps: 139201, return: 237.98
+Episode: 1425, total numsteps: 139329, return: 240.68
+Episode: 1426, total numsteps: 139450, return: 231.13
+Episode: 1427, total numsteps: 139560, return: 214.87
+Episode: 1428, total numsteps: 139719, return: 275.94
+Episode: 1429, total numsteps: 139801, return: 164.52
+Episode: 1430, total numsteps: 139926, return: 236.34
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_1_kl75.0_s5er7ua0
+   RPC_53_kl0.3_1dpadcwr
+   RPC_1_kl65.0_3ak314qp
+   RPC_24_kl0.3_e2mfrnnq
+Episode: 1431, total numsteps: 140027, return: 199.42
+Episode: 1432, total numsteps: 140115, return: 176.36
+Episode: 1433, total numsteps: 140216, return: 197.8
+Episode: 1434, total numsteps: 140359, return: 257.95
+Episode: 1435, total numsteps: 140474, return: 221.76
+Episode: 1436, total numsteps: 140645, return: 292.11
+Episode: 1437, total numsteps: 140783, return: 253.29
+Episode: 1438, total numsteps: 140924, return: 257.78
+Episode: 1439, total numsteps: 141031, return: 209.2
+Episode: 1440, total numsteps: 141145, return: 220.82
+Episode: 1441, total numsteps: 141255, return: 216.65
+Episode: 1442, total numsteps: 141380, return: 235.3
+Episode: 1443, total numsteps: 141506, return: 236.36
+Episode: 1444, total numsteps: 141653, return: 263.68
+Episode: 1445, total numsteps: 141752, return: 196.33
+Episode: 1446, total numsteps: 141862, return: 213.9
+Episode: 1447, total numsteps: 142010, return: 265.4
+Episode: 1448, total numsteps: 142147, return: 251.17
+Episode: 1449, total numsteps: 142326, return: 298.4
+Episode: 1450, total numsteps: 142427, return: 199.83
+Episode: 1451, total numsteps: 142585, return: 275.3
+Episode: 1452, total numsteps: 142715, return: 242.36
+Episode: 1453, total numsteps: 142809, return: 186.39
+Episode: 1454, total numsteps: 142969, return: 279.32
+Episode: 1455, total numsteps: 143086, return: 226.76
+Episode: 1456, total numsteps: 143189, return: 203.93
+Episode: 1457, total numsteps: 143335, return: 262.59
+Episode: 1458, total numsteps: 143443, return: 211.37
+Episode: 1459, total numsteps: 143574, return: 241.96
+Episode: 1460, total numsteps: 143667, return: 185.62
+Episode: 1461, total numsteps: 143791, return: 235.66
+Episode: 1462, total numsteps: 143909, return: 226.95
+Episode: 1463, total numsteps: 144023, return: 219.74
+Episode: 1464, total numsteps: 144150, return: 240.38
+Episode: 1465, total numsteps: 144284, return: 248.45
+Episode: 1466, total numsteps: 144411, return: 237.99
+Episode: 1467, total numsteps: 144502, return: 180.93
+Episode: 1468, total numsteps: 144618, return: 224.0
+Episode: 1469, total numsteps: 144756, return: 256.3
+Episode: 1470, total numsteps: 144883, return: 238.78
+Episode: 1471, total numsteps: 144981, return: 195.77
+Episode: 1472, total numsteps: 145091, return: 214.52
+Episode: 1473, total numsteps: 145225, return: 247.8
+Episode: 1474, total numsteps: 145356, return: 243.82
+Episode: 1475, total numsteps: 145449, return: 180.8
+Episode: 1476, total numsteps: 145552, return: 200.8
+Episode: 1477, total numsteps: 145640, return: 175.88
+Episode: 1478, total numsteps: 145764, return: 234.48
+Episode: 1479, total numsteps: 145925, return: 280.17
+Episode: 1480, total numsteps: 146031, return: 207.97
+Episode: 1481, total numsteps: 146138, return: 207.51
+Episode: 1482, total numsteps: 146257, return: 227.69
+Episode: 1483, total numsteps: 146348, return: 181.74
+Episode: 1484, total numsteps: 146460, return: 219.04
+Episode: 1485, total numsteps: 146616, return: 276.26
+Episode: 1486, total numsteps: 146751, return: 247.5
+Episode: 1487, total numsteps: 147191, return: 561.76
+Episode: 1488, total numsteps: 147307, return: 184.18
+Episode: 1489, total numsteps: 147414, return: 180.85
+Episode: 1490, total numsteps: 147562, return: 212.38
+Episode: 1491, total numsteps: 147714, return: 269.73
+Episode: 1492, total numsteps: 147845, return: 225.92
+Episode: 1493, total numsteps: 147978, return: 240.87
+Episode: 1494, total numsteps: 148125, return: 263.75
+Episode: 1495, total numsteps: 148321, return: 304.23
+Episode: 1496, total numsteps: 148455, return: 239.57
+Episode: 1497, total numsteps: 148568, return: 184.85
+Episode: 1498, total numsteps: 148829, return: 429.49
+Episode: 1499, total numsteps: 148976, return: 283.76
+Episode: 1500, total numsteps: 149100, return: 262.2
+Episode: 1501, total numsteps: 149235, return: 252.51
+Episode: 1502, total numsteps: 149353, return: 222.46
+Episode: 1503, total numsteps: 149474, return: 231.0
+Episode: 1504, total numsteps: 149617, return: 276.25
+Episode: 1505, total numsteps: 149742, return: 236.27
+Episode: 1506, total numsteps: 149873, return: 246.13
+Episode: 1507, total numsteps: 149989, return: 222.84
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_1_kl75.0_s5er7ua0
+   RPC_53_kl0.3_1dpadcwr
+   RPC_1_kl65.0_3ak314qp
+   RPC_24_kl0.3_e2mfrnnq
+Episode: 1508, total numsteps: 150106, return: 225.37
+Episode: 1509, total numsteps: 150209, return: 202.27
+Episode: 1510, total numsteps: 150313, return: 182.58
+Episode: 1511, total numsteps: 150414, return: 199.3
+Episode: 1512, total numsteps: 150532, return: 226.78
+Episode: 1513, total numsteps: 150629, return: 192.07
+Episode: 1514, total numsteps: 150730, return: 198.27
+Episode: 1515, total numsteps: 150824, return: 187.75
+Episode: 1516, total numsteps: 150923, return: 195.52
+Episode: 1517, total numsteps: 151042, return: 227.29
+Episode: 1518, total numsteps: 151132, return: 180.03
+Episode: 1519, total numsteps: 151232, return: 198.1
+Episode: 1520, total numsteps: 151335, return: 203.45
+Episode: 1521, total numsteps: 151446, return: 215.82
+Episode: 1522, total numsteps: 151535, return: 177.4
+Episode: 1523, total numsteps: 151625, return: 179.48
+Episode: 1524, total numsteps: 151725, return: 198.4
+Episode: 1525, total numsteps: 151806, return: 159.76
+Episode: 1526, total numsteps: 151927, return: 229.17
+Episode: 1527, total numsteps: 152034, return: 209.4
+Episode: 1528, total numsteps: 152144, return: 215.07
+Episode: 1529, total numsteps: 152276, return: 245.88
+Episode: 1530, total numsteps: 152398, return: 231.26
+Episode: 1531, total numsteps: 152508, return: 214.27
+Episode: 1532, total numsteps: 152655, return: 261.77
+Episode: 1533, total numsteps: 152765, return: 214.69
+Episode: 1534, total numsteps: 152851, return: 170.59
+Episode: 1535, total numsteps: 152936, return: 168.7
+Episode: 1536, total numsteps: 153041, return: 207.69
+Episode: 1537, total numsteps: 153145, return: 203.55
+Episode: 1538, total numsteps: 153291, return: 261.26
+Episode: 1539, total numsteps: 153396, return: 205.68
+Episode: 1540, total numsteps: 153517, return: 229.12
+Episode: 1541, total numsteps: 153646, return: 240.32
+Episode: 1542, total numsteps: 153747, return: 199.21
+Episode: 1543, total numsteps: 153837, return: 180.28
+Episode: 1544, total numsteps: 153935, return: 194.9
+Episode: 1545, total numsteps: 154036, return: 198.38
+Episode: 1546, total numsteps: 154149, return: 217.45
+Episode: 1547, total numsteps: 154279, return: 240.93
+Episode: 1548, total numsteps: 154362, return: 163.98
+Episode: 1549, total numsteps: 154482, return: 228.01
+Episode: 1550, total numsteps: 154583, return: 198.98
+Episode: 1551, total numsteps: 154675, return: 182.01
+Episode: 1552, total numsteps: 154773, return: 194.87
+Episode: 1553, total numsteps: 154866, return: 185.15
+Episode: 1554, total numsteps: 154982, return: 223.17
+Episode: 1555, total numsteps: 155123, return: 255.79
+Episode: 1556, total numsteps: 155236, return: 219.56
+Episode: 1557, total numsteps: 155324, return: 174.25
+Episode: 1558, total numsteps: 155416, return: 182.37
+Episode: 1559, total numsteps: 155492, return: 145.6
+Episode: 1560, total numsteps: 155605, return: 217.74
+Episode: 1561, total numsteps: 155703, return: 193.81
+Episode: 1562, total numsteps: 155814, return: 215.16
+Episode: 1563, total numsteps: 155899, return: 168.82
+Episode: 1564, total numsteps: 156004, return: 206.27
+Episode: 1565, total numsteps: 156147, return: 258.98
+Episode: 1566, total numsteps: 156283, return: 249.09
+Episode: 1567, total numsteps: 156392, return: 213.72
+Episode: 1568, total numsteps: 156478, return: 170.06
+Episode: 1569, total numsteps: 156579, return: 199.31
+Episode: 1570, total numsteps: 156689, return: 213.84
+Episode: 1571, total numsteps: 156794, return: 205.88
+Episode: 1572, total numsteps: 156900, return: 207.13
+Episode: 1573, total numsteps: 156986, return: 170.49
+Episode: 1574, total numsteps: 157101, return: 221.33
+Episode: 1575, total numsteps: 157200, return: 196.04
+Episode: 1576, total numsteps: 157285, return: 168.33
+Episode: 1577, total numsteps: 157402, return: 224.9
+Episode: 1578, total numsteps: 157493, return: 179.93
+Episode: 1579, total numsteps: 157584, return: 179.88
+Episode: 1580, total numsteps: 157698, return: 219.35
+Episode: 1581, total numsteps: 157796, return: 194.4
+Episode: 1582, total numsteps: 157887, return: 182.15
+Episode: 1583, total numsteps: 157986, return: 196.64
+Episode: 1584, total numsteps: 158086, return: 197.69
+Episode: 1585, total numsteps: 158227, return: 256.43
+Episode: 1586, total numsteps: 158345, return: 224.71
+Episode: 1587, total numsteps: 158445, return: 197.76
+Episode: 1588, total numsteps: 158529, return: 166.0
+Episode: 1589, total numsteps: 158623, return: 188.67
+Episode: 1590, total numsteps: 158747, return: 233.22
+Episode: 1591, total numsteps: 158844, return: 192.46
+Episode: 1592, total numsteps: 158944, return: 197.03
+Episode: 1593, total numsteps: 159037, return: 184.16
+Episode: 1594, total numsteps: 159125, return: 174.68
+Episode: 1595, total numsteps: 159216, return: 180.23
+Episode: 1596, total numsteps: 159313, return: 191.54
+Episode: 1597, total numsteps: 159420, return: 208.68
+Episode: 1598, total numsteps: 159523, return: 203.53
+Episode: 1599, total numsteps: 159629, return: 206.65
+Episode: 1600, total numsteps: 159748, return: 227.37
+Episode: 1601, total numsteps: 159859, return: 214.46
+Episode: 1602, total numsteps: 159994, return: 248.93
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_1_kl75.0_s5er7ua0
+   RPC_53_kl0.3_1dpadcwr
+   RPC_1_kl65.0_3ak314qp
+   RPC_24_kl0.3_e2mfrnnq
+Episode: 1603, total numsteps: 160107, return: 219.52
+Episode: 1604, total numsteps: 160221, return: 221.2
+Episode: 1605, total numsteps: 160317, return: 190.37
+Episode: 1606, total numsteps: 160451, return: 246.17
+Episode: 1607, total numsteps: 160576, return: 235.03
+Episode: 1608, total numsteps: 160682, return: 208.59
+Episode: 1609, total numsteps: 160771, return: 178.05
+Episode: 1610, total numsteps: 160884, return: 219.64
+Episode: 1611, total numsteps: 160998, return: 220.42
+Episode: 1612, total numsteps: 161099, return: 199.9
+Episode: 1613, total numsteps: 161233, return: 247.11
+Episode: 1614, total numsteps: 161346, return: 219.27
+Episode: 1615, total numsteps: 161462, return: 224.16
+Episode: 1616, total numsteps: 161570, return: 210.59
+Episode: 1617, total numsteps: 161652, return: 160.28
+Episode: 1618, total numsteps: 161774, return: 230.71
+Episode: 1619, total numsteps: 161881, return: 208.98
+Episode: 1620, total numsteps: 161986, return: 205.48
+Episode: 1621, total numsteps: 162082, return: 190.87
+Episode: 1622, total numsteps: 162186, return: 203.8
+Episode: 1623, total numsteps: 162288, return: 201.01
+Episode: 1624, total numsteps: 162404, return: 224.14
+Episode: 1625, total numsteps: 162516, return: 217.66
+Episode: 1626, total numsteps: 162633, return: 223.35
+Episode: 1627, total numsteps: 162733, return: 198.73
+Episode: 1628, total numsteps: 162814, return: 158.57
+Episode: 1629, total numsteps: 162917, return: 203.58
+Episode: 1630, total numsteps: 163029, return: 217.83
+Episode: 1631, total numsteps: 163138, return: 212.91
+Episode: 1632, total numsteps: 163216, return: 151.99
+Episode: 1633, total numsteps: 163311, return: 188.66
+Episode: 1634, total numsteps: 163406, return: 188.21
+Episode: 1635, total numsteps: 163522, return: 221.67
+Episode: 1636, total numsteps: 163614, return: 183.7
+Episode: 1637, total numsteps: 163714, return: 195.78
+Episode: 1638, total numsteps: 163812, return: 193.16
+Episode: 1639, total numsteps: 163917, return: 206.52
+Episode: 1640, total numsteps: 164027, return: 213.7
+Episode: 1641, total numsteps: 164157, return: 243.08
+Episode: 1642, total numsteps: 164264, return: 209.14
+Episode: 1643, total numsteps: 164364, return: 197.99
+Episode: 1644, total numsteps: 164467, return: 201.47
+Episode: 1645, total numsteps: 164576, return: 211.28
+Episode: 1646, total numsteps: 164679, return: 201.8
+Episode: 1647, total numsteps: 164784, return: 204.83
+Episode: 1648, total numsteps: 164891, return: 209.63
+Episode: 1649, total numsteps: 165048, return: 276.61
+Episode: 1650, total numsteps: 165169, return: 231.94
+Episode: 1651, total numsteps: 165303, return: 248.49
+Episode: 1652, total numsteps: 165441, return: 251.75
+Episode: 1653, total numsteps: 165543, return: 200.87
+Episode: 1654, total numsteps: 165644, return: 200.7
+Episode: 1655, total numsteps: 165736, return: 182.09
+Episode: 1656, total numsteps: 165863, return: 239.48
+Episode: 1657, total numsteps: 166031, return: 287.12
+Episode: 1658, total numsteps: 166144, return: 217.72
+Episode: 1659, total numsteps: 166267, return: 232.09
+Episode: 1660, total numsteps: 166382, return: 220.93
+Episode: 1661, total numsteps: 166505, return: 233.01
+Episode: 1662, total numsteps: 166639, return: 246.93
+Episode: 1663, total numsteps: 166734, return: 187.11
+Episode: 1664, total numsteps: 166882, return: 264.63
+Episode: 1665, total numsteps: 166994, return: 216.59
+Episode: 1666, total numsteps: 167104, return: 213.76
+Episode: 1667, total numsteps: 167188, return: 166.22
+Episode: 1668, total numsteps: 167335, return: 262.34
+Episode: 1669, total numsteps: 167487, return: 267.4
+Episode: 1670, total numsteps: 167655, return: 287.19
+Episode: 1671, total numsteps: 167781, return: 237.42
+Episode: 1672, total numsteps: 167901, return: 228.26
+Episode: 1673, total numsteps: 168028, return: 240.44
+Episode: 1674, total numsteps: 168138, return: 212.95
+Episode: 1675, total numsteps: 168250, return: 216.41
+Episode: 1676, total numsteps: 168344, return: 188.11
+Episode: 1677, total numsteps: 168449, return: 205.25
+Episode: 1678, total numsteps: 168546, return: 193.72
+Episode: 1679, total numsteps: 168667, return: 229.91
+Episode: 1680, total numsteps: 168768, return: 199.0
+Episode: 1681, total numsteps: 168891, return: 234.38
+Episode: 1682, total numsteps: 169022, return: 242.86
+Episode: 1683, total numsteps: 169142, return: 228.85
+Episode: 1684, total numsteps: 169257, return: 222.54
+Episode: 1685, total numsteps: 169350, return: 184.9
+Episode: 1686, total numsteps: 169490, return: 254.87
+Episode: 1687, total numsteps: 169590, return: 197.15
+Episode: 1688, total numsteps: 169722, return: 243.77
+Episode: 1689, total numsteps: 169841, return: 228.64
+Episode: 1690, total numsteps: 169968, return: 238.59
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_1_kl75.0_s5er7ua0
+   RPC_53_kl0.3_1dpadcwr
+   RPC_1_kl65.0_3ak314qp
+   RPC_24_kl0.3_e2mfrnnq
+Episode: 1691, total numsteps: 170130, return: 280.91
+Episode: 1692, total numsteps: 170245, return: 221.71
+Episode: 1693, total numsteps: 170361, return: 224.22
+Episode: 1694, total numsteps: 170477, return: 222.9
+Episode: 1695, total numsteps: 170580, return: 202.52
+Episode: 1696, total numsteps: 170715, return: 247.66
+Episode: 1697, total numsteps: 170826, return: 217.46
+Episode: 1698, total numsteps: 170938, return: 217.28
+Episode: 1699, total numsteps: 171045, return: 209.62
+Episode: 1700, total numsteps: 171172, return: 238.12
+Episode: 1701, total numsteps: 171300, return: 240.74
+Episode: 1702, total numsteps: 171451, return: 232.77
+Episode: 1703, total numsteps: 171646, return: 294.31
+Episode: 1704, total numsteps: 172100, return: 700.32
+Episode: 1705, total numsteps: 172285, return: 290.85
+Episode: 1706, total numsteps: 172463, return: 276.02
+Episode: 1707, total numsteps: 172586, return: 215.89
+Episode: 1708, total numsteps: 172777, return: 321.75
+Episode: 1709, total numsteps: 172963, return: 307.33
+Episode: 1710, total numsteps: 173078, return: 226.45
+Episode: 1711, total numsteps: 173184, return: 196.89
+Episode: 1712, total numsteps: 173320, return: 246.89
+Episode: 1713, total numsteps: 173421, return: 179.01
+Episode: 1714, total numsteps: 173562, return: 256.91
+Episode: 1715, total numsteps: 173693, return: 242.52
+Episode: 1716, total numsteps: 173838, return: 260.48
+Episode: 1717, total numsteps: 173939, return: 198.56
+Episode: 1718, total numsteps: 174050, return: 216.4
+Episode: 1719, total numsteps: 174186, return: 249.7
+Episode: 1720, total numsteps: 174361, return: 346.77
+Episode: 1721, total numsteps: 174518, return: 296.55
+Episode: 1722, total numsteps: 174659, return: 316.85
+Episode: 1723, total numsteps: 174840, return: 400.43
+Episode: 1724, total numsteps: 174996, return: 373.84
+Episode: 1725, total numsteps: 175135, return: 268.7
+Episode: 1726, total numsteps: 175272, return: 285.69
+Episode: 1727, total numsteps: 175472, return: 377.81
+Episode: 1728, total numsteps: 175611, return: 245.55
+Episode: 1729, total numsteps: 175780, return: 350.18
+Episode: 1730, total numsteps: 175986, return: 497.12
+Episode: 1731, total numsteps: 176145, return: 375.3
+Episode: 1732, total numsteps: 176335, return: 440.01
+Episode: 1733, total numsteps: 176500, return: 373.59
+Episode: 1734, total numsteps: 176717, return: 441.04
+Episode: 1735, total numsteps: 177007, return: 641.14
+Episode: 1736, total numsteps: 177276, return: 533.97
+Episode: 1737, total numsteps: 177521, return: 631.72
+Episode: 1738, total numsteps: 177721, return: 456.23
+Episode: 1739, total numsteps: 177885, return: 364.45
+Episode: 1740, total numsteps: 178078, return: 410.23
+Episode: 1741, total numsteps: 178274, return: 451.88
+Episode: 1742, total numsteps: 178455, return: 335.26
+Episode: 1743, total numsteps: 178619, return: 354.64
+Episode: 1744, total numsteps: 178785, return: 351.82
+Episode: 1745, total numsteps: 178902, return: 285.14
+Episode: 1746, total numsteps: 179060, return: 349.4
+Episode: 1747, total numsteps: 179218, return: 346.49
+Episode: 1748, total numsteps: 179368, return: 312.29
+Episode: 1749, total numsteps: 179525, return: 329.58
+Episode: 1750, total numsteps: 179635, return: 237.86
+Episode: 1751, total numsteps: 179809, return: 395.42
+Episode: 1752, total numsteps: 179970, return: 347.52
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_1_kl75.0_s5er7ua0
+   RPC_53_kl0.3_1dpadcwr
+   RPC_1_kl65.0_3ak314qp
+   RPC_24_kl0.3_e2mfrnnq
+Episode: 1753, total numsteps: 180162, return: 421.28
+Episode: 1754, total numsteps: 180268, return: 240.07
+Episode: 1755, total numsteps: 180432, return: 367.41
+Episode: 1756, total numsteps: 180571, return: 301.71
+Episode: 1757, total numsteps: 180729, return: 352.62
+Episode: 1758, total numsteps: 180890, return: 351.42
+Episode: 1759, total numsteps: 181062, return: 376.08
+Episode: 1760, total numsteps: 181219, return: 350.93
+Episode: 1761, total numsteps: 181355, return: 285.15
+Episode: 1762, total numsteps: 181539, return: 366.15
+Episode: 1763, total numsteps: 181703, return: 367.09
+Episode: 1764, total numsteps: 181869, return: 345.66
+Episode: 1765, total numsteps: 182002, return: 303.25
+Episode: 1766, total numsteps: 182171, return: 394.24
+Episode: 1767, total numsteps: 182321, return: 332.67
+Episode: 1768, total numsteps: 182470, return: 316.42
+Episode: 1769, total numsteps: 182688, return: 575.91
+Episode: 1770, total numsteps: 182843, return: 354.52
+Episode: 1771, total numsteps: 183019, return: 428.01
+Episode: 1772, total numsteps: 183190, return: 360.59
+Episode: 1773, total numsteps: 183334, return: 312.81
+Episode: 1774, total numsteps: 183474, return: 295.97
+Episode: 1775, total numsteps: 183621, return: 349.58
+Episode: 1776, total numsteps: 183766, return: 336.87
+Episode: 1777, total numsteps: 183939, return: 404.68
+Episode: 1778, total numsteps: 184099, return: 348.28
+Episode: 1779, total numsteps: 184249, return: 345.32
+Episode: 1780, total numsteps: 184373, return: 283.75
+Episode: 1781, total numsteps: 184508, return: 314.48
+Episode: 1782, total numsteps: 184687, return: 406.03
+Episode: 1783, total numsteps: 184927, return: 572.06
+Episode: 1784, total numsteps: 185102, return: 348.39
+Episode: 1785, total numsteps: 185426, return: 777.93
+Episode: 1786, total numsteps: 185726, return: 687.99
+Episode: 1787, total numsteps: 185900, return: 466.38
+Episode: 1788, total numsteps: 186027, return: 304.49
+Episode: 1789, total numsteps: 186173, return: 367.09
+Episode: 1790, total numsteps: 186331, return: 385.35
+Episode: 1791, total numsteps: 186487, return: 371.89
+Episode: 1792, total numsteps: 186638, return: 372.66
+Episode: 1793, total numsteps: 186802, return: 398.52
+Episode: 1794, total numsteps: 186933, return: 341.16
+Episode: 1795, total numsteps: 187113, return: 424.33
+Episode: 1796, total numsteps: 187260, return: 368.01
+Episode: 1797, total numsteps: 187436, return: 473.65
+Episode: 1798, total numsteps: 187584, return: 380.05
+Episode: 1799, total numsteps: 187745, return: 400.95
+Episode: 1800, total numsteps: 188116, return: 986.93
+Episode: 1801, total numsteps: 188564, return: 1396.57
+Episode: 1802, total numsteps: 188697, return: 341.15
+Episode: 1803, total numsteps: 188853, return: 415.85
+Episode: 1804, total numsteps: 189400, return: 1254.53
+Episode: 1805, total numsteps: 189543, return: 369.44
+Episode: 1806, total numsteps: 189684, return: 372.25
+Episode: 1807, total numsteps: 189849, return: 393.15
+Episode: 1808, total numsteps: 189969, return: 295.04
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_1_kl75.0_s5er7ua0
+   RPC_1_kl65.0_3ak314qp
+   RPC_53_kl0.3_1dpadcwr
+   RPC_24_kl0.3_e2mfrnnq
+Episode: 1809, total numsteps: 190090, return: 304.02
+Episode: 1810, total numsteps: 190237, return: 405.17
+Episode: 1811, total numsteps: 190368, return: 336.7
+Episode: 1812, total numsteps: 190493, return: 323.71
+Episode: 1813, total numsteps: 190622, return: 310.54
+Episode: 1814, total numsteps: 190747, return: 324.88
+Episode: 1815, total numsteps: 191017, return: 916.63
+Episode: 1816, total numsteps: 191183, return: 425.66
+Episode: 1817, total numsteps: 191345, return: 385.44
+Episode: 1818, total numsteps: 191482, return: 343.87
+Episode: 1819, total numsteps: 191609, return: 344.13
+Episode: 1820, total numsteps: 191752, return: 369.67
+Episode: 1821, total numsteps: 191904, return: 425.4
+Episode: 1822, total numsteps: 192065, return: 406.65
+Episode: 1823, total numsteps: 192206, return: 384.03
+Episode: 1824, total numsteps: 192345, return: 357.92
+Episode: 1825, total numsteps: 192505, return: 404.4
+Episode: 1826, total numsteps: 192649, return: 399.17
+Episode: 1827, total numsteps: 192815, return: 475.09
+Episode: 1828, total numsteps: 192979, return: 440.72
+Episode: 1829, total numsteps: 193130, return: 431.12
+Episode: 1830, total numsteps: 193269, return: 369.29
+Episode: 1831, total numsteps: 193416, return: 396.94
+Episode: 1832, total numsteps: 193547, return: 354.66
+Episode: 1833, total numsteps: 193713, return: 440.34
+Episode: 1834, total numsteps: 193851, return: 370.34
+Episode: 1835, total numsteps: 193972, return: 316.25
+Episode: 1836, total numsteps: 194104, return: 352.46
+Episode: 1837, total numsteps: 194253, return: 394.11
+Episode: 1838, total numsteps: 194419, return: 461.96
+Episode: 1839, total numsteps: 194608, return: 515.28
+Episode: 1840, total numsteps: 194780, return: 436.25
+Episode: 1841, total numsteps: 195018, return: 708.22
+Episode: 1842, total numsteps: 195169, return: 431.08
+Episode: 1843, total numsteps: 195317, return: 396.05
+Episode: 1844, total numsteps: 195476, return: 452.86
+Episode: 1845, total numsteps: 195620, return: 406.99
+Episode: 1846, total numsteps: 195868, return: 639.66
+Episode: 1847, total numsteps: 196017, return: 397.87
+Episode: 1848, total numsteps: 196185, return: 459.29
+Episode: 1849, total numsteps: 196358, return: 495.75
+Episode: 1850, total numsteps: 196486, return: 346.55
+Episode: 1851, total numsteps: 196643, return: 441.49
+Episode: 1852, total numsteps: 196832, return: 491.35
+Episode: 1853, total numsteps: 196971, return: 375.15
+Episode: 1854, total numsteps: 197118, return: 427.37
+Episode: 1855, total numsteps: 197263, return: 424.7
+Episode: 1856, total numsteps: 197389, return: 336.65
+Episode: 1857, total numsteps: 197563, return: 467.03
+Episode: 1858, total numsteps: 197690, return: 337.96
+Episode: 1859, total numsteps: 197824, return: 383.0
+Episode: 1860, total numsteps: 197986, return: 467.38
+Episode: 1861, total numsteps: 198124, return: 255.49
+Episode: 1862, total numsteps: 198274, return: 428.0
+Episode: 1863, total numsteps: 198423, return: 407.79
+Episode: 1864, total numsteps: 198588, return: 470.03
+Episode: 1865, total numsteps: 198721, return: 369.43
+Episode: 1866, total numsteps: 198860, return: 393.18
+Episode: 1867, total numsteps: 199222, return: 1165.88
+Episode: 1868, total numsteps: 199375, return: 293.61
+Episode: 1869, total numsteps: 199493, return: 309.44
+Episode: 1870, total numsteps: 199846, return: 1130.3
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_1_kl75.0_s5er7ua0
+   RPC_1_kl65.0_3ak314qp
+   RPC_53_kl0.3_1dpadcwr
+   RPC_24_kl0.3_e2mfrnnq
+Episode: 1871, total numsteps: 200060, return: 487.38
+Episode: 1872, total numsteps: 200253, return: 560.43
+Episode: 1873, total numsteps: 200361, return: 248.13
+Episode: 1874, total numsteps: 200500, return: 404.9
+Episode: 1875, total numsteps: 200784, return: 813.79
+Episode: 1876, total numsteps: 201026, return: 734.22
+Episode: 1877, total numsteps: 201256, return: 712.97
+Episode: 1878, total numsteps: 201567, return: 939.15
+Episode: 1879, total numsteps: 201816, return: 717.13
+Episode: 1880, total numsteps: 202078, return: 813.13
+Episode: 1881, total numsteps: 202367, return: 915.54
+Episode: 1882, total numsteps: 202528, return: 449.34
+Episode: 1883, total numsteps: 202676, return: 433.16
+Episode: 1884, total numsteps: 202836, return: 448.92
+Episode: 1885, total numsteps: 202982, return: 415.89
+Episode: 1886, total numsteps: 203227, return: 772.09
+Episode: 1887, total numsteps: 203386, return: 454.5
+Episode: 1888, total numsteps: 203534, return: 413.75
+Episode: 1889, total numsteps: 203659, return: 363.19
+Episode: 1890, total numsteps: 203799, return: 385.71
+Episode: 1891, total numsteps: 203929, return: 235.34
+Episode: 1892, total numsteps: 204112, return: 508.48
+Episode: 1893, total numsteps: 204301, return: 528.31
+Episode: 1894, total numsteps: 204793, return: 1510.51
+Episode: 1895, total numsteps: 204942, return: 441.6
+Episode: 1896, total numsteps: 205112, return: 486.53
+Episode: 1897, total numsteps: 205486, return: 990.76
+Episode: 1898, total numsteps: 205700, return: 680.29
+Episode: 1899, total numsteps: 205845, return: 420.24
+Episode: 1900, total numsteps: 206000, return: 462.61
+Episode: 1901, total numsteps: 206146, return: 425.8
+Episode: 1902, total numsteps: 206344, return: 581.19
+Episode: 1903, total numsteps: 206578, return: 710.34
+Episode: 1904, total numsteps: 206803, return: 565.72
+Episode: 1905, total numsteps: 206932, return: 357.52
+Episode: 1906, total numsteps: 207069, return: 380.16
+Episode: 1907, total numsteps: 207210, return: 403.37
+Episode: 1908, total numsteps: 207356, return: 421.82
+Episode: 1909, total numsteps: 207504, return: 416.13
+Episode: 1910, total numsteps: 207742, return: 847.72
+Episode: 1911, total numsteps: 207895, return: 431.72
+Episode: 1912, total numsteps: 208114, return: 784.52
+Episode: 1913, total numsteps: 208231, return: 310.67
+Episode: 1914, total numsteps: 208365, return: 376.89
+Episode: 1915, total numsteps: 208508, return: 302.01
+Episode: 1916, total numsteps: 208655, return: 416.09
+Episode: 1917, total numsteps: 208789, return: 401.32
+Episode: 1918, total numsteps: 208932, return: 383.7
+Episode: 1919, total numsteps: 209076, return: 418.15
+Episode: 1920, total numsteps: 209206, return: 378.91
+Episode: 1921, total numsteps: 209356, return: 411.65
+Episode: 1922, total numsteps: 209503, return: 436.99
+Episode: 1923, total numsteps: 209663, return: 440.7
+Episode: 1924, total numsteps: 209908, return: 792.44
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_1_kl75.0_s5er7ua0
+   RPC_1_kl65.0_3ak314qp
+   RPC_53_kl0.3_1dpadcwr
+   RPC_24_kl0.3_e2mfrnnq
+Episode: 1925, total numsteps: 210135, return: 791.47
+Episode: 1926, total numsteps: 210286, return: 424.62
+Episode: 1927, total numsteps: 210529, return: 763.01
+Episode: 1928, total numsteps: 210815, return: 884.05
+Episode: 1929, total numsteps: 210968, return: 436.67
+Episode: 1930, total numsteps: 211131, return: 464.79
+Episode: 1931, total numsteps: 211437, return: 980.0
+Episode: 1932, total numsteps: 211582, return: 432.23
+Episode: 1933, total numsteps: 211755, return: 510.06
+Episode: 1934, total numsteps: 211908, return: 449.74
+Episode: 1935, total numsteps: 212055, return: 423.15
+Episode: 1936, total numsteps: 212221, return: 488.89
+Episode: 1937, total numsteps: 212346, return: 355.04
+Episode: 1938, total numsteps: 212495, return: 430.36
+Episode: 1939, total numsteps: 212684, return: 476.53
+Episode: 1940, total numsteps: 212960, return: 822.18
+Episode: 1941, total numsteps: 213159, return: 625.47
+Episode: 1942, total numsteps: 213299, return: 397.77
+Episode: 1943, total numsteps: 213538, return: 796.27
+Episode: 1944, total numsteps: 213691, return: 459.46
+Episode: 1945, total numsteps: 213976, return: 852.7
+Episode: 1946, total numsteps: 214168, return: 522.86
+Episode: 1947, total numsteps: 214391, return: 681.68
+Episode: 1948, total numsteps: 214586, return: 594.74
+Episode: 1949, total numsteps: 214751, return: 479.71
+Episode: 1950, total numsteps: 214924, return: 520.91
+Episode: 1951, total numsteps: 215075, return: 443.25
+Episode: 1952, total numsteps: 215238, return: 508.68
+Episode: 1953, total numsteps: 215386, return: 430.0
+Episode: 1954, total numsteps: 215535, return: 429.68
+Episode: 1955, total numsteps: 215683, return: 431.11
+Episode: 1956, total numsteps: 215830, return: 406.29
+Episode: 1957, total numsteps: 216023, return: 619.85
+Episode: 1958, total numsteps: 216196, return: 557.56
+Episode: 1959, total numsteps: 216386, return: 666.0
+Episode: 1960, total numsteps: 216626, return: 829.08
+Episode: 1961, total numsteps: 216848, return: 764.75
+Episode: 1962, total numsteps: 216982, return: 385.81
+Episode: 1963, total numsteps: 217123, return: 400.86
+Episode: 1964, total numsteps: 217264, return: 415.26
+Episode: 1965, total numsteps: 217422, return: 447.76
+Episode: 1966, total numsteps: 217618, return: 673.87
+Episode: 1967, total numsteps: 217764, return: 437.97
+Episode: 1968, total numsteps: 217908, return: 407.9
+Episode: 1969, total numsteps: 218055, return: 388.92
+Episode: 1970, total numsteps: 218220, return: 483.06
+Episode: 1971, total numsteps: 218570, return: 1058.99
+Episode: 1972, total numsteps: 218780, return: 770.34
+Episode: 1973, total numsteps: 218939, return: 498.93
+Episode: 1974, total numsteps: 219249, return: 1079.2
+Episode: 1975, total numsteps: 219427, return: 547.28
+Episode: 1976, total numsteps: 219575, return: 428.7
+Episode: 1977, total numsteps: 219738, return: 476.49
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_1_kl75.0_s5er7ua0
+   RPC_53_kl0.3_1dpadcwr
+   RPC_1_kl65.0_3ak314qp
+   RPC_24_kl0.3_e2mfrnnq
+Episode: 1978, total numsteps: 220004, return: 909.32
+Episode: 1979, total numsteps: 220122, return: 232.26
+Episode: 1980, total numsteps: 220401, return: 978.2
+Episode: 1981, total numsteps: 220639, return: 805.88
+Episode: 1982, total numsteps: 220827, return: 643.61
+Episode: 1983, total numsteps: 221063, return: 812.75
+Episode: 1984, total numsteps: 221350, return: 941.71
+Episode: 1985, total numsteps: 221499, return: 449.67
+Episode: 1986, total numsteps: 221649, return: 448.34
+Episode: 1987, total numsteps: 221843, return: 658.89
+Episode: 1988, total numsteps: 222057, return: 724.88
+Episode: 1989, total numsteps: 222370, return: 1028.33
+Episode: 1990, total numsteps: 222639, return: 804.74
+Episode: 1991, total numsteps: 222806, return: 483.13
+Episode: 1992, total numsteps: 223112, return: 945.95
+Episode: 1993, total numsteps: 223294, return: 597.97
+Episode: 1994, total numsteps: 223460, return: 496.63
+Episode: 1995, total numsteps: 223787, return: 1048.98
+Episode: 1996, total numsteps: 224010, return: 747.46
+Episode: 1997, total numsteps: 224237, return: 809.49
+Episode: 1998, total numsteps: 224358, return: 209.04
+Episode: 1999, total numsteps: 224752, return: 1209.28
+Episode: 2000, total numsteps: 224998, return: 759.22
+Episode: 2001, total numsteps: 225235, return: 782.12
+Episode: 2002, total numsteps: 226049, return: 1666.07
+Episode: 2003, total numsteps: 226293, return: 773.78
+Episode: 2004, total numsteps: 226536, return: 838.34
+Episode: 2005, total numsteps: 226938, return: 1255.85
+Episode: 2006, total numsteps: 227194, return: 835.93
+Episode: 2007, total numsteps: 227465, return: 908.42
+Episode: 2008, total numsteps: 227708, return: 810.05
+Episode: 2009, total numsteps: 227959, return: 714.84
+Episode: 2010, total numsteps: 228147, return: 630.3
+Episode: 2011, total numsteps: 228415, return: 833.99
+Episode: 2012, total numsteps: 228553, return: 259.59
+Episode: 2013, total numsteps: 228855, return: 901.38
+Episode: 2014, total numsteps: 229087, return: 795.15
+Episode: 2015, total numsteps: 229311, return: 721.48
+Episode: 2016, total numsteps: 229573, return: 927.13
+Episode: 2017, total numsteps: 229811, return: 848.1
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_1_kl65.0_3ak314qp
+   RPC_53_kl0.3_1dpadcwr
+   RPC_24_kl0.3_e2mfrnnq
+   RPC_1_kl75.0_s5er7ua0
+Episode: 2018, total numsteps: 230022, return: 702.08
+Episode: 2019, total numsteps: 230258, return: 770.28
+Episode: 2020, total numsteps: 230514, return: 795.39
+Episode: 2021, total numsteps: 230739, return: 765.31
+Episode: 2022, total numsteps: 230939, return: 663.01
+Episode: 2023, total numsteps: 231138, return: 671.01
+Episode: 2024, total numsteps: 231413, return: 917.98
+Episode: 2025, total numsteps: 231657, return: 857.63
+Episode: 2026, total numsteps: 231867, return: 735.95
+Episode: 2027, total numsteps: 232037, return: 534.31
+Episode: 2028, total numsteps: 232216, return: 588.48
+Episode: 2029, total numsteps: 232395, return: 592.65
+Episode: 2030, total numsteps: 232535, return: 373.48
+Episode: 2031, total numsteps: 232705, return: 552.26
+Episode: 2032, total numsteps: 232939, return: 793.61
+Episode: 2033, total numsteps: 233138, return: 690.79
+Episode: 2034, total numsteps: 233325, return: 634.44
+Episode: 2035, total numsteps: 233577, return: 866.06
+Episode: 2036, total numsteps: 233984, return: 1346.36
+Episode: 2037, total numsteps: 234218, return: 821.29
+Episode: 2038, total numsteps: 234414, return: 676.15
+Episode: 2039, total numsteps: 234644, return: 814.96
+Episode: 2040, total numsteps: 234848, return: 709.94
+Episode: 2041, total numsteps: 235224, return: 1256.56
+Episode: 2042, total numsteps: 235410, return: 618.44
+Episode: 2043, total numsteps: 235594, return: 624.26
+Episode: 2044, total numsteps: 235775, return: 624.54
+Episode: 2045, total numsteps: 235936, return: 433.99
+Episode: 2046, total numsteps: 236190, return: 864.75
+Episode: 2047, total numsteps: 236435, return: 916.38
+Episode: 2048, total numsteps: 236646, return: 744.61
+Episode: 2049, total numsteps: 236827, return: 604.78
+Episode: 2050, total numsteps: 236995, return: 527.46
+Episode: 2051, total numsteps: 237277, return: 900.66
+Episode: 2052, total numsteps: 237519, return: 788.85
+Episode: 2053, total numsteps: 237678, return: 459.88
+Episode: 2054, total numsteps: 237879, return: 686.23
+Episode: 2055, total numsteps: 238076, return: 686.05
+Episode: 2056, total numsteps: 238325, return: 719.52
+Episode: 2057, total numsteps: 238577, return: 845.04
+Episode: 2058, total numsteps: 238807, return: 774.87
+Episode: 2059, total numsteps: 239016, return: 710.06
+Episode: 2060, total numsteps: 239177, return: 486.35
+Episode: 2061, total numsteps: 239357, return: 602.6
+Episode: 2062, total numsteps: 239605, return: 847.97
+Episode: 2063, total numsteps: 239802, return: 696.59
+Episode: 2064, total numsteps: 239972, return: 570.95
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_1_kl65.0_3ak314qp
+   RPC_53_kl0.3_1dpadcwr
+   RPC_24_kl0.3_e2mfrnnq
+   RPC_1_kl75.0_s5er7ua0
+Episode: 2065, total numsteps: 240229, return: 830.0
+Episode: 2066, total numsteps: 240374, return: 423.22
+Episode: 2067, total numsteps: 240546, return: 566.17
+Episode: 2068, total numsteps: 240712, return: 549.11
+Episode: 2069, total numsteps: 240887, return: 600.22
+Episode: 2070, total numsteps: 241082, return: 691.29
+Episode: 2071, total numsteps: 241284, return: 699.65
+Episode: 2072, total numsteps: 241441, return: 464.79
+Episode: 2073, total numsteps: 241609, return: 553.43
+Episode: 2074, total numsteps: 241752, return: 425.85
+Episode: 2075, total numsteps: 241925, return: 571.77
+Episode: 2076, total numsteps: 242123, return: 686.26
+Episode: 2077, total numsteps: 242291, return: 537.93
+Episode: 2078, total numsteps: 242442, return: 452.74
+Episode: 2079, total numsteps: 242602, return: 469.28
+Episode: 2080, total numsteps: 242855, return: 788.47
+Episode: 2081, total numsteps: 243057, return: 689.44
+Episode: 2082, total numsteps: 243265, return: 717.47
+Episode: 2083, total numsteps: 243513, return: 885.0
+Episode: 2084, total numsteps: 243664, return: 444.28
+Episode: 2085, total numsteps: 243900, return: 756.49
+Episode: 2086, total numsteps: 244135, return: 745.33
+Episode: 2087, total numsteps: 244356, return: 799.28
+Episode: 2088, total numsteps: 244547, return: 661.15
+Episode: 2089, total numsteps: 244710, return: 528.88
+Episode: 2090, total numsteps: 244881, return: 540.14
+Episode: 2091, total numsteps: 245050, return: 561.03
+Episode: 2092, total numsteps: 245279, return: 801.1
+Episode: 2093, total numsteps: 245505, return: 820.96
+Episode: 2094, total numsteps: 245728, return: 730.69
+Episode: 2095, total numsteps: 245898, return: 537.17
+Episode: 2096, total numsteps: 246103, return: 692.47
+Episode: 2097, total numsteps: 246259, return: 468.76
+Episode: 2098, total numsteps: 246463, return: 684.64
+Episode: 2099, total numsteps: 246640, return: 606.55
+Episode: 2100, total numsteps: 246849, return: 747.62
+Episode: 2101, total numsteps: 247081, return: 769.18
+Episode: 2102, total numsteps: 247295, return: 770.28
+Episode: 2103, total numsteps: 247506, return: 706.45
+Episode: 2104, total numsteps: 247737, return: 830.47
+Episode: 2105, total numsteps: 247876, return: 381.78
+Episode: 2106, total numsteps: 248076, return: 681.08
+Episode: 2107, total numsteps: 248244, return: 522.66
+Episode: 2108, total numsteps: 248436, return: 644.96
+Episode: 2109, total numsteps: 248737, return: 1166.41
+Episode: 2110, total numsteps: 248922, return: 635.6
+Episode: 2111, total numsteps: 249155, return: 837.6
+Episode: 2112, total numsteps: 249326, return: 557.2
+Episode: 2113, total numsteps: 249473, return: 436.85
+Episode: 2114, total numsteps: 249606, return: 394.43
+Episode: 2115, total numsteps: 249800, return: 664.09
+Episode: 2116, total numsteps: 249970, return: 564.25
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_1_kl65.0_3ak314qp
+   RPC_53_kl0.3_1dpadcwr
+   RPC_24_kl0.3_e2mfrnnq
+   RPC_1_kl75.0_s5er7ua0
+Episode: 2117, total numsteps: 250133, return: 532.22
+Episode: 2118, total numsteps: 250295, return: 506.77
+Episode: 2119, total numsteps: 250448, return: 453.07
+Episode: 2120, total numsteps: 250638, return: 659.81
+Episode: 2121, total numsteps: 250835, return: 701.71
+Episode: 2122, total numsteps: 251043, return: 730.95
+Episode: 2123, total numsteps: 251203, return: 519.22
+Episode: 2124, total numsteps: 251428, return: 823.49
+Episode: 2125, total numsteps: 251656, return: 766.88
+Episode: 2126, total numsteps: 251871, return: 749.26
+Episode: 2127, total numsteps: 252106, return: 806.42
+Episode: 2128, total numsteps: 252330, return: 808.64
+Episode: 2129, total numsteps: 252506, return: 580.73
+Episode: 2130, total numsteps: 252769, return: 822.15
+Episode: 2131, total numsteps: 253015, return: 808.85
+Episode: 2132, total numsteps: 253165, return: 415.99
+Episode: 2133, total numsteps: 253337, return: 575.5
+Episode: 2134, total numsteps: 253501, return: 530.43
+Episode: 2135, total numsteps: 253644, return: 434.9
+Episode: 2136, total numsteps: 253836, return: 649.67
+Episode: 2137, total numsteps: 254052, return: 777.25
+Episode: 2138, total numsteps: 254302, return: 815.67
+Episode: 2139, total numsteps: 254451, return: 292.76
+Episode: 2140, total numsteps: 254683, return: 826.0
+Episode: 2141, total numsteps: 254917, return: 764.32
+Episode: 2142, total numsteps: 255125, return: 723.3
+Episode: 2143, total numsteps: 255293, return: 536.85
+Episode: 2144, total numsteps: 255453, return: 480.2
+Episode: 2145, total numsteps: 255619, return: 528.33
+Episode: 2146, total numsteps: 255768, return: 461.79
+Episode: 2147, total numsteps: 255941, return: 564.45
+Episode: 2148, total numsteps: 256111, return: 533.78
+Episode: 2149, total numsteps: 256249, return: 262.49
+Episode: 2150, total numsteps: 256487, return: 829.73
+Episode: 2151, total numsteps: 256645, return: 474.8
+Episode: 2152, total numsteps: 256893, return: 914.92
+Episode: 2153, total numsteps: 257109, return: 758.34
+Episode: 2154, total numsteps: 257327, return: 751.77
+Episode: 2155, total numsteps: 257503, return: 564.57
+Episode: 2156, total numsteps: 257702, return: 664.59
+Episode: 2157, total numsteps: 257972, return: 840.07
+Episode: 2158, total numsteps: 258221, return: 840.66
+Episode: 2159, total numsteps: 258456, return: 841.09
+Episode: 2160, total numsteps: 258611, return: 452.68
+Episode: 2161, total numsteps: 258788, return: 587.43
+Episode: 2162, total numsteps: 258965, return: 590.0
+Episode: 2163, total numsteps: 259204, return: 856.77
+Episode: 2164, total numsteps: 259378, return: 588.07
+Episode: 2165, total numsteps: 259620, return: 871.54
+Episode: 2166, total numsteps: 259878, return: 889.03
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_1_kl65.0_3ak314qp
+   RPC_53_kl0.3_1dpadcwr
+   RPC_24_kl0.3_e2mfrnnq
+   RPC_1_kl75.0_s5er7ua0
+Episode: 2167, total numsteps: 260120, return: 810.56
+Episode: 2168, total numsteps: 260309, return: 650.58
+Episode: 2169, total numsteps: 260531, return: 785.1
+Episode: 2170, total numsteps: 260758, return: 709.09
+Episode: 2171, total numsteps: 260948, return: 656.64
+Episode: 2172, total numsteps: 261118, return: 543.47
+Episode: 2173, total numsteps: 261362, return: 850.3
+Episode: 2174, total numsteps: 261602, return: 829.44
+Episode: 2175, total numsteps: 261798, return: 627.83
+Episode: 2176, total numsteps: 262039, return: 855.63
+Episode: 2177, total numsteps: 262264, return: 795.62
+Episode: 2178, total numsteps: 262512, return: 819.07
+Episode: 2179, total numsteps: 262699, return: 615.12
+Episode: 2180, total numsteps: 263156, return: 1383.69
+Episode: 2181, total numsteps: 263327, return: 561.84
+Episode: 2182, total numsteps: 263505, return: 579.89
+Episode: 2183, total numsteps: 263718, return: 761.5
+Episode: 2184, total numsteps: 263965, return: 787.1
+Episode: 2185, total numsteps: 264188, return: 811.15
+Episode: 2186, total numsteps: 264416, return: 812.35
+Episode: 2187, total numsteps: 264610, return: 661.59
+Episode: 2188, total numsteps: 264808, return: 699.59
+Episode: 2189, total numsteps: 264943, return: 394.89
+Episode: 2190, total numsteps: 265135, return: 649.15
+Episode: 2191, total numsteps: 265328, return: 678.27
+Episode: 2192, total numsteps: 265530, return: 710.68
+Episode: 2193, total numsteps: 265742, return: 765.58
+Episode: 2194, total numsteps: 265939, return: 683.05
+Episode: 2195, total numsteps: 266124, return: 651.01
+Episode: 2196, total numsteps: 266332, return: 723.48
+Episode: 2197, total numsteps: 266549, return: 757.18
+Episode: 2198, total numsteps: 266770, return: 791.33
+Episode: 2199, total numsteps: 266952, return: 629.68
+Episode: 2200, total numsteps: 267192, return: 807.74
+Episode: 2201, total numsteps: 267419, return: 742.7
+Episode: 2202, total numsteps: 267647, return: 820.88
+Episode: 2203, total numsteps: 267883, return: 792.78
+Episode: 2204, total numsteps: 268200, return: 1105.8
+Episode: 2205, total numsteps: 268373, return: 557.95
+Episode: 2206, total numsteps: 268572, return: 683.88
+Episode: 2207, total numsteps: 268803, return: 821.42
+Episode: 2208, total numsteps: 269063, return: 837.83
+Episode: 2209, total numsteps: 269307, return: 873.91
+Episode: 2210, total numsteps: 269550, return: 841.26
+Episode: 2211, total numsteps: 269758, return: 721.0
+Episode: 2212, total numsteps: 269956, return: 680.56
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_53_kl0.3_1dpadcwr
+   RPC_1_kl65.0_3ak314qp
+   RPC_24_kl0.3_e2mfrnnq
+   RPC_1_kl75.0_s5er7ua0
+Episode: 2213, total numsteps: 270179, return: 798.69
+Episode: 2214, total numsteps: 270438, return: 827.97
+Episode: 2215, total numsteps: 270641, return: 699.02
+Episode: 2216, total numsteps: 270873, return: 827.48
+Episode: 2217, total numsteps: 271130, return: 860.92
+Episode: 2218, total numsteps: 271390, return: 809.84
+Episode: 2219, total numsteps: 271586, return: 665.86
+Episode: 2220, total numsteps: 271746, return: 503.61
+Episode: 2221, total numsteps: 271944, return: 664.93
+Episode: 2222, total numsteps: 272213, return: 1004.38
+Episode: 2223, total numsteps: 272398, return: 634.62
+Episode: 2224, total numsteps: 272582, return: 359.64
+Episode: 2225, total numsteps: 272825, return: 783.5
+Episode: 2226, total numsteps: 273073, return: 899.48
+Episode: 2227, total numsteps: 273284, return: 726.72
+Episode: 2228, total numsteps: 273440, return: 489.33
+Episode: 2229, total numsteps: 273653, return: 770.14
+Episode: 2230, total numsteps: 273812, return: 500.98
+Episode: 2231, total numsteps: 274042, return: 823.89
+Episode: 2232, total numsteps: 274281, return: 828.71
+Episode: 2233, total numsteps: 274525, return: 839.86
+Episode: 2234, total numsteps: 274735, return: 737.73
+Episode: 2235, total numsteps: 274952, return: 734.82
+Episode: 2236, total numsteps: 275191, return: 781.61
+Episode: 2237, total numsteps: 275441, return: 827.57
+Episode: 2238, total numsteps: 275706, return: 877.82
+Episode: 2239, total numsteps: 275856, return: 425.19
+Episode: 2240, total numsteps: 276049, return: 679.74
+Episode: 2241, total numsteps: 276273, return: 792.42
+Episode: 2242, total numsteps: 276514, return: 863.14
+Episode: 2243, total numsteps: 276702, return: 599.08
+Episode: 2244, total numsteps: 276953, return: 840.9
+Episode: 2245, total numsteps: 277135, return: 604.1
+Episode: 2246, total numsteps: 277366, return: 752.2
+Episode: 2247, total numsteps: 277598, return: 831.64
+Episode: 2248, total numsteps: 277762, return: 520.53
+Episode: 2249, total numsteps: 277986, return: 716.42
+Episode: 2250, total numsteps: 278226, return: 847.2
+Episode: 2251, total numsteps: 278400, return: 575.84
+Episode: 2252, total numsteps: 278614, return: 741.23
+Episode: 2253, total numsteps: 278862, return: 887.58
+Episode: 2254, total numsteps: 279076, return: 745.67
+Episode: 2255, total numsteps: 279262, return: 603.43
+Episode: 2256, total numsteps: 279509, return: 842.58
+Episode: 2257, total numsteps: 279737, return: 722.67
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_53_kl0.3_1dpadcwr
+   RPC_1_kl65.0_3ak314qp
+   RPC_24_kl0.3_e2mfrnnq
+   RPC_1_kl75.0_s5er7ua0
+Episode: 2258, total numsteps: 280000, return: 916.51
+Episode: 2259, total numsteps: 280169, return: 497.94
+Episode: 2260, total numsteps: 280384, return: 777.04
+Episode: 2261, total numsteps: 280543, return: 505.77
+Episode: 2262, total numsteps: 280802, return: 795.71
+Episode: 2263, total numsteps: 280982, return: 602.3
+Episode: 2264, total numsteps: 281193, return: 722.81
+Episode: 2265, total numsteps: 281394, return: 691.14
+Episode: 2266, total numsteps: 281614, return: 778.24
+Episode: 2267, total numsteps: 281898, return: 914.66
+Episode: 2268, total numsteps: 282111, return: 771.97
+Episode: 2269, total numsteps: 282340, return: 807.56
+Episode: 2270, total numsteps: 282546, return: 716.11
+Episode: 2271, total numsteps: 282878, return: 1120.47
+Episode: 2272, total numsteps: 283059, return: 601.83
+Episode: 2273, total numsteps: 283293, return: 834.98
+Episode: 2274, total numsteps: 283466, return: 571.21
+Episode: 2275, total numsteps: 283662, return: 671.11
+Episode: 2276, total numsteps: 283990, return: 1172.73
+Episode: 2277, total numsteps: 284251, return: 921.91
+Episode: 2278, total numsteps: 284491, return: 779.45
+Episode: 2279, total numsteps: 284702, return: 736.54
+Episode: 2280, total numsteps: 284981, return: 1022.24
+Episode: 2281, total numsteps: 285232, return: 857.14
+Episode: 2282, total numsteps: 285492, return: 866.53
+Episode: 2283, total numsteps: 285703, return: 739.08
+Episode: 2284, total numsteps: 285922, return: 774.71
+Episode: 2285, total numsteps: 286139, return: 783.26
+Episode: 2286, total numsteps: 286372, return: 836.07
+Episode: 2287, total numsteps: 286668, return: 913.16
+Episode: 2288, total numsteps: 286898, return: 842.13
+Episode: 2289, total numsteps: 287071, return: 577.53
+Episode: 2290, total numsteps: 287302, return: 781.89
+Episode: 2291, total numsteps: 287563, return: 962.54
+Episode: 2292, total numsteps: 287812, return: 902.28
+Episode: 2293, total numsteps: 288031, return: 788.06
+Episode: 2294, total numsteps: 288284, return: 836.46
+Episode: 2295, total numsteps: 288487, return: 717.47
+Episode: 2296, total numsteps: 288727, return: 845.54
+Episode: 2297, total numsteps: 288927, return: 700.45
+Episode: 2298, total numsteps: 289141, return: 764.96
+Episode: 2299, total numsteps: 289359, return: 669.42
+Episode: 2300, total numsteps: 289560, return: 700.88
+Episode: 2301, total numsteps: 289795, return: 786.12
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_53_kl0.3_1dpadcwr
+   RPC_1_kl65.0_3ak314qp
+   RPC_24_kl0.3_e2mfrnnq
+   RPC_1_kl75.0_s5er7ua0
+Episode: 2302, total numsteps: 290028, return: 757.97
+Episode: 2303, total numsteps: 290250, return: 765.79
+Episode: 2304, total numsteps: 290488, return: 833.29
+Episode: 2305, total numsteps: 290709, return: 796.23
+Episode: 2306, total numsteps: 290971, return: 940.43
+Episode: 2307, total numsteps: 291149, return: 600.69
+Episode: 2308, total numsteps: 291289, return: 387.01
+Episode: 2309, total numsteps: 291528, return: 825.14
+Episode: 2310, total numsteps: 291774, return: 855.38
+Episode: 2311, total numsteps: 291966, return: 662.62
+Episode: 2312, total numsteps: 292143, return: 582.01
+Episode: 2313, total numsteps: 292412, return: 858.47
+Episode: 2314, total numsteps: 292629, return: 777.96
+Episode: 2315, total numsteps: 292794, return: 522.01
+Episode: 2316, total numsteps: 292948, return: 424.56
+Episode: 2317, total numsteps: 293115, return: 538.12
+Episode: 2318, total numsteps: 293335, return: 756.12
+Episode: 2319, total numsteps: 293536, return: 713.58
+Episode: 2320, total numsteps: 293733, return: 672.18
+Episode: 2321, total numsteps: 293918, return: 610.93
+Episode: 2322, total numsteps: 294144, return: 800.58
+Episode: 2323, total numsteps: 294372, return: 827.49
+Episode: 2324, total numsteps: 294616, return: 856.49
+Episode: 2325, total numsteps: 294835, return: 796.56
+Episode: 2326, total numsteps: 295061, return: 803.49
+Episode: 2327, total numsteps: 295222, return: 511.25
+Episode: 2328, total numsteps: 295477, return: 870.37
+Episode: 2329, total numsteps: 295715, return: 858.99
+Episode: 2330, total numsteps: 295907, return: 641.64
+Episode: 2331, total numsteps: 296120, return: 737.36
+Episode: 2332, total numsteps: 296371, return: 898.42
+Episode: 2333, total numsteps: 296586, return: 783.69
+Episode: 2334, total numsteps: 296816, return: 814.03
+Episode: 2335, total numsteps: 296980, return: 515.82
+Episode: 2336, total numsteps: 297219, return: 837.51
+Episode: 2337, total numsteps: 297469, return: 883.91
+Episode: 2338, total numsteps: 297811, return: 1243.3
+Episode: 2339, total numsteps: 298042, return: 821.41
+Episode: 2340, total numsteps: 298243, return: 649.44
+Episode: 2341, total numsteps: 298460, return: 779.06
+Episode: 2342, total numsteps: 298679, return: 751.18
+Episode: 2343, total numsteps: 298935, return: 920.63
+Episode: 2344, total numsteps: 299159, return: 797.98
+Episode: 2345, total numsteps: 299356, return: 678.46
+Episode: 2346, total numsteps: 299597, return: 753.46
+Episode: 2347, total numsteps: 299837, return: 860.5
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_53_kl0.3_1dpadcwr
+   RPC_1_kl65.0_3ak314qp
+   RPC_24_kl0.3_e2mfrnnq
+   RPC_1_kl75.0_s5er7ua0
+Episode: 2348, total numsteps: 300082, return: 817.39
+Episode: 2349, total numsteps: 300317, return: 817.8
+Episode: 2350, total numsteps: 300543, return: 760.43
+Episode: 2351, total numsteps: 300784, return: 784.33
+Episode: 2352, total numsteps: 301019, return: 774.02
+Episode: 2353, total numsteps: 301269, return: 864.4
+Episode: 2354, total numsteps: 301494, return: 816.32
+Episode: 2355, total numsteps: 301705, return: 725.6
+Episode: 2356, total numsteps: 301895, return: 640.56
+Episode: 2357, total numsteps: 302086, return: 668.7
+Episode: 2358, total numsteps: 302308, return: 784.69
+Episode: 2359, total numsteps: 302504, return: 669.51
+Episode: 2360, total numsteps: 302744, return: 828.23
+Episode: 2361, total numsteps: 302979, return: 846.02
+Episode: 2362, total numsteps: 303209, return: 799.86
+Episode: 2363, total numsteps: 303450, return: 833.02
+Episode: 2364, total numsteps: 303657, return: 716.31
+Episode: 2365, total numsteps: 303836, return: 578.85
+Episode: 2366, total numsteps: 304106, return: 999.64
+Episode: 2367, total numsteps: 304319, return: 742.75
+Episode: 2368, total numsteps: 304558, return: 775.28
+Episode: 2369, total numsteps: 304747, return: 647.24
+Episode: 2370, total numsteps: 304994, return: 900.34
+Episode: 2371, total numsteps: 305242, return: 838.61
+Episode: 2372, total numsteps: 305527, return: 904.78
+Episode: 2373, total numsteps: 305762, return: 756.84
+Episode: 2374, total numsteps: 305973, return: 758.53
+Episode: 2375, total numsteps: 306197, return: 809.91
+Episode: 2376, total numsteps: 306432, return: 827.27
+Episode: 2377, total numsteps: 306640, return: 688.88
+Episode: 2378, total numsteps: 306774, return: 404.14
+Episode: 2379, total numsteps: 306966, return: 662.07
+Episode: 2380, total numsteps: 307246, return: 951.83
+Episode: 2381, total numsteps: 307483, return: 752.19
+Episode: 2382, total numsteps: 307643, return: 448.27
+Episode: 2383, total numsteps: 307780, return: 427.2
+Episode: 2384, total numsteps: 307945, return: 549.31
+Episode: 2385, total numsteps: 308161, return: 767.42
+Episode: 2386, total numsteps: 308518, return: 1232.31
+Episode: 2387, total numsteps: 308716, return: 676.76
+Episode: 2388, total numsteps: 308947, return: 828.93
+Episode: 2389, total numsteps: 309176, return: 809.08
+Episode: 2390, total numsteps: 309417, return: 821.19
+Episode: 2391, total numsteps: 309519, return: 195.46
+Episode: 2392, total numsteps: 309738, return: 788.46
+Episode: 2393, total numsteps: 309958, return: 780.88
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_53_kl0.3_1dpadcwr
+   RPC_1_kl65.0_3ak314qp
+   RPC_24_kl0.3_e2mfrnnq
+   RPC_1_kl75.0_s5er7ua0
+Episode: 2394, total numsteps: 310209, return: 900.81
+Episode: 2395, total numsteps: 310440, return: 803.01
+Episode: 2396, total numsteps: 310719, return: 1048.2
+Episode: 2397, total numsteps: 310962, return: 867.52
+Episode: 2398, total numsteps: 311147, return: 624.47
+Episode: 2399, total numsteps: 311382, return: 831.83
+Episode: 2400, total numsteps: 311608, return: 783.57
+Episode: 2401, total numsteps: 311877, return: 1012.53
+Episode: 2402, total numsteps: 312110, return: 799.08
+Episode: 2403, total numsteps: 312340, return: 839.58
+Episode: 2404, total numsteps: 312572, return: 819.95
+Episode: 2405, total numsteps: 312755, return: 612.19
+Episode: 2406, total numsteps: 312996, return: 829.62
+Episode: 2407, total numsteps: 313178, return: 567.49
+Episode: 2408, total numsteps: 313419, return: 835.17
+Episode: 2409, total numsteps: 313666, return: 839.02
+Episode: 2410, total numsteps: 313907, return: 838.4
+Episode: 2411, total numsteps: 314173, return: 995.63
+Episode: 2412, total numsteps: 314333, return: 489.57
+Episode: 2413, total numsteps: 314520, return: 631.5
+Episode: 2414, total numsteps: 314731, return: 756.88
+Episode: 2415, total numsteps: 314970, return: 856.31
+Episode: 2416, total numsteps: 315126, return: 463.42
+Episode: 2417, total numsteps: 315388, return: 916.99
+Episode: 2418, total numsteps: 315590, return: 743.06
+Episode: 2419, total numsteps: 315842, return: 910.38
+Episode: 2420, total numsteps: 316068, return: 784.12
+Episode: 2421, total numsteps: 316310, return: 822.48
+Episode: 2422, total numsteps: 316547, return: 842.24
+Episode: 2423, total numsteps: 316779, return: 807.53
+Episode: 2424, total numsteps: 316914, return: 407.36
+Episode: 2425, total numsteps: 317161, return: 864.18
+Episode: 2426, total numsteps: 317414, return: 894.88
+Episode: 2427, total numsteps: 317662, return: 833.11
+Episode: 2428, total numsteps: 317895, return: 813.74
+Episode: 2429, total numsteps: 318153, return: 947.84
+Episode: 2430, total numsteps: 318391, return: 835.26
+Episode: 2431, total numsteps: 318636, return: 865.16
+Episode: 2432, total numsteps: 318917, return: 1018.07
+Episode: 2433, total numsteps: 319084, return: 533.97
+Episode: 2434, total numsteps: 319278, return: 656.79
+Episode: 2435, total numsteps: 319502, return: 761.12
+Episode: 2436, total numsteps: 319756, return: 843.42
+Episode: 2437, total numsteps: 319995, return: 840.79
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_53_kl0.3_1dpadcwr
+   RPC_1_kl65.0_3ak314qp
+   RPC_24_kl0.3_e2mfrnnq
+   RPC_1_kl75.0_s5er7ua0
+Episode: 2438, total numsteps: 320207, return: 735.98
+Episode: 2439, total numsteps: 320443, return: 857.21
+Episode: 2440, total numsteps: 320683, return: 796.38
+Episode: 2441, total numsteps: 320864, return: 561.58
+Episode: 2442, total numsteps: 321022, return: 489.36
+Episode: 2443, total numsteps: 321156, return: 402.76
+Episode: 2444, total numsteps: 321322, return: 492.28
+Episode: 2445, total numsteps: 321450, return: 375.53
+Episode: 2446, total numsteps: 321642, return: 658.48
+Episode: 2447, total numsteps: 321886, return: 871.07
+Episode: 2448, total numsteps: 322255, return: 1247.28
+Episode: 2449, total numsteps: 322466, return: 750.64
+Episode: 2450, total numsteps: 322699, return: 763.49
+Episode: 2451, total numsteps: 322860, return: 525.99
+Episode: 2452, total numsteps: 323086, return: 802.07
+Episode: 2453, total numsteps: 323323, return: 818.47
+Episode: 2454, total numsteps: 323560, return: 792.54
+Episode: 2455, total numsteps: 323796, return: 820.49
+Episode: 2456, total numsteps: 324050, return: 907.54
+Episode: 2457, total numsteps: 324299, return: 851.72
+Episode: 2458, total numsteps: 324435, return: 403.7
+Episode: 2459, total numsteps: 324594, return: 481.04
+Episode: 2460, total numsteps: 324844, return: 885.88
+Episode: 2461, total numsteps: 325000, return: 464.77
+Episode: 2462, total numsteps: 325222, return: 789.16
+Episode: 2463, total numsteps: 325393, return: 561.9
+Episode: 2464, total numsteps: 325640, return: 870.37
+Episode: 2465, total numsteps: 325889, return: 885.65
+Episode: 2466, total numsteps: 326139, return: 925.95
+Episode: 2467, total numsteps: 326326, return: 630.26
+Episode: 2468, total numsteps: 326575, return: 855.03
+Episode: 2469, total numsteps: 326818, return: 833.95
+Episode: 2470, total numsteps: 327027, return: 720.82
+Episode: 2471, total numsteps: 327232, return: 701.46
+Episode: 2472, total numsteps: 327487, return: 828.0
+Episode: 2473, total numsteps: 327710, return: 791.93
+Episode: 2474, total numsteps: 327919, return: 743.37
+Episode: 2475, total numsteps: 328153, return: 800.67
+Episode: 2476, total numsteps: 328391, return: 845.49
+Episode: 2477, total numsteps: 328618, return: 818.96
+Episode: 2478, total numsteps: 328869, return: 878.68
+Episode: 2479, total numsteps: 329143, return: 1000.6
+Episode: 2480, total numsteps: 329428, return: 992.56
+Episode: 2481, total numsteps: 329665, return: 840.44
+Episode: 2482, total numsteps: 329829, return: 539.0
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_53_kl0.3_1dpadcwr
+   RPC_1_kl65.0_3ak314qp
+   RPC_24_kl0.3_e2mfrnnq
+   RPC_1_kl75.0_s5er7ua0
+Episode: 2483, total numsteps: 330068, return: 845.79
+Episode: 2484, total numsteps: 330316, return: 832.75
+Episode: 2485, total numsteps: 330589, return: 1041.89
+Episode: 2486, total numsteps: 330829, return: 770.13
+Episode: 2487, total numsteps: 331012, return: 543.49
+Episode: 2488, total numsteps: 331287, return: 1014.79
+Episode: 2489, total numsteps: 331545, return: 988.04
+Episode: 2490, total numsteps: 331782, return: 847.0
+Episode: 2491, total numsteps: 332028, return: 852.81
+Episode: 2492, total numsteps: 332178, return: 420.75
+Episode: 2493, total numsteps: 332392, return: 729.41
+Episode: 2494, total numsteps: 332576, return: 604.21
+Episode: 2495, total numsteps: 332771, return: 698.03
+Episode: 2496, total numsteps: 333001, return: 817.52
+Episode: 2497, total numsteps: 333245, return: 813.27
+Episode: 2498, total numsteps: 333496, return: 886.67
+Episode: 2499, total numsteps: 333745, return: 849.84
+Episode: 2500, total numsteps: 333929, return: 641.19
+Episode: 2501, total numsteps: 334153, return: 793.17
+Episode: 2502, total numsteps: 334370, return: 788.34
+Episode: 2503, total numsteps: 334604, return: 805.06
+Episode: 2504, total numsteps: 334796, return: 650.59
+Episode: 2505, total numsteps: 335059, return: 949.8
+Episode: 2506, total numsteps: 335297, return: 844.34
+Episode: 2507, total numsteps: 335580, return: 998.3
+Episode: 2508, total numsteps: 335771, return: 634.61
+Episode: 2509, total numsteps: 336019, return: 827.46
+Episode: 2510, total numsteps: 336226, return: 725.97
+Episode: 2511, total numsteps: 336493, return: 953.02
+Episode: 2512, total numsteps: 336717, return: 799.25
+Episode: 2513, total numsteps: 336964, return: 825.11
+Episode: 2514, total numsteps: 337173, return: 750.44
+Episode: 2515, total numsteps: 337426, return: 844.57
+Episode: 2516, total numsteps: 337674, return: 888.12
+Episode: 2517, total numsteps: 337912, return: 785.23
+Episode: 2518, total numsteps: 338117, return: 718.76
+Episode: 2519, total numsteps: 338352, return: 838.32
+Episode: 2520, total numsteps: 338594, return: 872.94
+Episode: 2521, total numsteps: 338830, return: 829.32
+Episode: 2522, total numsteps: 339066, return: 828.11
+Episode: 2523, total numsteps: 339297, return: 818.72
+Episode: 2524, total numsteps: 339694, return: 1258.71
+Episode: 2525, total numsteps: 339930, return: 843.95
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_53_kl0.3_1dpadcwr
+   RPC_1_kl65.0_3ak314qp
+   RPC_24_kl0.3_e2mfrnnq
+   RPC_1_kl75.0_s5er7ua0
+Episode: 2526, total numsteps: 340167, return: 801.24
+Episode: 2527, total numsteps: 340462, return: 1003.62
+Episode: 2528, total numsteps: 340704, return: 865.56
+Episode: 2529, total numsteps: 340944, return: 795.43
+Episode: 2530, total numsteps: 341206, return: 796.32
+Episode: 2531, total numsteps: 341406, return: 699.76
+Episode: 2532, total numsteps: 341651, return: 823.56
+Episode: 2533, total numsteps: 341878, return: 803.78
+Episode: 2534, total numsteps: 342162, return: 895.54
+Episode: 2535, total numsteps: 342359, return: 699.66
+Episode: 2536, total numsteps: 342600, return: 869.54
+Episode: 2537, total numsteps: 342805, return: 725.2
+Episode: 2538, total numsteps: 342948, return: 428.38
+Episode: 2539, total numsteps: 343185, return: 772.66
+Episode: 2540, total numsteps: 343415, return: 843.04
+Episode: 2541, total numsteps: 343550, return: 408.77
+Episode: 2542, total numsteps: 343689, return: 418.1
+Episode: 2543, total numsteps: 343816, return: 363.38
+Episode: 2544, total numsteps: 344050, return: 798.19
+Episode: 2545, total numsteps: 344291, return: 784.42
+Episode: 2546, total numsteps: 344506, return: 784.2
+Episode: 2547, total numsteps: 344705, return: 704.84
+Episode: 2548, total numsteps: 344908, return: 710.1
+Episode: 2549, total numsteps: 345143, return: 787.92
+Episode: 2550, total numsteps: 345399, return: 876.84
+Episode: 2551, total numsteps: 345628, return: 812.87
+Episode: 2552, total numsteps: 345865, return: 838.66
+Episode: 2553, total numsteps: 346113, return: 802.01
+Episode: 2554, total numsteps: 346371, return: 805.26
+Episode: 2555, total numsteps: 346615, return: 737.19
+Episode: 2556, total numsteps: 346823, return: 722.28
+Episode: 2557, total numsteps: 347077, return: 865.63
+Episode: 2558, total numsteps: 347254, return: 569.87
+Episode: 2559, total numsteps: 347504, return: 795.22
+Episode: 2560, total numsteps: 347732, return: 809.09
+Episode: 2561, total numsteps: 347893, return: 532.94
+Episode: 2562, total numsteps: 348099, return: 724.26
+Episode: 2563, total numsteps: 348301, return: 710.09
+Episode: 2564, total numsteps: 348539, return: 810.53
+Episode: 2565, total numsteps: 348773, return: 742.39
+Episode: 2566, total numsteps: 349002, return: 829.98
+Episode: 2567, total numsteps: 349251, return: 823.26
+Episode: 2568, total numsteps: 349489, return: 820.76
+Episode: 2569, total numsteps: 349707, return: 789.18
+Episode: 2570, total numsteps: 349973, return: 939.56
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_53_kl0.3_1dpadcwr
+   RPC_1_kl65.0_3ak314qp
+   RPC_24_kl0.3_e2mfrnnq
+   RPC_1_kl75.0_s5er7ua0
+Episode: 2571, total numsteps: 350212, return: 800.41
+Episode: 2572, total numsteps: 350454, return: 818.09
+Episode: 2573, total numsteps: 350651, return: 677.97
+Episode: 2574, total numsteps: 350892, return: 821.38
+Episode: 2575, total numsteps: 351093, return: 719.49
+Episode: 2576, total numsteps: 351338, return: 834.88
+Episode: 2577, total numsteps: 351567, return: 829.83
+Episode: 2578, total numsteps: 351730, return: 519.57
+Episode: 2579, total numsteps: 351997, return: 919.96
+Episode: 2580, total numsteps: 352234, return: 845.62
+Episode: 2581, total numsteps: 352371, return: 416.53
+Episode: 2582, total numsteps: 352623, return: 831.59
+Episode: 2583, total numsteps: 352891, return: 953.16
+Episode: 2584, total numsteps: 353111, return: 758.22
+Episode: 2585, total numsteps: 353357, return: 833.1
+Episode: 2586, total numsteps: 353558, return: 698.55
+Episode: 2587, total numsteps: 353739, return: 620.35
+Episode: 2588, total numsteps: 353962, return: 780.65
+Episode: 2589, total numsteps: 354115, return: 466.64
+Episode: 2590, total numsteps: 354364, return: 797.36
+Episode: 2591, total numsteps: 354567, return: 728.1
+Episode: 2592, total numsteps: 354743, return: 612.63
+Episode: 2593, total numsteps: 354962, return: 767.4
+Episode: 2594, total numsteps: 355202, return: 840.57
+Episode: 2595, total numsteps: 355424, return: 785.05
+Episode: 2596, total numsteps: 355670, return: 875.43
+Episode: 2597, total numsteps: 355922, return: 875.54
+Episode: 2598, total numsteps: 356168, return: 796.95
+Episode: 2599, total numsteps: 356507, return: 1167.3
+Episode: 2600, total numsteps: 356701, return: 664.14
+Episode: 2601, total numsteps: 356910, return: 719.44
+Episode: 2602, total numsteps: 357141, return: 838.27
+Episode: 2603, total numsteps: 357352, return: 715.83
+Episode: 2604, total numsteps: 357587, return: 819.37
+Episode: 2605, total numsteps: 357817, return: 824.14
+Episode: 2606, total numsteps: 358086, return: 842.76
+Episode: 2607, total numsteps: 358306, return: 770.24
+Episode: 2608, total numsteps: 358556, return: 851.57
+Episode: 2609, total numsteps: 358805, return: 807.76
+Episode: 2610, total numsteps: 359051, return: 822.05
+Episode: 2611, total numsteps: 359293, return: 788.95
+Episode: 2612, total numsteps: 359540, return: 893.39
+Episode: 2613, total numsteps: 359720, return: 604.13
+Episode: 2614, total numsteps: 359896, return: 566.9
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_53_kl0.3_1dpadcwr
+   RPC_1_kl65.0_3ak314qp
+   RPC_24_kl0.3_e2mfrnnq
+   RPC_1_kl75.0_s5er7ua0
+Episode: 2615, total numsteps: 360111, return: 770.77
+Episode: 2616, total numsteps: 360345, return: 841.91
+Episode: 2617, total numsteps: 360582, return: 838.52
+Episode: 2618, total numsteps: 360765, return: 609.04
+Episode: 2619, total numsteps: 360997, return: 832.72
+Episode: 2620, total numsteps: 361237, return: 775.79
+Episode: 2621, total numsteps: 361466, return: 789.21
+Episode: 2622, total numsteps: 361718, return: 851.17
+Episode: 2623, total numsteps: 362102, return: 1232.04
+Episode: 2624, total numsteps: 362297, return: 692.05
+Episode: 2625, total numsteps: 362539, return: 851.47
+Episode: 2626, total numsteps: 362786, return: 822.18
+Episode: 2627, total numsteps: 362920, return: 389.79
+Episode: 2628, total numsteps: 363161, return: 783.61
+Episode: 2629, total numsteps: 363404, return: 813.28
+Episode: 2630, total numsteps: 363536, return: 394.12
+Episode: 2631, total numsteps: 363736, return: 696.52
+Episode: 2632, total numsteps: 364011, return: 860.39
+Episode: 2633, total numsteps: 364281, return: 838.73
+Episode: 2634, total numsteps: 364525, return: 779.95
+Episode: 2635, total numsteps: 364781, return: 923.78
+Episode: 2636, total numsteps: 365021, return: 832.08
+Episode: 2637, total numsteps: 365162, return: 434.39
+Episode: 2638, total numsteps: 365364, return: 693.3
+Episode: 2639, total numsteps: 365589, return: 791.58
+Episode: 2640, total numsteps: 365840, return: 828.78
+Episode: 2641, total numsteps: 366087, return: 850.29
+Episode: 2642, total numsteps: 366350, return: 887.86
+Episode: 2643, total numsteps: 366602, return: 935.33
+Episode: 2644, total numsteps: 366738, return: 391.69
+Episode: 2645, total numsteps: 366954, return: 774.15
+Episode: 2646, total numsteps: 367202, return: 841.72
+Episode: 2647, total numsteps: 367443, return: 795.05
+Episode: 2648, total numsteps: 367647, return: 695.74
+Episode: 2649, total numsteps: 367886, return: 834.23
+Episode: 2650, total numsteps: 368153, return: 899.54
+Episode: 2651, total numsteps: 368410, return: 893.37
+Episode: 2652, total numsteps: 368659, return: 831.67
+Episode: 2653, total numsteps: 368911, return: 837.24
+Episode: 2654, total numsteps: 369153, return: 835.1
+Episode: 2655, total numsteps: 369395, return: 839.26
+Episode: 2656, total numsteps: 369636, return: 809.1
+Episode: 2657, total numsteps: 369871, return: 805.14
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_1_kl65.0_3ak314qp
+   RPC_24_kl0.3_e2mfrnnq
+   RPC_1_kl75.0_s5er7ua0
+   RPC_53_kl0.3_1dpadcwr
+Episode: 2658, total numsteps: 370069, return: 648.36
+Episode: 2659, total numsteps: 370310, return: 809.95
+Episode: 2660, total numsteps: 370595, return: 841.09
+Episode: 2661, total numsteps: 370833, return: 822.94
+Episode: 2662, total numsteps: 371077, return: 769.9
+Episode: 2663, total numsteps: 371273, return: 678.83
+Episode: 2664, total numsteps: 371489, return: 747.49
+Episode: 2665, total numsteps: 371723, return: 779.16
+Episode: 2666, total numsteps: 371863, return: 418.86
+Episode: 2667, total numsteps: 372059, return: 661.86
+Episode: 2668, total numsteps: 372193, return: 400.76
+Episode: 2669, total numsteps: 372451, return: 839.0
+Episode: 2670, total numsteps: 372697, return: 825.66
+Episode: 2671, total numsteps: 372943, return: 848.31
+Episode: 2672, total numsteps: 373168, return: 812.5
+Episode: 2673, total numsteps: 373381, return: 754.95
+Episode: 2674, total numsteps: 373745, return: 1231.7
+Episode: 2675, total numsteps: 373992, return: 827.87
+Episode: 2676, total numsteps: 374238, return: 786.14
+Episode: 2677, total numsteps: 374402, return: 512.58
+Episode: 2678, total numsteps: 374648, return: 901.09
+Episode: 2679, total numsteps: 374895, return: 811.37
+Episode: 2680, total numsteps: 375116, return: 775.87
+Episode: 2681, total numsteps: 375367, return: 864.56
+Episode: 2682, total numsteps: 375600, return: 749.22
+Episode: 2683, total numsteps: 375858, return: 919.84
+Episode: 2684, total numsteps: 376062, return: 730.77
+Episode: 2685, total numsteps: 376294, return: 822.16
+Episode: 2686, total numsteps: 376535, return: 792.96
+Episode: 2687, total numsteps: 376784, return: 904.12
+Episode: 2688, total numsteps: 377018, return: 804.6
+Episode: 2689, total numsteps: 377173, return: 474.73
+Episode: 2690, total numsteps: 377458, return: 1107.98
+Episode: 2691, total numsteps: 377677, return: 769.62
+Episode: 2692, total numsteps: 377920, return: 869.53
+Episode: 2693, total numsteps: 378071, return: 432.7
+Episode: 2694, total numsteps: 378322, return: 829.76
+Episode: 2695, total numsteps: 378569, return: 829.71
+Episode: 2696, total numsteps: 378775, return: 707.69
+Episode: 2697, total numsteps: 379025, return: 857.73
+Episode: 2698, total numsteps: 379277, return: 838.51
+Episode: 2699, total numsteps: 379527, return: 847.7
+Episode: 2700, total numsteps: 379771, return: 812.82
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_1_kl65.0_3ak314qp
+   RPC_24_kl0.3_e2mfrnnq
+   RPC_1_kl75.0_s5er7ua0
+   RPC_53_kl0.3_1dpadcwr
+Episode: 2701, total numsteps: 380014, return: 798.72
+Episode: 2702, total numsteps: 380293, return: 1073.08
+Episode: 2703, total numsteps: 380534, return: 857.32
+Episode: 2704, total numsteps: 380773, return: 793.32
+Episode: 2705, total numsteps: 381007, return: 835.84
+Episode: 2706, total numsteps: 381249, return: 813.17
+Episode: 2707, total numsteps: 381576, return: 1268.17
+Episode: 2708, total numsteps: 381775, return: 672.02
+Episode: 2709, total numsteps: 382019, return: 786.41
+Episode: 2710, total numsteps: 382259, return: 819.54
+Episode: 2711, total numsteps: 382517, return: 768.5
+Episode: 2712, total numsteps: 382787, return: 965.28
+Episode: 2713, total numsteps: 383041, return: 816.87
+Episode: 2714, total numsteps: 383283, return: 808.0
+Episode: 2715, total numsteps: 383526, return: 805.98
+Episode: 2716, total numsteps: 383651, return: 354.49
+Episode: 2717, total numsteps: 383902, return: 890.22
+Episode: 2718, total numsteps: 384151, return: 860.4
+Episode: 2719, total numsteps: 384392, return: 752.05
+Episode: 2720, total numsteps: 384630, return: 797.78
+Episode: 2721, total numsteps: 384890, return: 818.93
+Episode: 2722, total numsteps: 385137, return: 760.91
+Episode: 2723, total numsteps: 385371, return: 829.59
+Episode: 2724, total numsteps: 385628, return: 915.18
+Episode: 2725, total numsteps: 385879, return: 936.18
+Episode: 2726, total numsteps: 386058, return: 595.84
+Episode: 2727, total numsteps: 386269, return: 719.79
+Episode: 2728, total numsteps: 386609, return: 1125.72
+Episode: 2729, total numsteps: 386860, return: 843.43
+Episode: 2730, total numsteps: 387161, return: 950.59
+Episode: 2731, total numsteps: 387455, return: 1136.01
+Episode: 2732, total numsteps: 387695, return: 793.81
+Episode: 2733, total numsteps: 387931, return: 754.69
+Episode: 2734, total numsteps: 388282, return: 1318.67
+Episode: 2735, total numsteps: 388529, return: 863.6
+Episode: 2736, total numsteps: 388780, return: 893.64
+Episode: 2737, total numsteps: 389015, return: 818.56
+Episode: 2738, total numsteps: 389204, return: 640.66
+Episode: 2739, total numsteps: 389438, return: 787.28
+Episode: 2740, total numsteps: 389682, return: 772.1
+Episode: 2741, total numsteps: 389949, return: 808.45
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_53_kl0.3_1dpadcwr
+   RPC_1_kl65.0_3ak314qp
+   RPC_24_kl0.3_e2mfrnnq
+   RPC_1_kl75.0_s5er7ua0
+Episode: 2742, total numsteps: 390191, return: 719.66
+Episode: 2743, total numsteps: 390407, return: 757.64
+Episode: 2744, total numsteps: 390659, return: 809.45
+Episode: 2745, total numsteps: 390905, return: 822.78
+Episode: 2746, total numsteps: 391183, return: 1064.48
+Episode: 2747, total numsteps: 391439, return: 892.91
+Episode: 2748, total numsteps: 391678, return: 845.87
+Episode: 2749, total numsteps: 391930, return: 834.41
+Episode: 2750, total numsteps: 392168, return: 814.95
+Episode: 2751, total numsteps: 392406, return: 780.49
+Episode: 2752, total numsteps: 392647, return: 787.58
+Episode: 2753, total numsteps: 392840, return: 689.42
+Episode: 2754, total numsteps: 393050, return: 755.72
+Episode: 2755, total numsteps: 393300, return: 837.61
+Episode: 2756, total numsteps: 393546, return: 821.74
+Episode: 2757, total numsteps: 393828, return: 963.53
+Episode: 2758, total numsteps: 394092, return: 984.47
+Episode: 2759, total numsteps: 394251, return: 498.78
+Episode: 2760, total numsteps: 394489, return: 817.52
+Episode: 2761, total numsteps: 394720, return: 838.49
+Episode: 2762, total numsteps: 394867, return: 396.23
+Episode: 2763, total numsteps: 395022, return: 489.81
+Episode: 2764, total numsteps: 395221, return: 705.93
+Episode: 2765, total numsteps: 395462, return: 749.7
+Episode: 2766, total numsteps: 395704, return: 780.32
+Episode: 2767, total numsteps: 395967, return: 905.9
+Episode: 2768, total numsteps: 396211, return: 815.76
+Episode: 2769, total numsteps: 396461, return: 860.26
+Episode: 2770, total numsteps: 396704, return: 804.94
+Episode: 2771, total numsteps: 396952, return: 902.52
+Episode: 2772, total numsteps: 397159, return: 734.7
+Episode: 2773, total numsteps: 397362, return: 677.49
+Episode: 2774, total numsteps: 397675, return: 1236.39
+Episode: 2775, total numsteps: 397891, return: 760.49
+Episode: 2776, total numsteps: 398127, return: 799.86
+Episode: 2777, total numsteps: 398397, return: 873.93
+Episode: 2778, total numsteps: 398571, return: 601.0
+Episode: 2779, total numsteps: 398833, return: 977.49
+Episode: 2780, total numsteps: 399119, return: 1057.21
+Episode: 2781, total numsteps: 399363, return: 766.04
+Episode: 2782, total numsteps: 399601, return: 810.71
+Episode: 2783, total numsteps: 399843, return: 819.92
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_53_kl0.3_1dpadcwr
+   RPC_1_kl65.0_3ak314qp
+   RPC_24_kl0.3_e2mfrnnq
+   RPC_1_kl75.0_s5er7ua0
+Episode: 2784, total numsteps: 400075, return: 830.62
+Episode: 2785, total numsteps: 400384, return: 1152.45
+Episode: 2786, total numsteps: 400615, return: 808.17
+Episode: 2787, total numsteps: 400836, return: 751.39
+Episode: 2788, total numsteps: 401115, return: 1049.55
+Episode: 2789, total numsteps: 401344, return: 816.45
+Episode: 2790, total numsteps: 401568, return: 713.62
+Episode: 2791, total numsteps: 401783, return: 750.39
+Episode: 2792, total numsteps: 402070, return: 987.15
+Episode: 2793, total numsteps: 402316, return: 795.53
+Episode: 2794, total numsteps: 402563, return: 737.44
+Episode: 2795, total numsteps: 402822, return: 936.36
+Episode: 2796, total numsteps: 403047, return: 803.32
+Episode: 2797, total numsteps: 403268, return: 773.32
+Episode: 2798, total numsteps: 403522, return: 863.87
+Episode: 2799, total numsteps: 403782, return: 890.5
+Episode: 2800, total numsteps: 404023, return: 840.01
+Episode: 2801, total numsteps: 404364, return: 1178.61
+Episode: 2802, total numsteps: 404627, return: 934.59
+Episode: 2803, total numsteps: 404990, return: 1328.2
+Episode: 2804, total numsteps: 405233, return: 799.86
+Episode: 2805, total numsteps: 405482, return: 819.38
+Episode: 2806, total numsteps: 405719, return: 777.34
+Episode: 2807, total numsteps: 405960, return: 825.05
+Episode: 2808, total numsteps: 406183, return: 803.05
+Episode: 2809, total numsteps: 406423, return: 803.3
+Episode: 2810, total numsteps: 406702, return: 963.88
+Episode: 2811, total numsteps: 407121, return: 1358.74
+Episode: 2812, total numsteps: 407330, return: 733.22
+Episode: 2813, total numsteps: 407571, return: 865.95
+Episode: 2814, total numsteps: 407834, return: 949.1
+Episode: 2815, total numsteps: 408074, return: 792.67
+Episode: 2816, total numsteps: 408340, return: 913.28
+Episode: 2817, total numsteps: 408588, return: 835.58
+Episode: 2818, total numsteps: 408922, return: 1133.45
+Episode: 2819, total numsteps: 409227, return: 1114.7
+Episode: 2820, total numsteps: 409486, return: 922.36
+Episode: 2821, total numsteps: 409821, return: 1059.57
+Episode: 2822, total numsteps: 409933, return: 263.47
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_1_kl75.0_s5er7ua0
+   RPC_53_kl0.3_1dpadcwr
+   RPC_1_kl65.0_3ak314qp
+   RPC_24_kl0.3_e2mfrnnq
+Episode: 2823, total numsteps: 410184, return: 806.47
+Episode: 2824, total numsteps: 410431, return: 889.69
+Episode: 2825, total numsteps: 410690, return: 936.87
+Episode: 2826, total numsteps: 410944, return: 802.19
+Episode: 2827, total numsteps: 411271, return: 1051.83
+Episode: 2828, total numsteps: 411521, return: 927.25
+Episode: 2829, total numsteps: 411770, return: 825.16
+Episode: 2830, total numsteps: 412007, return: 836.11
+Episode: 2831, total numsteps: 412261, return: 803.04
+Episode: 2832, total numsteps: 412575, return: 1208.57
+Episode: 2833, total numsteps: 412843, return: 991.88
+Episode: 2834, total numsteps: 413152, return: 1148.14
+Episode: 2835, total numsteps: 413453, return: 1148.5
+Episode: 2836, total numsteps: 413706, return: 867.04
+Episode: 2837, total numsteps: 414011, return: 1117.42
+Episode: 2838, total numsteps: 414257, return: 791.25
+Episode: 2839, total numsteps: 414543, return: 836.1
+Episode: 2840, total numsteps: 414782, return: 836.24
+Episode: 2841, total numsteps: 415103, return: 1227.36
+Episode: 2842, total numsteps: 415424, return: 1159.56
+Episode: 2843, total numsteps: 415660, return: 814.87
+Episode: 2844, total numsteps: 415898, return: 801.72
+Episode: 2845, total numsteps: 416235, return: 1235.23
+Episode: 2846, total numsteps: 416488, return: 825.93
+Episode: 2847, total numsteps: 416728, return: 838.47
+Episode: 2848, total numsteps: 416876, return: 382.96
+Episode: 2849, total numsteps: 417158, return: 810.42
+Episode: 2850, total numsteps: 417425, return: 999.83
+Episode: 2851, total numsteps: 417726, return: 1126.48
+Episode: 2852, total numsteps: 417967, return: 802.07
+Episode: 2853, total numsteps: 418106, return: 407.57
+Episode: 2854, total numsteps: 418350, return: 897.1
+Episode: 2855, total numsteps: 418594, return: 850.77
+Episode: 2856, total numsteps: 418946, return: 1154.23
+Episode: 2857, total numsteps: 419297, return: 1243.3
+Episode: 2858, total numsteps: 419543, return: 792.64
+Episode: 2859, total numsteps: 419827, return: 1000.51
+Episode: 2860, total numsteps: 419967, return: 410.93
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_1_kl75.0_s5er7ua0
+   RPC_53_kl0.3_1dpadcwr
+   RPC_1_kl65.0_3ak314qp
+   RPC_24_kl0.3_e2mfrnnq
+Episode: 2861, total numsteps: 420240, return: 960.38
+Episode: 2862, total numsteps: 420586, return: 1201.7
+Episode: 2863, total numsteps: 420833, return: 817.81
+Episode: 2864, total numsteps: 421133, return: 1133.29
+Episode: 2865, total numsteps: 421380, return: 832.21
+Episode: 2866, total numsteps: 421614, return: 862.78
+Episode: 2867, total numsteps: 421891, return: 1041.03
+Episode: 2868, total numsteps: 422162, return: 962.38
+Episode: 2869, total numsteps: 422457, return: 1034.31
+Episode: 2870, total numsteps: 422734, return: 1022.17
+Episode: 2871, total numsteps: 422936, return: 694.58
+Episode: 2872, total numsteps: 423207, return: 902.3
+Episode: 2873, total numsteps: 423495, return: 1009.61
+Episode: 2874, total numsteps: 423838, return: 1258.4
+Episode: 2875, total numsteps: 424105, return: 1009.27
+Episode: 2876, total numsteps: 424355, return: 824.03
+Episode: 2877, total numsteps: 424609, return: 927.08
+Episode: 2878, total numsteps: 424802, return: 675.21
+Episode: 2879, total numsteps: 425059, return: 889.42
+Episode: 2880, total numsteps: 425305, return: 814.57
+Episode: 2881, total numsteps: 425556, return: 926.27
+Episode: 2882, total numsteps: 425791, return: 843.36
+Episode: 2883, total numsteps: 426024, return: 825.86
+Episode: 2884, total numsteps: 426317, return: 1032.75
+Episode: 2885, total numsteps: 426595, return: 1027.0
+Episode: 2886, total numsteps: 426722, return: 362.24
+Episode: 2887, total numsteps: 426985, return: 1017.55
+Episode: 2888, total numsteps: 427237, return: 792.72
+Episode: 2889, total numsteps: 427511, return: 986.64
+Episode: 2890, total numsteps: 427778, return: 1000.8
+Episode: 2891, total numsteps: 428057, return: 1023.51
+Episode: 2892, total numsteps: 428331, return: 1044.29
+Episode: 2893, total numsteps: 428445, return: 293.02
+Episode: 2894, total numsteps: 428728, return: 1047.15
+Episode: 2895, total numsteps: 429028, return: 1102.11
+Episode: 2896, total numsteps: 429304, return: 994.96
+Episode: 2897, total numsteps: 429627, return: 1227.88
+Episode: 2898, total numsteps: 429873, return: 872.91
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_1_kl65.0_3ak314qp
+   RPC_24_kl0.3_e2mfrnnq
+   RPC_1_kl75.0_s5er7ua0
+   RPC_53_kl0.3_1dpadcwr
+Episode: 2899, total numsteps: 430182, return: 1119.0
+Episode: 2900, total numsteps: 430389, return: 757.94
+Episode: 2901, total numsteps: 430523, return: 381.9
+Episode: 2902, total numsteps: 430786, return: 927.3
+Episode: 2903, total numsteps: 430963, return: 594.99
+Episode: 2904, total numsteps: 431233, return: 913.24
+Episode: 2905, total numsteps: 431561, return: 1145.51
+Episode: 2906, total numsteps: 431782, return: 770.22
+Episode: 2907, total numsteps: 432063, return: 1039.7
+Episode: 2908, total numsteps: 432378, return: 1198.19
+Episode: 2909, total numsteps: 432632, return: 882.25
+Episode: 2910, total numsteps: 432744, return: 301.53
+Episode: 2911, total numsteps: 433107, return: 1361.09
+Episode: 2912, total numsteps: 433278, return: 573.14
+Episode: 2913, total numsteps: 433547, return: 1002.79
+Episode: 2914, total numsteps: 433810, return: 838.53
+Episode: 2915, total numsteps: 434140, return: 1226.89
+Episode: 2916, total numsteps: 434352, return: 683.72
+Episode: 2917, total numsteps: 434614, return: 890.89
+Episode: 2918, total numsteps: 434836, return: 787.11
+Episode: 2919, total numsteps: 435139, return: 1173.41
+Episode: 2920, total numsteps: 435472, return: 1253.92
+Episode: 2921, total numsteps: 435766, return: 1119.78
+Episode: 2922, total numsteps: 435984, return: 764.75
+Episode: 2923, total numsteps: 436324, return: 1190.89
+Episode: 2924, total numsteps: 436648, return: 1202.18
+Episode: 2925, total numsteps: 436865, return: 760.89
+Episode: 2926, total numsteps: 437102, return: 832.74
+Episode: 2927, total numsteps: 437363, return: 878.49
+Episode: 2928, total numsteps: 437586, return: 774.39
+Episode: 2929, total numsteps: 437850, return: 993.14
+Episode: 2930, total numsteps: 438270, return: 1618.79
+Episode: 2931, total numsteps: 438551, return: 1052.44
+Episode: 2932, total numsteps: 438691, return: 408.93
+Episode: 2933, total numsteps: 438999, return: 1021.08
+Episode: 2934, total numsteps: 439316, return: 1110.07
+Episode: 2935, total numsteps: 439581, return: 940.45
+Episode: 2936, total numsteps: 439896, return: 1183.01
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_1_kl65.0_3ak314qp
+   RPC_24_kl0.3_e2mfrnnq
+   RPC_1_kl75.0_s5er7ua0
+   RPC_53_kl0.3_1dpadcwr
+Episode: 2937, total numsteps: 440097, return: 700.17
+Episode: 2938, total numsteps: 440457, return: 1247.07
+Episode: 2939, total numsteps: 440781, return: 1168.52
+Episode: 2940, total numsteps: 441077, return: 1106.89
+Episode: 2941, total numsteps: 441326, return: 797.54
+Episode: 2942, total numsteps: 441625, return: 1120.9
+Episode: 2943, total numsteps: 441908, return: 1062.6
+Episode: 2944, total numsteps: 442315, return: 1593.17
+Episode: 2945, total numsteps: 442618, return: 1127.37
+Episode: 2946, total numsteps: 442934, return: 1106.47
+Episode: 2947, total numsteps: 443074, return: 396.66
+Episode: 2948, total numsteps: 443441, return: 1378.4
+Episode: 2949, total numsteps: 443685, return: 791.32
+Episode: 2950, total numsteps: 444008, return: 1206.48
+Episode: 2951, total numsteps: 444129, return: 316.69
+Episode: 2952, total numsteps: 444590, return: 1567.3
+Episode: 2953, total numsteps: 444798, return: 731.25
+Episode: 2954, total numsteps: 445038, return: 787.54
+Episode: 2955, total numsteps: 445313, return: 911.66
+Episode: 2956, total numsteps: 445651, return: 1343.14
+Episode: 2957, total numsteps: 445968, return: 1232.32
+Episode: 2958, total numsteps: 446324, return: 1409.97
+Episode: 2959, total numsteps: 446561, return: 829.65
+Episode: 2960, total numsteps: 446687, return: 324.34
+Episode: 2961, total numsteps: 446980, return: 1135.58
+Episode: 2962, total numsteps: 447224, return: 806.74
+Episode: 2963, total numsteps: 447481, return: 924.04
+Episode: 2964, total numsteps: 447781, return: 1086.11
+Episode: 2965, total numsteps: 447954, return: 555.58
+Episode: 2966, total numsteps: 448327, return: 1344.87
+Episode: 2967, total numsteps: 448650, return: 1250.06
+Episode: 2968, total numsteps: 448936, return: 1023.91
+Episode: 2969, total numsteps: 449222, return: 1090.83
+Episode: 2970, total numsteps: 449474, return: 810.38
+Episode: 2971, total numsteps: 449718, return: 840.86
+Episode: 2972, total numsteps: 449982, return: 917.05
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_1_kl65.0_3ak314qp
+   RPC_24_kl0.3_e2mfrnnq
+   RPC_1_kl75.0_s5er7ua0
+   RPC_53_kl0.3_1dpadcwr
+Episode: 2973, total numsteps: 450292, return: 1159.62
+Episode: 2974, total numsteps: 450498, return: 727.59
+Episode: 2975, total numsteps: 450743, return: 856.88
+Episode: 2976, total numsteps: 451005, return: 966.49
+Episode: 2977, total numsteps: 451234, return: 820.42
+Episode: 2978, total numsteps: 451541, return: 1212.58
+Episode: 2979, total numsteps: 451791, return: 831.01
+Episode: 2980, total numsteps: 452110, return: 1254.65
+Episode: 2981, total numsteps: 452339, return: 805.22
+Episode: 2982, total numsteps: 452636, return: 1015.57
+Episode: 2983, total numsteps: 452878, return: 789.96
+Episode: 2984, total numsteps: 453225, return: 1189.6
+Episode: 2985, total numsteps: 453506, return: 1035.3
+Episode: 2986, total numsteps: 453757, return: 819.12
+Episode: 2987, total numsteps: 454168, return: 1562.31
+Episode: 2988, total numsteps: 454400, return: 835.5
+Episode: 2989, total numsteps: 454615, return: 783.95
+Episode: 2990, total numsteps: 454758, return: 409.43
+Episode: 2991, total numsteps: 455002, return: 816.85
+Episode: 2992, total numsteps: 455260, return: 807.39
+Episode: 2993, total numsteps: 455540, return: 1017.2
+Episode: 2994, total numsteps: 455807, return: 910.48
+Episode: 2995, total numsteps: 456247, return: 1498.46
+Episode: 2996, total numsteps: 456525, return: 1056.22
+Episode: 2997, total numsteps: 456773, return: 915.26
+Episode: 2998, total numsteps: 457062, return: 1033.58
+Episode: 2999, total numsteps: 457198, return: 403.86
+Episode: 3000, total numsteps: 457537, return: 1196.66
+Episode: 3001, total numsteps: 457808, return: 971.83
+Episode: 3002, total numsteps: 458043, return: 830.56
+Episode: 3003, total numsteps: 458254, return: 736.36
+Episode: 3004, total numsteps: 458731, return: 1751.24
+Episode: 3005, total numsteps: 458978, return: 777.79
+Episode: 3006, total numsteps: 459264, return: 1030.46
+Episode: 3007, total numsteps: 459569, return: 1189.0
+Episode: 3008, total numsteps: 459809, return: 883.97
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_1_kl65.0_3ak314qp
+   RPC_24_kl0.3_e2mfrnnq
+   RPC_1_kl75.0_s5er7ua0
+   RPC_53_kl0.3_1dpadcwr
+Episode: 3009, total numsteps: 460080, return: 938.92
+Episode: 3010, total numsteps: 460438, return: 1233.48
+Episode: 3011, total numsteps: 460690, return: 870.4
+Episode: 3012, total numsteps: 460986, return: 1159.32
+Episode: 3013, total numsteps: 461310, return: 1204.46
+Episode: 3014, total numsteps: 461550, return: 782.51
+Episode: 3015, total numsteps: 461814, return: 879.64
+Episode: 3016, total numsteps: 461955, return: 435.58
+Episode: 3017, total numsteps: 462282, return: 1213.84
+Episode: 3018, total numsteps: 462615, return: 1305.0
+Episode: 3019, total numsteps: 462919, return: 1165.84
+Episode: 3020, total numsteps: 463049, return: 368.86
+Episode: 3021, total numsteps: 463192, return: 432.59
+Episode: 3022, total numsteps: 463553, return: 1172.32
+Episode: 3023, total numsteps: 463906, return: 1402.06
+Episode: 3024, total numsteps: 464246, return: 1219.33
+Episode: 3025, total numsteps: 464466, return: 775.12
+Episode: 3026, total numsteps: 464763, return: 1077.46
+Episode: 3027, total numsteps: 465076, return: 1186.07
+Episode: 3028, total numsteps: 465404, return: 1262.13
+Episode: 3029, total numsteps: 465667, return: 930.8
+Episode: 3030, total numsteps: 465938, return: 998.37
+Episode: 3031, total numsteps: 466216, return: 943.0
+Episode: 3032, total numsteps: 466343, return: 356.39
+Episode: 3033, total numsteps: 466657, return: 1225.92
+Episode: 3034, total numsteps: 467036, return: 1466.97
+Episode: 3035, total numsteps: 467253, return: 772.84
+Episode: 3036, total numsteps: 467523, return: 1018.4
+Episode: 3037, total numsteps: 467787, return: 934.98
+Episode: 3038, total numsteps: 468120, return: 1147.6
+Episode: 3039, total numsteps: 468523, return: 1574.14
+Episode: 3040, total numsteps: 468835, return: 1210.14
+Episode: 3041, total numsteps: 469150, return: 1147.55
+Episode: 3042, total numsteps: 469467, return: 1112.66
+Episode: 3043, total numsteps: 469746, return: 1018.57
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_1_kl65.0_3ak314qp
+   RPC_24_kl0.3_e2mfrnnq
+   RPC_1_kl75.0_s5er7ua0
+   RPC_53_kl0.3_1dpadcwr
+Episode: 3044, total numsteps: 470066, return: 1229.28
+Episode: 3045, total numsteps: 470252, return: 653.66
+Episode: 3046, total numsteps: 470548, return: 1090.81
+Episode: 3047, total numsteps: 470838, return: 1045.63
+Episode: 3048, total numsteps: 471184, return: 1379.77
+Episode: 3049, total numsteps: 471469, return: 1082.61
+Episode: 3050, total numsteps: 471679, return: 735.42
+Episode: 3051, total numsteps: 471933, return: 911.07
+Episode: 3052, total numsteps: 472240, return: 1207.21
+Episode: 3053, total numsteps: 472494, return: 878.17
+Episode: 3054, total numsteps: 472768, return: 970.74
+Episode: 3055, total numsteps: 473087, return: 1250.65
+Episode: 3056, total numsteps: 473394, return: 1153.24
+Episode: 3057, total numsteps: 473606, return: 739.6
+Episode: 3058, total numsteps: 473868, return: 922.58
+Episode: 3059, total numsteps: 474037, return: 575.11
+Episode: 3060, total numsteps: 474402, return: 1320.59
+Episode: 3061, total numsteps: 474698, return: 1089.53
+Episode: 3062, total numsteps: 475055, return: 1215.78
+Episode: 3063, total numsteps: 475416, return: 1398.52
+Episode: 3064, total numsteps: 475832, return: 1616.63
+Episode: 3065, total numsteps: 476076, return: 848.08
+Episode: 3066, total numsteps: 476282, return: 721.54
+Episode: 3067, total numsteps: 476599, return: 1239.83
+Episode: 3068, total numsteps: 476836, return: 846.15
+Episode: 3069, total numsteps: 477032, return: 690.26
+Episode: 3070, total numsteps: 477233, return: 681.75
+Episode: 3071, total numsteps: 477520, return: 910.45
+Episode: 3072, total numsteps: 477796, return: 983.08
+Episode: 3073, total numsteps: 478111, return: 1226.57
+Episode: 3074, total numsteps: 478416, return: 1198.38
+Episode: 3075, total numsteps: 478698, return: 989.34
+Episode: 3076, total numsteps: 479012, return: 1197.95
+Episode: 3077, total numsteps: 479233, return: 771.35
+Episode: 3078, total numsteps: 479411, return: 611.79
+Episode: 3079, total numsteps: 479687, return: 1055.49
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_1_kl65.0_3ak314qp
+   RPC_24_kl0.3_e2mfrnnq
+   RPC_1_kl75.0_s5er7ua0
+   RPC_53_kl0.3_1dpadcwr
+Episode: 3080, total numsteps: 480002, return: 1192.02
+Episode: 3081, total numsteps: 480263, return: 961.02
+Episode: 3082, total numsteps: 480632, return: 1316.11
+Episode: 3083, total numsteps: 481023, return: 1469.63
+Episode: 3084, total numsteps: 481280, return: 938.53
+Episode: 3085, total numsteps: 481416, return: 398.81
+Episode: 3086, total numsteps: 481737, return: 1201.7
+Episode: 3087, total numsteps: 482098, return: 1378.03
+Episode: 3088, total numsteps: 482474, return: 1475.17
+Episode: 3089, total numsteps: 482789, return: 1167.78
+Episode: 3090, total numsteps: 483053, return: 977.85
+Episode: 3091, total numsteps: 483345, return: 1058.99
+Episode: 3092, total numsteps: 483661, return: 1234.86
+Episode: 3093, total numsteps: 483927, return: 893.8
+Episode: 3094, total numsteps: 484223, return: 1169.84
+Episode: 3095, total numsteps: 484345, return: 343.44
+Episode: 3096, total numsteps: 484624, return: 974.7
+Episode: 3097, total numsteps: 484869, return: 866.73
+Episode: 3098, total numsteps: 485173, return: 1150.65
+Episode: 3099, total numsteps: 485479, return: 1146.28
+Episode: 3100, total numsteps: 485746, return: 915.99
+Episode: 3101, total numsteps: 485993, return: 867.41
+Episode: 3102, total numsteps: 486258, return: 977.29
+Episode: 3103, total numsteps: 486611, return: 1348.25
+Episode: 3104, total numsteps: 487035, return: 1584.43
+Episode: 3105, total numsteps: 487175, return: 404.17
+Episode: 3106, total numsteps: 487525, return: 1196.11
+Episode: 3107, total numsteps: 487772, return: 926.64
+Episode: 3108, total numsteps: 488080, return: 1175.95
+Episode: 3109, total numsteps: 488350, return: 977.75
+Episode: 3110, total numsteps: 488689, return: 1287.77
+Episode: 3111, total numsteps: 488958, return: 1003.56
+Episode: 3112, total numsteps: 489317, return: 1373.43
+Episode: 3113, total numsteps: 489607, return: 1063.78
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_1_kl65.0_3ak314qp
+   RPC_24_kl0.3_e2mfrnnq
+   RPC_1_kl75.0_s5er7ua0
+   RPC_53_kl0.3_1dpadcwr
+Episode: 3114, total numsteps: 490008, return: 1557.22
+Episode: 3115, total numsteps: 490323, return: 1118.03
+Episode: 3116, total numsteps: 490583, return: 902.23
+Episode: 3117, total numsteps: 490776, return: 666.69
+Episode: 3118, total numsteps: 491059, return: 1085.11
+Episode: 3119, total numsteps: 491364, return: 1118.78
+Episode: 3120, total numsteps: 491704, return: 1291.49
+Episode: 3121, total numsteps: 492020, return: 1195.94
+Episode: 3122, total numsteps: 492350, return: 1117.24
+Episode: 3123, total numsteps: 492609, return: 783.07
+Episode: 3124, total numsteps: 492922, return: 1168.56
+Episode: 3125, total numsteps: 493175, return: 887.41
+Episode: 3126, total numsteps: 493457, return: 1081.39
+Episode: 3127, total numsteps: 493702, return: 929.41
+Episode: 3128, total numsteps: 494014, return: 1154.17
+Episode: 3129, total numsteps: 494307, return: 1055.63
+Episode: 3130, total numsteps: 494555, return: 812.26
+Episode: 3131, total numsteps: 494878, return: 1202.61
+Episode: 3132, total numsteps: 495143, return: 963.34
+Episode: 3133, total numsteps: 495457, return: 1188.82
+Episode: 3134, total numsteps: 495759, return: 1099.94
+Episode: 3135, total numsteps: 495991, return: 832.92
+Episode: 3136, total numsteps: 496269, return: 1010.53
+Episode: 3137, total numsteps: 496626, return: 1372.78
+Episode: 3138, total numsteps: 496892, return: 890.81
+Episode: 3139, total numsteps: 497210, return: 1204.66
+Episode: 3140, total numsteps: 497454, return: 851.4
+Episode: 3141, total numsteps: 497755, return: 1160.87
+Episode: 3142, total numsteps: 498013, return: 887.45
+Episode: 3143, total numsteps: 498269, return: 894.44
+Episode: 3144, total numsteps: 498518, return: 870.65
+Episode: 3145, total numsteps: 498850, return: 1267.92
+Episode: 3146, total numsteps: 499176, return: 1217.63
+Episode: 3147, total numsteps: 499456, return: 1034.79
+Episode: 3148, total numsteps: 499930, return: 1566.45
+wandb: WARNING `fps` argument does not affect the frame rate of the video when providing a file path or raw bytes.
+[Walker2d-v5] runs sorted by time:
+   RPC_93_kl0.3_pmi2i8o4
+   RPC_1_kl65.0_3ak314qp
+   RPC_24_kl0.3_e2mfrnnq
+   RPC_1_kl75.0_s5er7ua0
+   RPC_53_kl0.3_1dpadcwr

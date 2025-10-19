@@ -1,0 +1,26 @@
+{
+  "os":  "Linux-5.15.0-139-generic-x86_64-with-glibc2.31",
+  "python":  "CPython 3.13.7",
+  "startedAt":  "2025-09-24T17:47:33.327733Z",
+  "args":  [
+    "--agent",
+    "RPC",
+    "--kl_constraint",
+    "30",
+    "--noise_factor",
+    "3",
+    "--env_name=Walker2d-v5'\n"
+  ],
+  "program":  "/home/harsh/arjun/robust-predictable-control/train.py",
+  "codePath":  "train.py",
+  "codePathLocal":  "train.py",
+  "git":  {
+    "remote":  "git@github-arjun:ArjunArasappan/robust-predictable-control.git",
+    "commit":  "6313e4bbdbcdfb4a6f19e1857c57b55ba3b1d4ea"
+  },
+  "email":  "arasarjun@gmail.com",
+  "root":  "/home/harsh/arjun/robust-predictable-control",
+  "host":  "rl-server",
+  "executable":  "/home/harsh/miniconda3/envs/rpc/bin/python",
+  "writerId":  "rovw3b75iebyjdvg83gme78dbn56s5am"
+}

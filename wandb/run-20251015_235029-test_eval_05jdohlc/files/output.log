@@ -1,0 +1,11 @@
+[INFO] Using run_id / name: test_eval_05jdohlc
+Namespace(agent='RPC', env_name='Walker2d-v5', device='cuda', seed=1, num_train_steps=10500, learning_starts=10000, gamma=0.99, tau=0.005, env_buffer_size=1000000, target_update_interval=1, log_interval=500, save_snapshot_interval=100, eval_episode_interval=10000, num_eval_episodes=5, latent_dims=16, model_hidden_dims=256, model_num_layers=2, kl_constraint=1, lambda_init=1e-05, alpha_autotune=True, alpha_init=0.2, noise_factor=1, batch_size=256, seq_len=4, lr=0.0003, record_eval=True, video_dir='videos', video_fps=30, use_rpc=1)
+RPC: True
+Traceback (most recent call last):
+  File "/home/harsh/arjun/robust-predictable-control/eval_rpc.py", line 401, in main
+    workspace.salvage_weights()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/harsh/arjun/robust-predictable-control/eval_rpc.py", line 362, in salvage_weights
+    snapshot = Path(+ p, 'best.pt')
+                    ^^^
+TypeError: bad operand type for unary +: 'PosixPath'

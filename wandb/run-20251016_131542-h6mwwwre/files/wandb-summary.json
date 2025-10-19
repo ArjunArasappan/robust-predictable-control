@@ -1,0 +1,1 @@
+{"_timestamp":1.760634947580511e+09,"episodic_length":12,"_step":9999,"eval/episodic_length":94.4,"_wandb":{"runtime":4},"eval/episodic_return":81.80742697655238,"_runtime":4.7516374599999995,"episodic_return":-3.3681882079563588,"env_buffer_length":9997}
