@@ -3,5 +3,6 @@ checkpoints/
 runs/
 logs/
 *.mp4
+wandb/
 
 __pycache__/*
