@@ -4,5 +4,7 @@ runs/
 logs/
 *.mp4
 wandb/
-
+eval_checkpoints/
+eval_videos/
 __pycache__/*
+

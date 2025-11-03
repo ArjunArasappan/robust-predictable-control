@@ -178,25 +178,25 @@ class RPCAgent(object):
         # print('state debug', type(state), len(state), state)
         with torch.no_grad():
             state = torch.FloatTensor(state).unsqueeze(0).to(self.device)
-            z = self.encoder(state).sample()     
+            z_dist = self.encoder(state)
+            z = z_dist.rsample()     
             if eval:
                 action = self.actor.get_action(z, eval)       
             else:
                 action, _, _ = self.actor.get_action(z)   
-        return action.cpu().numpy()[0]
+        return action.cpu().numpy()[0], z_dist
     
-    def get_action_open_loop(self, prev_z_dist, eval=False):
+    def get_action_open_loop(self, prev_z_dist, prev_action, eval=False):
         # print('state debug', type(state), len(state), state)
         with torch.no_grad():
             sample = prev_z_dist.sample()
-            self.model(sample)
-            state = torch.FloatTensor(state).unsqueeze(0).to(self.device)
-            z = self.encoder(state).sample()     
+            z_pred_dist = self.model(sample, prev_action)
+            z = z_pred_dist.sample()     
             if eval:
                 action = self.actor.get_action(z, eval)       
             else:
                 action, _, _ = self.actor.get_action(z)   
-        return action.cpu().numpy()[0]
+        return action.cpu().numpy()[0], z_pred_dist
     
     def get_state_latent(self, state):
         with torch.no_grad():

@@ -428,7 +428,8 @@ def main():
     
     if not args.use_rpc:
         args.kl_constraint = 0
-        
+    
+    # generate run tag
     ts = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     kl_tag = f"kl_{args.kl_constraint:.3g}" if args.kl_constraint is not None else "klNA"
     run_tag = f"{ts}_{args.agent}_{args.env_name}_seed_{args.seed}_{kl_tag}"

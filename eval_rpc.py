@@ -12,6 +12,29 @@ import random
 import time 
 from rpc import RPCAgent 
 from rrpc import RRPCAgent
+from argparse import Namespace
+
+
+import cv2
+import numpy as np
+import torch
+
+def draw_metrics_bar(frame: np.ndarray, *, step: int, mode_text: str, is_open_loop: bool | None) -> np.ndarray:
+    img = frame.copy()
+    h, w = img.shape[:2]
+    bar_h = max(24, h // 20)
+    overlay = img.copy()
+    cv2.rectangle(overlay, (0, h - bar_h), (w, h), (0, 0, 0), -1)
+    img[h - bar_h:h] = cv2.addWeighted(overlay[h - bar_h:h], 0.4, img[h - bar_h:h], 0.6, 0)
+    font, scale, thickness, margin = cv2.FONT_HERSHEY_SIMPLEX, 0.6, 2, 12
+    cv2.putText(img, f"Step {step}", (margin, h - bar_h//3), font, scale, (255, 255, 255), thickness, cv2.LINE_AA)
+    color = (200, 200, 200) if is_open_loop is None else ((60, 180, 75) if not is_open_loop else (36, 36, 255))
+    tw, _ = cv2.getTextSize(f"Mode: {mode_text}", font, scale, thickness)[0]
+    cv2.putText(img, f"Mode: {mode_text}", (w - tw - margin, h - bar_h//3), font, scale, color, thickness, cv2.LINE_AA)
+    return img
+
+
+
 
 def parse_args(config):
     parser = argparse.ArgumentParser()
@@ -47,7 +70,7 @@ def parse_args(config):
     parser.add_argument('--lr', type=float, default=config['lr'])
     
     parser.add_argument('--record_eval', action='store_true', help='save & log eval videos', default=True)
-    parser.add_argument('--video_dir', type=str, default='videos')
+    parser.add_argument('--video_dir', type=str, default='eval_videos')
     parser.add_argument('--video_fps', type=int, default=30)
     
     
@@ -80,10 +103,33 @@ def make_agent(env, device, args):
     return agent
 
 class MujocoWorkspace:
-    def __init__(self, args):
+    def __init__(self, args, load_path=None, iter=None):
+        
+        if load_path:
+            self.load_snapshot(load_path, iter)
+            self.work_dir = Path.cwd()
+            self.device = torch.device("cuda" if torch.cuda.is_available() and args.device=='cuda' else "cpu")
+
+            self.setup()
+            self.agent = make_agent(self.train_env, self.device, self.args)
+                        
+            self.agent.encoder.load_state_dict(self.encoder)
+            self.agent.actor.load_state_dict(self.actor)
+            self.agent.model.load_state_dict(self.model)
+            
+            
+            
+            self.set_seeds_everywhere()
+            
+            self._best_eval_returns = -np.inf
+
+            
+            return
+        
+        
         self.args = args
         self.device = torch.device("cuda" if torch.cuda.is_available() and args.device=='cuda' else "cpu")
-        self.work_dir = Path.cwd()
+        
         self.setup()
         self.set_seeds_everywhere()
         print(self.args)
@@ -93,24 +139,19 @@ class MujocoWorkspace:
         self._best_eval_returns = -np.inf
 
     def setup(self):
-        # self.train_env = gym.make(self.args.env_name)
-        # self.eval_env = gym.make(self.args.env_name)        
-        # self.robust_env = gym.make(self.args.env_name)
-        # self.checkpoint_path = os.path.join(self.work_dir,'checkpoints/' + self.args.agent +'_' + self.args.env_name + '/' + str(datetime.datetime.now())) 
-        # os.makedirs(self.checkpoint_path, exist_ok=True)
         
         self.train_env  = gym.make(self.args.env_name)  # no rendering needed here
         self.eval_env   = gym.make(self.args.env_name, render_mode="rgb_array")
         self.robust_env = gym.make(self.args.env_name, render_mode="rgb_array")
         self.checkpoint_path = os.path.join(
-                self.work_dir, 'checkpoints',
+                self.work_dir, 'eval_checkpoints',
                 f"{self.args.agent}_{self.args.env_name}",
                 wandb.run.id
                 )
         os.makedirs(self.checkpoint_path, exist_ok=True)
 
         # videos folder
-        Path(self.args.video_dir).mkdir(parents=True, exist_ok=True)
+
         
     def _kl_target_bits(self):
         return float(self.args.kl_constraint)
@@ -124,11 +165,22 @@ class MujocoWorkspace:
         if not p.exists():
             with p.open("w") as f:
                 yaml.safe_dump(vars(self.args), f, sort_keys=False)
+                
+                
+    def override_args(self):
+        
+        if isinstance(self.args, dict):
+            self.args = Namespace(**self.args)
+            
+        self.args.video_dir = 'eval_videos'
+        Path(self.args.video_dir ).mkdir(parents=True, exist_ok=True)
+        
+
 
 
 
             
-    def _save_and_log_video(self, frames, tag):
+    def _save_and_log_video(self, frames, tag, eval_key):
         if not frames:
             return
 
@@ -149,7 +201,7 @@ class MujocoWorkspace:
                 else datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
 
         # 🔑 New: env-level subdir → then run subdir
-        env_dir = Path(self.args.video_dir) / self.args.env_name
+        env_dir = Path(self.args.video_dir) / self.args.env_name / eval_key
         env_dir.mkdir(parents=True, exist_ok=True)
 
         video_subdir = env_dir / f"{self.args.agent}_{self.args.seed}_{kl_tag}_{run_id}"
@@ -243,7 +295,7 @@ class MujocoWorkspace:
         }, step=self._global_step)
 
         if record_first:
-            self._save_and_log_video(frames, tag="eval")
+            self._save_and_log_video(frames, tag="eval", eval_key='eval')
 
 
     def eval_robustness(self):
@@ -258,7 +310,7 @@ class MujocoWorkspace:
                 if r>0.5:
                     state[2] += self.args.noise_factor*(np.random.rand()-0.5) 
                 with torch.no_grad():
-                    action = self.agent.get_action(state, True)
+                    action, _ = self.agent.get_action(state, True)
                     
                 next_state, reward, terminated, truncated, info = self.eval_env.step(action)
                 done = bool(terminated or truncated)
@@ -272,31 +324,165 @@ class MujocoWorkspace:
         robust_metrics['robust_episodic_length'] = steps / robust_evals
         wandb.log(robust_metrics, step = self._global_step)
         
-    def eval_openloop(self):
+        if record_first:
+            self._save_and_log_video(frames, tag="eval", eval_key='eval_robustness')
+        
+        
+    def eval_open_loop(self):
         steps, returns = 0, 0
+        record_first = self.args.record_eval
 
-        for _ in range(1):
-            done = False 
-            state, info = self.robust_env.reset()
+        frames = []  
+        robustness_p = 0.7
+
+        for e in range(self.args.num_eval_episodes):
+            done = False
+            state, info = self.eval_env.reset()
+            last_z = None
+            last_action = None
+
+            open_loop_flags = [] 
+
+            if record_first and e == 0:
+                frame = self.eval_env.render()   # (H,W,C) uint8
+                if frame is not None:
+                    annotated = draw_metrics_bar(
+                        frame, step=0, mode_text="N/A", is_open_loop=None
+                    )
+                    frames.append(annotated)
+
+            ep_steps = 0
+   
             while not done:
-                r = random.uniform(0.0, 1.0)
-                if r>0.5:
-                    state[2] += self.args.noise_factor*(np.random.rand()-0.5) 
                 with torch.no_grad():
-                    action = self.agent.get_action(state, True)
-                    
+                    # choose action; set open-loop flag
+                    if (last_z is not None) and (np.random.uniform(0, 1) < robustness_p):
+                        action, predicted_z = self.agent.get_action_open_loop(last_z, last_action)
+                        last_action = action
+                        last_z = predicted_z
+                        is_open = True
+                    else:
+                        action, z = self.agent.get_action(state, True)
+                        last_action = action
+                        last_z = z
+                        is_open = False
+                        
+                    last_action = torch.tensor(last_action, device=self.device).unsqueeze(dim=0)
+                    last_z = last_z
+
+
                 next_state, reward, terminated, truncated, info = self.eval_env.step(action)
                 done = bool(terminated or truncated)
-                
-                returns += reward
+
+                returns += float(reward)
                 steps += 1
+                ep_steps += 1
                 state = next_state
 
-        robust_metrics = {}
-        robust_metrics['robust_episodic_return'] = returns
-        robust_metrics['robust_episodic_length'] = steps
-        wandb.log(robust_metrics, step = self._global_step)
+                if record_first and e == 0:
+                    open_loop_flags.append(is_open)
+                    frame = self.eval_env.render()
+                    if frame is not None:
+                        mode_text = "OPEN-LOOP" if is_open else "CLOSED-LOOP"
+                        annotated = draw_metrics_bar(
+                            frame,
+                            step=ep_steps,               # step count within the episode
+                            mode_text=mode_text,
+                            is_open_loop=is_open
+                        )
+                        frames.append(annotated)
 
+        avg_return = returns / self.args.num_eval_episodes
+        if avg_return >= self._best_eval_returns:
+            self.save_snapshot(best=True)
+            self._best_eval_returns = avg_return
+
+        wandb.log({
+            'eval/episodic_return': avg_return,
+            'eval/episodic_length': steps / self.args.num_eval_episodes
+        }, step=self._global_step)
+
+        if record_first:
+
+            self._save_and_log_video(frames, tag="eval", eval_key='eval')
+            
+            
+    def eval_open_loop_freq(self, rate):
+
+        steps, returns = 0, 0.0
+        record_first = getattr(self.args, "record_eval", False)
+
+        frames = []
+
+        for e in range(self.args.num_eval_episodes):
+            done = False
+            state, info = self.eval_env.reset()
+            last_z = None
+            last_action = None
+
+            if record_first and e == 0:
+                frame = self.eval_env.render()  # (H,W,C) uint8
+                if frame is not None:
+                    annotated = draw_metrics_bar(
+                        frame, step=0, mode_text="N/A", is_open_loop=None
+                    )
+                    frames.append(annotated)
+
+            ep_steps = 0
+
+            while not done:
+                with torch.no_grad():
+                    observe_now = (rate <= 0) or (ep_steps % rate == 0) or (last_z is None)
+
+                    if observe_now:
+                        action, z = self.agent.get_action(state, True)
+                        last_action = action
+                        last_z = z
+                        is_open = False
+                    else:
+                        action, predicted_z = self.agent.get_action_open_loop(last_z, last_action)
+                        last_action = action
+                        last_z = predicted_z
+                        is_open = True
+
+                    last_action = torch.as_tensor(last_action, device=self.device).unsqueeze(0)
+
+                next_state, reward, terminated, truncated, info = self.eval_env.step(action)
+                done = bool(terminated or truncated)
+
+                returns += float(reward)
+                steps += 1
+                ep_steps += 1
+                state = next_state
+
+                if record_first and e == 0:
+                    frame = self.eval_env.render()
+                    if frame is not None:
+                        mode_text = f"Rate {rate}" + "OPEN-LOOP" if is_open else "CLOSED-LOOP"
+                        annotated = draw_metrics_bar(
+                            frame,
+                            step=ep_steps,        
+                            mode_text=mode_text,
+                            is_open_loop=is_open
+                        )
+                        frames.append(annotated)
+
+        avg_return = returns / self.args.num_eval_episodes
+        if avg_return >= self._best_eval_returns:
+            self.save_snapshot(best=True)
+            self._best_eval_returns = avg_return
+
+        wandb.log({
+            'eval/episodic_return': avg_return,
+            'eval/episodic_length': steps / self.args.num_eval_episodes
+        }, step=self._global_step)
+
+        if record_first:
+            self._save_and_log_video(frames, tag="eval", eval_key='eval')
+
+
+    
+        
     def save_snapshot(self, best=False):
         keys_to_save = ['agent', '_global_step', '_global_episode', 'args']
         if best:
@@ -307,16 +493,23 @@ class MujocoWorkspace:
         with snapshot.open('wb') as f:
             torch.save(payload, f)
 
-    def load_snapshot(self, iter, best=False):
+    def load_snapshot(self, path, iter, best=False):
         if best:
-            snapshot = Path(self.checkpoint_path) / 'best.pt'
+            snapshot = path / 'best.pt'
         else:
-            snapshot = Path(self.checkpoint_path) / Path(str(iter)+'.pt')
+            snapshot = path / Path(str(iter)+'.pt')
             
         with snapshot.open('rb') as f:
             payload = torch.load(f)
         for k, v in payload.items():
             self.__dict__[k] = v
+            print(k)
+            
+            
+            
+        self.override_args()
+            
+
             
     def load_best(self, path):
         snapshot = Path(path, 'best.pt')
@@ -324,28 +517,22 @@ class MujocoWorkspace:
             payload = torch.load(f, weights_only=False)
         for k, v in payload.items():
             self.__dict__[k] = v
+            print(k)
+            
 
-    def salvage_weights(self):
-        from pathlib import Path
-
-
-
-        st = 'robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-01_11-36-23.998758 robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-01_11-50-15.741457 robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-01_11-53-56.534500 robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-01_17-07-53.558064 robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-01_17-09-47.965958 robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-01_17-20-19.030783 robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-01_22-30-46.464062 robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-01_22-30-58.504174 robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-01_22-44-17.106398 robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-02_03-46-17.646129 robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-02_03-51-56.396265 robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-02_04-04-00.644838 robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-02_09-04-37.596086 robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-02_09-10-15.413442 robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-02_09-19-08.051633 robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-02_14-23-04.267465 robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-02_14-29-54.712829 robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-02_14-39-58.759492 robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-15_15-15-47.359893 robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-15_15-17-38.593985 robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-15_15-18-32.309093 robust-predictable-control/checkpoints/RPC_Walker2d-v5/2025-10-15_16-03-05.735273'
-        paths = st.split(' ')
-        print(len(paths))
-
+    
+        # Load weights into the *existing* agent
+        self.agent.encoder.load_state_dict(self.encoder)
+        self.agent.actor.load_state_dict(self.actor)
+        self.agent.model.load_state_dict(self.model)
         
+        self.override_args()
+            
 
-        for exp_path in paths:
-            p = Path('../' + exp_path)
+            
+        print(self.args.kl_constraint)
+        # print(self.args.keys())
 
-            snapshot = Path(p, 'best.pt')
-            with snapshot.open('rb') as f:
-                payload = torch.load(f, weights_only=False)
-            for k, v in payload.items():
-                self.__dict__[k] = v
-                
-            print(self.agent.kl_constraint)
         
 def main():
 
@@ -375,10 +562,16 @@ def main():
         wandb.run.name = run_id
         wandb.config.update({"run_id": run_id}, allow_val_change=True)
 
-        print(f"[INFO] Using run_id / name: {run_id}")
 
-        workspace = MujocoWorkspace(args)
-        workspace.salvage_weights()
+        print(f"[INFO] Using run_id / name: {run_id}")
+        
+        
+        load_path = "../robust-predictable-control/checkpoints//RPC_Walker2d-v5/_saved/2025-10-29_17-45-11_RPC_Walker2d-v5_seed_84_kl_60_d2n0u5b8"
+        iter = 500_000
+        workspace = MujocoWorkspace(args, load_path = load_path, iter = iter)
+
+        workspace.eval_open_loop_freq(rate = 10)
+        # workspace.salvage_weights()
 
 
 if __name__ == '__main__':
