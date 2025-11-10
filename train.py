@@ -166,7 +166,7 @@ class MujocoWorkspace:
         imageio.mimsave(out_path, arr, fps=int(self.args.video_fps), codec="libx264", format="ffmpeg")
 
         payload = {
-            f"{tag}/video": wandb.Video(str(out_path), fps=int(self.args.video_fps), format="mp4"),
+            # f"{tag}/video": wandb.Video(str(out_path), fps=int(self.args.video_fps), format="mp4"),
             f"{tag}/video_path": str(out_path),
         }
         
@@ -206,7 +206,7 @@ class MujocoWorkspace:
             if self._global_step <= self.args.learning_starts:
                 action = self.train_env.action_space.sample()
             else:
-                action = self.agent.get_action(state)
+                action, _ = self.agent.get_action(state)
 
             next_state, reward, terminated, truncated, info = self.train_env.step(action)
             # print('nextstate', type(next_state))
@@ -271,7 +271,7 @@ class MujocoWorkspace:
 
             while not done:
                 with torch.no_grad():
-                    action = self.agent.get_action(state, True)
+                    action, _ = self.agent.get_action(state, True)
 
                 next_state, reward, terminated, truncated, info = self.eval_env.step(action)
                 done = bool(terminated or truncated)
@@ -311,7 +311,7 @@ class MujocoWorkspace:
                 if r>0.5:
                     state[2] += self.args.noise_factor*(np.random.rand()-0.5) 
                 with torch.no_grad():
-                    action = self.agent.get_action(state, True)
+                    action, _ = self.agent.get_action(state, True)
                     
                 next_state, reward, terminated, truncated, info = self.eval_env.step(action)
                 done = bool(terminated or truncated)
@@ -345,7 +345,7 @@ class MujocoWorkspace:
                     
                     
                 with torch.no_grad():
-                    action = self.agent.get_action(state, True)
+                    action, _ = self.agent.get_action(state, True)
                     last_z = self.agent.get_state_latent(state)
                     
                 next_state, reward, terminated, truncated, info = self.eval_env.step(action)

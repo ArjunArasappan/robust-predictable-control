@@ -100,7 +100,7 @@ class Actor(nn.Module):
         mean = self.mean(x)
         log_std = self.logstd(x)
         log_std = torch.tanh(log_std)
-        log_std = LOG_STD_MIN + 0.5 * (LOG_STD_MAX - LOG_STD_MIN) * (log_std + 1) # From SpinUp / Denis Yarats
+        log_std = LOG_STD_MIN + 0.5 * (LOG_STD_MAX - LOG_STD_MIN) * (log_std + 1) 
 
         return mean, log_std
 
@@ -179,7 +179,7 @@ class RPCAgent(object):
         with torch.no_grad():
             state = torch.FloatTensor(state).unsqueeze(0).to(self.device)
             z_dist = self.encoder(state)
-            z = z_dist.rsample()     
+            z = z_dist.sample()     
             if eval:
                 action = self.actor.get_action(z, eval)       
             else:
@@ -198,11 +198,16 @@ class RPCAgent(object):
                 action, _, _ = self.actor.get_action(z)   
         return action.cpu().numpy()[0], z_pred_dist
     
-    def get_state_latent(self, state):
-        with torch.no_grad():
-            state = torch.FloatTensor(state).unsqueeze(0).to(self.device)
-            z = self.encoder(state).sample()
-            return z     
+
+
+    def get_kl(self, last_state, state, action):
+        last_state = torch.FloatTensor(last_state).unsqueeze(0).to(self.device)
+        state = torch.FloatTensor(state).unsqueeze(0).to(self.device)
+        
+        z_prev = self.encoder(last_state).mean
+        z_curr_dist = self.encoder(state)
+        z_dist_pred = self.model(z_prev, action)
+        return td.kl_divergence(z_curr_dist, z_dist_pred).item() 
 
 
     def update(self, step):
@@ -212,16 +217,16 @@ class RPCAgent(object):
         state_batch  = torch.FloatTensor(state_batch).to(self.device)
         next_state_batch = torch.FloatTensor(next_state_batch).to(self.device)
         action_batch = torch.FloatTensor(action_batch).to(self.device)
-        reward_batch    = torch.FloatTensor(reward_batch).to(self.device)
-        done_batch      = torch.FloatTensor(done_batch).to(self.device)
-        discount_batch  = self.gamma * (1 - done_batch)
+        reward_batch = torch.FloatTensor(reward_batch).to(self.device)
+        done_batch = torch.FloatTensor(done_batch).to(self.device)
+        discount_batch = self.gamma * (1 - done_batch)
 
         if self.use_rpc:
             kl, z_dist, z_next_dist, _ = self.kl_loss(state_batch, action_batch, next_state_batch, step, metrics)
             kl_for_target = kl.detach()              
             kl_for_loss   = kl.mean()            
         else:
-            z_dist       = self.encoder(state_batch)
+            z_dist = self.encoder(state_batch)
             z_next_dist  = self.encoder(next_state_batch)
 
             with torch.no_grad():
@@ -274,18 +279,18 @@ class RPCAgent(object):
             wandb.log(metrics, step=step)
 
     def kl_loss(self, state_batch, action_batch, next_state_batch, step, metrics):
-        z_dist        = self.encoder(state_batch)
-        z_batch       = z_dist.rsample()         
+        z_dist = self.encoder(state_batch)
+        z_batch = z_dist.sample()         
 
-        z_next_dist   = self.encoder(next_state_batch)
+        z_next_dist = self.encoder(next_state_batch)
         z_next_prior  = self.model(z_batch, action_batch)
 
         kl = td.kl_divergence(z_next_dist, z_next_prior)
 
         if step % self.log_interval == 0:
-            metrics['kl_predictor']      = kl.mean().item()
+            metrics['kl_predictor'] = kl.mean().item()
             metrics['posterior_entropy'] = z_next_dist.entropy().mean().item()
-            metrics['prior_entropy']     = z_next_prior.entropy().mean().item()
+            metrics['prior_entropy'] = z_next_prior.entropy().mean().item()
 
         return kl, z_dist, z_next_dist, z_next_prior
 

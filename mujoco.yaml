@@ -2,7 +2,7 @@ rpc_params:
   env_name : 'Walker2d-v5'
   device : 'cuda'
   seed : 1
-  num_train_steps : 500_000
+  num_train_steps : 1_000_000
   learning_starts : 10_000
   gamma : 0.99
   alpha : 0.2
@@ -12,8 +12,8 @@ rpc_params:
 
   target_update_interval : 1
   log_interval : 500
-  save_snapshot_interval : 10000
-  eval_episode_interval : 10000
+  save_snapshot_interval : 100000
+  eval_episode_interval : 100000
   num_eval_episodes : 5
   
   latent_dims : 16

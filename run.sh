@@ -3,8 +3,8 @@
 set -euo pipefail
 
 # ----- Search spaces -----
-KLS=(0.1 0.3 1 5 10 30 60)
-SEEDS=(42, 84) # add more seeds as needed
+KLS=(0.1 0.4 1.6 6.4 25.6)
+SEEDS=(43) #(94 75 43) # add more seeds as needed
 
 # ----- Config -----
 OUTDIR="${OUTDIR:-runs}"          # override: OUTDIR=rpc_runs ./sweep...
